@@ -1,0 +1,347 @@
+xrun(64): 20.09-s017: (c) Copyright 1995-2021 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	20.09-s017: Started on Feb 16, 2025 at 21:27:56 PST
+xrun
+	+gui
+	+access+rwc
+	+xm64bit
+	+xmstatus
+	+xmtimescale+1ns/1ps
+	+xmoveride_timescale
+	-v ./add.pnr.v
+	-v /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v
+	./netlist/add_tb.v
+	+xmseq_udp_delay+20ps
+
+   User defined plus("+") options:
+	+xmoveride_timescale
+
+DEFINE analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,5): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/artist/analogLib' (cds.lib command ignored).
+DEFINE basic $CDSHOME/tools/dfII/etc/cdslib/basic
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,6): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/basic' (cds.lib command ignored).
+DEFINE US_8ths $CDSHOME/tools/dfII/etc/cdslib/sheets/US_8ths
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,7): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/sheets/US_8ths' (cds.lib command ignored).
+DEFINE sheets $CDSHOME/tools/dfII/etc/cdslib/sheets/US_8ths
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,8): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/sheets/US_8ths' (cds.lib command ignored).
+DEFINE cdsDefTechLib $CDSHOME/tools/dfII/etc/cdsDefTechLib
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,9): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdsDefTechLib' (cds.lib command ignored).
+DEFINE ahdlLib $CDSHOME/tools/dfII/samples/artist
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,10): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/samples/artist' (cds.lib command ignored).
+ASSIGN gsclib045 COMBINE gsclib045 gsclib045_tech
+|
+xrun: *W,DLCOMB (/home/linux/ieng6/oce/6d/h3le/cds.lib,24): cds.lib COMBINE attribute library not defined 'gsclib045_tech' (cds.lib command ignored).
+ASSIGN gsclib045_tech DISPLAY PDKlib
+|
+xrun: *W,DLCLIB (/home/linux/ieng6/oce/6d/h3le/cds.lib,26): cds.lib Library not defined 'gsclib045_tech' (cds.lib command ignored).
+DEFINE sharedKen /home/linux/ieng6/ee283fa23/public/ee283fa23_hll/shared_buck_project
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,36): cds.lib Invalid path '/home/linux/ieng6/ee283fa23/public/ee283fa23_hll/shared_buck_project' (cds.lib command ignored).
+DEFINE analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,5): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/artist/analogLib' (cds.lib command ignored).
+DEFINE basic $CDSHOME/tools/dfII/etc/cdslib/basic
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,6): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/basic' (cds.lib command ignored).
+DEFINE US_8ths $CDSHOME/tools/dfII/etc/cdslib/sheets/US_8ths
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,7): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/sheets/US_8ths' (cds.lib command ignored).
+DEFINE sheets $CDSHOME/tools/dfII/etc/cdslib/sheets/US_8ths
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,8): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/sheets/US_8ths' (cds.lib command ignored).
+DEFINE cdsDefTechLib $CDSHOME/tools/dfII/etc/cdsDefTechLib
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,9): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdsDefTechLib' (cds.lib command ignored).
+DEFINE ahdlLib $CDSHOME/tools/dfII/samples/artist
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,10): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/samples/artist' (cds.lib command ignored).
+ASSIGN gsclib045 COMBINE gsclib045 gsclib045_tech
+|
+xrun: *W,DLCOMB (/home/linux/ieng6/oce/6d/h3le/cds.lib,24): cds.lib COMBINE attribute library not defined 'gsclib045_tech' (cds.lib command ignored).
+ASSIGN gsclib045_tech DISPLAY PDKlib
+|
+xrun: *W,DLCLIB (/home/linux/ieng6/oce/6d/h3le/cds.lib,26): cds.lib Library not defined 'gsclib045_tech' (cds.lib command ignored).
+DEFINE sharedKen /home/linux/ieng6/ee283fa23/public/ee283fa23_hll/shared_buck_project
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,36): cds.lib Invalid path '/home/linux/ieng6/ee283fa23/public/ee283fa23_hll/shared_buck_project' (cds.lib command ignored).
+DEFINE analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,5): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/artist/analogLib' (cds.lib command ignored).
+DEFINE basic $CDSHOME/tools/dfII/etc/cdslib/basic
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,6): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/basic' (cds.lib command ignored).
+DEFINE US_8ths $CDSHOME/tools/dfII/etc/cdslib/sheets/US_8ths
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,7): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/sheets/US_8ths' (cds.lib command ignored).
+DEFINE sheets $CDSHOME/tools/dfII/etc/cdslib/sheets/US_8ths
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,8): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/sheets/US_8ths' (cds.lib command ignored).
+DEFINE cdsDefTechLib $CDSHOME/tools/dfII/etc/cdsDefTechLib
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,9): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdsDefTechLib' (cds.lib command ignored).
+DEFINE ahdlLib $CDSHOME/tools/dfII/samples/artist
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,10): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/samples/artist' (cds.lib command ignored).
+ASSIGN gsclib045 COMBINE gsclib045 gsclib045_tech
+|
+xrun: *W,DLCOMB (/home/linux/ieng6/oce/6d/h3le/cds.lib,24): cds.lib COMBINE attribute library not defined 'gsclib045_tech' (cds.lib command ignored).
+ASSIGN gsclib045_tech DISPLAY PDKlib
+|
+xrun: *W,DLCLIB (/home/linux/ieng6/oce/6d/h3le/cds.lib,26): cds.lib Library not defined 'gsclib045_tech' (cds.lib command ignored).
+DEFINE sharedKen /home/linux/ieng6/ee283fa23/public/ee283fa23_hll/shared_buck_project
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,36): cds.lib Invalid path '/home/linux/ieng6/ee283fa23/public/ee283fa23_hll/shared_buck_project' (cds.lib command ignored).
+DEFINE analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,5): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/artist/analogLib' (cds.lib command ignored).
+DEFINE basic $CDSHOME/tools/dfII/etc/cdslib/basic
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,6): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/basic' (cds.lib command ignored).
+DEFINE US_8ths $CDSHOME/tools/dfII/etc/cdslib/sheets/US_8ths
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,7): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/sheets/US_8ths' (cds.lib command ignored).
+DEFINE sheets $CDSHOME/tools/dfII/etc/cdslib/sheets/US_8ths
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,8): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/sheets/US_8ths' (cds.lib command ignored).
+DEFINE cdsDefTechLib $CDSHOME/tools/dfII/etc/cdsDefTechLib
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,9): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdsDefTechLib' (cds.lib command ignored).
+DEFINE ahdlLib $CDSHOME/tools/dfII/samples/artist
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,10): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/samples/artist' (cds.lib command ignored).
+ASSIGN gsclib045 COMBINE gsclib045 gsclib045_tech
+|
+xrun: *W,DLCOMB (/home/linux/ieng6/oce/6d/h3le/cds.lib,24): cds.lib COMBINE attribute library not defined 'gsclib045_tech' (cds.lib command ignored).
+ASSIGN gsclib045_tech DISPLAY PDKlib
+|
+xrun: *W,DLCLIB (/home/linux/ieng6/oce/6d/h3le/cds.lib,26): cds.lib Library not defined 'gsclib045_tech' (cds.lib command ignored).
+DEFINE sharedKen /home/linux/ieng6/ee283fa23/public/ee283fa23_hll/shared_buck_project
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,36): cds.lib Invalid path '/home/linux/ieng6/ee283fa23/public/ee283fa23_hll/shared_buck_project' (cds.lib command ignored).
+DEFINE analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,5): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/artist/analogLib' (cds.lib command ignored).
+DEFINE basic $CDSHOME/tools/dfII/etc/cdslib/basic
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,6): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/basic' (cds.lib command ignored).
+DEFINE US_8ths $CDSHOME/tools/dfII/etc/cdslib/sheets/US_8ths
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,7): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/sheets/US_8ths' (cds.lib command ignored).
+DEFINE sheets $CDSHOME/tools/dfII/etc/cdslib/sheets/US_8ths
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,8): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/sheets/US_8ths' (cds.lib command ignored).
+DEFINE cdsDefTechLib $CDSHOME/tools/dfII/etc/cdsDefTechLib
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,9): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdsDefTechLib' (cds.lib command ignored).
+DEFINE ahdlLib $CDSHOME/tools/dfII/samples/artist
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,10): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/samples/artist' (cds.lib command ignored).
+ASSIGN gsclib045 COMBINE gsclib045 gsclib045_tech
+|
+xrun: *W,DLCOMB (/home/linux/ieng6/oce/6d/h3le/cds.lib,24): cds.lib COMBINE attribute library not defined 'gsclib045_tech' (cds.lib command ignored).
+ASSIGN gsclib045_tech DISPLAY PDKlib
+|
+xrun: *W,DLCLIB (/home/linux/ieng6/oce/6d/h3le/cds.lib,26): cds.lib Library not defined 'gsclib045_tech' (cds.lib command ignored).
+DEFINE sharedKen /home/linux/ieng6/ee283fa23/public/ee283fa23_hll/shared_buck_project
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,36): cds.lib Invalid path '/home/linux/ieng6/ee283fa23/public/ee283fa23_hll/shared_buck_project' (cds.lib command ignored).
+DEFINE analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,5): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/artist/analogLib' (cds.lib command ignored).
+DEFINE basic $CDSHOME/tools/dfII/etc/cdslib/basic
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,6): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/basic' (cds.lib command ignored).
+DEFINE US_8ths $CDSHOME/tools/dfII/etc/cdslib/sheets/US_8ths
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,7): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/sheets/US_8ths' (cds.lib command ignored).
+DEFINE sheets $CDSHOME/tools/dfII/etc/cdslib/sheets/US_8ths
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,8): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/sheets/US_8ths' (cds.lib command ignored).
+DEFINE cdsDefTechLib $CDSHOME/tools/dfII/etc/cdsDefTechLib
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,9): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdsDefTechLib' (cds.lib command ignored).
+DEFINE ahdlLib $CDSHOME/tools/dfII/samples/artist
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,10): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/samples/artist' (cds.lib command ignored).
+ASSIGN gsclib045 COMBINE gsclib045 gsclib045_tech
+|
+xrun: *W,DLCOMB (/home/linux/ieng6/oce/6d/h3le/cds.lib,24): cds.lib COMBINE attribute library not defined 'gsclib045_tech' (cds.lib command ignored).
+ASSIGN gsclib045_tech DISPLAY PDKlib
+|
+xrun: *W,DLCLIB (/home/linux/ieng6/oce/6d/h3le/cds.lib,26): cds.lib Library not defined 'gsclib045_tech' (cds.lib command ignored).
+DEFINE sharedKen /home/linux/ieng6/ee283fa23/public/ee283fa23_hll/shared_buck_project
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,36): cds.lib Invalid path '/home/linux/ieng6/ee283fa23/public/ee283fa23_hll/shared_buck_project' (cds.lib command ignored).
+DEFINE analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,5): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/artist/analogLib' (cds.lib command ignored).
+DEFINE basic $CDSHOME/tools/dfII/etc/cdslib/basic
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,6): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/basic' (cds.lib command ignored).
+DEFINE US_8ths $CDSHOME/tools/dfII/etc/cdslib/sheets/US_8ths
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,7): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/sheets/US_8ths' (cds.lib command ignored).
+DEFINE sheets $CDSHOME/tools/dfII/etc/cdslib/sheets/US_8ths
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,8): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/sheets/US_8ths' (cds.lib command ignored).
+DEFINE cdsDefTechLib $CDSHOME/tools/dfII/etc/cdsDefTechLib
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,9): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdsDefTechLib' (cds.lib command ignored).
+DEFINE ahdlLib $CDSHOME/tools/dfII/samples/artist
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,10): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/samples/artist' (cds.lib command ignored).
+ASSIGN gsclib045 COMBINE gsclib045 gsclib045_tech
+|
+xrun: *W,DLCOMB (/home/linux/ieng6/oce/6d/h3le/cds.lib,24): cds.lib COMBINE attribute library not defined 'gsclib045_tech' (cds.lib command ignored).
+ASSIGN gsclib045_tech DISPLAY PDKlib
+|
+xrun: *W,DLCLIB (/home/linux/ieng6/oce/6d/h3le/cds.lib,26): cds.lib Library not defined 'gsclib045_tech' (cds.lib command ignored).
+DEFINE sharedKen /home/linux/ieng6/ee283fa23/public/ee283fa23_hll/shared_buck_project
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,36): cds.lib Invalid path '/home/linux/ieng6/ee283fa23/public/ee283fa23_hll/shared_buck_project' (cds.lib command ignored).
+DEFINE analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,5): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/artist/analogLib' (cds.lib command ignored).
+DEFINE basic $CDSHOME/tools/dfII/etc/cdslib/basic
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,6): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/basic' (cds.lib command ignored).
+DEFINE US_8ths $CDSHOME/tools/dfII/etc/cdslib/sheets/US_8ths
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,7): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/sheets/US_8ths' (cds.lib command ignored).
+DEFINE sheets $CDSHOME/tools/dfII/etc/cdslib/sheets/US_8ths
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,8): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/sheets/US_8ths' (cds.lib command ignored).
+DEFINE cdsDefTechLib $CDSHOME/tools/dfII/etc/cdsDefTechLib
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,9): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdsDefTechLib' (cds.lib command ignored).
+DEFINE ahdlLib $CDSHOME/tools/dfII/samples/artist
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,10): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/samples/artist' (cds.lib command ignored).
+ASSIGN gsclib045 COMBINE gsclib045 gsclib045_tech
+|
+xrun: *W,DLCOMB (/home/linux/ieng6/oce/6d/h3le/cds.lib,24): cds.lib COMBINE attribute library not defined 'gsclib045_tech' (cds.lib command ignored).
+ASSIGN gsclib045_tech DISPLAY PDKlib
+|
+xrun: *W,DLCLIB (/home/linux/ieng6/oce/6d/h3le/cds.lib,26): cds.lib Library not defined 'gsclib045_tech' (cds.lib command ignored).
+DEFINE sharedKen /home/linux/ieng6/ee283fa23/public/ee283fa23_hll/shared_buck_project
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,36): cds.lib Invalid path '/home/linux/ieng6/ee283fa23/public/ee283fa23_hll/shared_buck_project' (cds.lib command ignored).
+DEFINE analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
+|
+xmelab: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,5): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/artist/analogLib' (cds.lib command ignored).
+DEFINE basic $CDSHOME/tools/dfII/etc/cdslib/basic
+|
+xmelab: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,6): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/basic' (cds.lib command ignored).
+DEFINE US_8ths $CDSHOME/tools/dfII/etc/cdslib/sheets/US_8ths
+|
+xmelab: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,7): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/sheets/US_8ths' (cds.lib command ignored).
+DEFINE sheets $CDSHOME/tools/dfII/etc/cdslib/sheets/US_8ths
+|
+xmelab: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,8): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/sheets/US_8ths' (cds.lib command ignored).
+DEFINE cdsDefTechLib $CDSHOME/tools/dfII/etc/cdsDefTechLib
+|
+xmelab: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,9): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdsDefTechLib' (cds.lib command ignored).
+DEFINE ahdlLib $CDSHOME/tools/dfII/samples/artist
+|
+xmelab: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,10): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/samples/artist' (cds.lib command ignored).
+ASSIGN gsclib045 COMBINE gsclib045 gsclib045_tech
+|
+xmelab: *W,DLCOMB (/home/linux/ieng6/oce/6d/h3le/cds.lib,24): cds.lib COMBINE attribute library not defined 'gsclib045_tech' (cds.lib command ignored).
+ASSIGN gsclib045_tech DISPLAY PDKlib
+|
+xmelab: *W,DLCLIB (/home/linux/ieng6/oce/6d/h3le/cds.lib,26): cds.lib Library not defined 'gsclib045_tech' (cds.lib command ignored).
+DEFINE sharedKen /home/linux/ieng6/ee283fa23/public/ee283fa23_hll/shared_buck_project
+|
+xmelab: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,36): cds.lib Invalid path '/home/linux/ieng6/ee283fa23/public/ee283fa23_hll/shared_buck_project' (cds.lib command ignored).
+xmelab: *N,INFSUD: -NOSPECIFY is automatically used with -SEQ_UDP_DELAY.
+		Caching library 'add' ....... Done
+		Caching library 'worklib' ....... Done
+		Caching library 'tcbn65gplus' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		add_tb
+	Building instance overlay tables: .................... Done
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                30       6
+		UDPs:                   18       1
+		Primitives:             94       7
+		Registers:              43      27
+		Scalar wires:           19       -
+		Expanded wires:         12       3
+		Initial blocks:          5       5
+		Pseudo assignments:      4       4
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: worklib.add_tb:v
+xmelab: Memory Usage - Final: 26.1M, Peak: 26.1M, Peak virtual: 158.2M
+xmelab: CPU Usage - 0.0s system + 0.0s user = 0.1s total (0.1s, 63.5% cpu)
+DEFINE analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
+|
+xmsim: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,5): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/artist/analogLib' (cds.lib command ignored).
+DEFINE basic $CDSHOME/tools/dfII/etc/cdslib/basic
+|
+xmsim: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,6): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/basic' (cds.lib command ignored).
+DEFINE US_8ths $CDSHOME/tools/dfII/etc/cdslib/sheets/US_8ths
+|
+xmsim: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,7): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/sheets/US_8ths' (cds.lib command ignored).
+DEFINE sheets $CDSHOME/tools/dfII/etc/cdslib/sheets/US_8ths
+|
+xmsim: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,8): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/sheets/US_8ths' (cds.lib command ignored).
+DEFINE cdsDefTechLib $CDSHOME/tools/dfII/etc/cdsDefTechLib
+|
+xmsim: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,9): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdsDefTechLib' (cds.lib command ignored).
+DEFINE ahdlLib $CDSHOME/tools/dfII/samples/artist
+|
+xmsim: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,10): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/samples/artist' (cds.lib command ignored).
+ASSIGN gsclib045 COMBINE gsclib045 gsclib045_tech
+|
+xmsim: *W,DLCOMB (/home/linux/ieng6/oce/6d/h3le/cds.lib,24): cds.lib COMBINE attribute library not defined 'gsclib045_tech' (cds.lib command ignored).
+ASSIGN gsclib045_tech DISPLAY PDKlib
+|
+xmsim: *W,DLCLIB (/home/linux/ieng6/oce/6d/h3le/cds.lib,26): cds.lib Library not defined 'gsclib045_tech' (cds.lib command ignored).
+DEFINE sharedKen /home/linux/ieng6/ee283fa23/public/ee283fa23_hll/shared_buck_project
+|
+xmsim: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,36): cds.lib Invalid path '/home/linux/ieng6/ee283fa23/public/ee283fa23_hll/shared_buck_project' (cds.lib command ignored).
+
+-------------------------------------
+Relinquished control to SimVision...
+xcelium> 
+xcelium> source /software/ECE/XCELIUM-2009/tools/xcelium/files/xmsimrc
+xcelium> database -open waves -into waves.shm -default
+Created default SHM database waves
+xcelium> probe -create -shm add_tb.clk add_tb.expected_out_delay add_tb.out
+Created probe 1
+xcelium> run
+-------------------- Computation start --------------------
+Computed data matched :D, 20 vs. 20
+Total ERROR:   0
+Computed data matched :D, 23 vs. 23
+Total ERROR:   0
+Computed data matched :D, 25 vs. 25
+Total ERROR:   0
+Computed data matched :D, 28 vs. 28
+Total ERROR:   0
+Computed data matched :D, 16 vs. 16
+Total ERROR:   0
+Computed data matched :D, 29 vs. 29
+Total ERROR:   0
+Computed data matched :D, 13 vs. 13
+Total ERROR:   0
+Computed data matched :D, 24 vs. 24
+Total ERROR:   0
+-------------------- Computation completed --------------------
+Simulation complete via $finish(1) at time 35 NS + 0
+./netlist/add_tb.v:148   #10 $finish;
+xcelium> ^C
+xcelium> exit
+xmsim: Memory Usage - Final: 34.8M, Peak: 45.3M, Peak virtual: 510.5M
+xmsim: Main Thread CPU Usage - 35.8s system + 19.5s user = 55.3s total
+xmsim: CPU Usage - 35.7s system + 19.2s user = 54.9s total (1862.9s, 2.9% cpu)
+TOOL:	xrun(64)	20.09-s017: Exiting on Feb 16, 2025 at 21:58:59 PST  (total: 00:31:03)
