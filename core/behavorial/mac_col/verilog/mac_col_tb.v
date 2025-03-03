@@ -3,7 +3,7 @@
 
 `timescale 1ns/1ps
 
-module fullchip_tb;
+module mac_col_tb;
 
 parameter total_cycle = 8;   // how many streamed Q vectors will be processed
 parameter bw = 8;            // Q & K vector bit precision
