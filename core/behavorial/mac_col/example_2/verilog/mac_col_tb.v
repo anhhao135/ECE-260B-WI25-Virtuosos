@@ -59,9 +59,11 @@ assign inst[5] = qmem_rd;
 assign inst[4] = qmem_wr;
 assign inst[3] = kmem_rd;
 assign inst[2] = kmem_wr;
-assign inst[1] = pmem_rd;
-assign inst[0] = pmem_wr;
+//assign inst[1] = pmem_rd;
+//assign inst[0] = pmem_wr;
 
+assign inst[1] = execute;
+assign inst[0] = load;
 
 
 reg [bw_psum-1:0] temp5b;
@@ -72,8 +74,8 @@ reg [bw_psum*col-1:0] temp16b;
 mac_col #(.bw(bw), .bw_psum(bw_psum), .col(col), .pr(pr)) mac_col_instance (
       .reset(reset),
       .clk(clk), 
-      .mem_in(mem_in), 
-      .inst(inst)
+      .q_in(mem_in), 
+      .i_inst(inst)
 );
 
 
