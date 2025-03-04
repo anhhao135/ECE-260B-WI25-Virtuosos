@@ -25,7 +25,7 @@ assign fifo_wr = inst_2q[1];
 assign q_out = query_q;
 assign out = psum;
 
-mac_8in mac_8in_instance (query_q, key_q, psum);
+mac_8in mac_8in_instance (.a(query_q), .b(key_q), .out(psum));
 
 
 always @ (posedge clk) begin

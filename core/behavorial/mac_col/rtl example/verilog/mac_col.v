@@ -22,7 +22,7 @@ wire  signed [bw_psum-1:0] psum;
 assign o_inst = inst_q;
 assign q_out  = query_q;
 
-mac_16in  mac_16in_instance (
+mac_8in  mac_8in_instance (
         .a(query_q), 
         .b(key_q),
 	.out(psum)
