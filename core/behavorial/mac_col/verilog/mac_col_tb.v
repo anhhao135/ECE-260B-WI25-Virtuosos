@@ -69,7 +69,7 @@ reg [bw_psum+3:0] temp_sum;
 reg [bw_psum*col-1:0] temp16b;
 
 
-mac_col #(.bw(bw), .bw_psum(bw_psum), .col(col), .pr(pr)) mac_col_instance (
+mac_col #(.col_id(0)) mac_col_instance (
       .reset(reset),
       .clk(clk), 
       .mem_in(mem_in), 
