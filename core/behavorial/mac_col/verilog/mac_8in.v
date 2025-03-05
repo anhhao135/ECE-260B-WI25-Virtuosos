@@ -1,31 +1,43 @@
 module mac_8in (out, a, b);
 
-//Vector A, 8 elements, each element is 8-bit
-//Vector B, 8 elements, each element is 8-bit
-//Out, scalar, 19-bit (maximum sum out is 255*255*8 = 520200 which is 19-bits)
+parameter bw = 8;
+parameter bw_psum = 2*bw+6;
+parameter pr = 8; // parallel factor: number of inputs = 64
 
-output [18:0] out;
-input [63:0] a; //{a7,a6,a5,a4,a3,a2,a1,a0}
-input [63:0] b; //{b7,b6,b5,b4,b3,b2,b1,b0}
+output [bw_psum-1:0] out;
+input  [pr*bw-1:0] a;
+input  [pr*bw-1:0] b;
 
-wire [15:0] a0b0;
-wire [15:0] a1b1;
-wire [15:0] a2b2;
-wire [15:0] a3b3;
-wire [15:0] a4b4;
-wire [15:0] a5b5;
-wire [15:0] a6b6;
-wire [15:0] a7b7;
 
-assign a0b0 = a[7:0] * b[7:0];
-assign a1b1 = a[15:8] * b[15:8];
-assign a2b2 = a[23:16] * b[23:16];
-assign a3b3 = a[31:24] * b[31:24];
-assign a4b4 = a[39:32] * b[39:32];
-assign a5b5 = a[47:40] * b[47:40];
-assign a6b6 = a[55:48] * b[55:48];
-assign a7b7 = a[63:56] * b[63:56];
+wire		[2*bw-1:0]	product0	;
+wire		[2*bw-1:0]	product1	;
+wire		[2*bw-1:0]	product2	;
+wire		[2*bw-1:0]	product3	;
+wire		[2*bw-1:0]	product4	;
+wire		[2*bw-1:0]	product5	;
+wire		[2*bw-1:0]	product6	;
+wire		[2*bw-1:0]	product7	;
 
-assign out = a0b0 + a1b1 + a2b2 + a3b3 + a4b4 + a5b5 + a6b6 + a7b7;
+
+assign	product0	=	{{(bw){a[bw*	1	-1]}},	a[bw*	1	-1:bw*	0	]}	*	{{(bw){b[bw*	1	-1]}},	b[bw*	1	-1:	bw*	0	]};
+assign	product1	=	{{(bw){a[bw*	2	-1]}},	a[bw*	2	-1:bw*	1	]}	*	{{(bw){b[bw*	2	-1]}},	b[bw*	2	-1:	bw*	1	]};
+assign	product2	=	{{(bw){a[bw*	3	-1]}},	a[bw*	3	-1:bw*	2	]}	*	{{(bw){b[bw*	3	-1]}},	b[bw*	3	-1:	bw*	2	]};
+assign	product3	=	{{(bw){a[bw*	4	-1]}},	a[bw*	4	-1:bw*	3	]}	*	{{(bw){b[bw*	4	-1]}},	b[bw*	4	-1:	bw*	3	]};
+assign	product4	=	{{(bw){a[bw*	5	-1]}},	a[bw*	5	-1:bw*	4	]}	*	{{(bw){b[bw*	5	-1]}},	b[bw*	5	-1:	bw*	4	]};
+assign	product5	=	{{(bw){a[bw*	6	-1]}},	a[bw*	6	-1:bw*	5	]}	*	{{(bw){b[bw*	6	-1]}},	b[bw*	6	-1:	bw*	5	]};
+assign	product6	=	{{(bw){a[bw*	7	-1]}},	a[bw*	7	-1:bw*	6	]}	*	{{(bw){b[bw*	7	-1]}},	b[bw*	7	-1:	bw*	6	]};
+assign	product7	=	{{(bw){a[bw*	8	-1]}},	a[bw*	8	-1:bw*	7	]}	*	{{(bw){b[bw*	8	-1]}},	b[bw*	8	-1:	bw*	7	]};
+
+
+
+assign out = 
+        {{(4){product0[2*bw-1]}},product0	}
+	+	{{(4){product1[2*bw-1]}},product1	}
+	+	{{(4){product2[2*bw-1]}},product2	}
+	+	{{(4){product3[2*bw-1]}},product3	}
+	+	{{(4){product4[2*bw-1]}},product4	}
+	+	{{(4){product5[2*bw-1]}},product5	}
+	+	{{(4){product6[2*bw-1]}},product6	}
+	+	{{(4){product7[2*bw-1]}},product7	};
 
 endmodule
