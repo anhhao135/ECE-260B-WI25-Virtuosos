@@ -52,8 +52,7 @@ always @ (posedge clk) begin
 
        query_q <= q_in;
 
-       if (cnt_q == col_id+1)begin
-         cnt_q <= 0;
+       if (cnt_q == col_id && load_ready_q) begin
          key_q <= q_in;
          load_ready_q <= 0;
        end

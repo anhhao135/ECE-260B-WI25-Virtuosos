@@ -52,11 +52,17 @@ initial begin
       #1 clk = 1;
       #1 clk = 0; reset = 0;
       #1 clk = 1;
-      #1 clk = 0; i_inst = 2'b01; q_in = {8'd1, 8'd2, 8'd3, 8'd4, 8'd5, 8'd6, 8'd7, 8'd8};
+      #1 clk = 0; i_inst = 2'b01;
       #1 clk = 1;
-      #1 clk = 0; i_inst = 2'b01; q_in = {8'd1, 8'd3, 8'd5, 8'd7, 8'd9, 8'd11, 8'd13, 8'd15};
+      #1 clk = 0; q_in = {8'd1, 8'd2, 8'd3, 8'd4, 8'd5, 8'd6, 8'd7, 8'd8};
+      #1 clk = 1;
+      #1 clk = 0; q_in = {8'd1, 8'd3, 8'd5, 8'd7, 8'd9, 8'd11, 8'd13, 8'd15};
       #1 clk = 1;
       #1 clk = 0; i_inst = 2'b00;
+      #1 clk = 1;
+      #1 clk = 0;
+      #1 clk = 1;
+      #1 clk = 0;
       #1 $display("Finished.");
       #1 $finish;
 end
