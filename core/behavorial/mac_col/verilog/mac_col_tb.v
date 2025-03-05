@@ -23,7 +23,7 @@ wire [1:0] o_inst_1;
 wire fifo_wr_1;
 
 
-mac_col #(.bw(8), .bw_psum(32), .pr(8), col_id(0)) mac_col_instance_0 (
+mac_col #(.bw(8), .bw_psum(32), .pr(8), .col_id(0)) mac_col_instance_0 (
       .clk(clk),
       .reset(reset),
       .out(out_0),
@@ -34,7 +34,7 @@ mac_col #(.bw(8), .bw_psum(32), .pr(8), col_id(0)) mac_col_instance_0 (
       .fifo_wr(fifo_wr_0)
 );
 
-mac_col #(.bw(8), .bw_psum(32), .pr(8), col_id(1)) mac_col_instance_1 (
+mac_col #(.bw(8), .bw_psum(32), .pr(8), .col_id(1)) mac_col_instance_1 (
       .clk(clk),
       .reset(reset),
       .out(out_1),
@@ -47,6 +47,8 @@ mac_col #(.bw(8), .bw_psum(32), .pr(8), col_id(1)) mac_col_instance_1 (
 
 
 initial begin 
+      $dumpfile("mac_col_tb.vcd");
+      $dumpvars(0, mac_col_tb);
       #1 clk = 1;
       #1 clk = 0; reset = 0;
       #1 clk = 1;
