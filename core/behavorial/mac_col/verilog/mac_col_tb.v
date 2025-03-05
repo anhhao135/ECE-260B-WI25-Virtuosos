@@ -80,6 +80,22 @@ initial begin
             #1 clk = 0;
       end
 
+      #1 clk = 1;
+      #1 clk = 0; i_inst = 2'b10;
+      #1 clk = 1;
+      #1 clk = 0; q_in = {8'd1, 8'd2, 8'd3, 8'd4, 8'd5, 8'd6, 8'd7, 8'd8};
+      #1 clk = 1;
+      #1 clk = 0; q_in = {8'd1, 8'd3, 8'd5, 8'd7, 8'd9, 8'd11, 8'd13, 8'd15};
+      #1 clk = 1;
+      #1 clk = 0; q_in = {8'd2, 8'd4, 8'd6, 8'd8, 8'd10, 8'd12, 8'd14, 8'd16}; i_inst = 2'b00;
+
+      for (i = 0; i < 10; i = i + 1) begin
+            #1 clk = 1;
+            #1 clk = 0;
+            #1 clk = 1;
+            #1 clk = 0;
+      end
+
       #1 $display("Finished.");
       #1 $finish;
 end
