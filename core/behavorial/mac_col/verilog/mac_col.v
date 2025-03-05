@@ -1,5 +1,3 @@
-// Created by prof. Mingu Kang @VVIP Lab in UCSD ECE department
-// Please do not spread this code without permission 
 module mac_col (clk, reset, out, q_in, q_out, i_inst, fifo_wr, o_inst);
 
 parameter bw = 8;
@@ -27,37 +25,47 @@ assign fifo_wr = inst_2q[1];
 assign q_out  = query_q;
 assign out = psum;
 
-mac_16in #(.bw(bw), .bw_psum(bw_psum), .pr(pr)) mac_16in_instance (
-        .a(query_q), 
-        .b(key_q),
-	.out(psum)
+mac_8in #(.bw(8), .bw_psum(19), .pr(8)) mac_8in_instance (
+  .a(query_q), 
+  .b(key_q),
+  .out(psum)
 ); 
 
 
 always @ (posedge clk) begin
+
   if (reset) begin
+
     cnt_q <= 0;
     load_ready_q <= 1;
     inst_q <= 0;
     inst_2q <= 0;
+
   end
+
   else begin
+
     inst_q <= i_inst;
     inst_2q <= inst_q;
-    if (inst_q[0]) begin
+
+    if (inst_q[0]) begin //load
+
        query_q <= q_in;
-       if (cnt_q == 9-col_id)begin
+
+       if (cnt_q == col_id+1)begin
          cnt_q <= 0;
          key_q <= q_in;
          load_ready_q <= 0;
        end
+
        else if (load_ready_q)
          cnt_q <= cnt_q + 1;
     end
+
     else if(inst_q[1]) begin
-      //out     <= psum;
       query_q <= q_in;
     end
+
   end
 end
 
