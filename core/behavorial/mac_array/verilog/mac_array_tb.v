@@ -116,7 +116,7 @@ initial begin
 
       for (q=0; q<total_Q; q=q+1) begin
             #1 clk = 0; q_in = {Q[q][7][7:0], Q[q][6][7:0], Q[q][5][7:0], Q[q][4][7:0], Q[q][3][7:0], Q[q][2][7:0], Q[q][1][7:0], Q[q][0][7:0]};
-            if (q + 1 == total_K)
+            if (q + 1 == total_Q)
                   i_inst = 2'b00;
             #1 clk = 1;
       end
