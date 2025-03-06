@@ -84,17 +84,12 @@ initial begin
 
       qk_file = $fopen("qdata.txt", "r");
 
-      //// To get rid of first 3 lines in data file ////
-      qk_scan_file = $fscanf(qk_file, "%s\n", captured_data);
-      qk_scan_file = $fscanf(qk_file, "%s\n", captured_data);
-      qk_scan_file = $fscanf(qk_file, "%s\n", captured_data);
-      qk_scan_file = $fscanf(qk_file, "%s\n", captured_data);
-
-
       for (q=0; q<total_Q; q=q+1) begin
+            $display("Q vector: %d\n", q);
             for (j=0; j<8; j=j+1) begin
                   qk_scan_file = $fscanf(qk_file, "%d\n", captured_data);
                   Q[q][j] = captured_data;
+                  $display("Data: %d\n", captured_data);
             end
       end
       /////////////////////////////////
@@ -107,17 +102,12 @@ initial begin
 
       qk_file = $fopen("kdata.txt", "r");
 
-      //// To get rid of first 3 lines in data file ////
-      qk_scan_file = $fscanf(qk_file, "%s\n", captured_data);
-      qk_scan_file = $fscanf(qk_file, "%s\n", captured_data);
-      qk_scan_file = $fscanf(qk_file, "%s\n", captured_data);
-      qk_scan_file = $fscanf(qk_file, "%s\n", captured_data);
-
-
       for (q=0; q<total_K; q=q+1) begin
+            $display("K vector: %d\n", q);
             for (j=0; j<8; j=j+1) begin
                   qk_scan_file = $fscanf(qk_file, "%d\n", captured_data);
                   K[q][j] = captured_data;
+                  $display("Data: %d\n", captured_data);
             end
       end
       /////////////////////////////////
