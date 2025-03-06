@@ -31,8 +31,11 @@ integer qk_file;
 integer qk_scan_file;
 integer  K[total_K-1:0][7:0];
 integer  Q[total_Q-1:0][7:0];
-integer  result[total_cycle-1:0];
-integer  sum[total_cycle-1:0];
+//integer  result[total_cycle-1:0];
+//integer  sum[total_cycle-1:0];
+
+integer  captured_data;
+`define NULL 0
 
 integer i,j,k,t,p,q,s,u,m;
 
