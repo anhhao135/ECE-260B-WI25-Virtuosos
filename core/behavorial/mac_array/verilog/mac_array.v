@@ -15,6 +15,7 @@ wire   [col*bw_psum-1:0] psum;
 wire   [2*(col+1)-1:0] inst_temp;
 wire   [2*(col+1)*bw*pr-1:0] q_temp;
 
+genvar i;
 
 assign inst_temp[1:0]    = inst;
 assign q_temp[bw*pr-1:0] = in;
