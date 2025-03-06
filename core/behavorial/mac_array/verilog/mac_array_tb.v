@@ -7,8 +7,8 @@ reg reset = 1;
 reg [63:0] q_in = 0;
 reg [1:0] i_inst = 0;
 
-parameter total_K = 8;
-parameter total_Q = 1;
+parameter total_K = 1;
+parameter total_Q = 8;
 
 integer qk_file;
 integer qk_scan_file;
@@ -25,7 +25,7 @@ wire [22*8-1:0] out;
 wire [7:0] fifo_wr;
 
 
-mac_array #(.col(8), .bw(8), .bw_psum(22), .pr(8)) DUT (
+mac_array #(.col(total_K), .bw(8), .bw_psum(22), .pr(8)) DUT (
       .clk(clk),
       .reset(reset),
       .in(q_in),
