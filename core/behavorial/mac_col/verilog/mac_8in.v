@@ -7,6 +7,8 @@ parameter pr = 8;
 output reg signed [bw_psum-1:0] out;
 input  [pr*bw-1:0] a;
 input  [pr*bw-1:0] b;
+input clk;
+input reset;
 
 
 reg		[2*bw-1:0]	product0	;
