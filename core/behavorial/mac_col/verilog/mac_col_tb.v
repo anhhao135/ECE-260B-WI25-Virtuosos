@@ -24,6 +24,18 @@ wire [63:0] q_out_2;
 wire [1:0] o_inst_2;
 wire fifo_wr_2;
 
+parameter total_K = 3;
+parameter total_Q = 3;
+
+integer qk_file;
+integer qk_scan_file;
+integer  K[total_K-1:0][7:0];
+integer  Q[total_Q-1:0][7:0];
+integer  result[total_cycle-1:0];
+integer  sum[total_cycle-1:0];
+
+integer i,j,k,t,p,q,s,u,m;
+
 
 mac_col #(.bw(8), .bw_psum(32), .pr(8), .col_id(0)) mac_col_instance_0 (
       .clk(clk),
@@ -62,6 +74,54 @@ mac_col #(.bw(8), .bw_psum(32), .pr(8), .col_id(2)) mac_col_instance_2 (
 initial begin 
       $dumpfile("mac_col_tb.vcd");
       $dumpvars(0, mac_col_tb);
+
+
+      ///// Q data txt reading /////
+
+      $display("##### Q data txt reading #####");
+
+
+      qk_file = $fopen("qdata.txt", "r");
+
+      //// To get rid of first 3 lines in data file ////
+      qk_scan_file = $fscanf(qk_file, "%s\n", captured_data);
+      qk_scan_file = $fscanf(qk_file, "%s\n", captured_data);
+      qk_scan_file = $fscanf(qk_file, "%s\n", captured_data);
+      qk_scan_file = $fscanf(qk_file, "%s\n", captured_data);
+
+
+      for (q=0; q<total_Q; q=q+1) begin
+            for (j=0; j<8; j=j+1) begin
+                  qk_scan_file = $fscanf(qk_file, "%d\n", captured_data);
+                  Q[q][j] = captured_data;
+            end
+      end
+      /////////////////////////////////
+
+
+      ///// K data txt reading /////
+
+      $display("##### K data txt reading #####");
+
+
+      qk_file = $fopen("kdata.txt", "r");
+
+      //// To get rid of first 3 lines in data file ////
+      qk_scan_file = $fscanf(qk_file, "%s\n", captured_data);
+      qk_scan_file = $fscanf(qk_file, "%s\n", captured_data);
+      qk_scan_file = $fscanf(qk_file, "%s\n", captured_data);
+      qk_scan_file = $fscanf(qk_file, "%s\n", captured_data);
+
+
+      for (q=0; q<total_K; q=q+1) begin
+            for (j=0; j<8; j=j+1) begin
+                  qk_scan_file = $fscanf(qk_file, "%d\n", captured_data);
+                  K[q][j] = captured_data;
+            end
+      end
+      /////////////////////////////////
+
+
       #1 clk = 1;
       #1 clk = 0; reset = 0;
       #1 clk = 1;
