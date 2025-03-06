@@ -146,7 +146,6 @@ initial begin
       end
 
       for (i = 0; i < 10; i = i + 1) begin
-            #1 clk = 1;
             #1 clk = 0;
             #1 clk = 1;
             #1 clk = 0;
@@ -164,7 +163,6 @@ initial begin
       end
 
       for (i = 0; i < 10; i = i + 1) begin
-            #1 clk = 1;
             #1 clk = 0;
             #1 clk = 1;
             #1 clk = 0;
