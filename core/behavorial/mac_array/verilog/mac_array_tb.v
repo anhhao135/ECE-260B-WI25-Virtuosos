@@ -21,8 +21,8 @@ integer  captured_data;
 
 integer i,j,k,t,p,q,s,u,m;
 
-wire [22*8-1:0] out;
-wire [7:0] fifo_wr;
+wire [22*total_K-1:0] out;
+wire [total_K-1:0] fifo_wr;
 
 
 mac_array #(.col(total_K), .bw(8), .bw_psum(22), .pr(8)) DUT (
