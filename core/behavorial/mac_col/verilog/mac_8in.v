@@ -22,13 +22,13 @@ always @ (posedge clk) begin
 	if (reset) begin
 		out <= 0;
 		product0 <= 0;
-		product0 <= 1;
-		product0 <= 2;
-		product0 <= 3;
-		product0 <= 4;
-		product0 <= 5;
-		product0 <= 6;
-		product0 <= 7;
+		product1 <= 0;
+		product2 <= 0;
+		product3 <= 0;
+		product4 <= 0;
+		product5 <= 0;
+		product6 <= 0;
+		product7 <= 0;
 	end
 	else begin
 		product0	<=	{{(bw){a[bw*	1	-1]}},	a[bw*	1	-1:bw*	0	]}	*	{{(bw){b[bw*	1	-1]}},	b[bw*	1	-1:	bw*	0	]};
