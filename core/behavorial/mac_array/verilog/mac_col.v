@@ -20,7 +20,7 @@ reg    [1:0] inst_3q;
 reg    [1:0] inst_4q;
 reg   signed [pr*bw-1:0] query_q;
 reg   signed [pr*bw-1:0] key_q;
-wire  signed [bw_psum-1:0] psum;
+wire [bw_psum-1:0] psum;
 
 assign o_inst = inst_q;
 assign fifo_wr = inst_4q[1];

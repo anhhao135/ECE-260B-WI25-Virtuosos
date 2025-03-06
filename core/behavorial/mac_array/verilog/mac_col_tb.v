@@ -7,17 +7,17 @@ reg reset = 1;
 reg [63:0] q_in = 0;
 reg [1:0] i_inst = 0;
 
-wire [31:0] out_0;
+wire [21:0] out_0;
 wire [63:0] q_out_0;
 wire [1:0] o_inst_0;
 wire fifo_wr_0;
 
-wire [31:0] out_1;
+wire [21:0] out_1;
 wire [63:0] q_out_1;
 wire [1:0] o_inst_1;
 wire fifo_wr_1;
 
-wire [31:0] out_2;
+wire [21:0] out_2;
 wire [63:0] q_out_2;
 wire [1:0] o_inst_2;
 wire fifo_wr_2;
@@ -39,7 +39,7 @@ integer  captured_data;
 integer i,j,k,t,p,q,s,u,m;
 
 
-mac_col #(.bw(8), .bw_psum(32), .pr(8), .col_id(0)) mac_col_instance_0 (
+mac_col #(.bw(8), .bw_psum(22), .pr(8), .col_id(0)) mac_col_instance_0 (
       .clk(clk),
       .reset(reset),
       .out(out_0),
@@ -50,7 +50,7 @@ mac_col #(.bw(8), .bw_psum(32), .pr(8), .col_id(0)) mac_col_instance_0 (
       .fifo_wr(fifo_wr_0)
 );
 
-mac_col #(.bw(8), .bw_psum(32), .pr(8), .col_id(1)) mac_col_instance_1 (
+mac_col #(.bw(8), .bw_psum(22), .pr(8), .col_id(1)) mac_col_instance_1 (
       .clk(clk),
       .reset(reset),
       .out(out_1),
@@ -61,7 +61,7 @@ mac_col #(.bw(8), .bw_psum(32), .pr(8), .col_id(1)) mac_col_instance_1 (
       .fifo_wr(fifo_wr_1)
 );
 
-mac_col #(.bw(8), .bw_psum(32), .pr(8), .col_id(2)) mac_col_instance_2 (
+mac_col #(.bw(8), .bw_psum(22), .pr(8), .col_id(2)) mac_col_instance_2 (
       .clk(clk),
       .reset(reset),
       .out(out_2),

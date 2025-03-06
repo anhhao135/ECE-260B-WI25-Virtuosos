@@ -30,7 +30,7 @@ for (i=0; i<col ; i=i+1) begin
         .fifo_wr(fifo_wr[i]),
         .i_inst(inst_temp[2*(i+1)-1:2*(i)]),     
         .o_inst(inst_temp[2*(i+2)-1:2*(i+1)]),     
-	    .out(out[bw_psum*(i+1)-1 : bw_psum*(i)])
+	.out(out[bw_psum*(i+1)-1 : bw_psum*(i)])
    );
    
 end 
