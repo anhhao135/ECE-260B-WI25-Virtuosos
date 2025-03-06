@@ -28,7 +28,9 @@ assign out = psum;
 mac_8in #(.bw(8), .bw_psum(19), .pr(8)) mac_8in_instance (
   .a(query_q), 
   .b(key_q),
-  .out(psum)
+  .out(psum),
+  .clk(clk),
+  .reset(reset)
 ); 
 
 

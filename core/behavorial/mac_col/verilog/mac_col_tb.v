@@ -148,10 +148,8 @@ initial begin
       for (i = 0; i < 10; i = i + 1) begin
             #1 clk = 0;
             #1 clk = 1;
-            #1 clk = 0;
       end
 
-      #1 clk = 1;
       #1 clk = 0; i_inst = 2'b10;
       #1 clk = 1;
 
@@ -165,7 +163,6 @@ initial begin
       for (i = 0; i < 10; i = i + 1) begin
             #1 clk = 0;
             #1 clk = 1;
-            #1 clk = 0;
       end
 
       #1 $display("Finished.");
