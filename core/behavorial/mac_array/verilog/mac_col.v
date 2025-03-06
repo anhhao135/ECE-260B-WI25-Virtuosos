@@ -27,7 +27,7 @@ assign fifo_wr = inst_4q[1];
 assign q_out  = query_q;
 assign out = psum;
 
-mac_8in #(.bw(8), .bw_psum(19), .pr(8)) mac_8in_instance (
+mac_8in #(.bw(8), .bw_psum(bw_psum), .pr(8)) mac_8in_instance (
   .a(query_q), 
   .b(key_q),
   .out(psum),

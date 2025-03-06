@@ -35,8 +35,8 @@ mac_array #(.col(8), .bw(8), .bw_psum(22), .pr(8)) DUT (
 );
 
 initial begin 
-      $dumpfile("mac_col_tb.vcd");
-      $dumpvars(0, mac_col_tb);
+      $dumpfile("mac_array_tb.vcd");
+      $dumpvars(0, mac_array_tb);
 
 
       ///// Q data txt reading /////
