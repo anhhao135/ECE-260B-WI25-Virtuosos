@@ -4,7 +4,7 @@ parameter bw = 8;
 parameter bw_psum = 2*bw+6;
 parameter pr = 8;
 
-output [bw_psum-1:0] out;
+output signed [bw_psum-1:0] out;
 input  [pr*bw-1:0] a;
 input  [pr*bw-1:0] b;
 
