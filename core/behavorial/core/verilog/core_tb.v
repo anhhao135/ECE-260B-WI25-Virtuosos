@@ -222,7 +222,7 @@ $display("##### Kmem writing #####");
   end
 
 
-/*
+
 
 
 
@@ -255,6 +255,8 @@ $display("##### K data loading to processor #####");
     #0.5 clk = 1'b1;   
  end
 
+
+/*
 
 
 
