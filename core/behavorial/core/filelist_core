@@ -8,4 +8,4 @@
 ./verilog/sram_w16.v
 ../mac_array/verilog/mac_array.v
 ../mac_array/verilog/mac_col.v
-../mac_array/verilog/mac_8_in.v
+../mac_array/verilog/mac_8in.v
