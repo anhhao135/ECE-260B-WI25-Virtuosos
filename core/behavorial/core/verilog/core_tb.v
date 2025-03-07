@@ -229,23 +229,20 @@ $display("##### Kmem writing #####");
 /////  K data loading  /////
 $display("##### K data loading to processor #####");
 
-  for (q=0; q<col+1; q=q+1) begin
+  for (q=0; q<col; q=q+1) begin
     #0.5 clk = 1'b0;  
     load = 1; 
-    if (q==1) kmem_rd = 1;
-    if (q>1) begin
-       qkmem_add = qkmem_add + 1;
-    end
-
-    #0.5 clk = 1'b1;  
+    kmem_rd = 1;
+    #0.5 clk = 1'b1;
+    qkmem_add = qkmem_add + 1;  
   end
 
   #0.5 clk = 1'b0;  
   kmem_rd = 0; qkmem_add = 0;
   #0.5 clk = 1'b1;  
 
-  #0.5 clk = 1'b0;  
-  load = 0; 
+  #0.5 clk = 1'b0;   
+  load = 0;
   #0.5 clk = 1'b1;  
 
 ///////////////////////////////////////////
@@ -256,7 +253,7 @@ $display("##### K data loading to processor #####");
  end
 
 
-/*
+
 
 
 
@@ -289,7 +286,7 @@ $display("##### execute #####");
  end
 
 
-
+/*
 
 ////////////// output fifo rd and wb to psum mem ///////////////////
 
