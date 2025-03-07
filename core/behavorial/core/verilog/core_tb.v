@@ -139,8 +139,13 @@ $display("##### Estimated multiplication result #####");
 
 #0.5 clk = 0;
 #0.5 clk = 1;
-#0.5 clk = 0; reset = 0; 
+#0.5 clk = 0;
 #0.5 clk = 1;
+#0.5 clk = 0;
+#0.5 clk = 1;
+#0.5 clk = 0; reset = 0;
+#0.5 clk = 1;
+
 
 
 ///// Qmem writing  /////
@@ -169,6 +174,11 @@ end
 #0.5 clk = 1'b0;  
 qmem_wr = 0; 
 qkmem_add = 0;
+
+#0.5 clk = 1'b1;  
+#0.5 clk = 1'b0;  
+#0.5 clk = 1'b1;  
+#0.5 clk = 1'b0;  
 #0.5 clk = 1'b1;  
 ///////////////////////////////////////////
 
