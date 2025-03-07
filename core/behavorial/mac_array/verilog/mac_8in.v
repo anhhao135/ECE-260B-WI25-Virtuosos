@@ -11,14 +11,14 @@ input clk;
 input reset;
 
 
-reg		[2*bw-1:0]	product0	;
-reg		[2*bw-1:0]	product1	;
-reg		[2*bw-1:0]	product2	;
-reg		[2*bw-1:0]	product3	;
-reg		[2*bw-1:0]	product4	;
-reg		[2*bw-1:0]	product5	;
-reg		[2*bw-1:0]	product6	;
-reg		[2*bw-1:0]	product7	;
+reg signed		[2*bw-1:0]	product0	;
+reg signed		[2*bw-1:0]	product1	;
+reg signed		[2*bw-1:0]	product2	;
+reg signed		[2*bw-1:0]	product3	;
+reg signed		[2*bw-1:0]	product4	;
+reg signed		[2*bw-1:0]	product5	;
+reg signed		[2*bw-1:0]	product6	;
+reg signed		[2*bw-1:0]	product7	;
 
 always @ (posedge clk) begin
 	if (reset) begin
@@ -42,15 +42,8 @@ always @ (posedge clk) begin
 		product6	<=	{{(bw){a[bw*	7	-1]}},	a[bw*	7	-1:bw*	6	]}	*	{{(bw){b[bw*	7	-1]}},	b[bw*	7	-1:	bw*	6	]};
 		product7	<=	{{(bw){a[bw*	8	-1]}},	a[bw*	8	-1:bw*	7	]}	*	{{(bw){b[bw*	8	-1]}},	b[bw*	8	-1:	bw*	7	]};
 
-		out <= 
-				{{(4){product0[2*bw-1]}},product0	}
-			+	{{(4){product1[2*bw-1]}},product1	}
-			+	{{(4){product2[2*bw-1]}},product2	}
-			+	{{(4){product3[2*bw-1]}},product3	}
-			+	{{(4){product4[2*bw-1]}},product4	}
-			+	{{(4){product5[2*bw-1]}},product5	}
-			+	{{(4){product6[2*bw-1]}},product6	}
-			+	{{(4){product7[2*bw-1]}},product7	};
+		out <= product0 + product1 + product2 + product3 + product4 + product5 + product6 + product7;
+
 	end
 end
 
