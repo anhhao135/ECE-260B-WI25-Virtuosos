@@ -75,6 +75,8 @@ sram_w16 #(.sram_bit(pr*bw)) qmem_instance (
         .A(qkmem_add)
 );
 
+
+
 sram_w16 #(.sram_bit(pr*bw)) kmem_instance (
         .CLK(clk),
         .D(mem_in),
@@ -83,6 +85,8 @@ sram_w16 #(.sram_bit(pr*bw)) kmem_instance (
         .WEN(!kmem_wr), 
         .A(qkmem_add)
 );
+
+/*
 
 sram_w16 #(.sram_bit(col*bw_psum)) psum_mem_instance (
         .CLK(clk),
@@ -101,6 +105,7 @@ sram_w16 #(.sram_bit(col*bw_psum)) psum_mem_instance (
          $display("Memory write to PSUM mem add %x %x ", pmem_add, pmem_in); 
   end
 
+*/
 
 
 endmodule
