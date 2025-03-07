@@ -112,10 +112,6 @@ end
 
 
 
-/*
-
-
-
 
 /////////////// Estimated result printing /////////////////
 
@@ -141,9 +137,10 @@ $display("##### Estimated multiplication result #####");
 
 //////////////////////////////////////////////
 
-
-
-
+#0.5 clk = 0;
+#0.5 clk = 1;
+#0.5 clk = 0; reset = 0; 
+#0.5 clk = 1;
 
 
 ///// Qmem writing  /////
@@ -196,14 +193,6 @@ $display("##### Kmem writing #####");
     mem_in[6*bw-1:5*bw] = K[q][5];
     mem_in[7*bw-1:6*bw] = K[q][6];
     mem_in[8*bw-1:7*bw] = K[q][7];
-    mem_in[9*bw-1:8*bw] = K[q][8];
-    mem_in[10*bw-1:9*bw] = K[q][9];
-    mem_in[11*bw-1:10*bw] = K[q][10];
-    mem_in[12*bw-1:11*bw] = K[q][11];
-    mem_in[13*bw-1:12*bw] = K[q][12];
-    mem_in[14*bw-1:13*bw] = K[q][13];
-    mem_in[15*bw-1:14*bw] = K[q][14];
-    mem_in[16*bw-1:15*bw] = K[q][15];
 
     #0.5 clk = 1'b1;  
 
@@ -222,6 +211,8 @@ $display("##### Kmem writing #####");
     #0.5 clk = 1'b1;   
   end
 
+
+/*
 
 
 
