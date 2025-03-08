@@ -23,7 +23,7 @@ integer  K[col-1:0][pr-1:0];
 integer  Q[total_cycle-1:0][pr-1:0];
 integer  result[total_cycle-1:0][col-1:0];
 integer  sum[total_cycle-1:0];
-integer predicted_results_pmem [7:0];
+reg [bw_psum*pr-1:0] predicted_results_pmem [7:0];
 
 integer i,j,k,t,p,q,s,u,m;
 
@@ -321,7 +321,7 @@ $display("##### move ofifo to pmem #####");
 
 $display("##### compare pmem results to predicted #####");
 
-  for (q=0; q<total_cycle; q=q+1) begin
+  for (q=0; q<total_cycle+1; q=q+1) begin
     #0.5 clk = 1'b0;   
     pmem_rd = 1; 
 
@@ -329,8 +329,18 @@ $display("##### compare pmem results to predicted #####");
        pmem_add = pmem_add + 1;
     end
 
-    #0.5 clk = 1'b1;  
-    $display("Pmem result at address %d: %h", pmem_add, out); 
+    #0.5 clk = 1'b1; 
+    if (q>0) begin
+
+    	$display("Pmem result at address %d: %h", pmem_add-1, out);
+	if (out == predicted_results_pmem[q-1]) begin
+        	$display("Result matched predicted!");
+	end
+
+	else begin
+		$display("Result is incorrect!");
+	end
+    end
   end
 
   #0.5 clk = 1'b0;  
