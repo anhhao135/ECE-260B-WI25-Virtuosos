@@ -133,7 +133,7 @@ $display("##### Estimated multiplication result #####");
       end
       $display("Predicted psum: %d", result[t][q]);
     end
-    $display("Predicted psum vector: %h", {result[t][0][bw_psum-1:0], result[t][1][bw_psum-1:0], result[t][2][bw_psum-1:0], result[t][3][bw_psum-1:0], result[t][4][bw_psum-1:0], result[t][5][bw_psum-1:0], result[t][6][bw_psum-1:0], result[t][7][bw_psum-1:0], })
+    $display("Predicted psum vector: %h", {result[t][7][bw_psum-1:0], result[t][6][bw_psum-1:0], result[t][5][bw_psum-1:0], result[t][4][bw_psum-1:0], result[t][3][bw_psum-1:0], result[t][2][bw_psum-1:0], result[t][1][bw_psum-1:0], result[t][0][bw_psum-1:0]});
   end
 
 //////////////////////////////////////////////
