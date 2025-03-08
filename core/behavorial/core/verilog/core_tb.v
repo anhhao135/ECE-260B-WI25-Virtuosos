@@ -23,6 +23,7 @@ integer  K[col-1:0][pr-1:0];
 integer  Q[total_cycle-1:0][pr-1:0];
 integer  result[total_cycle-1:0][col-1:0];
 integer  sum[total_cycle-1:0];
+integer predicted_results_pmem [7:0];
 
 integer i,j,k,t,p,q,s,u,m;
 
@@ -32,6 +33,7 @@ reg clk = 0;
 reg [pr*bw-1:0] mem_in; 
 reg ofifo_rd = 0;
 wire [16:0] inst; 
+wire [bw_psum*col-1:0] out;
 reg qmem_rd = 0;
 reg qmem_wr = 0; 
 reg kmem_rd = 0; 
@@ -68,7 +70,8 @@ core #(.bw(bw), .bw_psum(bw_psum), .col(col), .pr(pr)) DUT (
       .reset(reset),
       .clk(clk), 
       .mem_in(mem_in), 
-      .inst(inst)
+      .inst(inst),
+      .out(out)
 );
 
 
@@ -133,7 +136,10 @@ $display("##### Estimated multiplication result #####");
       end
       $display("Predicted psum: %d", result[t][q]);
     end
-    $display("Predicted psum vector: %h", {result[t][7][bw_psum-1:0], result[t][6][bw_psum-1:0], result[t][5][bw_psum-1:0], result[t][4][bw_psum-1:0], result[t][3][bw_psum-1:0], result[t][2][bw_psum-1:0], result[t][1][bw_psum-1:0], result[t][0][bw_psum-1:0]});
+
+    predicted_results_pmem [t] = {result[t][7][bw_psum-1:0], result[t][6][bw_psum-1:0], result[t][5][bw_psum-1:0], result[t][4][bw_psum-1:0], result[t][3][bw_psum-1:0], result[t][2][bw_psum-1:0], result[t][1][bw_psum-1:0], result[t][0][bw_psum-1:0]};
+
+    $display("Predicted psum vector: %h", predicted_results_pmem [t]);
   end
 
 //////////////////////////////////////////////
@@ -307,6 +313,28 @@ $display("##### move ofifo to pmem #####");
 
   #0.5 clk = 1'b0;  
   pmem_wr = 0; pmem_add = 0; ofifo_rd = 0;
+  #0.5 clk = 1'b1;  
+
+///////////////////////////////////////////
+
+////////////// output fifo rd and wb to psum mem ///////////////////
+
+$display("##### compare pmem results to predicted #####");
+
+  for (q=0; q<total_cycle; q=q+1) begin
+    #0.5 clk = 1'b0;   
+    pmem_rd = 1; 
+
+    if (q>0) begin
+       pmem_add = pmem_add + 1;
+    end
+
+    #0.5 clk = 1'b1;  
+    $display("Pmem result at address %d: %h", pmem_add, out); 
+  end
+
+  #0.5 clk = 1'b0;  
+  pmem_rd = 0; pmem_add = 0;
   #0.5 clk = 1'b1;  
 
 ///////////////////////////////////////////
