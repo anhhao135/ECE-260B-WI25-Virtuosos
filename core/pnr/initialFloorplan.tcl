@@ -1,5 +1,4 @@
 # Floorplan
-# TODO: Set floorplan
 floorPlan -site core -r 1 0.50 10.0 10.0 10.0 10.0
 
 timeDesign -preplace -prefix preplace
@@ -12,4 +11,4 @@ addRing -spacing {top 2 bottom 2 left 2 right 2} -width {top 3 bottom 3 left 3 r
 
 setAddStripeMode -break_at {block_ring}
 
-addStripe -nets {VDD VSS} -layer M4 -direction vertical -width 2 -spacing 6 -number_of_sets 2
+addStripe -nets {VDD VSS} -layer M4 -direction vertical -width 2 -spacing 6 -number_of_sets 8

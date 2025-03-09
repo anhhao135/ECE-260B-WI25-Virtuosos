@@ -1,3 +1,6 @@
 *.template
 *command.log
 *filenames.log
+
+*/pnr/innovus.*
+*/pnr/*.rs.*
