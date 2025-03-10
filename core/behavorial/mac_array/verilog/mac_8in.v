@@ -20,6 +20,15 @@ reg signed		[2*bw-1:0]	product5	;
 reg signed		[2*bw-1:0]	product6	;
 reg signed		[2*bw-1:0]	product7	;
 
+reg signed [bw_psum-1:0] psum_0_0;
+reg signed [bw_psum-1:0] psum_0_1;
+reg signed [bw_psum-1:0] psum_0_2;
+reg signed [bw_psum-1:0] psum_0_3;
+
+reg signed [bw_psum-1:0] psum_1_0;
+reg signed [bw_psum-1:0] psum_1_1;
+
+
 always @ (posedge clk) begin
 	if (reset) begin
 		out <= 0;
@@ -42,7 +51,16 @@ always @ (posedge clk) begin
 		product6	<=	{{(bw){a[bw*	7	-1]}},	a[bw*	7	-1:bw*	6	]}	*	{{(bw){b[bw*	7	-1]}},	b[bw*	7	-1:	bw*	6	]};
 		product7	<=	{{(bw){a[bw*	8	-1]}},	a[bw*	8	-1:bw*	7	]}	*	{{(bw){b[bw*	8	-1]}},	b[bw*	8	-1:	bw*	7	]};
 
-		out <= product0 + product1 + product2 + product3 + product4 + product5 + product6 + product7;
+		psum_0_0 <= product0 + product1;
+		psum_0_1 <= product2 + product3;
+		psum_0_2 <= product4 + product5;
+		psum_0_3 <= product6 + product7;
+
+		psum_1_0 <= psum_0_0 + psum_0_1;
+		psum_1_1 <= psum_0_2 + psum_0_3;
+
+		out <= psum_1_0 + psum_1_1;
+		//out <= product0 + product1 + product2 + product3 + product4 + product5 + product6 + product7;
 
 	end
 end
