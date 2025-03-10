@@ -1,0 +1,31 @@
+[*]
+[*] GTKWave Analyzer v3.3.118 (w)1999-2023 BSI
+[*] Mon Mar 10 03:13:15 2025
+[*]
+[dumpfile] "/home/linux/ieng6/ee260bwi25/h3le/ECE-260B-WI25-Virtuosos/core/behavorial/mac_array/mac_col_tb.vcd"
+[dumpfile_mtime] "Mon Mar 10 03:11:44 2025"
+[dumpfile_size] 17321
+[savefile] "/home/linux/ieng6/ee260bwi25/h3le/ECE-260B-WI25-Virtuosos/core/behavorial/mac_array/mac_col_tb.gtkw"
+[timestart] 22250
+[size] 1920 808
+[pos] -39 -39
+*-12.000000 39060 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] mac_col_tb.
+[treeopen] mac_col_tb.mac_col_instance_0.
+[sst_width] 229
+[signals_width] 118
+[sst_expanded] 1
+[sst_vpaned_height] 212
+@28
+mac_col_tb.clk
+mac_col_tb.reset
+mac_col_tb.i_inst[1:0]
+@22
+mac_col_tb.q_in[63:0]
+mac_col_tb.mac_col_instance_0.key_q[63:0]
+@421
+mac_col_tb.mac_col_instance_0.out[21:0]
+@28
+mac_col_tb.mac_col_instance_0.fifo_wr
+[pattern_trace] 1
+[pattern_trace] 0
