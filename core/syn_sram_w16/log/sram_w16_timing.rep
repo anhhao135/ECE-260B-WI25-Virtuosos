@@ -1,0 +1,2452 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nets
+        -max_paths 100
+        -transition_time
+        -capacitance
+Design : sram_w16
+Version: K-2015.06-SP2
+Date   : Mon Mar 10 12:38:22 2025
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: WCCOM   Library: tcbn65gpluswc
+Wire Load Model Mode: segmented
+
+  Startpoint: memory2_reg_63_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Q_reg_63_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16           ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  memory2_reg_63_/CP (EDFQD1)                       0.000     0.000 #    0.000 r
+  memory2_reg_63_/Q (EDFQD1)                        0.018     0.126      0.126 f
+  memory2[63] (net)              1        0.001               0.000      0.126 f
+  U1304/ZN (AOI22D0)                                0.099     0.073      0.199 r
+  n1338 (net)                    1        0.001               0.000      0.199 r
+  U781/Z (AN4D0)                                    0.048     0.131      0.330 r
+  n1355 (net)                    1        0.001               0.000      0.330 r
+  U1437/ZN (CKND2D0)                                0.035     0.036      0.366 f
+  N132 (net)                     1        0.001               0.000      0.366 f
+  Q_reg_63_/D (EDFQD1)                              0.035     0.000      0.366 f
+  data arrival time                                                      0.366
+
+  clock clk (rise edge)                                       1.000      1.000
+  clock network delay (ideal)                                 0.000      1.000
+  Q_reg_63_/CP (EDFQD1)                                       0.000      1.000 r
+  library setup time                                         -0.097      0.903
+  data required time                                                     0.903
+  -------------------------------------------------------------------------------
+  data required time                                                     0.903
+  data arrival time                                                     -0.366
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.538
+
+
+  Startpoint: memory2_reg_62_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Q_reg_62_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16           ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  memory2_reg_62_/CP (EDFQD1)                       0.000     0.000 #    0.000 r
+  memory2_reg_62_/Q (EDFQD1)                        0.018     0.126      0.126 f
+  memory2[62] (net)              1        0.001               0.000      0.126 f
+  U1298/ZN (AOI22D0)                                0.099     0.073      0.199 r
+  n1320 (net)                    1        0.001               0.000      0.199 r
+  U834/Z (AN4D0)                                    0.048     0.131      0.330 r
+  n1329 (net)                    1        0.001               0.000      0.330 r
+  U1435/ZN (CKND2D0)                                0.035     0.036      0.366 f
+  N131 (net)                     1        0.001               0.000      0.366 f
+  Q_reg_62_/D (EDFQD1)                              0.035     0.000      0.366 f
+  data arrival time                                                      0.366
+
+  clock clk (rise edge)                                       1.000      1.000
+  clock network delay (ideal)                                 0.000      1.000
+  Q_reg_62_/CP (EDFQD1)                                       0.000      1.000 r
+  library setup time                                         -0.097      0.903
+  data required time                                                     0.903
+  -------------------------------------------------------------------------------
+  data required time                                                     0.903
+  data arrival time                                                     -0.366
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.538
+
+
+  Startpoint: memory2_reg_61_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Q_reg_61_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16           ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  memory2_reg_61_/CP (EDFQD1)                       0.000     0.000 #    0.000 r
+  memory2_reg_61_/Q (EDFQD1)                        0.018     0.126      0.126 f
+  memory2[61] (net)              1        0.001               0.000      0.126 f
+  U1291/ZN (AOI22D0)                                0.099     0.073      0.199 r
+  n1310 (net)                    1        0.001               0.000      0.199 r
+  U798/Z (AN4D0)                                    0.048     0.131      0.330 r
+  n1319 (net)                    1        0.001               0.000      0.330 r
+  U1433/ZN (CKND2D0)                                0.035     0.036      0.366 f
+  N130 (net)                     1        0.001               0.000      0.366 f
+  Q_reg_61_/D (EDFQD1)                              0.035     0.000      0.366 f
+  data arrival time                                                      0.366
+
+  clock clk (rise edge)                                       1.000      1.000
+  clock network delay (ideal)                                 0.000      1.000
+  Q_reg_61_/CP (EDFQD1)                                       0.000      1.000 r
+  library setup time                                         -0.097      0.903
+  data required time                                                     0.903
+  -------------------------------------------------------------------------------
+  data required time                                                     0.903
+  data arrival time                                                     -0.366
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.538
+
+
+  Startpoint: memory2_reg_60_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Q_reg_60_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16           ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  memory2_reg_60_/CP (EDFQD1)                       0.000     0.000 #    0.000 r
+  memory2_reg_60_/Q (EDFQD1)                        0.018     0.126      0.126 f
+  memory2[60] (net)              1        0.001               0.000      0.126 f
+  U1285/ZN (AOI22D0)                                0.099     0.073      0.199 r
+  n1300 (net)                    1        0.001               0.000      0.199 r
+  U780/Z (AN4D0)                                    0.048     0.131      0.330 r
+  n1309 (net)                    1        0.001               0.000      0.330 r
+  U1431/ZN (CKND2D0)                                0.035     0.036      0.366 f
+  N129 (net)                     1        0.001               0.000      0.366 f
+  Q_reg_60_/D (EDFQD1)                              0.035     0.000      0.366 f
+  data arrival time                                                      0.366
+
+  clock clk (rise edge)                                       1.000      1.000
+  clock network delay (ideal)                                 0.000      1.000
+  Q_reg_60_/CP (EDFQD1)                                       0.000      1.000 r
+  library setup time                                         -0.097      0.903
+  data required time                                                     0.903
+  -------------------------------------------------------------------------------
+  data required time                                                     0.903
+  data arrival time                                                     -0.366
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.538
+
+
+  Startpoint: memory2_reg_59_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Q_reg_59_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16           ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  memory2_reg_59_/CP (EDFQD1)                       0.000     0.000 #    0.000 r
+  memory2_reg_59_/Q (EDFQD1)                        0.018     0.126      0.126 f
+  memory2[59] (net)              1        0.001               0.000      0.126 f
+  U1278/ZN (AOI22D0)                                0.099     0.073      0.199 r
+  n1290 (net)                    1        0.001               0.000      0.199 r
+  U812/Z (AN4D0)                                    0.048     0.131      0.330 r
+  n1299 (net)                    1        0.001               0.000      0.330 r
+  U1429/ZN (CKND2D0)                                0.035     0.036      0.366 f
+  N128 (net)                     1        0.001               0.000      0.366 f
+  Q_reg_59_/D (EDFQD1)                              0.035     0.000      0.366 f
+  data arrival time                                                      0.366
+
+  clock clk (rise edge)                                       1.000      1.000
+  clock network delay (ideal)                                 0.000      1.000
+  Q_reg_59_/CP (EDFQD1)                                       0.000      1.000 r
+  library setup time                                         -0.097      0.903
+  data required time                                                     0.903
+  -------------------------------------------------------------------------------
+  data required time                                                     0.903
+  data arrival time                                                     -0.366
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.538
+
+
+  Startpoint: memory2_reg_58_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Q_reg_58_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16           ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  memory2_reg_58_/CP (EDFQD1)                       0.000     0.000 #    0.000 r
+  memory2_reg_58_/Q (EDFQD1)                        0.018     0.126      0.126 f
+  memory2[58] (net)              1        0.001               0.000      0.126 f
+  U921/ZN (AOI22D0)                                 0.099     0.073      0.199 r
+  n1280 (net)                    1        0.001               0.000      0.199 r
+  U774/Z (AN4D0)                                    0.048     0.131      0.330 r
+  n1289 (net)                    1        0.001               0.000      0.330 r
+  U1478/ZN (CKND2D0)                                0.035     0.036      0.366 f
+  N127 (net)                     1        0.001               0.000      0.366 f
+  Q_reg_58_/D (EDFQD1)                              0.035     0.000      0.366 f
+  data arrival time                                                      0.366
+
+  clock clk (rise edge)                                       1.000      1.000
+  clock network delay (ideal)                                 0.000      1.000
+  Q_reg_58_/CP (EDFQD1)                                       0.000      1.000 r
+  library setup time                                         -0.097      0.903
+  data required time                                                     0.903
+  -------------------------------------------------------------------------------
+  data required time                                                     0.903
+  data arrival time                                                     -0.366
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.538
+
+
+  Startpoint: memory2_reg_57_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Q_reg_57_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16           ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  memory2_reg_57_/CP (EDFQD1)                       0.000     0.000 #    0.000 r
+  memory2_reg_57_/Q (EDFQD1)                        0.018     0.126      0.126 f
+  memory2[57] (net)              1        0.001               0.000      0.126 f
+  U1470/ZN (AOI22D0)                                0.099     0.073      0.199 r
+  n1260 (net)                    1        0.001               0.000      0.199 r
+  U760/Z (AN4D0)                                    0.048     0.131      0.330 r
+  n1269 (net)                    1        0.001               0.000      0.330 r
+  U1425/ZN (CKND2D0)                                0.035     0.036      0.366 f
+  N126 (net)                     1        0.001               0.000      0.366 f
+  Q_reg_57_/D (EDFQD1)                              0.035     0.000      0.366 f
+  data arrival time                                                      0.366
+
+  clock clk (rise edge)                                       1.000      1.000
+  clock network delay (ideal)                                 0.000      1.000
+  Q_reg_57_/CP (EDFQD1)                                       0.000      1.000 r
+  library setup time                                         -0.097      0.903
+  data required time                                                     0.903
+  -------------------------------------------------------------------------------
+  data required time                                                     0.903
+  data arrival time                                                     -0.366
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.538
+
+
+  Startpoint: memory2_reg_56_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Q_reg_56_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16           ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  memory2_reg_56_/CP (EDFQD1)                       0.000     0.000 #    0.000 r
+  memory2_reg_56_/Q (EDFQD1)                        0.018     0.126      0.126 f
+  memory2[56] (net)              1        0.001               0.000      0.126 f
+  U1266/ZN (AOI22D0)                                0.099     0.073      0.199 r
+  n1250 (net)                    1        0.001               0.000      0.199 r
+  U804/Z (AN4D0)                                    0.048     0.131      0.330 r
+  n1259 (net)                    1        0.001               0.000      0.330 r
+  U1423/ZN (CKND2D0)                                0.035     0.036      0.366 f
+  N125 (net)                     1        0.001               0.000      0.366 f
+  Q_reg_56_/D (EDFQD1)                              0.035     0.000      0.366 f
+  data arrival time                                                      0.366
+
+  clock clk (rise edge)                                       1.000      1.000
+  clock network delay (ideal)                                 0.000      1.000
+  Q_reg_56_/CP (EDFQD1)                                       0.000      1.000 r
+  library setup time                                         -0.097      0.903
+  data required time                                                     0.903
+  -------------------------------------------------------------------------------
+  data required time                                                     0.903
+  data arrival time                                                     -0.366
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.538
+
+
+  Startpoint: memory2_reg_55_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Q_reg_55_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16           ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  memory2_reg_55_/CP (EDFQD1)                       0.000     0.000 #    0.000 r
+  memory2_reg_55_/Q (EDFQD1)                        0.018     0.126      0.126 f
+  memory2[55] (net)              1        0.001               0.000      0.126 f
+  U1256/ZN (AOI22D0)                                0.099     0.073      0.199 r
+  n1230 (net)                    1        0.001               0.000      0.199 r
+  U772/Z (AN4D0)                                    0.048     0.131      0.330 r
+  n1239 (net)                    1        0.001               0.000      0.330 r
+  U1421/ZN (CKND2D0)                                0.035     0.036      0.366 f
+  N124 (net)                     1        0.001               0.000      0.366 f
+  Q_reg_55_/D (EDFQD1)                              0.035     0.000      0.366 f
+  data arrival time                                                      0.366
+
+  clock clk (rise edge)                                       1.000      1.000
+  clock network delay (ideal)                                 0.000      1.000
+  Q_reg_55_/CP (EDFQD1)                                       0.000      1.000 r
+  library setup time                                         -0.097      0.903
+  data required time                                                     0.903
+  -------------------------------------------------------------------------------
+  data required time                                                     0.903
+  data arrival time                                                     -0.366
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.538
+
+
+  Startpoint: memory2_reg_54_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Q_reg_54_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16           ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  memory2_reg_54_/CP (EDFQD1)                       0.000     0.000 #    0.000 r
+  memory2_reg_54_/Q (EDFQD1)                        0.018     0.126      0.126 f
+  memory2[54] (net)              1        0.001               0.000      0.126 f
+  U1253/ZN (AOI22D0)                                0.099     0.073      0.199 r
+  n1220 (net)                    1        0.001               0.000      0.199 r
+  U788/Z (AN4D0)                                    0.048     0.131      0.330 r
+  n1229 (net)                    1        0.001               0.000      0.330 r
+  U1419/ZN (CKND2D0)                                0.035     0.036      0.366 f
+  N123 (net)                     1        0.001               0.000      0.366 f
+  Q_reg_54_/D (EDFQD1)                              0.035     0.000      0.366 f
+  data arrival time                                                      0.366
+
+  clock clk (rise edge)                                       1.000      1.000
+  clock network delay (ideal)                                 0.000      1.000
+  Q_reg_54_/CP (EDFQD1)                                       0.000      1.000 r
+  library setup time                                         -0.097      0.903
+  data required time                                                     0.903
+  -------------------------------------------------------------------------------
+  data required time                                                     0.903
+  data arrival time                                                     -0.366
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.538
+
+
+  Startpoint: memory2_reg_53_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Q_reg_53_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16           ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  memory2_reg_53_/CP (EDFQD1)                       0.000     0.000 #    0.000 r
+  memory2_reg_53_/Q (EDFQD1)                        0.018     0.126      0.126 f
+  memory2[53] (net)              1        0.001               0.000      0.126 f
+  U1243/ZN (AOI22D0)                                0.099     0.073      0.199 r
+  n1210 (net)                    1        0.001               0.000      0.199 r
+  U770/Z (AN4D0)                                    0.048     0.131      0.330 r
+  n1219 (net)                    1        0.001               0.000      0.330 r
+  U1417/ZN (CKND2D0)                                0.035     0.036      0.366 f
+  N122 (net)                     1        0.001               0.000      0.366 f
+  Q_reg_53_/D (EDFQD1)                              0.035     0.000      0.366 f
+  data arrival time                                                      0.366
+
+  clock clk (rise edge)                                       1.000      1.000
+  clock network delay (ideal)                                 0.000      1.000
+  Q_reg_53_/CP (EDFQD1)                                       0.000      1.000 r
+  library setup time                                         -0.097      0.903
+  data required time                                                     0.903
+  -------------------------------------------------------------------------------
+  data required time                                                     0.903
+  data arrival time                                                     -0.366
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.538
+
+
+  Startpoint: memory2_reg_52_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Q_reg_52_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16           ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  memory2_reg_52_/CP (EDFQD1)                       0.000     0.000 #    0.000 r
+  memory2_reg_52_/Q (EDFQD1)                        0.018     0.126      0.126 f
+  memory2[52] (net)              1        0.001               0.000      0.126 f
+  U1240/ZN (AOI22D0)                                0.099     0.073      0.199 r
+  n1200 (net)                    1        0.001               0.000      0.199 r
+  U827/Z (AN4D0)                                    0.048     0.131      0.330 r
+  n1209 (net)                    1        0.001               0.000      0.330 r
+  U1415/ZN (CKND2D0)                                0.035     0.036      0.366 f
+  N121 (net)                     1        0.001               0.000      0.366 f
+  Q_reg_52_/D (EDFQD1)                              0.035     0.000      0.366 f
+  data arrival time                                                      0.366
+
+  clock clk (rise edge)                                       1.000      1.000
+  clock network delay (ideal)                                 0.000      1.000
+  Q_reg_52_/CP (EDFQD1)                                       0.000      1.000 r
+  library setup time                                         -0.097      0.903
+  data required time                                                     0.903
+  -------------------------------------------------------------------------------
+  data required time                                                     0.903
+  data arrival time                                                     -0.366
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.538
+
+
+  Startpoint: memory2_reg_51_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Q_reg_51_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16           ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  memory2_reg_51_/CP (EDFQD1)                       0.000     0.000 #    0.000 r
+  memory2_reg_51_/Q (EDFQD1)                        0.018     0.126      0.126 f
+  memory2[51] (net)              1        0.001               0.000      0.126 f
+  U1230/ZN (AOI22D0)                                0.099     0.073      0.199 r
+  n1190 (net)                    1        0.001               0.000      0.199 r
+  U817/Z (AN4D0)                                    0.048     0.131      0.330 r
+  n1199 (net)                    1        0.001               0.000      0.330 r
+  U1413/ZN (CKND2D0)                                0.035     0.036      0.366 f
+  N120 (net)                     1        0.001               0.000      0.366 f
+  Q_reg_51_/D (EDFQD1)                              0.035     0.000      0.366 f
+  data arrival time                                                      0.366
+
+  clock clk (rise edge)                                       1.000      1.000
+  clock network delay (ideal)                                 0.000      1.000
+  Q_reg_51_/CP (EDFQD1)                                       0.000      1.000 r
+  library setup time                                         -0.097      0.903
+  data required time                                                     0.903
+  -------------------------------------------------------------------------------
+  data required time                                                     0.903
+  data arrival time                                                     -0.366
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.538
+
+
+  Startpoint: memory2_reg_50_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Q_reg_50_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16           ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  memory2_reg_50_/CP (EDFQD1)                       0.000     0.000 #    0.000 r
+  memory2_reg_50_/Q (EDFQD1)                        0.018     0.126      0.126 f
+  memory2[50] (net)              1        0.001               0.000      0.126 f
+  U1227/ZN (AOI22D0)                                0.099     0.073      0.199 r
+  n1170 (net)                    1        0.001               0.000      0.199 r
+  U825/Z (AN4D0)                                    0.048     0.131      0.330 r
+  n1179 (net)                    1        0.001               0.000      0.330 r
+  U1411/ZN (CKND2D0)                                0.035     0.036      0.366 f
+  N119 (net)                     1        0.001               0.000      0.366 f
+  Q_reg_50_/D (EDFQD1)                              0.035     0.000      0.366 f
+  data arrival time                                                      0.366
+
+  clock clk (rise edge)                                       1.000      1.000
+  clock network delay (ideal)                                 0.000      1.000
+  Q_reg_50_/CP (EDFQD1)                                       0.000      1.000 r
+  library setup time                                         -0.097      0.903
+  data required time                                                     0.903
+  -------------------------------------------------------------------------------
+  data required time                                                     0.903
+  data arrival time                                                     -0.366
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.538
+
+
+  Startpoint: memory2_reg_49_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Q_reg_49_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16           ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  memory2_reg_49_/CP (EDFQD1)                       0.000     0.000 #    0.000 r
+  memory2_reg_49_/Q (EDFQD1)                        0.018     0.126      0.126 f
+  memory2[49] (net)              1        0.001               0.000      0.126 f
+  U1217/ZN (AOI22D0)                                0.099     0.073      0.199 r
+  n1160 (net)                    1        0.001               0.000      0.199 r
+  U1409/Z (AN4D0)                                   0.048     0.131      0.330 r
+  n1169 (net)                    1        0.001               0.000      0.330 r
+  U1408/ZN (CKND2D0)                                0.035     0.036      0.366 f
+  N118 (net)                     1        0.001               0.000      0.366 f
+  Q_reg_49_/D (EDFQD1)                              0.035     0.000      0.366 f
+  data arrival time                                                      0.366
+
+  clock clk (rise edge)                                       1.000      1.000
+  clock network delay (ideal)                                 0.000      1.000
+  Q_reg_49_/CP (EDFQD1)                                       0.000      1.000 r
+  library setup time                                         -0.097      0.903
+  data required time                                                     0.903
+  -------------------------------------------------------------------------------
+  data required time                                                     0.903
+  data arrival time                                                     -0.366
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.538
+
+
+  Startpoint: memory2_reg_48_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Q_reg_48_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16           ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  memory2_reg_48_/CP (EDFQD1)                       0.000     0.000 #    0.000 r
+  memory2_reg_48_/Q (EDFQD1)                        0.018     0.126      0.126 f
+  memory2[48] (net)              1        0.001               0.000      0.126 f
+  U1214/ZN (AOI22D0)                                0.099     0.073      0.199 r
+  n1140 (net)                    1        0.001               0.000      0.199 r
+  U800/Z (AN4D0)                                    0.048     0.131      0.330 r
+  n1149 (net)                    1        0.001               0.000      0.330 r
+  U1406/ZN (CKND2D0)                                0.035     0.036      0.366 f
+  N117 (net)                     1        0.001               0.000      0.366 f
+  Q_reg_48_/D (EDFQD1)                              0.035     0.000      0.366 f
+  data arrival time                                                      0.366
+
+  clock clk (rise edge)                                       1.000      1.000
+  clock network delay (ideal)                                 0.000      1.000
+  Q_reg_48_/CP (EDFQD1)                                       0.000      1.000 r
+  library setup time                                         -0.097      0.903
+  data required time                                                     0.903
+  -------------------------------------------------------------------------------
+  data required time                                                     0.903
+  data arrival time                                                     -0.366
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.538
+
+
+  Startpoint: memory2_reg_47_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Q_reg_47_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16           ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  memory2_reg_47_/CP (EDFQD1)                       0.000     0.000 #    0.000 r
+  memory2_reg_47_/Q (EDFQD1)                        0.018     0.126      0.126 f
+  memory2[47] (net)              1        0.001               0.000      0.126 f
+  U1208/ZN (AOI22D0)                                0.099     0.073      0.199 r
+  n1130 (net)                    1        0.001               0.000      0.199 r
+  U822/Z (AN4D0)                                    0.048     0.131      0.330 r
+  n1139 (net)                    1        0.001               0.000      0.330 r
+  U1404/ZN (CKND2D0)                                0.035     0.036      0.366 f
+  N116 (net)                     1        0.001               0.000      0.366 f
+  Q_reg_47_/D (EDFQD1)                              0.035     0.000      0.366 f
+  data arrival time                                                      0.366
+
+  clock clk (rise edge)                                       1.000      1.000
+  clock network delay (ideal)                                 0.000      1.000
+  Q_reg_47_/CP (EDFQD1)                                       0.000      1.000 r
+  library setup time                                         -0.097      0.903
+  data required time                                                     0.903
+  -------------------------------------------------------------------------------
+  data required time                                                     0.903
+  data arrival time                                                     -0.366
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.538
+
+
+  Startpoint: memory2_reg_46_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Q_reg_46_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16           ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  memory2_reg_46_/CP (EDFQD1)                       0.000     0.000 #    0.000 r
+  memory2_reg_46_/Q (EDFQD1)                        0.018     0.126      0.126 f
+  memory2[46] (net)              1        0.001               0.000      0.126 f
+  U1201/ZN (AOI22D0)                                0.099     0.073      0.199 r
+  n1120 (net)                    1        0.001               0.000      0.199 r
+  U777/Z (AN4D0)                                    0.048     0.131      0.330 r
+  n1129 (net)                    1        0.001               0.000      0.330 r
+  U1402/ZN (CKND2D0)                                0.035     0.036      0.366 f
+  N115 (net)                     1        0.001               0.000      0.366 f
+  Q_reg_46_/D (EDFQD1)                              0.035     0.000      0.366 f
+  data arrival time                                                      0.366
+
+  clock clk (rise edge)                                       1.000      1.000
+  clock network delay (ideal)                                 0.000      1.000
+  Q_reg_46_/CP (EDFQD1)                                       0.000      1.000 r
+  library setup time                                         -0.097      0.903
+  data required time                                                     0.903
+  -------------------------------------------------------------------------------
+  data required time                                                     0.903
+  data arrival time                                                     -0.366
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.538
+
+
+  Startpoint: memory2_reg_45_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Q_reg_45_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16           ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  memory2_reg_45_/CP (EDFQD1)                       0.000     0.000 #    0.000 r
+  memory2_reg_45_/Q (EDFQD1)                        0.018     0.126      0.126 f
+  memory2[45] (net)              1        0.001               0.000      0.126 f
+  U914/ZN (AOI22D0)                                 0.099     0.073      0.199 r
+  n1110 (net)                    1        0.001               0.000      0.199 r
+  U794/Z (AN4D0)                                    0.048     0.131      0.330 r
+  n1119 (net)                    1        0.001               0.000      0.330 r
+  U1477/ZN (CKND2D0)                                0.035     0.036      0.366 f
+  N114 (net)                     1        0.001               0.000      0.366 f
+  Q_reg_45_/D (EDFQD1)                              0.035     0.000      0.366 f
+  data arrival time                                                      0.366
+
+  clock clk (rise edge)                                       1.000      1.000
+  clock network delay (ideal)                                 0.000      1.000
+  Q_reg_45_/CP (EDFQD1)                                       0.000      1.000 r
+  library setup time                                         -0.097      0.903
+  data required time                                                     0.903
+  -------------------------------------------------------------------------------
+  data required time                                                     0.903
+  data arrival time                                                     -0.366
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.538
+
+
+  Startpoint: memory2_reg_44_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Q_reg_44_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16           ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  memory2_reg_44_/CP (EDFQD1)                       0.000     0.000 #    0.000 r
+  memory2_reg_44_/Q (EDFQD1)                        0.018     0.126      0.126 f
+  memory2[44] (net)              1        0.001               0.000      0.126 f
+  U1195/ZN (AOI22D0)                                0.099     0.073      0.199 r
+  n1100 (net)                    1        0.001               0.000      0.199 r
+  U761/Z (AN4D0)                                    0.048     0.131      0.330 r
+  n1109 (net)                    1        0.001               0.000      0.330 r
+  U1399/ZN (CKND2D0)                                0.035     0.036      0.366 f
+  N113 (net)                     1        0.001               0.000      0.366 f
+  Q_reg_44_/D (EDFQD1)                              0.035     0.000      0.366 f
+  data arrival time                                                      0.366
+
+  clock clk (rise edge)                                       1.000      1.000
+  clock network delay (ideal)                                 0.000      1.000
+  Q_reg_44_/CP (EDFQD1)                                       0.000      1.000 r
+  library setup time                                         -0.097      0.903
+  data required time                                                     0.903
+  -------------------------------------------------------------------------------
+  data required time                                                     0.903
+  data arrival time                                                     -0.366
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.538
+
+
+  Startpoint: memory2_reg_43_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Q_reg_43_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16           ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  memory2_reg_43_/CP (EDFQD1)                       0.000     0.000 #    0.000 r
+  memory2_reg_43_/Q (EDFQD1)                        0.018     0.126      0.126 f
+  memory2[43] (net)              1        0.001               0.000      0.126 f
+  U1185/ZN (AOI22D0)                                0.099     0.073      0.199 r
+  n1080 (net)                    1        0.001               0.000      0.199 r
+  U1397/Z (AN4D0)                                   0.048     0.131      0.330 r
+  n1089 (net)                    1        0.001               0.000      0.330 r
+  U1396/ZN (CKND2D0)                                0.035     0.036      0.366 f
+  N112 (net)                     1        0.001               0.000      0.366 f
+  Q_reg_43_/D (EDFQD1)                              0.035     0.000      0.366 f
+  data arrival time                                                      0.366
+
+  clock clk (rise edge)                                       1.000      1.000
+  clock network delay (ideal)                                 0.000      1.000
+  Q_reg_43_/CP (EDFQD1)                                       0.000      1.000 r
+  library setup time                                         -0.097      0.903
+  data required time                                                     0.903
+  -------------------------------------------------------------------------------
+  data required time                                                     0.903
+  data arrival time                                                     -0.366
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.538
+
+
+  Startpoint: memory2_reg_42_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Q_reg_42_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16           ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  memory2_reg_42_/CP (EDFQD1)                       0.000     0.000 #    0.000 r
+  memory2_reg_42_/Q (EDFQD1)                        0.018     0.126      0.126 f
+  memory2[42] (net)              1        0.001               0.000      0.126 f
+  U1462/ZN (AOI22D0)                                0.099     0.073      0.199 r
+  n1070 (net)                    1        0.001               0.000      0.199 r
+  U816/Z (AN4D0)                                    0.048     0.131      0.330 r
+  n1079 (net)                    1        0.001               0.000      0.330 r
+  U1394/ZN (CKND2D0)                                0.035     0.036      0.366 f
+  N111 (net)                     1        0.001               0.000      0.366 f
+  Q_reg_42_/D (EDFQD1)                              0.035     0.000      0.366 f
+  data arrival time                                                      0.366
+
+  clock clk (rise edge)                                       1.000      1.000
+  clock network delay (ideal)                                 0.000      1.000
+  Q_reg_42_/CP (EDFQD1)                                       0.000      1.000 r
+  library setup time                                         -0.097      0.903
+  data required time                                                     0.903
+  -------------------------------------------------------------------------------
+  data required time                                                     0.903
+  data arrival time                                                     -0.366
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.538
+
+
+  Startpoint: memory2_reg_41_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Q_reg_41_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16           ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  memory2_reg_41_/CP (EDFQD1)                       0.000     0.000 #    0.000 r
+  memory2_reg_41_/Q (EDFQD1)                        0.018     0.126      0.126 f
+  memory2[41] (net)              1        0.001               0.000      0.126 f
+  U1176/ZN (AOI22D0)                                0.099     0.073      0.199 r
+  n1050 (net)                    1        0.001               0.000      0.199 r
+  U790/Z (AN4D0)                                    0.048     0.131      0.330 r
+  n1059 (net)                    1        0.001               0.000      0.330 r
+  U1392/ZN (CKND2D0)                                0.035     0.036      0.366 f
+  N110 (net)                     1        0.001               0.000      0.366 f
+  Q_reg_41_/D (EDFQD1)                              0.035     0.000      0.366 f
+  data arrival time                                                      0.366
+
+  clock clk (rise edge)                                       1.000      1.000
+  clock network delay (ideal)                                 0.000      1.000
+  Q_reg_41_/CP (EDFQD1)                                       0.000      1.000 r
+  library setup time                                         -0.097      0.903
+  data required time                                                     0.903
+  -------------------------------------------------------------------------------
+  data required time                                                     0.903
+  data arrival time                                                     -0.366
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.538
+
+
+  Startpoint: memory2_reg_35_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Q_reg_35_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16           ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  memory2_reg_35_/CP (EDFQD1)                       0.000     0.000 #    0.000 r
+  memory2_reg_35_/Q (EDFQD1)                        0.018     0.126      0.126 f
+  memory2[35] (net)              1        0.001               0.000      0.126 f
+  U1137/ZN (AOI22D0)                                0.099     0.073      0.199 r
+  n990 (net)                     1        0.001               0.000      0.199 r
+  U771/Z (AN4D0)                                    0.048     0.131      0.330 r
+  n999 (net)                     1        0.001               0.000      0.330 r
+  U1379/ZN (CKND2D0)                                0.035     0.036      0.366 f
+  N104 (net)                     1        0.001               0.000      0.366 f
+  Q_reg_35_/D (EDFQD1)                              0.035     0.000      0.366 f
+  data arrival time                                                      0.366
+
+  clock clk (rise edge)                                       1.000      1.000
+  clock network delay (ideal)                                 0.000      1.000
+  Q_reg_35_/CP (EDFQD1)                                       0.000      1.000 r
+  library setup time                                         -0.097      0.903
+  data required time                                                     0.903
+  -------------------------------------------------------------------------------
+  data required time                                                     0.903
+  data arrival time                                                     -0.366
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.538
+
+
+  Startpoint: memory2_reg_33_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Q_reg_33_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16           ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  memory2_reg_33_/CP (EDFQD1)                       0.000     0.000 #    0.000 r
+  memory2_reg_33_/Q (EDFQD1)                        0.018     0.126      0.126 f
+  memory2[33] (net)              1        0.001               0.000      0.126 f
+  U1124/ZN (AOI22D0)                                0.099     0.073      0.199 r
+  n960 (net)                     1        0.001               0.000      0.199 r
+  U832/Z (AN4D0)                                    0.048     0.131      0.330 r
+  n969 (net)                     1        0.001               0.000      0.330 r
+  U1375/ZN (CKND2D0)                                0.035     0.036      0.366 f
+  N102 (net)                     1        0.001               0.000      0.366 f
+  Q_reg_33_/D (EDFQD1)                              0.035     0.000      0.366 f
+  data arrival time                                                      0.366
+
+  clock clk (rise edge)                                       1.000      1.000
+  clock network delay (ideal)                                 0.000      1.000
+  Q_reg_33_/CP (EDFQD1)                                       0.000      1.000 r
+  library setup time                                         -0.097      0.903
+  data required time                                                     0.903
+  -------------------------------------------------------------------------------
+  data required time                                                     0.903
+  data arrival time                                                     -0.366
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.538
+
+
+  Startpoint: memory2_reg_31_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Q_reg_31_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16           ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  memory2_reg_31_/CP (EDFQD1)                       0.000     0.000 #    0.000 r
+  memory2_reg_31_/Q (EDFQD1)                        0.018     0.126      0.126 f
+  memory2[31] (net)              1        0.001               0.000      0.126 f
+  U1111/ZN (AOI22D0)                                0.099     0.073      0.199 r
+  n940 (net)                     1        0.001               0.000      0.199 r
+  U802/Z (AN4D0)                                    0.048     0.131      0.330 r
+  n949 (net)                     1        0.001               0.000      0.330 r
+  U1371/ZN (CKND2D0)                                0.035     0.036      0.366 f
+  N100 (net)                     1        0.001               0.000      0.366 f
+  Q_reg_31_/D (EDFQD1)                              0.035     0.000      0.366 f
+  data arrival time                                                      0.366
+
+  clock clk (rise edge)                                       1.000      1.000
+  clock network delay (ideal)                                 0.000      1.000
+  Q_reg_31_/CP (EDFQD1)                                       0.000      1.000 r
+  library setup time                                         -0.097      0.903
+  data required time                                                     0.903
+  -------------------------------------------------------------------------------
+  data required time                                                     0.903
+  data arrival time                                                     -0.366
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.538
+
+
+  Startpoint: memory2_reg_29_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Q_reg_29_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16           ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  memory2_reg_29_/CP (EDFQD1)                       0.000     0.000 #    0.000 r
+  memory2_reg_29_/Q (EDFQD1)                        0.018     0.126      0.126 f
+  memory2[29] (net)              1        0.001               0.000      0.126 f
+  U1105/ZN (AOI22D0)                                0.099     0.073      0.199 r
+  n1030 (net)                    1        0.001               0.000      0.199 r
+  U823/Z (AN4D0)                                    0.048     0.131      0.330 r
+  n1039 (net)                    1        0.001               0.000      0.330 r
+  U1368/ZN (CKND2D0)                                0.035     0.036      0.366 f
+  N98 (net)                      1        0.001               0.000      0.366 f
+  Q_reg_29_/D (EDFQD1)                              0.035     0.000      0.366 f
+  data arrival time                                                      0.366
+
+  clock clk (rise edge)                                       1.000      1.000
+  clock network delay (ideal)                                 0.000      1.000
+  Q_reg_29_/CP (EDFQD1)                                       0.000      1.000 r
+  library setup time                                         -0.097      0.903
+  data required time                                                     0.903
+  -------------------------------------------------------------------------------
+  data required time                                                     0.903
+  data arrival time                                                     -0.366
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.538
+
+
+  Startpoint: memory2_reg_27_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Q_reg_27_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16           ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  memory2_reg_27_/CP (EDFQD1)                       0.000     0.000 #    0.000 r
+  memory2_reg_27_/Q (EDFQD1)                        0.018     0.126      0.126 f
+  memory2[27] (net)              1        0.001               0.000      0.126 f
+  U1454/ZN (AOI22D0)                                0.099     0.073      0.199 r
+  n1010 (net)                    1        0.001               0.000      0.199 r
+  U778/Z (AN4D0)                                    0.048     0.131      0.330 r
+  n1019 (net)                    1        0.001               0.000      0.330 r
+  U1363/ZN (CKND2D0)                                0.035     0.036      0.366 f
+  N96 (net)                      1        0.001               0.000      0.366 f
+  Q_reg_27_/D (EDFQD1)                              0.035     0.000      0.366 f
+  data arrival time                                                      0.366
+
+  clock clk (rise edge)                                       1.000      1.000
+  clock network delay (ideal)                                 0.000      1.000
+  Q_reg_27_/CP (EDFQD1)                                       0.000      1.000 r
+  library setup time                                         -0.097      0.903
+  data required time                                                     0.903
+  -------------------------------------------------------------------------------
+  data required time                                                     0.903
+  data arrival time                                                     -0.366
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.538
+
+
+  Startpoint: memory2_reg_24_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Q_reg_24_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16           ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  memory2_reg_24_/CP (EDFQD1)                       0.000     0.000 #    0.000 r
+  memory2_reg_24_/Q (EDFQD1)                        0.018     0.126      0.126 f
+  memory2[24] (net)              1        0.001               0.000      0.126 f
+  U1073/ZN (AOI22D0)                                0.099     0.073      0.199 r
+  n930 (net)                     1        0.001               0.000      0.199 r
+  U795/Z (AN4D0)                                    0.048     0.131      0.330 r
+  n939 (net)                     1        0.001               0.000      0.330 r
+  U1357/ZN (CKND2D0)                                0.035     0.036      0.366 f
+  N93 (net)                      1        0.001               0.000      0.366 f
+  Q_reg_24_/D (EDFQD1)                              0.035     0.000      0.366 f
+  data arrival time                                                      0.366
+
+  clock clk (rise edge)                                       1.000      1.000
+  clock network delay (ideal)                                 0.000      1.000
+  Q_reg_24_/CP (EDFQD1)                                       0.000      1.000 r
+  library setup time                                         -0.097      0.903
+  data required time                                                     0.903
+  -------------------------------------------------------------------------------
+  data required time                                                     0.903
+  data arrival time                                                     -0.366
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.538
+
+
+  Startpoint: memory2_reg_22_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Q_reg_22_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16           ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  memory2_reg_22_/CP (EDFQD1)                       0.000     0.000 #    0.000 r
+  memory2_reg_22_/Q (EDFQD1)                        0.018     0.126      0.126 f
+  memory2[22] (net)              1        0.001               0.000      0.126 f
+  U1060/ZN (AOI22D0)                                0.099     0.073      0.199 r
+  n980 (net)                     1        0.001               0.000      0.199 r
+  U813/Z (AN4D0)                                    0.048     0.131      0.330 r
+  n989 (net)                     1        0.001               0.000      0.330 r
+  U1353/ZN (CKND2D0)                                0.035     0.036      0.366 f
+  N91 (net)                      1        0.001               0.000      0.366 f
+  Q_reg_22_/D (EDFQD1)                              0.035     0.000      0.366 f
+  data arrival time                                                      0.366
+
+  clock clk (rise edge)                                       1.000      1.000
+  clock network delay (ideal)                                 0.000      1.000
+  Q_reg_22_/CP (EDFQD1)                                       0.000      1.000 r
+  library setup time                                         -0.097      0.903
+  data required time                                                     0.903
+  -------------------------------------------------------------------------------
+  data required time                                                     0.903
+  data arrival time                                                     -0.366
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.538
+
+
+  Startpoint: memory2_reg_20_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Q_reg_20_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16           ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  memory2_reg_20_/CP (EDFQD1)                       0.000     0.000 #    0.000 r
+  memory2_reg_20_/Q (EDFQD1)                        0.018     0.126      0.126 f
+  memory2[20] (net)              1        0.001               0.000      0.126 f
+  U1047/ZN (AOI22D0)                                0.099     0.073      0.199 r
+  n970 (net)                     1        0.001               0.000      0.199 r
+  U783/Z (AN4D0)                                    0.048     0.131      0.330 r
+  n979 (net)                     1        0.001               0.000      0.330 r
+  U1348/ZN (CKND2D0)                                0.035     0.036      0.366 f
+  N89 (net)                      1        0.001               0.000      0.366 f
+  Q_reg_20_/D (EDFQD1)                              0.035     0.000      0.366 f
+  data arrival time                                                      0.366
+
+  clock clk (rise edge)                                       1.000      1.000
+  clock network delay (ideal)                                 0.000      1.000
+  Q_reg_20_/CP (EDFQD1)                                       0.000      1.000 r
+  library setup time                                         -0.097      0.903
+  data required time                                                     0.903
+  -------------------------------------------------------------------------------
+  data required time                                                     0.903
+  data arrival time                                                     -0.366
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.538
+
+
+  Startpoint: memory2_reg_18_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Q_reg_18_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16           ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  memory2_reg_18_/CP (EDFQD1)                       0.000     0.000 #    0.000 r
+  memory2_reg_18_/Q (EDFQD1)                        0.018     0.126      0.126 f
+  memory2[18] (net)              1        0.001               0.000      0.126 f
+  U1034/ZN (AOI22D0)                                0.099     0.073      0.199 r
+  n1040 (net)                    1        0.001               0.000      0.199 r
+  U826/Z (AN4D0)                                    0.048     0.131      0.330 r
+  n1049 (net)                    1        0.001               0.000      0.330 r
+  U1344/ZN (CKND2D0)                                0.035     0.036      0.366 f
+  N87 (net)                      1        0.001               0.000      0.366 f
+  Q_reg_18_/D (EDFQD1)                              0.035     0.000      0.366 f
+  data arrival time                                                      0.366
+
+  clock clk (rise edge)                                       1.000      1.000
+  clock network delay (ideal)                                 0.000      1.000
+  Q_reg_18_/CP (EDFQD1)                                       0.000      1.000 r
+  library setup time                                         -0.097      0.903
+  data required time                                                     0.903
+  -------------------------------------------------------------------------------
+  data required time                                                     0.903
+  data arrival time                                                     -0.366
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.538
+
+
+  Startpoint: memory2_reg_16_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Q_reg_16_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16           ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  memory2_reg_16_/CP (EDFQD1)                       0.000     0.000 #    0.000 r
+  memory2_reg_16_/Q (EDFQD1)                        0.018     0.126      0.126 f
+  memory2[16] (net)              1        0.001               0.000      0.126 f
+  U1021/ZN (AOI22D0)                                0.099     0.073      0.199 r
+  n950 (net)                     1        0.001               0.000      0.199 r
+  U764/Z (AN4D0)                                    0.048     0.131      0.330 r
+  n959 (net)                     1        0.001               0.000      0.330 r
+  U1340/ZN (CKND2D0)                                0.035     0.036      0.366 f
+  N85 (net)                      1        0.001               0.000      0.366 f
+  Q_reg_16_/D (EDFQD1)                              0.035     0.000      0.366 f
+  data arrival time                                                      0.366
+
+  clock clk (rise edge)                                       1.000      1.000
+  clock network delay (ideal)                                 0.000      1.000
+  Q_reg_16_/CP (EDFQD1)                                       0.000      1.000 r
+  library setup time                                         -0.097      0.903
+  data required time                                                     0.903
+  -------------------------------------------------------------------------------
+  data required time                                                     0.903
+  data arrival time                                                     -0.366
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.538
+
+
+  Startpoint: memory2_reg_12_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Q_reg_12_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16           ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  memory2_reg_12_/CP (EDFQD1)                       0.000     0.000 #    0.000 r
+  memory2_reg_12_/Q (EDFQD1)                        0.018     0.126      0.126 f
+  memory2[12] (net)              1        0.001               0.000      0.126 f
+  U1446/ZN (AOI22D0)                                0.099     0.073      0.199 r
+  n1020 (net)                    1        0.001               0.000      0.199 r
+  U803/Z (AN4D0)                                    0.048     0.131      0.330 r
+  n1029 (net)                    1        0.001               0.000      0.330 r
+  U1332/ZN (CKND2D0)                                0.035     0.036      0.366 f
+  N81 (net)                      1        0.001               0.000      0.366 f
+  Q_reg_12_/D (EDFQD1)                              0.035     0.000      0.366 f
+  data arrival time                                                      0.366
+
+  clock clk (rise edge)                                       1.000      1.000
+  clock network delay (ideal)                                 0.000      1.000
+  Q_reg_12_/CP (EDFQD1)                                       0.000      1.000 r
+  library setup time                                         -0.097      0.903
+  data required time                                                     0.903
+  -------------------------------------------------------------------------------
+  data required time                                                     0.903
+  data arrival time                                                     -0.366
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.538
+
+
+  Startpoint: memory2_reg_11_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Q_reg_11_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16           ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  memory2_reg_11_/CP (EDFQD1)                       0.000     0.000 #    0.000 r
+  memory2_reg_11_/Q (EDFQD1)                        0.018     0.126      0.126 f
+  memory2[11] (net)              1        0.001               0.000      0.126 f
+  U996/ZN (AOI22D0)                                 0.099     0.073      0.199 r
+  n1000 (net)                    1        0.001               0.000      0.199 r
+  U819/Z (AN4D0)                                    0.048     0.131      0.330 r
+  n1009 (net)                    1        0.001               0.000      0.330 r
+  U1330/ZN (CKND2D0)                                0.035     0.036      0.366 f
+  N80 (net)                      1        0.001               0.000      0.366 f
+  Q_reg_11_/D (EDFQD1)                              0.035     0.000      0.366 f
+  data arrival time                                                      0.366
+
+  clock clk (rise edge)                                       1.000      1.000
+  clock network delay (ideal)                                 0.000      1.000
+  Q_reg_11_/CP (EDFQD1)                                       0.000      1.000 r
+  library setup time                                         -0.097      0.903
+  data required time                                                     0.903
+  -------------------------------------------------------------------------------
+  data required time                                                     0.903
+  data arrival time                                                     -0.366
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.538
+
+
+  Startpoint: memory2_reg_9_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Q_reg_9_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16           ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  memory2_reg_9_/CP (EDFQD1)                        0.000     0.000 #    0.000 r
+  memory2_reg_9_/Q (EDFQD1)                         0.018     0.126      0.126 f
+  memory2[9] (net)               1        0.001               0.000      0.126 f
+  U983/ZN (AOI22D0)                                 0.099     0.073      0.199 r
+  n1060 (net)                    1        0.001               0.000      0.199 r
+  U784/Z (AN4D0)                                    0.048     0.131      0.330 r
+  n1069 (net)                    1        0.001               0.000      0.330 r
+  U1326/ZN (CKND2D0)                                0.035     0.036      0.366 f
+  N78 (net)                      1        0.001               0.000      0.366 f
+  Q_reg_9_/D (EDFQD1)                               0.035     0.000      0.366 f
+  data arrival time                                                      0.366
+
+  clock clk (rise edge)                                       1.000      1.000
+  clock network delay (ideal)                                 0.000      1.000
+  Q_reg_9_/CP (EDFQD1)                                        0.000      1.000 r
+  library setup time                                         -0.097      0.903
+  data required time                                                     0.903
+  -------------------------------------------------------------------------------
+  data required time                                                     0.903
+  data arrival time                                                     -0.366
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.538
+
+
+  Startpoint: memory2_reg_8_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Q_reg_8_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16           ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  memory2_reg_8_/CP (EDFQD1)                        0.000     0.000 #    0.000 r
+  memory2_reg_8_/Q (EDFQD1)                         0.018     0.126      0.126 f
+  memory2[8] (net)               1        0.001               0.000      0.126 f
+  U973/ZN (AOI22D0)                                 0.099     0.073      0.199 r
+  n1090 (net)                    1        0.001               0.000      0.199 r
+  U791/Z (AN4D0)                                    0.048     0.131      0.330 r
+  n1099 (net)                    1        0.001               0.000      0.330 r
+  U1324/ZN (CKND2D0)                                0.035     0.036      0.366 f
+  N77 (net)                      1        0.001               0.000      0.366 f
+  Q_reg_8_/D (EDFQD1)                               0.035     0.000      0.366 f
+  data arrival time                                                      0.366
+
+  clock clk (rise edge)                                       1.000      1.000
+  clock network delay (ideal)                                 0.000      1.000
+  Q_reg_8_/CP (EDFQD1)                                        0.000      1.000 r
+  library setup time                                         -0.097      0.903
+  data required time                                                     0.903
+  -------------------------------------------------------------------------------
+  data required time                                                     0.903
+  data arrival time                                                     -0.366
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.538
+
+
+  Startpoint: memory2_reg_6_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Q_reg_6_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16           ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  memory2_reg_6_/CP (EDFQD1)                        0.000     0.000 #    0.000 r
+  memory2_reg_6_/Q (EDFQD1)                         0.018     0.126      0.126 f
+  memory2[6] (net)               1        0.001               0.000      0.126 f
+  U964/ZN (AOI22D0)                                 0.099     0.073      0.199 r
+  n1150 (net)                    1        0.001               0.000      0.199 r
+  U769/Z (AN4D0)                                    0.048     0.131      0.330 r
+  n1159 (net)                    1        0.001               0.000      0.330 r
+  U1319/ZN (CKND2D0)                                0.035     0.036      0.366 f
+  N75 (net)                      1        0.001               0.000      0.366 f
+  Q_reg_6_/D (EDFQD1)                               0.035     0.000      0.366 f
+  data arrival time                                                      0.366
+
+  clock clk (rise edge)                                       1.000      1.000
+  clock network delay (ideal)                                 0.000      1.000
+  Q_reg_6_/CP (EDFQD1)                                        0.000      1.000 r
+  library setup time                                         -0.097      0.903
+  data required time                                                     0.903
+  -------------------------------------------------------------------------------
+  data required time                                                     0.903
+  data arrival time                                                     -0.366
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.538
+
+
+  Startpoint: memory2_reg_5_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Q_reg_5_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16           ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  memory2_reg_5_/CP (EDFQD1)                        0.000     0.000 #    0.000 r
+  memory2_reg_5_/Q (EDFQD1)                         0.018     0.126      0.126 f
+  memory2[5] (net)               1        0.001               0.000      0.126 f
+  U957/ZN (AOI22D0)                                 0.099     0.073      0.199 r
+  n1180 (net)                    1        0.001               0.000      0.199 r
+  U773/Z (AN4D0)                                    0.048     0.131      0.330 r
+  n1189 (net)                    1        0.001               0.000      0.330 r
+  U1317/ZN (CKND2D0)                                0.035     0.036      0.366 f
+  N74 (net)                      1        0.001               0.000      0.366 f
+  Q_reg_5_/D (EDFQD1)                               0.035     0.000      0.366 f
+  data arrival time                                                      0.366
+
+  clock clk (rise edge)                                       1.000      1.000
+  clock network delay (ideal)                                 0.000      1.000
+  Q_reg_5_/CP (EDFQD1)                                        0.000      1.000 r
+  library setup time                                         -0.097      0.903
+  data required time                                                     0.903
+  -------------------------------------------------------------------------------
+  data required time                                                     0.903
+  data arrival time                                                     -0.366
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.538
+
+
+  Startpoint: memory2_reg_3_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Q_reg_3_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16           ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  memory2_reg_3_/CP (EDFQD1)                        0.000     0.000 #    0.000 r
+  memory2_reg_3_/Q (EDFQD1)                         0.018     0.126      0.126 f
+  memory2[3] (net)               1        0.001               0.000      0.126 f
+  U944/ZN (AOI22D0)                                 0.099     0.073      0.199 r
+  n1240 (net)                    1        0.001               0.000      0.199 r
+  U831/Z (AN4D0)                                    0.048     0.131      0.330 r
+  n1249 (net)                    1        0.001               0.000      0.330 r
+  U1313/ZN (CKND2D0)                                0.035     0.036      0.366 f
+  N72 (net)                      1        0.001               0.000      0.366 f
+  Q_reg_3_/D (EDFQD1)                               0.035     0.000      0.366 f
+  data arrival time                                                      0.366
+
+  clock clk (rise edge)                                       1.000      1.000
+  clock network delay (ideal)                                 0.000      1.000
+  Q_reg_3_/CP (EDFQD1)                                        0.000      1.000 r
+  library setup time                                         -0.097      0.903
+  data required time                                                     0.903
+  -------------------------------------------------------------------------------
+  data required time                                                     0.903
+  data arrival time                                                     -0.366
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.538
+
+
+  Startpoint: memory2_reg_2_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Q_reg_2_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16           ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  memory2_reg_2_/CP (EDFQD1)                        0.000     0.000 #    0.000 r
+  memory2_reg_2_/Q (EDFQD1)                         0.018     0.126      0.126 f
+  memory2[2] (net)               1        0.001               0.000      0.126 f
+  U938/ZN (AOI22D0)                                 0.099     0.073      0.199 r
+  n1270 (net)                    1        0.001               0.000      0.199 r
+  U814/Z (AN4D0)                                    0.048     0.131      0.330 r
+  n1279 (net)                    1        0.001               0.000      0.330 r
+  U1311/ZN (CKND2D0)                                0.035     0.036      0.366 f
+  N71 (net)                      1        0.001               0.000      0.366 f
+  Q_reg_2_/D (EDFQD1)                               0.035     0.000      0.366 f
+  data arrival time                                                      0.366
+
+  clock clk (rise edge)                                       1.000      1.000
+  clock network delay (ideal)                                 0.000      1.000
+  Q_reg_2_/CP (EDFQD1)                                        0.000      1.000 r
+  library setup time                                         -0.097      0.903
+  data required time                                                     0.903
+  -------------------------------------------------------------------------------
+  data required time                                                     0.903
+  data arrival time                                                     -0.366
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.538
+
+
+  Startpoint: memory2_reg_0_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Q_reg_0_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16           ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  memory2_reg_0_/CP (EDFQD1)                        0.000     0.000 #    0.000 r
+  memory2_reg_0_/Q (EDFQD1)                         0.018     0.126      0.126 f
+  memory2[0] (net)               1        0.001               0.000      0.126 f
+  U897/ZN (AOI22D0)                                 0.099     0.073      0.199 r
+  n912 (net)                     1        0.001               0.000      0.199 r
+  U785/Z (AN4D0)                                    0.048     0.131      0.330 r
+  n929 (net)                     1        0.001               0.000      0.330 r
+  U1474/ZN (CKND2D0)                                0.035     0.036      0.366 f
+  N69 (net)                      1        0.001               0.000      0.366 f
+  Q_reg_0_/D (EDFQD1)                               0.035     0.000      0.366 f
+  data arrival time                                                      0.366
+
+  clock clk (rise edge)                                       1.000      1.000
+  clock network delay (ideal)                                 0.000      1.000
+  Q_reg_0_/CP (EDFQD1)                                        0.000      1.000 r
+  library setup time                                         -0.097      0.903
+  data required time                                                     0.903
+  -------------------------------------------------------------------------------
+  data required time                                                     0.903
+  data arrival time                                                     -0.366
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.538
+
+
+  Startpoint: memory2_reg_40_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Q_reg_40_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16           ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  memory2_reg_40_/CP (EDFQD1)                       0.000     0.000 #    0.000 r
+  memory2_reg_40_/Q (EDFQD1)                        0.018     0.126      0.126 f
+  memory2[40] (net)              1        0.001               0.000      0.126 f
+  U1166/ZN (AOI22D0)                                0.090     0.073      0.199 r
+  n764 (net)                     1        0.001               0.000      0.199 r
+  U871/Z (AN4D0)                                    0.048     0.130      0.329 r
+  n773 (net)                     1        0.001               0.000      0.329 r
+  U1390/ZN (CKND2D0)                                0.035     0.036      0.365 f
+  N109 (net)                     1        0.001               0.000      0.365 f
+  Q_reg_40_/D (EDFQD1)                              0.035     0.000      0.365 f
+  data arrival time                                                      0.365
+
+  clock clk (rise edge)                                       1.000      1.000
+  clock network delay (ideal)                                 0.000      1.000
+  Q_reg_40_/CP (EDFQD1)                                       0.000      1.000 r
+  library setup time                                         -0.097      0.903
+  data required time                                                     0.903
+  -------------------------------------------------------------------------------
+  data required time                                                     0.903
+  data arrival time                                                     -0.365
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.539
+
+
+  Startpoint: memory2_reg_39_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Q_reg_39_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16           ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  memory2_reg_39_/CP (EDFQD1)                       0.000     0.000 #    0.000 r
+  memory2_reg_39_/Q (EDFQD1)                        0.018     0.126      0.126 f
+  memory2[39] (net)              1        0.001               0.000      0.126 f
+  U1163/ZN (AOI22D0)                                0.090     0.073      0.199 r
+  n774 (net)                     1        0.001               0.000      0.199 r
+  U866/Z (AN4D0)                                    0.048     0.130      0.329 r
+  n783 (net)                     1        0.001               0.000      0.329 r
+  U1388/ZN (CKND2D0)                                0.035     0.036      0.365 f
+  N108 (net)                     1        0.001               0.000      0.365 f
+  Q_reg_39_/D (EDFQD1)                              0.035     0.000      0.365 f
+  data arrival time                                                      0.365
+
+  clock clk (rise edge)                                       1.000      1.000
+  clock network delay (ideal)                                 0.000      1.000
+  Q_reg_39_/CP (EDFQD1)                                       0.000      1.000 r
+  library setup time                                         -0.097      0.903
+  data required time                                                     0.903
+  -------------------------------------------------------------------------------
+  data required time                                                     0.903
+  data arrival time                                                     -0.365
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.539
+
+
+  Startpoint: memory2_reg_38_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Q_reg_38_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16           ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  memory2_reg_38_/CP (EDFQD1)                       0.000     0.000 #    0.000 r
+  memory2_reg_38_/Q (EDFQD1)                        0.018     0.126      0.126 f
+  memory2[38] (net)              1        0.001               0.000      0.126 f
+  U1153/ZN (AOI22D0)                                0.090     0.073      0.199 r
+  n794 (net)                     1        0.001               0.000      0.199 r
+  U842/Z (AN4D0)                                    0.048     0.130      0.329 r
+  n803 (net)                     1        0.001               0.000      0.329 r
+  U1386/ZN (CKND2D0)                                0.035     0.036      0.365 f
+  N107 (net)                     1        0.001               0.000      0.365 f
+  Q_reg_38_/D (EDFQD1)                              0.035     0.000      0.365 f
+  data arrival time                                                      0.365
+
+  clock clk (rise edge)                                       1.000      1.000
+  clock network delay (ideal)                                 0.000      1.000
+  Q_reg_38_/CP (EDFQD1)                                       0.000      1.000 r
+  library setup time                                         -0.097      0.903
+  data required time                                                     0.903
+  -------------------------------------------------------------------------------
+  data required time                                                     0.903
+  data arrival time                                                     -0.365
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.539
+
+
+  Startpoint: memory2_reg_37_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Q_reg_37_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16           ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  memory2_reg_37_/CP (EDFQD1)                       0.000     0.000 #    0.000 r
+  memory2_reg_37_/Q (EDFQD1)                        0.018     0.126      0.126 f
+  memory2[37] (net)              1        0.001               0.000      0.126 f
+  U1150/ZN (AOI22D0)                                0.090     0.073      0.199 r
+  n894 (net)                     1        0.001               0.000      0.199 r
+  U846/Z (AN4D0)                                    0.048     0.130      0.329 r
+  n903 (net)                     1        0.001               0.000      0.329 r
+  U1384/ZN (CKND2D0)                                0.035     0.036      0.365 f
+  N106 (net)                     1        0.001               0.000      0.365 f
+  Q_reg_37_/D (EDFQD1)                              0.035     0.000      0.365 f
+  data arrival time                                                      0.365
+
+  clock clk (rise edge)                                       1.000      1.000
+  clock network delay (ideal)                                 0.000      1.000
+  Q_reg_37_/CP (EDFQD1)                                       0.000      1.000 r
+  library setup time                                         -0.097      0.903
+  data required time                                                     0.903
+  -------------------------------------------------------------------------------
+  data required time                                                     0.903
+  data arrival time                                                     -0.365
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.539
+
+
+  Startpoint: memory2_reg_36_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Q_reg_36_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16           ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  memory2_reg_36_/CP (EDFQD1)                       0.000     0.000 #    0.000 r
+  memory2_reg_36_/Q (EDFQD1)                        0.018     0.126      0.126 f
+  memory2[36] (net)              1        0.001               0.000      0.126 f
+  U1144/ZN (AOI22D0)                                0.090     0.073      0.199 r
+  n834 (net)                     1        0.001               0.000      0.199 r
+  U844/Z (AN4D0)                                    0.048     0.130      0.329 r
+  n843 (net)                     1        0.001               0.000      0.329 r
+  U1381/ZN (CKND2D0)                                0.035     0.036      0.365 f
+  N105 (net)                     1        0.001               0.000      0.365 f
+  Q_reg_36_/D (EDFQD1)                              0.035     0.000      0.365 f
+  data arrival time                                                      0.365
+
+  clock clk (rise edge)                                       1.000      1.000
+  clock network delay (ideal)                                 0.000      1.000
+  Q_reg_36_/CP (EDFQD1)                                       0.000      1.000 r
+  library setup time                                         -0.097      0.903
+  data required time                                                     0.903
+  -------------------------------------------------------------------------------
+  data required time                                                     0.903
+  data arrival time                                                     -0.365
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.539
+
+
+  Startpoint: memory2_reg_34_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Q_reg_34_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16           ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  memory2_reg_34_/CP (EDFQD1)                       0.000     0.000 #    0.000 r
+  memory2_reg_34_/Q (EDFQD1)                        0.018     0.126      0.126 f
+  memory2[34] (net)              1        0.001               0.000      0.126 f
+  U1131/ZN (AOI22D0)                                0.090     0.073      0.199 r
+  n874 (net)                     1        0.001               0.000      0.199 r
+  U837/Z (AN4D0)                                    0.048     0.130      0.329 r
+  n883 (net)                     1        0.001               0.000      0.329 r
+  U1377/ZN (CKND2D0)                                0.035     0.036      0.365 f
+  N103 (net)                     1        0.001               0.000      0.365 f
+  Q_reg_34_/D (EDFQD1)                              0.035     0.000      0.365 f
+  data arrival time                                                      0.365
+
+  clock clk (rise edge)                                       1.000      1.000
+  clock network delay (ideal)                                 0.000      1.000
+  Q_reg_34_/CP (EDFQD1)                                       0.000      1.000 r
+  library setup time                                         -0.097      0.903
+  data required time                                                     0.903
+  -------------------------------------------------------------------------------
+  data required time                                                     0.903
+  data arrival time                                                     -0.365
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.539
+
+
+  Startpoint: memory2_reg_32_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Q_reg_32_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16           ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  memory2_reg_32_/CP (EDFQD1)                       0.000     0.000 #    0.000 r
+  memory2_reg_32_/Q (EDFQD1)                        0.018     0.126      0.126 f
+  memory2[32] (net)              1        0.001               0.000      0.126 f
+  U1118/ZN (AOI22D0)                                0.090     0.073      0.199 r
+  n884 (net)                     1        0.001               0.000      0.199 r
+  U845/Z (AN4D0)                                    0.048     0.130      0.329 r
+  n893 (net)                     1        0.001               0.000      0.329 r
+  U1373/ZN (CKND2D0)                                0.035     0.036      0.365 f
+  N101 (net)                     1        0.001               0.000      0.365 f
+  Q_reg_32_/D (EDFQD1)                              0.035     0.000      0.365 f
+  data arrival time                                                      0.365
+
+  clock clk (rise edge)                                       1.000      1.000
+  clock network delay (ideal)                                 0.000      1.000
+  Q_reg_32_/CP (EDFQD1)                                       0.000      1.000 r
+  library setup time                                         -0.097      0.903
+  data required time                                                     0.903
+  -------------------------------------------------------------------------------
+  data required time                                                     0.903
+  data arrival time                                                     -0.365
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.539
+
+
+  Startpoint: memory2_reg_30_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Q_reg_30_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16           ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  memory2_reg_30_/CP (EDFQD1)                       0.000     0.000 #    0.000 r
+  memory2_reg_30_/Q (EDFQD1)                        0.018     0.126      0.126 f
+  memory2[30] (net)              1        0.001               0.000      0.126 f
+  U911/ZN (AOI22D0)                                 0.090     0.073      0.199 r
+  n864 (net)                     1        0.001               0.000      0.199 r
+  U850/Z (AN4D0)                                    0.048     0.130      0.329 r
+  n873 (net)                     1        0.001               0.000      0.329 r
+  U1476/ZN (CKND2D0)                                0.035     0.036      0.365 f
+  N99 (net)                      1        0.001               0.000      0.365 f
+  Q_reg_30_/D (EDFQD1)                              0.035     0.000      0.365 f
+  data arrival time                                                      0.365
+
+  clock clk (rise edge)                                       1.000      1.000
+  clock network delay (ideal)                                 0.000      1.000
+  Q_reg_30_/CP (EDFQD1)                                       0.000      1.000 r
+  library setup time                                         -0.097      0.903
+  data required time                                                     0.903
+  -------------------------------------------------------------------------------
+  data required time                                                     0.903
+  data arrival time                                                     -0.365
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.539
+
+
+  Startpoint: memory2_reg_28_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Q_reg_28_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16           ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  memory2_reg_28_/CP (EDFQD1)                       0.000     0.000 #    0.000 r
+  memory2_reg_28_/Q (EDFQD1)                        0.018     0.126      0.126 f
+  memory2[28] (net)              1        0.001               0.000      0.126 f
+  U1095/ZN (AOI22D0)                                0.090     0.073      0.199 r
+  n844 (net)                     1        0.001               0.000      0.199 r
+  U1366/Z (AN4D0)                                   0.048     0.130      0.329 r
+  n853 (net)                     1        0.001               0.000      0.329 r
+  U1365/ZN (CKND2D0)                                0.035     0.036      0.365 f
+  N97 (net)                      1        0.001               0.000      0.365 f
+  Q_reg_28_/D (EDFQD1)                              0.035     0.000      0.365 f
+  data arrival time                                                      0.365
+
+  clock clk (rise edge)                                       1.000      1.000
+  clock network delay (ideal)                                 0.000      1.000
+  Q_reg_28_/CP (EDFQD1)                                       0.000      1.000 r
+  library setup time                                         -0.097      0.903
+  data required time                                                     0.903
+  -------------------------------------------------------------------------------
+  data required time                                                     0.903
+  data arrival time                                                     -0.365
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.539
+
+
+  Startpoint: memory2_reg_26_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Q_reg_26_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16           ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  memory2_reg_26_/CP (EDFQD1)                       0.000     0.000 #    0.000 r
+  memory2_reg_26_/Q (EDFQD1)                        0.018     0.126      0.126 f
+  memory2[26] (net)              1        0.001               0.000      0.126 f
+  U1086/ZN (AOI22D0)                                0.090     0.073      0.199 r
+  n814 (net)                     1        0.001               0.000      0.199 r
+  U836/Z (AN4D0)                                    0.048     0.130      0.329 r
+  n823 (net)                     1        0.001               0.000      0.329 r
+  U1361/ZN (CKND2D0)                                0.035     0.036      0.365 f
+  N95 (net)                      1        0.001               0.000      0.365 f
+  Q_reg_26_/D (EDFQD1)                              0.035     0.000      0.365 f
+  data arrival time                                                      0.365
+
+  clock clk (rise edge)                                       1.000      1.000
+  clock network delay (ideal)                                 0.000      1.000
+  Q_reg_26_/CP (EDFQD1)                                       0.000      1.000 r
+  library setup time                                         -0.097      0.903
+  data required time                                                     0.903
+  -------------------------------------------------------------------------------
+  data required time                                                     0.903
+  data arrival time                                                     -0.365
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.539
+
+
+  Startpoint: memory2_reg_25_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Q_reg_25_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16           ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  memory2_reg_25_/CP (EDFQD1)                       0.000     0.000 #    0.000 r
+  memory2_reg_25_/Q (EDFQD1)                        0.018     0.126      0.126 f
+  memory2[25] (net)              1        0.001               0.000      0.126 f
+  U1076/ZN (AOI22D0)                                0.090     0.073      0.199 r
+  n854 (net)                     1        0.001               0.000      0.199 r
+  U847/Z (AN4D0)                                    0.048     0.130      0.329 r
+  n863 (net)                     1        0.001               0.000      0.329 r
+  U1359/ZN (CKND2D0)                                0.035     0.036      0.365 f
+  N94 (net)                      1        0.001               0.000      0.365 f
+  Q_reg_25_/D (EDFQD1)                              0.035     0.000      0.365 f
+  data arrival time                                                      0.365
+
+  clock clk (rise edge)                                       1.000      1.000
+  clock network delay (ideal)                                 0.000      1.000
+  Q_reg_25_/CP (EDFQD1)                                       0.000      1.000 r
+  library setup time                                         -0.097      0.903
+  data required time                                                     0.903
+  -------------------------------------------------------------------------------
+  data required time                                                     0.903
+  data arrival time                                                     -0.365
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.539
+
+
+  Startpoint: memory2_reg_23_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Q_reg_23_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16           ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  memory2_reg_23_/CP (EDFQD1)                       0.000     0.000 #    0.000 r
+  memory2_reg_23_/Q (EDFQD1)                        0.018     0.126      0.126 f
+  memory2[23] (net)              1        0.001               0.000      0.126 f
+  U1063/ZN (AOI22D0)                                0.090     0.073      0.199 r
+  n824 (net)                     1        0.001               0.000      0.199 r
+  U873/Z (AN4D0)                                    0.048     0.130      0.329 r
+  n833 (net)                     1        0.001               0.000      0.329 r
+  U1355/ZN (CKND2D0)                                0.035     0.036      0.365 f
+  N92 (net)                      1        0.001               0.000      0.365 f
+  Q_reg_23_/D (EDFQD1)                              0.035     0.000      0.365 f
+  data arrival time                                                      0.365
+
+  clock clk (rise edge)                                       1.000      1.000
+  clock network delay (ideal)                                 0.000      1.000
+  Q_reg_23_/CP (EDFQD1)                                       0.000      1.000 r
+  library setup time                                         -0.097      0.903
+  data required time                                                     0.903
+  -------------------------------------------------------------------------------
+  data required time                                                     0.903
+  data arrival time                                                     -0.365
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.539
+
+
+  Startpoint: memory2_reg_21_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Q_reg_21_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16           ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  memory2_reg_21_/CP (EDFQD1)                       0.000     0.000 #    0.000 r
+  memory2_reg_21_/Q (EDFQD1)                        0.018     0.126      0.126 f
+  memory2[21] (net)              1        0.001               0.000      0.126 f
+  U1054/ZN (AOI22D0)                                0.090     0.073      0.199 r
+  n804 (net)                     1        0.001               0.000      0.199 r
+  U870/Z (AN4D0)                                    0.048     0.130      0.329 r
+  n813 (net)                     1        0.001               0.000      0.329 r
+  U1350/ZN (CKND2D0)                                0.035     0.036      0.365 f
+  N90 (net)                      1        0.001               0.000      0.365 f
+  Q_reg_21_/D (EDFQD1)                              0.035     0.000      0.365 f
+  data arrival time                                                      0.365
+
+  clock clk (rise edge)                                       1.000      1.000
+  clock network delay (ideal)                                 0.000      1.000
+  Q_reg_21_/CP (EDFQD1)                                       0.000      1.000 r
+  library setup time                                         -0.097      0.903
+  data required time                                                     0.903
+  -------------------------------------------------------------------------------
+  data required time                                                     0.903
+  data arrival time                                                     -0.365
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.539
+
+
+  Startpoint: memory2_reg_19_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Q_reg_19_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16           ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  memory2_reg_19_/CP (EDFQD1)                       0.000     0.000 #    0.000 r
+  memory2_reg_19_/Q (EDFQD1)                        0.018     0.126      0.126 f
+  memory2[19] (net)              1        0.001               0.000      0.126 f
+  U1041/ZN (AOI22D0)                                0.090     0.073      0.199 r
+  n784 (net)                     1        0.001               0.000      0.199 r
+  U875/Z (AN4D0)                                    0.048     0.130      0.329 r
+  n793 (net)                     1        0.001               0.000      0.329 r
+  U1346/ZN (CKND2D0)                                0.035     0.036      0.365 f
+  N88 (net)                      1        0.001               0.000      0.365 f
+  Q_reg_19_/D (EDFQD1)                              0.035     0.000      0.365 f
+  data arrival time                                                      0.365
+
+  clock clk (rise edge)                                       1.000      1.000
+  clock network delay (ideal)                                 0.000      1.000
+  Q_reg_19_/CP (EDFQD1)                                       0.000      1.000 r
+  library setup time                                         -0.097      0.903
+  data required time                                                     0.903
+  -------------------------------------------------------------------------------
+  data required time                                                     0.903
+  data arrival time                                                     -0.365
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.539
+
+
+  Startpoint: memory2_reg_17_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Q_reg_17_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16           ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  memory2_reg_17_/CP (EDFQD1)                       0.000     0.000 #    0.000 r
+  memory2_reg_17_/Q (EDFQD1)                        0.018     0.126      0.126 f
+  memory2[17] (net)              1        0.001               0.000      0.126 f
+  U1028/ZN (AOI22D0)                                0.090     0.073      0.199 r
+  n714 (net)                     1        0.001               0.000      0.199 r
+  U852/Z (AN4D0)                                    0.048     0.130      0.329 r
+  n723 (net)                     1        0.001               0.000      0.329 r
+  U1342/ZN (CKND2D0)                                0.035     0.036      0.365 f
+  N86 (net)                      1        0.001               0.000      0.365 f
+  Q_reg_17_/D (EDFQD1)                              0.035     0.000      0.365 f
+  data arrival time                                                      0.365
+
+  clock clk (rise edge)                                       1.000      1.000
+  clock network delay (ideal)                                 0.000      1.000
+  Q_reg_17_/CP (EDFQD1)                                       0.000      1.000 r
+  library setup time                                         -0.097      0.903
+  data required time                                                     0.903
+  -------------------------------------------------------------------------------
+  data required time                                                     0.903
+  data arrival time                                                     -0.365
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.539
+
+
+  Startpoint: memory2_reg_15_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Q_reg_15_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16           ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  memory2_reg_15_/CP (EDFQD1)                       0.000     0.000 #    0.000 r
+  memory2_reg_15_/Q (EDFQD1)                        0.018     0.126      0.126 f
+  memory2[15] (net)              1        0.001               0.000      0.126 f
+  U904/ZN (AOI22D0)                                 0.090     0.073      0.199 r
+  n694 (net)                     1        0.001               0.000      0.199 r
+  U855/Z (AN4D0)                                    0.048     0.130      0.329 r
+  n703 (net)                     1        0.001               0.000      0.329 r
+  U1475/ZN (CKND2D0)                                0.035     0.036      0.365 f
+  N84 (net)                      1        0.001               0.000      0.365 f
+  Q_reg_15_/D (EDFQD1)                              0.035     0.000      0.365 f
+  data arrival time                                                      0.365
+
+  clock clk (rise edge)                                       1.000      1.000
+  clock network delay (ideal)                                 0.000      1.000
+  Q_reg_15_/CP (EDFQD1)                                       0.000      1.000 r
+  library setup time                                         -0.097      0.903
+  data required time                                                     0.903
+  -------------------------------------------------------------------------------
+  data required time                                                     0.903
+  data arrival time                                                     -0.365
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.539
+
+
+  Startpoint: memory2_reg_14_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Q_reg_14_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16           ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  memory2_reg_14_/CP (EDFQD1)                       0.000     0.000 #    0.000 r
+  memory2_reg_14_/Q (EDFQD1)                        0.018     0.126      0.126 f
+  memory2[14] (net)              1        0.001               0.000      0.126 f
+  U1015/ZN (AOI22D0)                                0.090     0.073      0.199 r
+  n754 (net)                     1        0.001               0.000      0.199 r
+  U857/Z (AN4D0)                                    0.048     0.130      0.329 r
+  n763 (net)                     1        0.001               0.000      0.329 r
+  U1337/ZN (CKND2D0)                                0.035     0.036      0.365 f
+  N83 (net)                      1        0.001               0.000      0.365 f
+  Q_reg_14_/D (EDFQD1)                              0.035     0.000      0.365 f
+  data arrival time                                                      0.365
+
+  clock clk (rise edge)                                       1.000      1.000
+  clock network delay (ideal)                                 0.000      1.000
+  Q_reg_14_/CP (EDFQD1)                                       0.000      1.000 r
+  library setup time                                         -0.097      0.903
+  data required time                                                     0.903
+  -------------------------------------------------------------------------------
+  data required time                                                     0.903
+  data arrival time                                                     -0.365
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.539
+
+
+  Startpoint: memory2_reg_13_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Q_reg_13_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16           ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  memory2_reg_13_/CP (EDFQD1)                       0.000     0.000 #    0.000 r
+  memory2_reg_13_/Q (EDFQD1)                        0.018     0.126      0.126 f
+  memory2[13] (net)              1        0.001               0.000      0.126 f
+  U1005/ZN (AOI22D0)                                0.090     0.073      0.199 r
+  n724 (net)                     1        0.001               0.000      0.199 r
+  U1335/Z (AN4D0)                                   0.048     0.130      0.329 r
+  n733 (net)                     1        0.001               0.000      0.329 r
+  U1334/ZN (CKND2D0)                                0.035     0.036      0.365 f
+  N82 (net)                      1        0.001               0.000      0.365 f
+  Q_reg_13_/D (EDFQD1)                              0.035     0.000      0.365 f
+  data arrival time                                                      0.365
+
+  clock clk (rise edge)                                       1.000      1.000
+  clock network delay (ideal)                                 0.000      1.000
+  Q_reg_13_/CP (EDFQD1)                                       0.000      1.000 r
+  library setup time                                         -0.097      0.903
+  data required time                                                     0.903
+  -------------------------------------------------------------------------------
+  data required time                                                     0.903
+  data arrival time                                                     -0.365
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.539
+
+
+  Startpoint: memory2_reg_10_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Q_reg_10_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16           ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  memory2_reg_10_/CP (EDFQD1)                       0.000     0.000 #    0.000 r
+  memory2_reg_10_/Q (EDFQD1)                        0.018     0.126      0.126 f
+  memory2[10] (net)              1        0.001               0.000      0.126 f
+  U986/ZN (AOI22D0)                                 0.090     0.073      0.199 r
+  n704 (net)                     1        0.001               0.000      0.199 r
+  U862/Z (AN4D0)                                    0.048     0.130      0.329 r
+  n713 (net)                     1        0.001               0.000      0.329 r
+  U1328/ZN (CKND2D0)                                0.035     0.036      0.365 f
+  N79 (net)                      1        0.001               0.000      0.365 f
+  Q_reg_10_/D (EDFQD1)                              0.035     0.000      0.365 f
+  data arrival time                                                      0.365
+
+  clock clk (rise edge)                                       1.000      1.000
+  clock network delay (ideal)                                 0.000      1.000
+  Q_reg_10_/CP (EDFQD1)                                       0.000      1.000 r
+  library setup time                                         -0.097      0.903
+  data required time                                                     0.903
+  -------------------------------------------------------------------------------
+  data required time                                                     0.903
+  data arrival time                                                     -0.365
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.539
+
+
+  Startpoint: memory2_reg_7_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Q_reg_7_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16           ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  memory2_reg_7_/CP (EDFQD1)                        0.000     0.000 #    0.000 r
+  memory2_reg_7_/Q (EDFQD1)                         0.018     0.126      0.126 f
+  memory2[7] (net)               1        0.001               0.000      0.126 f
+  U970/ZN (AOI22D0)                                 0.090     0.073      0.199 r
+  n684 (net)                     1        0.001               0.000      0.199 r
+  U859/Z (AN4D0)                                    0.048     0.130      0.329 r
+  n693 (net)                     1        0.001               0.000      0.329 r
+  U1322/ZN (CKND2D0)                                0.035     0.036      0.365 f
+  N76 (net)                      1        0.001               0.000      0.365 f
+  Q_reg_7_/D (EDFQD1)                               0.035     0.000      0.365 f
+  data arrival time                                                      0.365
+
+  clock clk (rise edge)                                       1.000      1.000
+  clock network delay (ideal)                                 0.000      1.000
+  Q_reg_7_/CP (EDFQD1)                                        0.000      1.000 r
+  library setup time                                         -0.097      0.903
+  data required time                                                     0.903
+  -------------------------------------------------------------------------------
+  data required time                                                     0.903
+  data arrival time                                                     -0.365
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.539
+
+
+  Startpoint: memory2_reg_4_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Q_reg_4_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16           ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  memory2_reg_4_/CP (EDFQD1)                        0.000     0.000 #    0.000 r
+  memory2_reg_4_/Q (EDFQD1)                         0.018     0.126      0.126 f
+  memory2[4] (net)               1        0.001               0.000      0.126 f
+  U951/ZN (AOI22D0)                                 0.090     0.073      0.199 r
+  n734 (net)                     1        0.001               0.000      0.199 r
+  U851/Z (AN4D0)                                    0.048     0.130      0.329 r
+  n743 (net)                     1        0.001               0.000      0.329 r
+  U1315/ZN (CKND2D0)                                0.035     0.036      0.365 f
+  N73 (net)                      1        0.001               0.000      0.365 f
+  Q_reg_4_/D (EDFQD1)                               0.035     0.000      0.365 f
+  data arrival time                                                      0.365
+
+  clock clk (rise edge)                                       1.000      1.000
+  clock network delay (ideal)                                 0.000      1.000
+  Q_reg_4_/CP (EDFQD1)                                        0.000      1.000 r
+  library setup time                                         -0.097      0.903
+  data required time                                                     0.903
+  -------------------------------------------------------------------------------
+  data required time                                                     0.903
+  data arrival time                                                     -0.365
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.539
+
+
+  Startpoint: memory2_reg_1_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Q_reg_1_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16           ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  memory2_reg_1_/CP (EDFQD1)                        0.000     0.000 #    0.000 r
+  memory2_reg_1_/Q (EDFQD1)                         0.018     0.126      0.126 f
+  memory2[1] (net)               1        0.001               0.000      0.126 f
+  U931/ZN (AOI22D0)                                 0.090     0.073      0.199 r
+  n744 (net)                     1        0.001               0.000      0.199 r
+  U867/Z (AN4D0)                                    0.048     0.130      0.329 r
+  n753 (net)                     1        0.001               0.000      0.329 r
+  U1309/ZN (CKND2D0)                                0.035     0.036      0.365 f
+  N70 (net)                      1        0.001               0.000      0.365 f
+  Q_reg_1_/D (EDFQD1)                               0.035     0.000      0.365 f
+  data arrival time                                                      0.365
+
+  clock clk (rise edge)                                       1.000      1.000
+  clock network delay (ideal)                                 0.000      1.000
+  Q_reg_1_/CP (EDFQD1)                                        0.000      1.000 r
+  library setup time                                         -0.097      0.903
+  data required time                                                     0.903
+  -------------------------------------------------------------------------------
+  data required time                                                     0.903
+  data arrival time                                                     -0.365
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.539
+
+
+1

@@ -1,5 +1,5 @@
 # Floorplan
-floorPlan -site core -r 1 0.5 10 10 10 10
+floorPlan -site core -r 1 0.4 50 50 50 50
 
 timeDesign -preplace -prefix preplace
 
@@ -7,7 +7,7 @@ globalNetConnect VDD -type pgpin -pin VDD -inst * -verbose
 globalNetConnect VSS -type pgpin -pin VSS -inst * -verbose
 
 # TODO: Set power ring and stripes
-addRing -spacing {top 2 bottom 2 left 2 right 2} -width {top 3 bottom 3 left 3 right 3} -layer {top M1 bottom M1 left M2 right M2} -center 1 -type core_rings -nets {VSS VDD}
+addRing -spacing {top 10 bottom 10 left 10 right 10} -width {top 3 bottom 3 left 3 right 3} -layer {top M1 bottom M1 left M2 right M2} -center 1 -type core_rings -nets {VSS VDD}
 
 setAddStripeMode -break_at {block_ring}
 
