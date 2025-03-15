@@ -1,1 +1,0 @@
-/home/linux/ieng6/ee260bwi25/h3le/ECE-260B-WI25-Virtuosos/core/pnr_sram_w16/constraints/sram_w16.sdc
