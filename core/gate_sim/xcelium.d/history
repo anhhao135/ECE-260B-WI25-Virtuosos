@@ -1,0 +1,13 @@
+//
+// File created by:  xrun
+// Do not modify this file
+
+s1::(14Mar2025:19:57:28):( xrun +gui +access+rwc +xm64bit +xmstatus +xmtimescale+1ns/1ps +xmoveride_timescale -v ./netlist/core.pnr.v -v /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v ./netlist/core_tb.v )
+s2::(14Mar2025:20:40:07):( xrun +gui +access+rwc +xm64bit +xmstatus +xmtimescale+1ns/1ps +xmoveride_timescale -v ./netlist/core.v -v /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v ./netlist/core_tb.v )
+s3::(14Mar2025:20:43:44):( xrun +gui +access+rwc +xm64bit +xmstatus +xmtimescale+1ns/1ps +xmoveride_timescale -v ./netlist/core.v -v /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v ./netlist/core_tb.v )
+s4::(14Mar2025:20:52:54):( xrun +gui +access+rwc +xm64bit +xmstatus +xmtimescale+1ns/1ps +xmoveride_timescale -v ./netlist/core.v -v /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v ./netlist/core_tb.v )
+s5::(14Mar2025:20:55:23):( xrun +gui +access+rwc +xm64bit +xmstatus +xmtimescale+1ns/1ps +xmoveride_timescale -v ./netlist/core.v -v /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v ./netlist/core_tb.v )
+s6::(14Mar2025:20:58:07):( xrun +gui +access+rwc +xm64bit +xmstatus +xmtimescale+1ns/1ps +xmoveride_timescale -v ./netlist/core.v -v /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v ./netlist/core_tb.v )
+s7::(14Mar2025:21:02:19):( xrun -define INITIALIZE_MEMORY -xminitialize 0 +gui +access+rwc +xm64bit +xmstatus +xmtimescale+1ns/1ps +xmoveride_timescale -v ./netlist/core.v -v /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v ./netlist/core_tb.v )
+s8::(14Mar2025:21:06:48):( xrun -define INITIALIZE_MEMORY -xminitialize 0 +gui +access+rwc +xm64bit +xmstatus +xmtimescale+1ns/1ps +xmoveride_timescale -v ./netlist/core.v -v /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v ./netlist/core_tb.v )
+s9::(14Mar2025:21:12:50):( xrun -define INITIALIZE_MEMORY -xminitialize 0 +gui +access+rwc +xm64bit +xmstatus +xmtimescale+1ns/1ps +xmoveride_timescale -v ./netlist/core.v -v /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v ./netlist/core_tb.v )
