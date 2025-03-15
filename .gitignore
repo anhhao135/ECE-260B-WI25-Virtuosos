@@ -4,3 +4,6 @@
 
 */pnr/innovus.*
 */pnr/*.rs.*
+
+*innovus.log*
+*innovus.cmd*
