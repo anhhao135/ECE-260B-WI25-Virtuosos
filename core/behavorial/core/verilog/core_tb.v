@@ -23,17 +23,19 @@ integer  K[col-1:0][pr-1:0];
 integer  Q[total_cycle-1:0][pr-1:0];
 integer  result[total_cycle-1:0][col-1:0];
 integer  sum[total_cycle-1:0];
+integer norm_result[total_cycle-1:0][col-1:0];
 reg [bw_psum*pr-1:0] predicted_results_pmem [7:0];
 
-integer i,j,k,t,p,q,s,u,m;
+integer i,j,k,t,p,q,s,u,m,st,kl;
 
 
 reg reset = 1;
 reg clk = 0;
 reg [pr*bw-1:0] mem_in; 
 reg ofifo_rd = 0;
-wire [16:0] inst; 
+wire [19:0] inst; 
 wire [bw_psum*col-1:0] out;
+reg sfp_rd;
 reg qmem_rd = 0;
 reg qmem_wr = 0; 
 reg kmem_rd = 0; 
@@ -42,10 +44,14 @@ reg pmem_rd = 0;
 reg pmem_wr = 0; 
 reg execute = 0;
 reg load = 0;
+reg norm_valid;
+reg norm_start;
 reg [3:0] qkmem_add = 0;
 reg [3:0] pmem_add = 0;
 
-
+assign inst[19]=sfp_rd;
+assign inst[18]=norm_valid;
+assign inst[17]=norm_start;
 assign inst[16] = ofifo_rd;
 assign inst[15:12] = qkmem_add;
 assign inst[11:8]  = pmem_add;
@@ -125,6 +131,7 @@ $display("##### Estimated multiplication result #####");
      for (q=0; q<col; q=q+1) begin
        result[t][q] = 0;
      end
+     sum[t]=0;
   end
 
   for (t=0; t<total_cycle; t=t+1) begin
@@ -134,9 +141,22 @@ $display("##### Estimated multiplication result #####");
       for (k=0; k<pr; k=k+1) begin
         result[t][q] = result[t][q] + Q[t][k] * K[q][k];
       end
-      $display("Predicted psum: %d", result[t][q]);
+      sum[t]=sum[t]+result[t][q];
+      //$display("Predicted psum: %d", result[t][q]);
     end
-
+      //$display("predicted result sum %d",sum[t]);
+      if (sum[t]<0)
+      begin
+	      sum[t]=sum[t]-2*sum[t];
+      end      
+      //sum[t]=(sum[t]<0)?-sum[t][q]:sum[t][q];  
+      //$display("predicted result sum %d",sum[t]);      
+      
+    for (kl=0;kl<col;kl++)
+    begin
+	    result[t][kl]=result[t][kl]*(256)/sum[t];
+	    $display("post division prediction %d",result[t][kl]);
+    end
     predicted_results_pmem [t] = {result[t][7][bw_psum-1:0], result[t][6][bw_psum-1:0], result[t][5][bw_psum-1:0], result[t][4][bw_psum-1:0], result[t][3][bw_psum-1:0], result[t][2][bw_psum-1:0], result[t][1][bw_psum-1:0], result[t][0][bw_psum-1:0]};
 
     $display("Predicted psum vector: %h", predicted_results_pmem [t]);
@@ -181,7 +201,8 @@ end
 #0.5 clk = 1'b0;  
 qmem_wr = 0; 
 qkmem_add = 0;
-
+norm_start=0;
+sfp_rd=0;
 #0.5 clk = 1'b1;  
 #0.5 clk = 1'b0;  
 #0.5 clk = 1'b1;  
@@ -316,7 +337,47 @@ $display("##### move ofifo to pmem #####");
   #0.5 clk = 1'b1;  
 
 ///////////////////////////////////////////
-
+//////sfp/////////////////////////////////
+#0.5 clk =1'b0;
+norm_start=1;
+norm_valid=0;
+pmem_add=0;
+#0.5 clk =1'b1;
+for (q=0;q<total_cycle;q=q+1)
+begin
+	#0.5 clk=1'b0;
+	#0.5 clk=1'b1;
+	if(q>0) begin
+		pmem_add=pmem_add+1;
+	end
+	#0.5 clk=1'b0;
+	#0.5 clk=1'b1;
+	pmem_wr=0;	
+	pmem_rd=1;
+	#0.5 clk=1'b0;
+	#0.5 clk=1'b1;
+	norm_valid=1;
+	for (st=0;st<18;st=st+1)
+	begin
+		#0.5 clk =1'b0;
+		#0.5 clk=1'b1;
+	end
+	norm_valid=0;
+end
+pmem_rd=0;
+sfp_rd=1;
+pmem_add=0;
+pmem_wr=1;
+for (q=0;q<total_cycle;q=q+1)
+begin
+	if(q>0) begin
+		pmem_add=pmem_add+1;
+	end
+	#0.5 clk=1'b0;
+	#0.5 clk=1'b1;
+end
+pmem_add=0;
+pmem_wr=0;
 ////////////// output fifo rd and wb to psum mem ///////////////////
 
 $display("##### compare pmem results to predicted #####");
@@ -346,20 +407,7 @@ $display("##### compare pmem results to predicted #####");
   #0.5 clk = 1'b0;  
   pmem_rd = 0; pmem_add = 0;
   #0.5 clk = 1'b1;  
-
 ///////////////////////////////////////////
-
-
-
 #10 $finish;
-
-
 end
-
-
-
 endmodule
-
-
-
-
