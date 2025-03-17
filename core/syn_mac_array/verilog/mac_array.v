@@ -1,6 +1,6 @@
 module mac_array (clk, reset, in, out, fifo_wr, inst);
 
-parameter col = 1;
+parameter col = 8;
 parameter bw = 8;
 parameter bw_psum = 2*bw+6;
 parameter pr = 8;

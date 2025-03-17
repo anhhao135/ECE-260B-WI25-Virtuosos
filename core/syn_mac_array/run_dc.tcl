@@ -2,7 +2,7 @@ set top_module mac_array
 set rtlPath "./verilog"
 
 # Target library
-set target_library /home/linux/ieng6/ee260bwi25/public/PDKdata/db/tcbn65gpluswc.db 
+set target_library /home/linux/ieng6/ee260bwi25/public/PDKdata/db/tcbn65gplustc.db 
 set link_library $target_library
 set symbol_library {}
 set wire_load_mode enclosed

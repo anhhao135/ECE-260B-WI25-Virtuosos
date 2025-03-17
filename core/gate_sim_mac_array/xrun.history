@@ -1,0 +1,4 @@
+s1(17Mar2025:14:53:19):  xrun +gui +access+rwc +xm64bit +xmstatus +xmtimescale+1ns/1ps +xmoveride_timescale -v ./mac_array.pnr.v -v /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v ./netlist/mac_array_tb.v 
+s2(17Mar2025:14:54:18):  xrun +gui +access+rwc +xm64bit +xmstatus +xmtimescale+1ns/1ps +xmoveride_timescale -v ./netlist/mac_array.pnr.v -v /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v ./netlist/mac_array_tb.v 
+s3(17Mar2025:14:55:25):  xrun +gui +access+rwc +xm64bit +xmstatus +xmtimescale+1ns/1ps +xmoveride_timescale -v ./netlist/mac_array.pnr.v -v /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v ./netlist/mac_array_tb.v 
+s4(17Mar2025:14:58:24):  xrun +gui +access+rwc +xm64bit +xmstatus +xmtimescale+1ns/1ps +xmoveride_timescale -v ./netlist/mac_array.pnr.v -v /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v ./netlist/mac_array_tb.v 
