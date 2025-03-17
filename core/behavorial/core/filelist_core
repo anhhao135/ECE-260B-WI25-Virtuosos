@@ -1,0 +1,12 @@
+./verilog/core_tb.v
+./verilog/core.v
+./verilog/norm.v
+./verilog/fifo_depth16.v
+./verilog/fifo_mux_2_1.v
+./verilog/fifo_mux_8_1.v
+./verilog/fifo_mux_16_1.v
+./verilog/ofifo.v
+./verilog/sram_w16.v
+../mac_array/verilog/mac_array.v
+../mac_array/verilog/mac_col.v
+../mac_array/verilog/mac_8in.v
