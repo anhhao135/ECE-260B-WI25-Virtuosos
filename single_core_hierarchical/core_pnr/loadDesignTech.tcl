@@ -19,7 +19,7 @@ set init_verilog "$netlist"
 set init_design_netlisttype "Verilog"
 set init_design_settop 1
 set init_top_cell "$design"
-set init_lef_file "$lef"
+set init_lef_file "$lef ../sram_pnr/sram_w16.lef"
 
 # MCMM setup
 create_library_set -name WC_LIB -timing "$worst_timing_lib ../sram_pnr/sram_w16_WC.lib"

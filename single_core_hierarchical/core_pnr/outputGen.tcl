@@ -1,4 +1,4 @@
-streamOut ${design}.gds2
+streamOut ${design}.gds2 -merge {../sram_pnr/sram_w16.gds2}
 write_lef_abstract ${design}.lef
 defOut -netlist -routing ${design}.def
 saveNetlist ${design}.pnr.v

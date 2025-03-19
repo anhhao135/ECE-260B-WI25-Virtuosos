@@ -12,11 +12,18 @@ addRing -spacing {top 10 bottom 10 left 10 right 10} -width {top 3 bottom 3 left
 setAddStripeMode -break_at {block_ring}
 addStripe -number_of_sets 20  -spacing 1 -layer M5 -width 1 -nets { VSS VDD } -direction horizontal
 
-setObjFPlanBox Instance qmem_instance 50 50 300 300
-setObjFPlanBox Instance kmem_instance 50 350 300 600
-setObjFPlanBox Instance psum_mem_instance 400 50 650 300
+setObjFPlanBox Instance kmem_instance 594.637 665.363 881.037 950.163
+setObjFPlanBox Instance qmem_instance 136.37 688.835 422.77 973.635
 
-addHaloToBlock {3 3 3 3} -allBlock
+selectInst psum_mem_instance
+uiSetTool move
+setDrawView fplan
+setObjFPlanBox Instance psum_mem_instance 382.695 231.0565 669.095 515.8565
+flipOrRotateObject -flip MX
+deselectInst psum_mem_instance
+
+
+addHaloToBlock {3 3 3 3} qmem_instance
 addHaloToBlock {3 3 3 3} kmem_instance
 addHaloToBlock {3 3 3 3} psum_mem_instance
 
