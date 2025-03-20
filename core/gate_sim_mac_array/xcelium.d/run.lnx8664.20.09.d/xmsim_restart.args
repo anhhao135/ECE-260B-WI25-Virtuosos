@@ -8,13 +8,16 @@
 +xm64bit
 +xmstatus
 +xmtimescale+1ns/1ps
++xmseq_udp_delay+20ps
 -gui
 -STATUS
 -MESSAGES
+-XMINITIALIZE
+0
 +EMGRLOG
 xrun.log
 -XLSTIME
-1742248704
+1742445281
 -XLKEEP
 -XLMODE
 ./xcelium.d/run.lnx8664.20.09.d
@@ -28,4 +31,4 @@ xrun
 -XLVERSION
 "TOOL:	xrun(64)	20.09-s017"
 -XLNAME
-./xcelium.d/run.lnx8664.20.09.d/ieng6-ece-04.ucsd.edu_17382
+./xcelium.d/run.lnx8664.20.09.d/ieng6-ece-06.ucsd.edu_6501

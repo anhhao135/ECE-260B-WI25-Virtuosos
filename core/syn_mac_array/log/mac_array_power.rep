@@ -7,7 +7,7 @@ Report : power
         -analysis_effort low
 Design : mac_array
 Version: K-2015.06-SP2
-Date   : Mon Mar 17 12:40:28 2025
+Date   : Wed Mar 19 21:33:35 2025
 ****************************************
 
 
@@ -22,37 +22,13 @@ Wire Load Model Mode: segmented
 Design        Wire Load Model            Library
 ------------------------------------------------
 mac_array              ZeroWireload      tcbn65gplustc
-mac_col_bw8_bw_psum22_pr8_col_id0
+mac_col_bw8_bw_psum22_pr8_1
                        ZeroWireload      tcbn65gplustc
-mac_col_bw8_bw_psum22_pr8_col_id1
-                       ZeroWireload      tcbn65gplustc
-mac_col_bw8_bw_psum22_pr8_col_id2
-                       ZeroWireload      tcbn65gplustc
-mac_col_bw8_bw_psum22_pr8_col_id3
-                       ZeroWireload      tcbn65gplustc
-mac_col_bw8_bw_psum22_pr8_col_id4
-                       ZeroWireload      tcbn65gplustc
-mac_col_bw8_bw_psum22_pr8_col_id5
-                       ZeroWireload      tcbn65gplustc
-mac_col_bw8_bw_psum22_pr8_col_id6
-                       ZeroWireload      tcbn65gplustc
-mac_col_bw8_bw_psum22_pr8_col_id7
-                       ZeroWireload      tcbn65gplustc
-mac_8in_bw8_bw_psum22_pr8_7
-                       ZeroWireload      tcbn65gplustc
-mac_8in_bw8_bw_psum22_pr8_0
+mac_col_bw8_bw_psum22_pr8_0
                        ZeroWireload      tcbn65gplustc
 mac_8in_bw8_bw_psum22_pr8_1
                        ZeroWireload      tcbn65gplustc
-mac_8in_bw8_bw_psum22_pr8_2
-                       ZeroWireload      tcbn65gplustc
-mac_8in_bw8_bw_psum22_pr8_3
-                       ZeroWireload      tcbn65gplustc
-mac_8in_bw8_bw_psum22_pr8_4
-                       ZeroWireload      tcbn65gplustc
-mac_8in_bw8_bw_psum22_pr8_5
-                       ZeroWireload      tcbn65gplustc
-mac_8in_bw8_bw_psum22_pr8_6
+mac_8in_bw8_bw_psum22_pr8_0
                        ZeroWireload      tcbn65gplustc
 
 
@@ -65,12 +41,12 @@ Power-specific unit information :
     Leakage Power Units = 1nW
 
 
-  Cell Internal Power  =  30.5544 mW   (94%)
-  Net Switching Power  =   1.7786 mW    (6%)
+  Cell Internal Power  =   7.4764 mW   (95%)
+  Net Switching Power  = 398.6240 uW    (5%)
                          ---------
-Total Dynamic Power    =  32.3331 mW  (100%)
+Total Dynamic Power    =   7.8750 mW  (100%)
 
-Cell Leakage Power     = 391.7409 uW
+Cell Leakage Power     =  97.0926 uW
 
 
                  Internal         Switching           Leakage            Total
@@ -80,9 +56,9 @@ io_pad             0.0000            0.0000            0.0000            0.0000 
 memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
 black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
 clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
-register          28.2375            0.8397        1.2857e+05           29.2058  (  89.25%)
+register           6.8573            0.1198        3.1490e+04            7.0086  (  87.91%)
 sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
-combinational      2.3170            0.9390        2.6317e+05            3.5191  (  10.75%)
+combinational      0.6191            0.2788        6.5603e+04            0.9635  (  12.09%)
 --------------------------------------------------------------------------------------------------
-Total             30.5544 mW         1.7786 mW     3.9174e+05 nW        32.7248 mW
+Total              7.4764 mW         0.3986 mW     9.7093e+04 nW         7.9721 mW
 1

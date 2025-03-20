@@ -1,9 +1,8 @@
-module mac_col (clk, reset, out, q_in, q_out, i_inst, fifo_wr, o_inst);
+module mac_col (clk, reset, out, q_in, q_out, i_inst, fifo_wr, o_inst, col_id);
 
 parameter bw = 8;
 parameter bw_psum = 2*bw+6;
 parameter pr = 8;
-parameter col_id = 0;
 
 output signed [bw_psum-1:0] out;
 input  signed [pr*bw-1:0] q_in;
@@ -12,6 +11,7 @@ input  clk, reset;
 input  [1:0] i_inst; // [1]: execute, [0]: load 
 output [1:0] o_inst; // [1]: execute, [0]: load 
 output fifo_wr;
+input [3:0] col_id;
 reg    load_ready_q;
 reg    [3:0] cnt_q;
 reg    [1:0] inst_q;
@@ -50,6 +50,8 @@ always @ (posedge clk) begin
     inst_4q <= 0;
     inst_5q <= 0;
     inst_6q <= 0;
+    query_q <= 0;
+    key_q <= 0;
 
   end
 

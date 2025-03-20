@@ -3,7 +3,7 @@
 module mac_array_tb;
 
 reg clk = 0;
-reg reset = 1;
+reg reset = 0;
 reg [63:0] q_in = 0;
 reg [1:0] i_inst = 0;
 
@@ -34,11 +34,11 @@ mac_array DUT (
       .inst(i_inst)
 );
 
-initial $sdf_annotate("./constraints/mac_array_BC.sdf", DUT, , ,"MAXIMUM","1:1:1","FROM_MTM");
+//initial $sdf_annotate("./constraints/mac_array_BC.sdf", DUT, , ,"MAXIMUM","1:1:1","FROM_MTM");
 
 initial begin 
-      $dumpfile("mac_array_tb.vcd");
-      $dumpvars(0, mac_array_tb);
+      //$dumpfile("mac_array_tb.vcd");
+      //$dumpvars(0, mac_array_tb);
 
 
       ///// Q data txt reading /////
@@ -95,8 +95,18 @@ initial begin
       end
       /////////////////////////////////
 
+      for (i = 0; i < 10; i = i + 1) begin
+            #1 clk = 0;
+            #1 clk = 1;
+      end
 
-      #1 clk = 1;
+      reset = 1;
+
+      for (i = 0; i < 10; i = i + 1) begin
+            #1 clk = 0;
+            #1 clk = 1;
+      end
+
       #1 clk = 0; reset = 0;
       #1 clk = 1;
       #1 clk = 0; i_inst = 2'b01;

@@ -63,6 +63,7 @@ assign inst[0] = pmem_wr;
 reg [bw_psum-1:0] temp5b;
 reg [bw_psum+3:0] temp_sum;
 reg [bw_psum*col-1:0] temp16b;
+reg [23:0] col_ids = {3'd7, 3'd6, 3'd5, 3'd4, 3'd3, 3'd2, 3'd1, 3'd0};
 
 
 
@@ -71,7 +72,8 @@ core #(.bw(bw), .bw_psum(bw_psum), .col(col), .pr(pr)) DUT (
       .clk(clk), 
       .mem_in(mem_in), 
       .inst(inst),
-      .out(out)
+      .out(out),
+      .col_ids(col_ids)
 );
 
 

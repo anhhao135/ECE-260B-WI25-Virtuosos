@@ -1,6 +1,8 @@
 xrun(64): 20.09-s017: (c) Copyright 1995-2021 Cadence Design Systems, Inc.
-TOOL:	xrun(64)	20.09-s017: Started on Mar 17, 2025 at 14:58:24 PDT
+TOOL:	xrun(64)	20.09-s017: Started on Mar 19, 2025 at 21:34:41 PDT
 xrun
+	-define INITIALIZE_MEMORY
+	-xminitialize 0
 	+gui
 	+access+rwc
 	+xm64bit
@@ -10,6 +12,7 @@ xrun
 	-v ./netlist/mac_array.pnr.v
 	-v /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v
 	./netlist/mac_array_tb.v
+	+xmseq_udp_delay+20ps
 
    User defined plus("+") options:
 	+xmoveride_timescale
@@ -122,6 +125,80 @@ xrun: *W,DLCLIB (/home/linux/ieng6/oce/6d/h3le/cds.lib,26): cds.lib Library not 
 DEFINE sharedKen /home/linux/ieng6/ee283fa23/public/ee283fa23_hll/shared_buck_project
 |
 xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,36): cds.lib Invalid path '/home/linux/ieng6/ee283fa23/public/ee283fa23_hll/shared_buck_project' (cds.lib command ignored).
+Recompiling... reason: file './netlist/mac_array.pnr.v' is newer than expected.
+	expected: Wed Mar 19 21:20:51 2025
+	actual:   Wed Mar 19 21:34:39 2025
+DEFINE analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,5): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/artist/analogLib' (cds.lib command ignored).
+DEFINE basic $CDSHOME/tools/dfII/etc/cdslib/basic
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,6): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/basic' (cds.lib command ignored).
+DEFINE US_8ths $CDSHOME/tools/dfII/etc/cdslib/sheets/US_8ths
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,7): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/sheets/US_8ths' (cds.lib command ignored).
+DEFINE sheets $CDSHOME/tools/dfII/etc/cdslib/sheets/US_8ths
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,8): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/sheets/US_8ths' (cds.lib command ignored).
+DEFINE cdsDefTechLib $CDSHOME/tools/dfII/etc/cdsDefTechLib
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,9): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdsDefTechLib' (cds.lib command ignored).
+DEFINE ahdlLib $CDSHOME/tools/dfII/samples/artist
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,10): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/samples/artist' (cds.lib command ignored).
+ASSIGN gsclib045 COMBINE gsclib045 gsclib045_tech
+|
+xrun: *W,DLCOMB (/home/linux/ieng6/oce/6d/h3le/cds.lib,24): cds.lib COMBINE attribute library not defined 'gsclib045_tech' (cds.lib command ignored).
+ASSIGN gsclib045_tech DISPLAY PDKlib
+|
+xrun: *W,DLCLIB (/home/linux/ieng6/oce/6d/h3le/cds.lib,26): cds.lib Library not defined 'gsclib045_tech' (cds.lib command ignored).
+DEFINE sharedKen /home/linux/ieng6/ee283fa23/public/ee283fa23_hll/shared_buck_project
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,36): cds.lib Invalid path '/home/linux/ieng6/ee283fa23/public/ee283fa23_hll/shared_buck_project' (cds.lib command ignored).
+DEFINE analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
+|
+xmvlog: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,5): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/artist/analogLib' (cds.lib command ignored).
+DEFINE basic $CDSHOME/tools/dfII/etc/cdslib/basic
+|
+xmvlog: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,6): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/basic' (cds.lib command ignored).
+DEFINE US_8ths $CDSHOME/tools/dfII/etc/cdslib/sheets/US_8ths
+|
+xmvlog: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,7): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/sheets/US_8ths' (cds.lib command ignored).
+DEFINE sheets $CDSHOME/tools/dfII/etc/cdslib/sheets/US_8ths
+|
+xmvlog: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,8): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/sheets/US_8ths' (cds.lib command ignored).
+DEFINE cdsDefTechLib $CDSHOME/tools/dfII/etc/cdsDefTechLib
+|
+xmvlog: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,9): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdsDefTechLib' (cds.lib command ignored).
+DEFINE ahdlLib $CDSHOME/tools/dfII/samples/artist
+|
+xmvlog: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,10): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/samples/artist' (cds.lib command ignored).
+ASSIGN gsclib045 COMBINE gsclib045 gsclib045_tech
+|
+xmvlog: *W,DLCOMB (/home/linux/ieng6/oce/6d/h3le/cds.lib,24): cds.lib COMBINE attribute library not defined 'gsclib045_tech' (cds.lib command ignored).
+ASSIGN gsclib045_tech DISPLAY PDKlib
+|
+xmvlog: *W,DLCLIB (/home/linux/ieng6/oce/6d/h3le/cds.lib,26): cds.lib Library not defined 'gsclib045_tech' (cds.lib command ignored).
+DEFINE sharedKen /home/linux/ieng6/ee283fa23/public/ee283fa23_hll/shared_buck_project
+|
+xmvlog: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,36): cds.lib Invalid path '/home/linux/ieng6/ee283fa23/public/ee283fa23_hll/shared_buck_project' (cds.lib command ignored).
+file: ./netlist/mac_array.pnr.v
+	module mac_array.mac_array:v
+		errors: 0, warnings: 0
+file: ./netlist/mac_array.pnr.v
+	module mac_array.mac_col_bw8_bw_psum22_pr8_1:v
+		errors: 0, warnings: 0
+	module mac_array.mac_col_bw8_bw_psum22_pr8_0:v
+		errors: 0, warnings: 0
+file: ./netlist/mac_array.pnr.v
+	module mac_array.mac_8in_bw8_bw_psum22_pr8_1:v
+		errors: 0, warnings: 0
+	module mac_array.mac_8in_bw8_bw_psum22_pr8_0:v
+		errors: 0, warnings: 0
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 9
+xmvlog: Memory Usage - Current physical: 20.9M, Current virtual: 93.1M
+xmvlog: CPU Usage - 0.0s system + 0.2s user = 0.2s total (0.3s, 84.4% cpu)
 DEFINE analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
 |
 xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,5): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/artist/analogLib' (cds.lib command ignored).
@@ -176,6 +253,100 @@ xrun: *W,DLCLIB (/home/linux/ieng6/oce/6d/h3le/cds.lib,26): cds.lib Library not 
 DEFINE sharedKen /home/linux/ieng6/ee283fa23/public/ee283fa23_hll/shared_buck_project
 |
 xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,36): cds.lib Invalid path '/home/linux/ieng6/ee283fa23/public/ee283fa23_hll/shared_buck_project' (cds.lib command ignored).
+DEFINE analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
+|
+xmelab: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,5): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/artist/analogLib' (cds.lib command ignored).
+DEFINE basic $CDSHOME/tools/dfII/etc/cdslib/basic
+|
+xmelab: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,6): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/basic' (cds.lib command ignored).
+DEFINE US_8ths $CDSHOME/tools/dfII/etc/cdslib/sheets/US_8ths
+|
+xmelab: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,7): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/sheets/US_8ths' (cds.lib command ignored).
+DEFINE sheets $CDSHOME/tools/dfII/etc/cdslib/sheets/US_8ths
+|
+xmelab: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,8): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/sheets/US_8ths' (cds.lib command ignored).
+DEFINE cdsDefTechLib $CDSHOME/tools/dfII/etc/cdsDefTechLib
+|
+xmelab: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,9): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdsDefTechLib' (cds.lib command ignored).
+DEFINE ahdlLib $CDSHOME/tools/dfII/samples/artist
+|
+xmelab: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,10): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/samples/artist' (cds.lib command ignored).
+ASSIGN gsclib045 COMBINE gsclib045 gsclib045_tech
+|
+xmelab: *W,DLCOMB (/home/linux/ieng6/oce/6d/h3le/cds.lib,24): cds.lib COMBINE attribute library not defined 'gsclib045_tech' (cds.lib command ignored).
+ASSIGN gsclib045_tech DISPLAY PDKlib
+|
+xmelab: *W,DLCLIB (/home/linux/ieng6/oce/6d/h3le/cds.lib,26): cds.lib Library not defined 'gsclib045_tech' (cds.lib command ignored).
+DEFINE sharedKen /home/linux/ieng6/ee283fa23/public/ee283fa23_hll/shared_buck_project
+|
+xmelab: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,36): cds.lib Invalid path '/home/linux/ieng6/ee283fa23/public/ee283fa23_hll/shared_buck_project' (cds.lib command ignored).
+xmelab: *N,INFSUD: -NOSPECIFY is automatically used with -SEQ_UDP_DELAY.
+		Caching library 'worklib' ....... Done
+		Caching library 'tcbn65gplus' ....... Done
+		Caching library 'mac_array' ....... Done
+	Elaborating the design hierarchy:
+  DFD1 cnt_q_reg_2_ ( .D(n21), .CP(clk), .QN(n9) );
+                  |
+xmelab: *W,CUVWSP (./netlist/mac_array.pnr.v,2544|18): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,5821): Q
+
+  DFD1 cnt_q_reg_2_ ( .D(n87), .CP(clk), .QN(n75) );
+                  |
+xmelab: *W,CUVWSP (./netlist/mac_array.pnr.v,5172|18): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,5821): Q
+
+	Top level design units:
+		mac_array_tb
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+DEFINE analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
+|
+xmvlog_cg: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,5): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/artist/analogLib' (cds.lib command ignored).
+DEFINE basic $CDSHOME/tools/dfII/etc/cdslib/basic
+|
+xmvlog_cg: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,6): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/basic' (cds.lib command ignored).
+DEFINE US_8ths $CDSHOME/tools/dfII/etc/cdslib/sheets/US_8ths
+|
+xmvlog_cg: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,7): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/sheets/US_8ths' (cds.lib command ignored).
+DEFINE sheets $CDSHOME/tools/dfII/etc/cdslib/sheets/US_8ths
+|
+xmvlog_cg: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,8): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/sheets/US_8ths' (cds.lib command ignored).
+DEFINE cdsDefTechLib $CDSHOME/tools/dfII/etc/cdsDefTechLib
+|
+xmvlog_cg: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,9): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdsDefTechLib' (cds.lib command ignored).
+DEFINE ahdlLib $CDSHOME/tools/dfII/samples/artist
+|
+xmvlog_cg: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,10): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/samples/artist' (cds.lib command ignored).
+ASSIGN gsclib045 COMBINE gsclib045 gsclib045_tech
+|
+xmvlog_cg: *W,DLCOMB (/home/linux/ieng6/oce/6d/h3le/cds.lib,24): cds.lib COMBINE attribute library not defined 'gsclib045_tech' (cds.lib command ignored).
+ASSIGN gsclib045_tech DISPLAY PDKlib
+|
+xmvlog_cg: *W,DLCLIB (/home/linux/ieng6/oce/6d/h3le/cds.lib,26): cds.lib Library not defined 'gsclib045_tech' (cds.lib command ignored).
+DEFINE sharedKen /home/linux/ieng6/ee283fa23/public/ee283fa23_hll/shared_buck_project
+|
+xmvlog_cg: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,36): cds.lib Invalid path '/home/linux/ieng6/ee283fa23/public/ee283fa23_hll/shared_buck_project' (cds.lib command ignored).
+		mac_array.mac_array:v <0x61d53658>
+			streams:   1, words:   267
+		tcbn65gplus.XNR2D4:v <0x485defbb>
+			streams:   0, words:     0
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                   Instances  Unique
+		Modules:                4166      75
+		UDPs:                   2001       3
+		Primitives:            10486       9
+		Registers:               863      25
+		Scalar wires:           1637       -
+		Expanded wires:           66       2
+		Vectored wires:            2       -
+		Initial blocks:            5       5
+		Pseudo assignments:        5       5
+		Simulation timescale:    1ps
+	Writing initial simulation snapshot: worklib.mac_array_tb:v
+xmelab: Memory Usage - Final: 31.4M, Peak: 32.0M, Peak virtual: 162.5M
+xmelab: CPU Usage - 0.1s system + 0.5s user = 0.6s total (0.7s, 83.2% cpu)
 DEFINE analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
 |
 xmsim: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,5): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/artist/analogLib' (cds.lib command ignored).
@@ -210,665 +381,8 @@ xcelium>
 xcelium> source /software/ECE/XCELIUM-2009/tools/xcelium/files/xmsimrc
 xcelium> database -open waves -into waves.shm -default
 Created default SHM database waves
-xcelium> probe -create -shm mac_array_tb.q_in mac_array_tb.i_inst mac_array_tb.clk mac_array_tb.reset
+xcelium> probe -create -shm mac_array_tb.DUT.mac_col_inst_0.col_id mac_array_tb.DUT.mac_col_inst_1.col_id
 Created probe 1
-xcelium> run
-##### Q data txt reading #####
-Q vector:           0
-
-Data:          -5
-
-Data:           7
-
-Data:          -5
-
-Data:          -7
-
-Data:          -1
-
-Data:           6
-
-Data:           1
-
-Data:           2
-
-Q vector:           1
-
-Data:          -4
-
-Data:           7
-
-Data:          -2
-
-Data:          -5
-
-Data:          -3
-
-Data:           4
-
-Data:           1
-
-Data:          -3
-
-Q vector:           2
-
-Data:          -4
-
-Data:          -1
-
-Data:          -4
-
-Data:          -4
-
-Data:           0
-
-Data:           5
-
-Data:           2
-
-Data:           0
-
-Q vector:           3
-
-Data:          -3
-
-Data:           3
-
-Data:           6
-
-Data:          -4
-
-Data:           6
-
-Data:           2
-
-Data:           1
-
-Data:           6
-
-Q vector:           4
-
-Data:          -8
-
-Data:           5
-
-Data:          -2
-
-Data:           6
-
-Data:           2
-
-Data:           1
-
-Data:          -3
-
-Data:           4
-
-Q vector:           5
-
-Data:          -2
-
-Data:          -1
-
-Data:          -2
-
-Data:          -6
-
-Data:          -1
-
-Data:           4
-
-Data:           0
-
-Data:           2
-
-Q vector:           6
-
-Data:           5
-
-Data:          -7
-
-Data:          -1
-
-Data:           3
-
-Data:           2
-
-Data:           1
-
-Data:          -7
-
-Data:           6
-
-Q vector:           7
-
-Data:           5
-
-Data:          -8
-
-Data:          -3
-
-Data:           6
-
-Data:           0
-
-Data:          -2
-
-Data:           6
-
-Data:          -1
-
-##### K data txt reading #####
-K vector:           0
-
-Data:          -6
-
-Data:           3
-
-Data:          -2
-
-Data:          -1
-
-Data:          -5
-
-Data:           1
-
-Data:           0
-
-Data:           7
-
-K vector:           1
-
-Data:           0
-
-Data:          -5
-
-Data:          -8
-
-Data:           0
-
-Data:           6
-
-Data:           0
-
-Data:          -5
-
-Data:          -7
-
-K vector:           2
-
-Data:           4
-
-Data:          -7
-
-Data:          -6
-
-Data:           3
-
-Data:           7
-
-Data:           7
-
-Data:           6
-
-Data:           6
-
-K vector:           3
-
-Data:          -3
-
-Data:           0
-
-Data:           0
-
-Data:          -7
-
-Data:           6
-
-Data:           3
-
-Data:           4
-
-Data:           7
-
-K vector:           4
-
-Data:           6
-
-Data:          -3
-
-Data:           4
-
-Data:          -7
-
-Data:          -4
-
-Data:          -3
-
-Data:          -2
-
-Data:          -5
-
-K vector:           5
-
-Data:           0
-
-Data:          -7
-
-Data:           3
-
-Data:           3
-
-Data:          -2
-
-Data:           6
-
-Data:           4
-
-Data:          -1
-
-K vector:           6
-
-Data:           7
-
-Data:          -5
-
-Data:           2
-
-Data:           1
-
-Data:           3
-
-Data:           6
-
-Data:           1
-
-Data:          -5
-
-K vector:           7
-
-Data:           3
-
-Data:          -1
-
-Data:           6
-
-Data:           3
-
-Data:          -6
-
-Data:          -2
-
-Data:           1
-
-Data:          -4
-
-##### K data txt reading #####
-K#:           0
-Q#:           0
-Predicted psum:          93
-Q#:           1
-Predicted psum:          52
-Q#:           2
-Predicted psum:          38
-Q#:           3
-Predicted psum:          33
-Q#:           4
-Predicted psum:          80
-Q#:           5
-Predicted psum:          42
-Q#:           6
-Predicted psum:         -19
-Q#:           7
-Predicted psum:         -63
-K#:           1
-Q#:           0
-Predicted psum:         -20
-Q#:           1
-Predicted psum:         -21
-Q#:           2
-Predicted psum:          27
-Q#:           3
-Predicted psum:         -74
-Q#:           4
-Predicted psum:         -10
-Q#:           5
-Predicted psum:           1
-Q#:           6
-Predicted psum:          48
-Q#:           7
-Predicted psum:          41
-K#:           2
-Q#:           0
-Predicted psum:          -7
-Q#:           1
-Predicted psum:         -73
-Q#:           2
-Predicted psum:          50
-Q#:           3
-Predicted psum:          17
-Q#:           4
-Predicted psum:         -10
-Q#:           5
-Predicted psum:          26
-Q#:           6
-Predicted psum:          99
-Q#:           7
-Predicted psum:         128
-K#:           3
-Q#:           0
-Predicted psum:          94
-Q#:           1
-Predicted psum:          24
-Q#:           2
-Predicted psum:          63
-Q#:           3
-Predicted psum:         125
-Q#:           4
-Predicted psum:          13
-Q#:           5
-Predicted psum:          68
-Q#:           6
-Predicted psum:          -7
-Q#:           7
-Predicted psum:         -46
-K#:           4
-Q#:           0
-Predicted psum:         -48
-Q#:           1
-Predicted psum:          -5
-Q#:           2
-Predicted psum:         -28
-Q#:           3
-Predicted psum:         -37
-Q#:           4
-Predicted psum:        -138
-Q#:           5
-Predicted psum:           7
-Q#:           6
-Predicted psum:          -1
-Q#:           7
-Predicted psum:          -1
-K#:           5
-Q#:           0
-Predicted psum:         -45
-Q#:           1
-Predicted psum:         -33
-Q#:           2
-Predicted psum:          21
-Q#:           3
-Predicted psum:         -17
-Q#:           4
-Predicted psum:         -37
-Q#:           5
-Predicted psum:           7
-Q#:           6
-Predicted psum:          23
-Q#:           7
-Predicted psum:          78
-K#:           6
-Q#:           0
-Predicted psum:         -63
-Q#:           1
-Predicted psum:         -41
-Q#:           2
-Predicted psum:          -3
-Q#:           3
-Predicted psum:         -27
-Q#:           4
-Predicted psum:         -90
-Q#:           5
-Predicted psum:          -8
-Q#:           6
-Predicted psum:          46
-Q#:           7
-Predicted psum:          74
-K#:           7
-Q#:           0
-Predicted psum:         -86
-Q#:           1
-Predicted psum:         -23
-Q#:           2
-Predicted psum:         -55
-Q#:           3
-Predicted psum:         -51
-Q#:           4
-Predicted psum:         -56
-Q#:           5
-Predicted psum:         -45
-Q#:           6
-Predicted psum:         -20
-Q#:           7
-Predicted psum:          37
-
-Warning!  Timing violation
-           $setuphold<setup>( posedge CP &&& xE:3170 PS, posedge D:3150 PS,  0.03 : 30 PS,  -0.01 : -10 PS );
-            File: /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v, line = 9744
-           Scope: mac_array_tb.DUT.genblk1_6__mac_col_inst.mac_8in_instance.psum_0_0_reg_0_
-            Time: 3170 PS
-
-
-Warning!  Glitch suppression
-           Scheduled event for delayed signal of net "D" at time 9252 PS was canceled!
-            File: /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v, line = 6122
-           Scope: mac_array_tb.DUT.genblk1_0__mac_col_inst.mac_8in_instance.product0_reg_1_
-            Time: 9250 PS
-
-
-Warning!  Timing violation
-           $setuphold<hold>( posedge CP &&& xE:13160 PS, negedge D:13140 PS,  0.04 : 40 PS,  -0.01 : -10 PS );
-            File: /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v, line = 9742
-           Scope: mac_array_tb.DUT.genblk1_1__mac_col_inst.key_q_reg_15_
-            Time: 13161 PS
-
-
-Warning!  Timing violation
-           $setuphold<hold>( posedge CP &&& xCN:15190 PS, negedge D:15190 PS,  0.01 : 10 PS,  0.01 : 10 PS );
-            File: /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v, line = 6288
-           Scope: mac_array_tb.DUT.genblk1_4__mac_col_inst.mac_8in_instance.product6_reg_0_
-            Time: 15199 PS
-
-
-Warning!  Glitch suppression
-           Scheduled event for delayed signal of net "D" at time 17252 PS was canceled!
-            File: /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v, line = 6122
-           Scope: mac_array_tb.DUT.genblk1_4__mac_col_inst.mac_8in_instance.product2_reg_1_
-            Time: 17250 PS
-
-
-Warning!  Glitch suppression
-           Scheduled event for delayed signal of net "D" at time 17252 PS was canceled!
-            File: /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v, line = 6122
-           Scope: mac_array_tb.DUT.genblk1_0__mac_col_inst.mac_8in_instance.product0_reg_1_
-            Time: 17250 PS
-
-
-Warning!  Timing violation
-           $setuphold<hold>( posedge CP &&& xCN:19180 PS, negedge D:19180 PS,  0.01 : 10 PS,  0.01 : 10 PS );
-            File: /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v, line = 6288
-           Scope: mac_array_tb.DUT.genblk1_6__mac_col_inst.mac_8in_instance.product6_reg_0_
-            Time: 19189 PS
-
-
-Warning!  Timing violation
-           $setuphold<hold>( posedge CP &&& xE:19190 PS, negedge D:19170 PS,  0.04 : 40 PS,  -0.01 : -10 PS );
-            File: /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v, line = 9742
-           Scope: mac_array_tb.DUT.genblk1_4__mac_col_inst.mac_8in_instance.psum_0_2_reg_0_
-            Time: 19191 PS
-
-
-Warning!  Timing violation
-           $setuphold<hold>( posedge CP &&& xCN:19190 PS, negedge D:19190 PS,  0.01 : 10 PS,  0.01 : 10 PS );
-            File: /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v, line = 6288
-           Scope: mac_array_tb.DUT.genblk1_4__mac_col_inst.mac_8in_instance.product6_reg_0_
-            Time: 19199 PS
-
-
-Warning!  Glitch suppression
-           Scheduled event for delayed signal of net "D" at time 19282 PS was canceled!
-            File: /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v, line = 6122
-           Scope: mac_array_tb.DUT.genblk1_5__mac_col_inst.mac_8in_instance.product0_reg_1_
-            Time: 19280 PS
-
-
-Warning!  Timing violation
-           $setuphold<hold>( posedge CP &&& xCN:21180 PS, negedge D:21180 PS,  0.01 : 10 PS,  0.01 : 10 PS );
-            File: /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v, line = 6288
-           Scope: mac_array_tb.DUT.genblk1_7__mac_col_inst.mac_8in_instance.product2_reg_0_
-            Time: 21189 PS
-
-
-Warning!  Glitch suppression
-           Scheduled event for delayed signal of net "D" at time 21252 PS was canceled!
-            File: /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v, line = 6122
-           Scope: mac_array_tb.DUT.genblk1_4__mac_col_inst.mac_8in_instance.product2_reg_1_
-            Time: 21250 PS
-
-
-Warning!  Glitch suppression
-           Scheduled event for delayed signal of net "D" at time 21262 PS was canceled!
-            File: /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v, line = 6122
-           Scope: mac_array_tb.DUT.genblk1_4__mac_col_inst.mac_8in_instance.product6_reg_1_
-            Time: 21260 PS
-
-
-Warning!  Timing violation
-           $setuphold<setup>( posedge CP &&& xE:23180 PS, posedge D:23160 PS,  0.03 : 30 PS,  -0.01 : -10 PS );
-            File: /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v, line = 9744
-           Scope: mac_array_tb.DUT.genblk1_5__mac_col_inst.key_q_reg_55_
-            Time: 23180 PS
-
-
-Warning!  Timing violation
-           $setuphold<hold>( posedge CP &&& xCN:23180 PS, negedge D:23180 PS,  0.01 : 10 PS,  0.01 : 10 PS );
-            File: /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v, line = 6288
-           Scope: mac_array_tb.DUT.genblk1_6__mac_col_inst.mac_8in_instance.product6_reg_0_
-            Time: 23189 PS
-
-
-Warning!  Timing violation
-           $setuphold<setup>( posedge CP &&& xE:25180 PS, negedge D:25160 PS,  0.03 : 30 PS,  -0.01 : -10 PS );
-            File: /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v, line = 9742
-           Scope: mac_array_tb.DUT.genblk1_5__mac_col_inst.key_q_reg_55_
-            Time: 25180 PS
-
-
-Warning!  Glitch suppression
-           Scheduled event for delayed signal of net "D" at time 25262 PS was canceled!
-            File: /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v, line = 6122
-           Scope: mac_array_tb.DUT.genblk1_4__mac_col_inst.mac_8in_instance.product6_reg_1_
-            Time: 25260 PS
-
-
-Warning!  Timing violation
-           $setuphold<hold>( posedge CP &&& xE:27190 PS, negedge D:27170 PS,  0.04 : 40 PS,  -0.01 : -10 PS );
-            File: /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v, line = 9742
-           Scope: mac_array_tb.DUT.genblk1_4__mac_col_inst.mac_8in_instance.psum_0_2_reg_0_
-            Time: 27191 PS
-
-
-Warning!  Glitch suppression
-           Scheduled event for delayed signal of net "D" at time 27282 PS was canceled!
-            File: /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v, line = 6122
-           Scope: mac_array_tb.DUT.genblk1_5__mac_col_inst.mac_8in_instance.product0_reg_1_
-            Time: 27280 PS
-
-
-Warning!  Timing violation
-           $setuphold<hold>( posedge CP &&& xCN:33180 PS, negedge D:33180 PS,  0.01 : 10 PS,  0.01 : 10 PS );
-            File: /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v, line = 6288
-           Scope: mac_array_tb.DUT.genblk1_7__mac_col_inst.mac_8in_instance.product2_reg_0_
-            Time: 33189 PS
-
-
-Warning!  Glitch suppression
-           Scheduled event for delayed signal of net "D" at time 69252 PS was canceled!
-            File: /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v, line = 6122
-           Scope: mac_array_tb.DUT.genblk1_0__mac_col_inst.mac_8in_instance.product0_reg_1_
-            Time: 69250 PS
-
-
-Warning!  Timing violation
-           $setuphold<hold>( posedge CP &&& xCN:79190 PS, negedge D:79190 PS,  0.01 : 10 PS,  0.01 : 10 PS );
-            File: /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v, line = 6288
-           Scope: mac_array_tb.DUT.genblk1_4__mac_col_inst.mac_8in_instance.product6_reg_0_
-            Time: 79199 PS
-
-
-Warning!  Glitch suppression
-           Scheduled event for delayed signal of net "D" at time 79252 PS was canceled!
-            File: /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v, line = 6122
-           Scope: mac_array_tb.DUT.genblk1_4__mac_col_inst.mac_8in_instance.product2_reg_1_
-            Time: 79250 PS
-
-
-Warning!  Timing violation
-           $setuphold<hold>( posedge CP &&& xCN:83180 PS, negedge D:83180 PS,  0.01 : 10 PS,  0.01 : 10 PS );
-            File: /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v, line = 6288
-           Scope: mac_array_tb.DUT.genblk1_6__mac_col_inst.mac_8in_instance.product6_reg_0_
-            Time: 83189 PS
-
-
-Warning!  Timing violation
-           $setuphold<hold>( posedge CP &&& xCN:83180 PS, negedge D:83180 PS,  0.01 : 10 PS,  0.01 : 10 PS );
-            File: /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v, line = 6288
-           Scope: mac_array_tb.DUT.genblk1_7__mac_col_inst.mac_8in_instance.product2_reg_0_
-            Time: 83189 PS
-
-
-Warning!  Timing violation
-           $setuphold<hold>( posedge CP &&& xE:83190 PS, negedge D:83170 PS,  0.04 : 40 PS,  -0.01 : -10 PS );
-            File: /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v, line = 9742
-           Scope: mac_array_tb.DUT.genblk1_4__mac_col_inst.mac_8in_instance.psum_0_2_reg_0_
-            Time: 83191 PS
-
-
-Warning!  Timing violation
-           $setuphold<hold>( posedge CP &&& xCN:85190 PS, negedge D:85190 PS,  0.01 : 10 PS,  0.01 : 10 PS );
-            File: /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v, line = 6288
-           Scope: mac_array_tb.DUT.genblk1_4__mac_col_inst.mac_8in_instance.product6_reg_0_
-            Time: 85199 PS
-
-
-Warning!  Timing violation
-           $setuphold<hold>( posedge CP &&& xE:87190 PS, negedge D:87170 PS,  0.04 : 40 PS,  -0.01 : -10 PS );
-            File: /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v, line = 9742
-           Scope: mac_array_tb.DUT.genblk1_4__mac_col_inst.mac_8in_instance.psum_0_2_reg_0_
-            Time: 87191 PS
-
-
-Warning!  Timing violation
-           $setuphold<hold>( posedge CP &&& xCN:89180 PS, negedge D:89180 PS,  0.01 : 10 PS,  0.01 : 10 PS );
-            File: /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v, line = 6288
-           Scope: mac_array_tb.DUT.genblk1_6__mac_col_inst.mac_8in_instance.product6_reg_0_
-            Time: 89189 PS
-
-
-Warning!  Timing violation
-           $setuphold<hold>( posedge CP &&& xCN:89190 PS, negedge D:89190 PS,  0.01 : 10 PS,  0.01 : 10 PS );
-            File: /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v, line = 6288
-           Scope: mac_array_tb.DUT.genblk1_4__mac_col_inst.mac_8in_instance.product6_reg_0_
-            Time: 89199 PS
-
-
-Warning!  Timing violation
-           $setuphold<hold>( posedge CP &&& xE:91190 PS, negedge D:91170 PS,  0.04 : 40 PS,  -0.01 : -10 PS );
-            File: /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v, line = 9742
-           Scope: mac_array_tb.DUT.genblk1_4__mac_col_inst.mac_8in_instance.psum_0_2_reg_0_
-            Time: 91191 PS
-
-
-Warning!  Timing violation
-           $setuphold<hold>( posedge CP &&& xCN:93180 PS, negedge D:93180 PS,  0.01 : 10 PS,  0.01 : 10 PS );
-            File: /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v, line = 6288
-           Scope: mac_array_tb.DUT.genblk1_6__mac_col_inst.mac_8in_instance.product6_reg_0_
-            Time: 93189 PS
-
-Finished.
-Simulation complete via $finish(1) at time 125 NS + 0
-./netlist/mac_array_tb.v:132       #1 $finish;
-xcelium> probe -create -shm mac_array_tb.DUT.genblk1_0__mac_col_inst.q_in mac_array_tb.DUT.genblk1_0__mac_col_inst.key_q mac_array_tb.DUT.genblk1_0__mac_col_inst.i_inst mac_array_tb.DUT.genblk1_0__mac_col_inst.cnt_q
-Created probe 2
 xcelium> reset
 Loaded snapshot worklib.mac_array_tb:v
 xcelium> run
@@ -1299,236 +813,12 @@ Q#:           6
 Predicted psum:         -20
 Q#:           7
 Predicted psum:          37
-
-Warning!  Timing violation
-           $setuphold<setup>( posedge CP &&& xE:3170 PS, posedge D:3150 PS,  0.03 : 30 PS,  -0.01 : -10 PS );
-            File: /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v, line = 9744
-           Scope: mac_array_tb.DUT.genblk1_6__mac_col_inst.mac_8in_instance.psum_0_0_reg_0_
-            Time: 3170 PS
-
-
-Warning!  Glitch suppression
-           Scheduled event for delayed signal of net "D" at time 9252 PS was canceled!
-            File: /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v, line = 6122
-           Scope: mac_array_tb.DUT.genblk1_0__mac_col_inst.mac_8in_instance.product0_reg_1_
-            Time: 9250 PS
-
-
-Warning!  Timing violation
-           $setuphold<hold>( posedge CP &&& xE:13160 PS, negedge D:13140 PS,  0.04 : 40 PS,  -0.01 : -10 PS );
-            File: /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v, line = 9742
-           Scope: mac_array_tb.DUT.genblk1_1__mac_col_inst.key_q_reg_15_
-            Time: 13161 PS
-
-
-Warning!  Timing violation
-           $setuphold<hold>( posedge CP &&& xCN:15190 PS, negedge D:15190 PS,  0.01 : 10 PS,  0.01 : 10 PS );
-            File: /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v, line = 6288
-           Scope: mac_array_tb.DUT.genblk1_4__mac_col_inst.mac_8in_instance.product6_reg_0_
-            Time: 15199 PS
-
-
-Warning!  Glitch suppression
-           Scheduled event for delayed signal of net "D" at time 17252 PS was canceled!
-            File: /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v, line = 6122
-           Scope: mac_array_tb.DUT.genblk1_4__mac_col_inst.mac_8in_instance.product2_reg_1_
-            Time: 17250 PS
-
-
-Warning!  Glitch suppression
-           Scheduled event for delayed signal of net "D" at time 17252 PS was canceled!
-            File: /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v, line = 6122
-           Scope: mac_array_tb.DUT.genblk1_0__mac_col_inst.mac_8in_instance.product0_reg_1_
-            Time: 17250 PS
-
-
-Warning!  Timing violation
-           $setuphold<hold>( posedge CP &&& xCN:19180 PS, negedge D:19180 PS,  0.01 : 10 PS,  0.01 : 10 PS );
-            File: /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v, line = 6288
-           Scope: mac_array_tb.DUT.genblk1_6__mac_col_inst.mac_8in_instance.product6_reg_0_
-            Time: 19189 PS
-
-
-Warning!  Timing violation
-           $setuphold<hold>( posedge CP &&& xE:19190 PS, negedge D:19170 PS,  0.04 : 40 PS,  -0.01 : -10 PS );
-            File: /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v, line = 9742
-           Scope: mac_array_tb.DUT.genblk1_4__mac_col_inst.mac_8in_instance.psum_0_2_reg_0_
-            Time: 19191 PS
-
-
-Warning!  Timing violation
-           $setuphold<hold>( posedge CP &&& xCN:19190 PS, negedge D:19190 PS,  0.01 : 10 PS,  0.01 : 10 PS );
-            File: /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v, line = 6288
-           Scope: mac_array_tb.DUT.genblk1_4__mac_col_inst.mac_8in_instance.product6_reg_0_
-            Time: 19199 PS
-
-
-Warning!  Glitch suppression
-           Scheduled event for delayed signal of net "D" at time 19282 PS was canceled!
-            File: /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v, line = 6122
-           Scope: mac_array_tb.DUT.genblk1_5__mac_col_inst.mac_8in_instance.product0_reg_1_
-            Time: 19280 PS
-
-
-Warning!  Timing violation
-           $setuphold<hold>( posedge CP &&& xCN:21180 PS, negedge D:21180 PS,  0.01 : 10 PS,  0.01 : 10 PS );
-            File: /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v, line = 6288
-           Scope: mac_array_tb.DUT.genblk1_7__mac_col_inst.mac_8in_instance.product2_reg_0_
-            Time: 21189 PS
-
-
-Warning!  Glitch suppression
-           Scheduled event for delayed signal of net "D" at time 21252 PS was canceled!
-            File: /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v, line = 6122
-           Scope: mac_array_tb.DUT.genblk1_4__mac_col_inst.mac_8in_instance.product2_reg_1_
-            Time: 21250 PS
-
-
-Warning!  Glitch suppression
-           Scheduled event for delayed signal of net "D" at time 21262 PS was canceled!
-            File: /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v, line = 6122
-           Scope: mac_array_tb.DUT.genblk1_4__mac_col_inst.mac_8in_instance.product6_reg_1_
-            Time: 21260 PS
-
-
-Warning!  Timing violation
-           $setuphold<setup>( posedge CP &&& xE:23180 PS, posedge D:23160 PS,  0.03 : 30 PS,  -0.01 : -10 PS );
-            File: /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v, line = 9744
-           Scope: mac_array_tb.DUT.genblk1_5__mac_col_inst.key_q_reg_55_
-            Time: 23180 PS
-
-
-Warning!  Timing violation
-           $setuphold<hold>( posedge CP &&& xCN:23180 PS, negedge D:23180 PS,  0.01 : 10 PS,  0.01 : 10 PS );
-            File: /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v, line = 6288
-           Scope: mac_array_tb.DUT.genblk1_6__mac_col_inst.mac_8in_instance.product6_reg_0_
-            Time: 23189 PS
-
-
-Warning!  Timing violation
-           $setuphold<setup>( posedge CP &&& xE:25180 PS, negedge D:25160 PS,  0.03 : 30 PS,  -0.01 : -10 PS );
-            File: /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v, line = 9742
-           Scope: mac_array_tb.DUT.genblk1_5__mac_col_inst.key_q_reg_55_
-            Time: 25180 PS
-
-
-Warning!  Glitch suppression
-           Scheduled event for delayed signal of net "D" at time 25262 PS was canceled!
-            File: /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v, line = 6122
-           Scope: mac_array_tb.DUT.genblk1_4__mac_col_inst.mac_8in_instance.product6_reg_1_
-            Time: 25260 PS
-
-
-Warning!  Timing violation
-           $setuphold<hold>( posedge CP &&& xE:27190 PS, negedge D:27170 PS,  0.04 : 40 PS,  -0.01 : -10 PS );
-            File: /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v, line = 9742
-           Scope: mac_array_tb.DUT.genblk1_4__mac_col_inst.mac_8in_instance.psum_0_2_reg_0_
-            Time: 27191 PS
-
-
-Warning!  Glitch suppression
-           Scheduled event for delayed signal of net "D" at time 27282 PS was canceled!
-            File: /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v, line = 6122
-           Scope: mac_array_tb.DUT.genblk1_5__mac_col_inst.mac_8in_instance.product0_reg_1_
-            Time: 27280 PS
-
-
-Warning!  Timing violation
-           $setuphold<hold>( posedge CP &&& xCN:33180 PS, negedge D:33180 PS,  0.01 : 10 PS,  0.01 : 10 PS );
-            File: /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v, line = 6288
-           Scope: mac_array_tb.DUT.genblk1_7__mac_col_inst.mac_8in_instance.product2_reg_0_
-            Time: 33189 PS
-
-
-Warning!  Glitch suppression
-           Scheduled event for delayed signal of net "D" at time 69252 PS was canceled!
-            File: /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v, line = 6122
-           Scope: mac_array_tb.DUT.genblk1_0__mac_col_inst.mac_8in_instance.product0_reg_1_
-            Time: 69250 PS
-
-
-Warning!  Timing violation
-           $setuphold<hold>( posedge CP &&& xCN:79190 PS, negedge D:79190 PS,  0.01 : 10 PS,  0.01 : 10 PS );
-            File: /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v, line = 6288
-           Scope: mac_array_tb.DUT.genblk1_4__mac_col_inst.mac_8in_instance.product6_reg_0_
-            Time: 79199 PS
-
-
-Warning!  Glitch suppression
-           Scheduled event for delayed signal of net "D" at time 79252 PS was canceled!
-            File: /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v, line = 6122
-           Scope: mac_array_tb.DUT.genblk1_4__mac_col_inst.mac_8in_instance.product2_reg_1_
-            Time: 79250 PS
-
-
-Warning!  Timing violation
-           $setuphold<hold>( posedge CP &&& xCN:83180 PS, negedge D:83180 PS,  0.01 : 10 PS,  0.01 : 10 PS );
-            File: /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v, line = 6288
-           Scope: mac_array_tb.DUT.genblk1_6__mac_col_inst.mac_8in_instance.product6_reg_0_
-            Time: 83189 PS
-
-
-Warning!  Timing violation
-           $setuphold<hold>( posedge CP &&& xCN:83180 PS, negedge D:83180 PS,  0.01 : 10 PS,  0.01 : 10 PS );
-            File: /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v, line = 6288
-           Scope: mac_array_tb.DUT.genblk1_7__mac_col_inst.mac_8in_instance.product2_reg_0_
-            Time: 83189 PS
-
-
-Warning!  Timing violation
-           $setuphold<hold>( posedge CP &&& xE:83190 PS, negedge D:83170 PS,  0.04 : 40 PS,  -0.01 : -10 PS );
-            File: /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v, line = 9742
-           Scope: mac_array_tb.DUT.genblk1_4__mac_col_inst.mac_8in_instance.psum_0_2_reg_0_
-            Time: 83191 PS
-
-
-Warning!  Timing violation
-           $setuphold<hold>( posedge CP &&& xCN:85190 PS, negedge D:85190 PS,  0.01 : 10 PS,  0.01 : 10 PS );
-            File: /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v, line = 6288
-           Scope: mac_array_tb.DUT.genblk1_4__mac_col_inst.mac_8in_instance.product6_reg_0_
-            Time: 85199 PS
-
-
-Warning!  Timing violation
-           $setuphold<hold>( posedge CP &&& xE:87190 PS, negedge D:87170 PS,  0.04 : 40 PS,  -0.01 : -10 PS );
-            File: /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v, line = 9742
-           Scope: mac_array_tb.DUT.genblk1_4__mac_col_inst.mac_8in_instance.psum_0_2_reg_0_
-            Time: 87191 PS
-
-
-Warning!  Timing violation
-           $setuphold<hold>( posedge CP &&& xCN:89180 PS, negedge D:89180 PS,  0.01 : 10 PS,  0.01 : 10 PS );
-            File: /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v, line = 6288
-           Scope: mac_array_tb.DUT.genblk1_6__mac_col_inst.mac_8in_instance.product6_reg_0_
-            Time: 89189 PS
-
-
-Warning!  Timing violation
-           $setuphold<hold>( posedge CP &&& xCN:89190 PS, negedge D:89190 PS,  0.01 : 10 PS,  0.01 : 10 PS );
-            File: /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v, line = 6288
-           Scope: mac_array_tb.DUT.genblk1_4__mac_col_inst.mac_8in_instance.product6_reg_0_
-            Time: 89199 PS
-
-
-Warning!  Timing violation
-           $setuphold<hold>( posedge CP &&& xE:91190 PS, negedge D:91170 PS,  0.04 : 40 PS,  -0.01 : -10 PS );
-            File: /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v, line = 9742
-           Scope: mac_array_tb.DUT.genblk1_4__mac_col_inst.mac_8in_instance.psum_0_2_reg_0_
-            Time: 91191 PS
-
-
-Warning!  Timing violation
-           $setuphold<hold>( posedge CP &&& xCN:93180 PS, negedge D:93180 PS,  0.01 : 10 PS,  0.01 : 10 PS );
-            File: /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v, line = 6288
-           Scope: mac_array_tb.DUT.genblk1_6__mac_col_inst.mac_8in_instance.product6_reg_0_
-            Time: 93189 PS
-
 Finished.
-Simulation complete via $finish(1) at time 125 NS + 0
-./netlist/mac_array_tb.v:132       #1 $finish;
+Simulation complete via $finish(1) at time 164 NS + 0
+./netlist/mac_array_tb.v:142       #1 $finish;
 xcelium> ^C
 xcelium> exit
-xmsim: Memory Usage - Final: 109.5M, Peak: 120.0M, Peak virtual: 584.1M
-xmsim: Main Thread CPU Usage - 3.3s system + 3.4s user = 6.7s total
-xmsim: CPU Usage - 3.3s system + 3.1s user = 6.4s total (196.5s, 3.2% cpu)
-TOOL:	xrun(64)	20.09-s017: Exiting on Mar 17, 2025 at 15:01:40 PDT  (total: 00:03:16)
+xmsim: Memory Usage - Final: 58.3M, Peak: 61.8M, Peak virtual: 394.4M
+xmsim: Main Thread CPU Usage - 0.9s system + 0.9s user = 1.8s total
+xmsim: CPU Usage - 0.8s system + 0.6s user = 1.5s total (57.7s, 2.6% cpu)
+TOOL:	xrun(64)	20.09-s017: Exiting on Mar 19, 2025 at 21:35:41 PDT  (total: 00:01:00)

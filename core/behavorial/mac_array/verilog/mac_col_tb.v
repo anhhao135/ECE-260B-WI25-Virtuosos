@@ -7,71 +7,32 @@ reg reset = 1;
 reg [63:0] q_in = 0;
 reg [1:0] i_inst = 0;
 
-wire [21:0] out_0;
-wire [63:0] q_out_0;
-wire [1:0] o_inst_0;
-wire fifo_wr_0;
-
-wire [21:0] out_1;
-wire [63:0] q_out_1;
-wire [1:0] o_inst_1;
-wire fifo_wr_1;
-
-wire [21:0] out_2;
-wire [63:0] q_out_2;
-wire [1:0] o_inst_2;
-wire fifo_wr_2;
-
-parameter total_K = 3;
-parameter total_Q = 3;
+parameter total_K = 8;
+parameter total_Q = 8;
 
 integer qk_file;
 integer qk_scan_file;
 integer  K[total_K-1:0][7:0];
 integer  Q[total_Q-1:0][7:0];
 integer  pred_result[total_K-1:0][total_Q-1:0];
-//integer  result[total_cycle-1:0];
-//integer  sum[total_cycle-1:0];
 
 integer  captured_data;
 `define NULL 0
 
 integer i,j,k,t,p,q,s,u,m;
 
+wire [21:0] out;
+wire fifo_wr;
 
-mac_col #(.bw(8), .bw_psum(22), .pr(8), .col_id(0)) mac_col_instance_0 (
+
+mac_col #(.col_id(4), .bw(8), .bw_psum(22), .pr(8)) DUT (
       .clk(clk),
       .reset(reset),
-      .out(out_0),
       .q_in(q_in),
-      .q_out(q_out_0),
-      .i_inst(i_inst),
-      .o_inst(o_inst_0),
-      .fifo_wr(fifo_wr_0)
+      .out(out),
+      .fifo_wr(fifo_wr),
+      .i_inst(i_inst)
 );
-
-mac_col #(.bw(8), .bw_psum(22), .pr(8), .col_id(1)) mac_col_instance_1 (
-      .clk(clk),
-      .reset(reset),
-      .out(out_1),
-      .q_in(q_out_0),
-      .q_out(q_out_1),
-      .i_inst(o_inst_0),
-      .o_inst(o_inst_1),
-      .fifo_wr(fifo_wr_1)
-);
-
-mac_col #(.bw(8), .bw_psum(22), .pr(8), .col_id(2)) mac_col_instance_2 (
-      .clk(clk),
-      .reset(reset),
-      .out(out_2),
-      .q_in(q_out_1),
-      .q_out(q_out_2),
-      .i_inst(o_inst_1),
-      .o_inst(o_inst_2),
-      .fifo_wr(fifo_wr_2)
-);
-
 
 initial begin 
       $dumpfile("mac_col_tb.vcd");
@@ -145,7 +106,7 @@ initial begin
             #1 clk = 1;
       end
 
-      for (i = 0; i < 10; i = i + 1) begin
+      for (i = 0; i < total_K + total_Q + 5; i = i + 1) begin
             #1 clk = 0;
             #1 clk = 1;
       end
@@ -160,7 +121,7 @@ initial begin
             #1 clk = 1;
       end
 
-      for (i = 0; i < 10; i = i + 1) begin
+      for (i = 0; i < total_K + total_Q + 5; i = i + 1) begin
             #1 clk = 0;
             #1 clk = 1;
       end

@@ -7,7 +7,7 @@ reg reset = 1;
 reg [63:0] q_in = 0;
 reg [1:0] i_inst = 0;
 
-parameter total_K = 1;
+parameter total_K = 8;
 parameter total_Q = 8;
 
 integer qk_file;

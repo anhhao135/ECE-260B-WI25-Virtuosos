@@ -1,0 +1,2427 @@
+xrun(64): 20.09-s017: (c) Copyright 1995-2021 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	20.09-s017: Started on Mar 19, 2025 at 21:57:05 PDT
+xrun
+	-define INITIALIZE_MEMORY
+	-xminitialize 0
+	+gui
+	+access+rwc
+	+xm64bit
+	+xmstatus
+	+xmtimescale+1ns/1ps
+	+xmoveride_timescale
+	-v ./netlist/core.pnr.v
+	-v /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v
+	./netlist/core_tb.v
+	+xmseq_udp_delay+20ps
+
+   User defined plus("+") options:
+	+xmoveride_timescale
+
+DEFINE analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,5): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/artist/analogLib' (cds.lib command ignored).
+DEFINE basic $CDSHOME/tools/dfII/etc/cdslib/basic
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,6): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/basic' (cds.lib command ignored).
+DEFINE US_8ths $CDSHOME/tools/dfII/etc/cdslib/sheets/US_8ths
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,7): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/sheets/US_8ths' (cds.lib command ignored).
+DEFINE sheets $CDSHOME/tools/dfII/etc/cdslib/sheets/US_8ths
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,8): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/sheets/US_8ths' (cds.lib command ignored).
+DEFINE cdsDefTechLib $CDSHOME/tools/dfII/etc/cdsDefTechLib
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,9): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdsDefTechLib' (cds.lib command ignored).
+DEFINE ahdlLib $CDSHOME/tools/dfII/samples/artist
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,10): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/samples/artist' (cds.lib command ignored).
+ASSIGN gsclib045 COMBINE gsclib045 gsclib045_tech
+|
+xrun: *W,DLCOMB (/home/linux/ieng6/oce/6d/h3le/cds.lib,24): cds.lib COMBINE attribute library not defined 'gsclib045_tech' (cds.lib command ignored).
+ASSIGN gsclib045_tech DISPLAY PDKlib
+|
+xrun: *W,DLCLIB (/home/linux/ieng6/oce/6d/h3le/cds.lib,26): cds.lib Library not defined 'gsclib045_tech' (cds.lib command ignored).
+DEFINE sharedKen /home/linux/ieng6/ee283fa23/public/ee283fa23_hll/shared_buck_project
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,36): cds.lib Invalid path '/home/linux/ieng6/ee283fa23/public/ee283fa23_hll/shared_buck_project' (cds.lib command ignored).
+DEFINE analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,5): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/artist/analogLib' (cds.lib command ignored).
+DEFINE basic $CDSHOME/tools/dfII/etc/cdslib/basic
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,6): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/basic' (cds.lib command ignored).
+DEFINE US_8ths $CDSHOME/tools/dfII/etc/cdslib/sheets/US_8ths
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,7): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/sheets/US_8ths' (cds.lib command ignored).
+DEFINE sheets $CDSHOME/tools/dfII/etc/cdslib/sheets/US_8ths
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,8): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/sheets/US_8ths' (cds.lib command ignored).
+DEFINE cdsDefTechLib $CDSHOME/tools/dfII/etc/cdsDefTechLib
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,9): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdsDefTechLib' (cds.lib command ignored).
+DEFINE ahdlLib $CDSHOME/tools/dfII/samples/artist
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,10): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/samples/artist' (cds.lib command ignored).
+ASSIGN gsclib045 COMBINE gsclib045 gsclib045_tech
+|
+xrun: *W,DLCOMB (/home/linux/ieng6/oce/6d/h3le/cds.lib,24): cds.lib COMBINE attribute library not defined 'gsclib045_tech' (cds.lib command ignored).
+ASSIGN gsclib045_tech DISPLAY PDKlib
+|
+xrun: *W,DLCLIB (/home/linux/ieng6/oce/6d/h3le/cds.lib,26): cds.lib Library not defined 'gsclib045_tech' (cds.lib command ignored).
+DEFINE sharedKen /home/linux/ieng6/ee283fa23/public/ee283fa23_hll/shared_buck_project
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,36): cds.lib Invalid path '/home/linux/ieng6/ee283fa23/public/ee283fa23_hll/shared_buck_project' (cds.lib command ignored).
+DEFINE analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,5): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/artist/analogLib' (cds.lib command ignored).
+DEFINE basic $CDSHOME/tools/dfII/etc/cdslib/basic
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,6): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/basic' (cds.lib command ignored).
+DEFINE US_8ths $CDSHOME/tools/dfII/etc/cdslib/sheets/US_8ths
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,7): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/sheets/US_8ths' (cds.lib command ignored).
+DEFINE sheets $CDSHOME/tools/dfII/etc/cdslib/sheets/US_8ths
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,8): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/sheets/US_8ths' (cds.lib command ignored).
+DEFINE cdsDefTechLib $CDSHOME/tools/dfII/etc/cdsDefTechLib
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,9): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdsDefTechLib' (cds.lib command ignored).
+DEFINE ahdlLib $CDSHOME/tools/dfII/samples/artist
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,10): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/samples/artist' (cds.lib command ignored).
+ASSIGN gsclib045 COMBINE gsclib045 gsclib045_tech
+|
+xrun: *W,DLCOMB (/home/linux/ieng6/oce/6d/h3le/cds.lib,24): cds.lib COMBINE attribute library not defined 'gsclib045_tech' (cds.lib command ignored).
+ASSIGN gsclib045_tech DISPLAY PDKlib
+|
+xrun: *W,DLCLIB (/home/linux/ieng6/oce/6d/h3le/cds.lib,26): cds.lib Library not defined 'gsclib045_tech' (cds.lib command ignored).
+DEFINE sharedKen /home/linux/ieng6/ee283fa23/public/ee283fa23_hll/shared_buck_project
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,36): cds.lib Invalid path '/home/linux/ieng6/ee283fa23/public/ee283fa23_hll/shared_buck_project' (cds.lib command ignored).
+DEFINE analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,5): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/artist/analogLib' (cds.lib command ignored).
+DEFINE basic $CDSHOME/tools/dfII/etc/cdslib/basic
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,6): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/basic' (cds.lib command ignored).
+DEFINE US_8ths $CDSHOME/tools/dfII/etc/cdslib/sheets/US_8ths
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,7): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/sheets/US_8ths' (cds.lib command ignored).
+DEFINE sheets $CDSHOME/tools/dfII/etc/cdslib/sheets/US_8ths
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,8): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/sheets/US_8ths' (cds.lib command ignored).
+DEFINE cdsDefTechLib $CDSHOME/tools/dfII/etc/cdsDefTechLib
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,9): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdsDefTechLib' (cds.lib command ignored).
+DEFINE ahdlLib $CDSHOME/tools/dfII/samples/artist
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,10): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/samples/artist' (cds.lib command ignored).
+ASSIGN gsclib045 COMBINE gsclib045 gsclib045_tech
+|
+xrun: *W,DLCOMB (/home/linux/ieng6/oce/6d/h3le/cds.lib,24): cds.lib COMBINE attribute library not defined 'gsclib045_tech' (cds.lib command ignored).
+ASSIGN gsclib045_tech DISPLAY PDKlib
+|
+xrun: *W,DLCLIB (/home/linux/ieng6/oce/6d/h3le/cds.lib,26): cds.lib Library not defined 'gsclib045_tech' (cds.lib command ignored).
+DEFINE sharedKen /home/linux/ieng6/ee283fa23/public/ee283fa23_hll/shared_buck_project
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,36): cds.lib Invalid path '/home/linux/ieng6/ee283fa23/public/ee283fa23_hll/shared_buck_project' (cds.lib command ignored).
+Recompiling... reason: file './netlist/core.pnr.v' is newer than expected.
+	expected: Wed Mar 19 20:50:05 2025
+	actual:   Wed Mar 19 21:53:20 2025
+DEFINE analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,5): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/artist/analogLib' (cds.lib command ignored).
+DEFINE basic $CDSHOME/tools/dfII/etc/cdslib/basic
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,6): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/basic' (cds.lib command ignored).
+DEFINE US_8ths $CDSHOME/tools/dfII/etc/cdslib/sheets/US_8ths
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,7): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/sheets/US_8ths' (cds.lib command ignored).
+DEFINE sheets $CDSHOME/tools/dfII/etc/cdslib/sheets/US_8ths
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,8): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/sheets/US_8ths' (cds.lib command ignored).
+DEFINE cdsDefTechLib $CDSHOME/tools/dfII/etc/cdsDefTechLib
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,9): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdsDefTechLib' (cds.lib command ignored).
+DEFINE ahdlLib $CDSHOME/tools/dfII/samples/artist
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,10): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/samples/artist' (cds.lib command ignored).
+ASSIGN gsclib045 COMBINE gsclib045 gsclib045_tech
+|
+xrun: *W,DLCOMB (/home/linux/ieng6/oce/6d/h3le/cds.lib,24): cds.lib COMBINE attribute library not defined 'gsclib045_tech' (cds.lib command ignored).
+ASSIGN gsclib045_tech DISPLAY PDKlib
+|
+xrun: *W,DLCLIB (/home/linux/ieng6/oce/6d/h3le/cds.lib,26): cds.lib Library not defined 'gsclib045_tech' (cds.lib command ignored).
+DEFINE sharedKen /home/linux/ieng6/ee283fa23/public/ee283fa23_hll/shared_buck_project
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,36): cds.lib Invalid path '/home/linux/ieng6/ee283fa23/public/ee283fa23_hll/shared_buck_project' (cds.lib command ignored).
+DEFINE analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
+|
+xmvlog: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,5): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/artist/analogLib' (cds.lib command ignored).
+DEFINE basic $CDSHOME/tools/dfII/etc/cdslib/basic
+|
+xmvlog: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,6): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/basic' (cds.lib command ignored).
+DEFINE US_8ths $CDSHOME/tools/dfII/etc/cdslib/sheets/US_8ths
+|
+xmvlog: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,7): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/sheets/US_8ths' (cds.lib command ignored).
+DEFINE sheets $CDSHOME/tools/dfII/etc/cdslib/sheets/US_8ths
+|
+xmvlog: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,8): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/sheets/US_8ths' (cds.lib command ignored).
+DEFINE cdsDefTechLib $CDSHOME/tools/dfII/etc/cdsDefTechLib
+|
+xmvlog: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,9): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdsDefTechLib' (cds.lib command ignored).
+DEFINE ahdlLib $CDSHOME/tools/dfII/samples/artist
+|
+xmvlog: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,10): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/samples/artist' (cds.lib command ignored).
+ASSIGN gsclib045 COMBINE gsclib045 gsclib045_tech
+|
+xmvlog: *W,DLCOMB (/home/linux/ieng6/oce/6d/h3le/cds.lib,24): cds.lib COMBINE attribute library not defined 'gsclib045_tech' (cds.lib command ignored).
+ASSIGN gsclib045_tech DISPLAY PDKlib
+|
+xmvlog: *W,DLCLIB (/home/linux/ieng6/oce/6d/h3le/cds.lib,26): cds.lib Library not defined 'gsclib045_tech' (cds.lib command ignored).
+DEFINE sharedKen /home/linux/ieng6/ee283fa23/public/ee283fa23_hll/shared_buck_project
+|
+xmvlog: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,36): cds.lib Invalid path '/home/linux/ieng6/ee283fa23/public/ee283fa23_hll/shared_buck_project' (cds.lib command ignored).
+file: ./netlist/core_tb.v
+	module worklib.core_tb:v
+		errors: 0, warnings: 0
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 9
+xmvlog: Memory Usage - Current physical: 24.1M, Current virtual: 95.5M
+xmvlog: CPU Usage - 0.0s system + 1.3s user = 1.3s total (1.4s, 97.1% cpu)
+DEFINE analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,5): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/artist/analogLib' (cds.lib command ignored).
+DEFINE basic $CDSHOME/tools/dfII/etc/cdslib/basic
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,6): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/basic' (cds.lib command ignored).
+DEFINE US_8ths $CDSHOME/tools/dfII/etc/cdslib/sheets/US_8ths
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,7): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/sheets/US_8ths' (cds.lib command ignored).
+DEFINE sheets $CDSHOME/tools/dfII/etc/cdslib/sheets/US_8ths
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,8): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/sheets/US_8ths' (cds.lib command ignored).
+DEFINE cdsDefTechLib $CDSHOME/tools/dfII/etc/cdsDefTechLib
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,9): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdsDefTechLib' (cds.lib command ignored).
+DEFINE ahdlLib $CDSHOME/tools/dfII/samples/artist
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,10): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/samples/artist' (cds.lib command ignored).
+ASSIGN gsclib045 COMBINE gsclib045 gsclib045_tech
+|
+xrun: *W,DLCOMB (/home/linux/ieng6/oce/6d/h3le/cds.lib,24): cds.lib COMBINE attribute library not defined 'gsclib045_tech' (cds.lib command ignored).
+ASSIGN gsclib045_tech DISPLAY PDKlib
+|
+xrun: *W,DLCLIB (/home/linux/ieng6/oce/6d/h3le/cds.lib,26): cds.lib Library not defined 'gsclib045_tech' (cds.lib command ignored).
+DEFINE sharedKen /home/linux/ieng6/ee283fa23/public/ee283fa23_hll/shared_buck_project
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,36): cds.lib Invalid path '/home/linux/ieng6/ee283fa23/public/ee283fa23_hll/shared_buck_project' (cds.lib command ignored).
+DEFINE analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,5): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/artist/analogLib' (cds.lib command ignored).
+DEFINE basic $CDSHOME/tools/dfII/etc/cdslib/basic
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,6): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/basic' (cds.lib command ignored).
+DEFINE US_8ths $CDSHOME/tools/dfII/etc/cdslib/sheets/US_8ths
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,7): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/sheets/US_8ths' (cds.lib command ignored).
+DEFINE sheets $CDSHOME/tools/dfII/etc/cdslib/sheets/US_8ths
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,8): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/sheets/US_8ths' (cds.lib command ignored).
+DEFINE cdsDefTechLib $CDSHOME/tools/dfII/etc/cdsDefTechLib
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,9): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdsDefTechLib' (cds.lib command ignored).
+DEFINE ahdlLib $CDSHOME/tools/dfII/samples/artist
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,10): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/samples/artist' (cds.lib command ignored).
+ASSIGN gsclib045 COMBINE gsclib045 gsclib045_tech
+|
+xrun: *W,DLCOMB (/home/linux/ieng6/oce/6d/h3le/cds.lib,24): cds.lib COMBINE attribute library not defined 'gsclib045_tech' (cds.lib command ignored).
+ASSIGN gsclib045_tech DISPLAY PDKlib
+|
+xrun: *W,DLCLIB (/home/linux/ieng6/oce/6d/h3le/cds.lib,26): cds.lib Library not defined 'gsclib045_tech' (cds.lib command ignored).
+DEFINE sharedKen /home/linux/ieng6/ee283fa23/public/ee283fa23_hll/shared_buck_project
+|
+xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,36): cds.lib Invalid path '/home/linux/ieng6/ee283fa23/public/ee283fa23_hll/shared_buck_project' (cds.lib command ignored).
+DEFINE analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
+|
+xmelab: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,5): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/artist/analogLib' (cds.lib command ignored).
+DEFINE basic $CDSHOME/tools/dfII/etc/cdslib/basic
+|
+xmelab: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,6): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/basic' (cds.lib command ignored).
+DEFINE US_8ths $CDSHOME/tools/dfII/etc/cdslib/sheets/US_8ths
+|
+xmelab: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,7): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/sheets/US_8ths' (cds.lib command ignored).
+DEFINE sheets $CDSHOME/tools/dfII/etc/cdslib/sheets/US_8ths
+|
+xmelab: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,8): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/sheets/US_8ths' (cds.lib command ignored).
+DEFINE cdsDefTechLib $CDSHOME/tools/dfII/etc/cdsDefTechLib
+|
+xmelab: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,9): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdsDefTechLib' (cds.lib command ignored).
+DEFINE ahdlLib $CDSHOME/tools/dfII/samples/artist
+|
+xmelab: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,10): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/samples/artist' (cds.lib command ignored).
+ASSIGN gsclib045 COMBINE gsclib045 gsclib045_tech
+|
+xmelab: *W,DLCOMB (/home/linux/ieng6/oce/6d/h3le/cds.lib,24): cds.lib COMBINE attribute library not defined 'gsclib045_tech' (cds.lib command ignored).
+ASSIGN gsclib045_tech DISPLAY PDKlib
+|
+xmelab: *W,DLCLIB (/home/linux/ieng6/oce/6d/h3le/cds.lib,26): cds.lib Library not defined 'gsclib045_tech' (cds.lib command ignored).
+DEFINE sharedKen /home/linux/ieng6/ee283fa23/public/ee283fa23_hll/shared_buck_project
+|
+xmelab: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,36): cds.lib Invalid path '/home/linux/ieng6/ee283fa23/public/ee283fa23_hll/shared_buck_project' (cds.lib command ignored).
+xmelab: *N,INFSUD: -NOSPECIFY is automatically used with -SEQ_UDP_DELAY.
+		Caching library 'worklib' ....... Done
+		Caching library 'netlist' ....... Done
+		Caching library 'tcbn65gplus' ....... Done
+	Elaborating the design hierarchy:
+core DUT (
+       |
+xmelab: *W,CUVWSP (./netlist/core_tb.v,70|7): 1 output port was not connected:
+xmelab: (./netlist/core.pnr.v,41251): sum_out
+
+  DFD1 cnt_q_reg_0_ ( .D(n25), .CP(clk), .QN(n18) );
+                  |
+xmelab: *W,CUVWSP (./netlist/core.pnr.v,2209|18): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,5821): Q
+
+  DFD1 cnt_q_reg_2_ ( .D(n23), .CP(clk), .QN(n11) );
+                  |
+xmelab: *W,CUVWSP (./netlist/core.pnr.v,2211|18): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,5821): Q
+
+  DFD1 cnt_q_reg_0_ ( .D(n280), .CP(clk), .QN(n17) );
+                  |
+xmelab: *W,CUVWSP (./netlist/core.pnr.v,18725|18): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,5821): Q
+
+  DFD1 cnt_q_reg_2_ ( .D(n282), .CP(clk), .QN(n285) );
+                  |
+xmelab: *W,CUVWSP (./netlist/core.pnr.v,18727|18): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,5821): Q
+
+  DFD1 cnt_q_reg_0_ ( .D(n282), .CP(clk), .QN(n18) );
+                  |
+xmelab: *W,CUVWSP (./netlist/core.pnr.v,16338|18): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,5821): Q
+
+  DFD1 cnt_q_reg_2_ ( .D(n284), .CP(clk), .QN(n287) );
+                  |
+xmelab: *W,CUVWSP (./netlist/core.pnr.v,16340|18): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,5821): Q
+
+  DFD1 cnt_q_reg_0_ ( .D(n280), .CP(clk), .QN(n17) );
+                  |
+xmelab: *W,CUVWSP (./netlist/core.pnr.v,13971|18): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,5821): Q
+
+  DFD1 cnt_q_reg_2_ ( .D(n282), .CP(clk), .QN(n285) );
+                  |
+xmelab: *W,CUVWSP (./netlist/core.pnr.v,13973|18): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,5821): Q
+
+  DFD1 cnt_q_reg_0_ ( .D(n280), .CP(clk), .QN(n17) );
+                  |
+xmelab: *W,CUVWSP (./netlist/core.pnr.v,11601|18): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,5821): Q
+
+  DFD1 cnt_q_reg_2_ ( .D(n282), .CP(clk), .QN(n285) );
+                  |
+xmelab: *W,CUVWSP (./netlist/core.pnr.v,11603|18): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,5821): Q
+
+  DFD1 cnt_q_reg_0_ ( .D(n280), .CP(clk), .QN(n17) );
+                  |
+xmelab: *W,CUVWSP (./netlist/core.pnr.v,9262|18): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,5821): Q
+
+  DFD1 cnt_q_reg_2_ ( .D(n282), .CP(clk), .QN(n285) );
+                  |
+xmelab: *W,CUVWSP (./netlist/core.pnr.v,9264|18): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,5821): Q
+
+  DFD1 cnt_q_reg_0_ ( .D(n280), .CP(clk), .QN(n17) );
+                  |
+xmelab: *W,CUVWSP (./netlist/core.pnr.v,6917|18): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,5821): Q
+
+  DFD1 cnt_q_reg_2_ ( .D(n282), .CP(clk), .QN(n285) );
+                  |
+xmelab: *W,CUVWSP (./netlist/core.pnr.v,6919|18): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,5821): Q
+
+  DFD1 cnt_q_reg_0_ ( .D(n91), .CP(clk), .QN(n83) );
+                  |
+xmelab: *W,CUVWSP (./netlist/core.pnr.v,4576|18): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,5821): Q
+
+  DFD1 cnt_q_reg_2_ ( .D(n89), .CP(clk), .QN(n77) );
+                  |
+xmelab: *W,CUVWSP (./netlist/core.pnr.v,4578|18): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,5821): Q
+
+  ofifo_col8_bw20 ofifo_inst ( .clk(clk), .in(array_out), .out(pmem_in), .rd(
+                           |
+xmelab: *W,CUVWSP (./netlist/core.pnr.v,41269|27): 2 output ports were not connected:
+xmelab: (./netlist/core.pnr.v,28534): o_valid
+xmelab: (./netlist/core.pnr.v,28534): o_full
+
+  fifo_depth16_bw20_simd1_7 col_idx_0__fifo_instance ( .rd_clk(clk), .wr_clk(
+                                                   |
+xmelab: *W,CUVWSP (./netlist/core.pnr.v,28542|51): 2 output ports were not connected:
+xmelab: (./netlist/core.pnr.v,19630): o_full
+xmelab: (./netlist/core.pnr.v,19631): o_empty
+
+  DFD1 rd_ptr_reg_1_ ( .D(n179), .CP(rd_clk), .Q(rd_ptr[1]) );
+                   |
+xmelab: *W,CUVWSP (./netlist/core.pnr.v,19680|19): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,5821): QN
+
+  fifo_depth16_bw20_simd1_6 col_idx_1__fifo_instance ( .rd_clk(clk), .wr_clk(
+                                                   |
+xmelab: *W,CUVWSP (./netlist/core.pnr.v,28545|51): 2 output ports were not connected:
+xmelab: (./netlist/core.pnr.v,20811): o_full
+xmelab: (./netlist/core.pnr.v,20812): o_empty
+
+  DFD1 rd_ptr_reg_1_ ( .D(n179), .CP(rd_clk), .Q(rd_ptr[1]) );
+                   |
+xmelab: *W,CUVWSP (./netlist/core.pnr.v,20861|19): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,5821): QN
+
+  fifo_depth16_bw20_simd1_5 col_idx_2__fifo_instance ( .rd_clk(clk), .wr_clk(
+                                                   |
+xmelab: *W,CUVWSP (./netlist/core.pnr.v,28548|51): 2 output ports were not connected:
+xmelab: (./netlist/core.pnr.v,27908): o_full
+xmelab: (./netlist/core.pnr.v,27909): o_empty
+
+  DFD1 rd_ptr_reg_1_ ( .D(n287), .CP(rd_clk), .Q(rd_ptr[1]) );
+                   |
+xmelab: *W,CUVWSP (./netlist/core.pnr.v,27959|19): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,5821): QN
+
+  fifo_depth16_bw20_simd1_4 col_idx_3__fifo_instance ( .rd_clk(clk), .wr_clk(
+                                                   |
+xmelab: *W,CUVWSP (./netlist/core.pnr.v,28551|51): 2 output ports were not connected:
+xmelab: (./netlist/core.pnr.v,26726): o_full
+xmelab: (./netlist/core.pnr.v,26727): o_empty
+
+  DFD1 rd_ptr_reg_1_ ( .D(n287), .CP(rd_clk), .Q(rd_ptr[1]) );
+                   |
+xmelab: *W,CUVWSP (./netlist/core.pnr.v,26777|19): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,5821): QN
+
+  fifo_depth16_bw20_simd1_3 col_idx_4__fifo_instance ( .rd_clk(clk), .wr_clk(
+                                                   |
+xmelab: *W,CUVWSP (./netlist/core.pnr.v,28554|51): 2 output ports were not connected:
+xmelab: (./netlist/core.pnr.v,25544): o_full
+xmelab: (./netlist/core.pnr.v,25545): o_empty
+
+  DFD1 rd_ptr_reg_1_ ( .D(n287), .CP(rd_clk), .Q(rd_ptr[1]) );
+                   |
+xmelab: *W,CUVWSP (./netlist/core.pnr.v,25595|19): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,5821): QN
+
+  fifo_depth16_bw20_simd1_2 col_idx_5__fifo_instance ( .rd_clk(clk), .wr_clk(
+                                                   |
+xmelab: *W,CUVWSP (./netlist/core.pnr.v,28557|51): 2 output ports were not connected:
+xmelab: (./netlist/core.pnr.v,24362): o_full
+xmelab: (./netlist/core.pnr.v,24363): o_empty
+
+  DFD1 rd_ptr_reg_1_ ( .D(n287), .CP(rd_clk), .Q(rd_ptr[1]) );
+                   |
+xmelab: *W,CUVWSP (./netlist/core.pnr.v,24413|19): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,5821): QN
+
+  fifo_depth16_bw20_simd1_1 col_idx_6__fifo_instance ( .rd_clk(clk), .wr_clk(
+                                                   |
+xmelab: *W,CUVWSP (./netlist/core.pnr.v,28560|51): 2 output ports were not connected:
+xmelab: (./netlist/core.pnr.v,23180): o_full
+xmelab: (./netlist/core.pnr.v,23181): o_empty
+
+  DFD1 rd_ptr_reg_1_ ( .D(n287), .CP(rd_clk), .Q(rd_ptr[1]) );
+                   |
+xmelab: *W,CUVWSP (./netlist/core.pnr.v,23231|19): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,5821): QN
+
+  fifo_depth16_bw20_simd1_0 col_idx_7__fifo_instance ( .rd_clk(clk), .wr_clk(
+                                                   |
+xmelab: *W,CUVWSP (./netlist/core.pnr.v,28563|51): 2 output ports were not connected:
+xmelab: (./netlist/core.pnr.v,21998): o_full
+xmelab: (./netlist/core.pnr.v,21999): o_empty
+
+  DFD1 rd_ptr_reg_1_ ( .D(n287), .CP(rd_clk), .Q(rd_ptr[1]) );
+                   |
+xmelab: *W,CUVWSP (./netlist/core.pnr.v,22049|19): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,5821): QN
+
+	Top level design units:
+		core_tb
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+DEFINE analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
+|
+xmvlog_cg: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,5): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/artist/analogLib' (cds.lib command ignored).
+DEFINE basic $CDSHOME/tools/dfII/etc/cdslib/basic
+|
+xmvlog_cg: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,6): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/basic' (cds.lib command ignored).
+DEFINE US_8ths $CDSHOME/tools/dfII/etc/cdslib/sheets/US_8ths
+|
+xmvlog_cg: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,7): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/sheets/US_8ths' (cds.lib command ignored).
+DEFINE sheets $CDSHOME/tools/dfII/etc/cdslib/sheets/US_8ths
+|
+xmvlog_cg: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,8): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/sheets/US_8ths' (cds.lib command ignored).
+DEFINE cdsDefTechLib $CDSHOME/tools/dfII/etc/cdsDefTechLib
+|
+xmvlog_cg: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,9): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdsDefTechLib' (cds.lib command ignored).
+DEFINE ahdlLib $CDSHOME/tools/dfII/samples/artist
+|
+xmvlog_cg: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,10): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/samples/artist' (cds.lib command ignored).
+ASSIGN gsclib045 COMBINE gsclib045 gsclib045_tech
+|
+xmvlog_cg: *W,DLCOMB (/home/linux/ieng6/oce/6d/h3le/cds.lib,24): cds.lib COMBINE attribute library not defined 'gsclib045_tech' (cds.lib command ignored).
+ASSIGN gsclib045_tech DISPLAY PDKlib
+|
+xmvlog_cg: *W,DLCLIB (/home/linux/ieng6/oce/6d/h3le/cds.lib,26): cds.lib Library not defined 'gsclib045_tech' (cds.lib command ignored).
+DEFINE sharedKen /home/linux/ieng6/ee283fa23/public/ee283fa23_hll/shared_buck_project
+|
+xmvlog_cg: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,36): cds.lib Invalid path '/home/linux/ieng6/ee283fa23/public/ee283fa23_hll/shared_buck_project' (cds.lib command ignored).
+		worklib.core_tb:v <0x54e04383>
+			streams:  30, words: 48097
+		netlist.fifo_mux_16_1_bw20_simd1_0:v <0x3c5b80e0>
+			streams:   0, words:     0
+		netlist.fifo_mux_16_1_bw20_simd1_1:v <0x52565382>
+			streams:   0, words:     0
+		netlist.fifo_mux_16_1_bw20_simd1_2:v <0x691af1d3>
+			streams:   0, words:     0
+		netlist.fifo_mux_16_1_bw20_simd1_3:v <0x071722b1>
+			streams:   0, words:     0
+		netlist.fifo_mux_16_1_bw20_simd1_4:v <0x751403a2>
+			streams:   0, words:     0
+		netlist.fifo_mux_16_1_bw20_simd1_5:v <0x1b19d0c0>
+			streams:   0, words:     0
+		netlist.fifo_mux_16_1_bw20_simd1_6:v <0x20557291>
+			streams:   0, words:     0
+		netlist.fifo_mux_16_1_bw20_simd1_7:v <0x4e58a1f3>
+			streams:   0, words:     0
+		netlist.mac_array_col8_bw8_bw_psum20_pr8:v <0x4b1ec4ff>
+			streams:   0, words:     0
+		tcbn65gplus.DFQD4:v <0x091fed02>
+			streams:   0, words:     0
+		tcbn65gplus.CKXOR2D1:v <0x0499ab43>
+			streams:   0, words:     0
+		tcbn65gplus.FA1D2:v <0x6e21157d>
+			streams:   0, words:     0
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                   Instances  Unique
+		Modules:               30708     270
+		UDPs:                  28232       3
+		Primitives:            81045       9
+		Registers:             10836      45
+		Scalar wires:          18450       -
+		Expanded wires:           96       4
+		Vectored wires:            1       -
+		Initial blocks:           15      15
+		Cont. assignments:        11      11
+		Pseudo assignments:        4       4
+		Simulation timescale:    1ps
+	Writing initial simulation snapshot: worklib.core_tb:v
+xmelab: Memory Usage - Final: 61.2M, Peak: 69.1M, Peak virtual: 193.2M
+xmelab: CPU Usage - 0.1s system + 3.4s user = 3.5s total (3.7s, 95.4% cpu)
+DEFINE analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
+|
+xmsim: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,5): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/artist/analogLib' (cds.lib command ignored).
+DEFINE basic $CDSHOME/tools/dfII/etc/cdslib/basic
+|
+xmsim: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,6): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/basic' (cds.lib command ignored).
+DEFINE US_8ths $CDSHOME/tools/dfII/etc/cdslib/sheets/US_8ths
+|
+xmsim: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,7): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/sheets/US_8ths' (cds.lib command ignored).
+DEFINE sheets $CDSHOME/tools/dfII/etc/cdslib/sheets/US_8ths
+|
+xmsim: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,8): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/sheets/US_8ths' (cds.lib command ignored).
+DEFINE cdsDefTechLib $CDSHOME/tools/dfII/etc/cdsDefTechLib
+|
+xmsim: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,9): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdsDefTechLib' (cds.lib command ignored).
+DEFINE ahdlLib $CDSHOME/tools/dfII/samples/artist
+|
+xmsim: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,10): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/samples/artist' (cds.lib command ignored).
+ASSIGN gsclib045 COMBINE gsclib045 gsclib045_tech
+|
+xmsim: *W,DLCOMB (/home/linux/ieng6/oce/6d/h3le/cds.lib,24): cds.lib COMBINE attribute library not defined 'gsclib045_tech' (cds.lib command ignored).
+ASSIGN gsclib045_tech DISPLAY PDKlib
+|
+xmsim: *W,DLCLIB (/home/linux/ieng6/oce/6d/h3le/cds.lib,26): cds.lib Library not defined 'gsclib045_tech' (cds.lib command ignored).
+DEFINE sharedKen /home/linux/ieng6/ee283fa23/public/ee283fa23_hll/shared_buck_project
+|
+xmsim: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,36): cds.lib Invalid path '/home/linux/ieng6/ee283fa23/public/ee283fa23_hll/shared_buck_project' (cds.lib command ignored).
+
+-------------------------------------
+Relinquished control to SimVision...
+xcelium> 
+xcelium> source /software/ECE/XCELIUM-2009/tools/xcelium/files/xmsimrc
+xcelium> database -open waves -into waves.shm -default
+Created default SHM database waves
+xcelium> probe -create -shm core_tb.DUT.mac_array_instance.genblk1_0__mac_col_inst.col_id core_tb.DUT.mac_array_instance.genblk1_7__mac_col_inst.col_id
+Created probe 1
+xcelium> run
+##### Q data txt reading #####
+Q vector:           0
+
+Data:          -5
+
+Data:           7
+
+Data:          -5
+
+Data:          -7
+
+Data:          -1
+
+Data:           6
+
+Data:           1
+
+Data:           2
+
+Q vector:           1
+
+Data:          -4
+
+Data:           7
+
+Data:          -2
+
+Data:          -5
+
+Data:          -3
+
+Data:           4
+
+Data:           1
+
+Data:          -3
+
+Q vector:           2
+
+Data:          -4
+
+Data:          -1
+
+Data:          -4
+
+Data:          -4
+
+Data:           0
+
+Data:           5
+
+Data:           2
+
+Data:           0
+
+Q vector:           3
+
+Data:          -3
+
+Data:           3
+
+Data:           6
+
+Data:          -4
+
+Data:           6
+
+Data:           2
+
+Data:           1
+
+Data:           6
+
+Q vector:           4
+
+Data:          -8
+
+Data:           5
+
+Data:          -2
+
+Data:           6
+
+Data:           2
+
+Data:           1
+
+Data:          -3
+
+Data:           4
+
+Q vector:           5
+
+Data:          -2
+
+Data:          -1
+
+Data:          -2
+
+Data:          -6
+
+Data:          -1
+
+Data:           4
+
+Data:           0
+
+Data:           2
+
+Q vector:           6
+
+Data:           5
+
+Data:          -7
+
+Data:          -1
+
+Data:           3
+
+Data:           2
+
+Data:           1
+
+Data:          -7
+
+Data:           6
+
+Q vector:           7
+
+Data:           5
+
+Data:          -8
+
+Data:          -3
+
+Data:           6
+
+Data:           0
+
+Data:          -2
+
+Data:           6
+
+Data:          -1
+
+##### K data txt reading #####
+K vector:           0
+
+Data:          -6
+
+Data:           3
+
+Data:          -2
+
+Data:          -1
+
+Data:          -5
+
+Data:           1
+
+Data:           0
+
+Data:           7
+
+K vector:           1
+
+Data:           0
+
+Data:          -5
+
+Data:          -8
+
+Data:           0
+
+Data:           6
+
+Data:           0
+
+Data:          -5
+
+Data:          -7
+
+K vector:           2
+
+Data:           4
+
+Data:          -7
+
+Data:          -6
+
+Data:           3
+
+Data:           7
+
+Data:           7
+
+Data:           6
+
+Data:           6
+
+K vector:           3
+
+Data:          -3
+
+Data:           0
+
+Data:           0
+
+Data:          -7
+
+Data:           6
+
+Data:           3
+
+Data:           4
+
+Data:           7
+
+K vector:           4
+
+Data:           6
+
+Data:          -3
+
+Data:           4
+
+Data:          -7
+
+Data:          -4
+
+Data:          -3
+
+Data:          -2
+
+Data:          -5
+
+K vector:           5
+
+Data:           0
+
+Data:          -7
+
+Data:           3
+
+Data:           3
+
+Data:          -2
+
+Data:           6
+
+Data:           4
+
+Data:          -1
+
+K vector:           6
+
+Data:           7
+
+Data:          -5
+
+Data:           2
+
+Data:           1
+
+Data:           3
+
+Data:           6
+
+Data:           1
+
+Data:          -5
+
+K vector:           7
+
+Data:           3
+
+Data:          -1
+
+Data:           6
+
+Data:           3
+
+Data:          -6
+
+Data:          -2
+
+Data:           1
+
+Data:          -4
+
+##### Estimated multiplication result #####
+Q#:           0
+K#:           0
+Predicted psum:          93
+K#:           1
+Predicted psum:         -20
+K#:           2
+Predicted psum:          -7
+K#:           3
+Predicted psum:          94
+K#:           4
+Predicted psum:         -48
+K#:           5
+Predicted psum:         -45
+K#:           6
+Predicted psum:         -63
+K#:           7
+Predicted psum:         -86
+Predicted psum vector: fffaafffc1fffd3fffd00005effff9fffec0005d
+Q#:           1
+K#:           0
+Predicted psum:          52
+K#:           1
+Predicted psum:         -21
+K#:           2
+Predicted psum:         -73
+K#:           3
+Predicted psum:          24
+K#:           4
+Predicted psum:          -5
+K#:           5
+Predicted psum:         -33
+K#:           6
+Predicted psum:         -41
+K#:           7
+Predicted psum:         -23
+Predicted psum vector: fffe9fffd7fffdfffffb00018fffb7fffeb00034
+Q#:           2
+K#:           0
+Predicted psum:          38
+K#:           1
+Predicted psum:          27
+K#:           2
+Predicted psum:          50
+K#:           3
+Predicted psum:          63
+K#:           4
+Predicted psum:         -28
+K#:           5
+Predicted psum:          21
+K#:           6
+Predicted psum:          -3
+K#:           7
+Predicted psum:         -55
+Predicted psum vector: fffc9ffffd00015fffe40003f000320001b00026
+Q#:           3
+K#:           0
+Predicted psum:          33
+K#:           1
+Predicted psum:         -74
+K#:           2
+Predicted psum:          17
+K#:           3
+Predicted psum:         125
+K#:           4
+Predicted psum:         -37
+K#:           5
+Predicted psum:         -17
+K#:           6
+Predicted psum:         -27
+K#:           7
+Predicted psum:         -51
+Predicted psum vector: fffcdfffe5fffeffffdb0007d00011fffb600021
+Q#:           4
+K#:           0
+Predicted psum:          80
+K#:           1
+Predicted psum:         -10
+K#:           2
+Predicted psum:         -10
+K#:           3
+Predicted psum:          13
+K#:           4
+Predicted psum:        -138
+K#:           5
+Predicted psum:         -37
+K#:           6
+Predicted psum:         -90
+K#:           7
+Predicted psum:         -56
+Predicted psum vector: fffc8fffa6fffdbfff760000dffff6ffff600050
+Q#:           5
+K#:           0
+Predicted psum:          42
+K#:           1
+Predicted psum:           1
+K#:           2
+Predicted psum:          26
+K#:           3
+Predicted psum:          68
+K#:           4
+Predicted psum:           7
+K#:           5
+Predicted psum:           7
+K#:           6
+Predicted psum:          -8
+K#:           7
+Predicted psum:         -45
+Predicted psum vector: fffd3ffff80000700007000440001a000010002a
+Q#:           6
+K#:           0
+Predicted psum:         -19
+K#:           1
+Predicted psum:          48
+K#:           2
+Predicted psum:          99
+K#:           3
+Predicted psum:          -7
+K#:           4
+Predicted psum:          -1
+K#:           5
+Predicted psum:          23
+K#:           6
+Predicted psum:          46
+K#:           7
+Predicted psum:         -20
+Predicted psum vector: fffec0002e00017fffffffff90006300030fffed
+Q#:           7
+K#:           0
+Predicted psum:         -63
+K#:           1
+Predicted psum:          41
+K#:           2
+Predicted psum:         128
+K#:           3
+Predicted psum:         -46
+K#:           4
+Predicted psum:          -1
+K#:           5
+Predicted psum:          78
+K#:           6
+Predicted psum:          74
+K#:           7
+Predicted psum:          37
+Predicted psum vector: 000250004a0004effffffffd20008000029fffc1
+##### Qmem writing  #####
+##### Kmem writing #####
+##### K data loading to processor #####
+##### execute #####
+##### move ofifo to pmem #####
+##### compare pmem results to predicted #####
+Pmem result at address          0: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Result is incorrect!
+Pmem result at address          1: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Result is incorrect!
+Pmem result at address          2: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Result is incorrect!
+Pmem result at address          3: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Result is incorrect!
+Pmem result at address          4: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Result is incorrect!
+Pmem result at address          5: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Result is incorrect!
+Pmem result at address          6: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Result is incorrect!
+Pmem result at address          7: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Result is incorrect!
+Simulation complete via $finish(1) at time 94 NS + 0
+./netlist/core_tb.v:356 #10 $finish;
+xcelium> probe -create -shm core_tb.DUT.mac_array_instance.genblk1_0__mac_col_inst.cnt_q
+Created probe 2
+xcelium> reset
+Loaded snapshot worklib.core_tb:v
+xcelium> run
+##### Q data txt reading #####
+Q vector:           0
+
+Data:          -5
+
+Data:           7
+
+Data:          -5
+
+Data:          -7
+
+Data:          -1
+
+Data:           6
+
+Data:           1
+
+Data:           2
+
+Q vector:           1
+
+Data:          -4
+
+Data:           7
+
+Data:          -2
+
+Data:          -5
+
+Data:          -3
+
+Data:           4
+
+Data:           1
+
+Data:          -3
+
+Q vector:           2
+
+Data:          -4
+
+Data:          -1
+
+Data:          -4
+
+Data:          -4
+
+Data:           0
+
+Data:           5
+
+Data:           2
+
+Data:           0
+
+Q vector:           3
+
+Data:          -3
+
+Data:           3
+
+Data:           6
+
+Data:          -4
+
+Data:           6
+
+Data:           2
+
+Data:           1
+
+Data:           6
+
+Q vector:           4
+
+Data:          -8
+
+Data:           5
+
+Data:          -2
+
+Data:           6
+
+Data:           2
+
+Data:           1
+
+Data:          -3
+
+Data:           4
+
+Q vector:           5
+
+Data:          -2
+
+Data:          -1
+
+Data:          -2
+
+Data:          -6
+
+Data:          -1
+
+Data:           4
+
+Data:           0
+
+Data:           2
+
+Q vector:           6
+
+Data:           5
+
+Data:          -7
+
+Data:          -1
+
+Data:           3
+
+Data:           2
+
+Data:           1
+
+Data:          -7
+
+Data:           6
+
+Q vector:           7
+
+Data:           5
+
+Data:          -8
+
+Data:          -3
+
+Data:           6
+
+Data:           0
+
+Data:          -2
+
+Data:           6
+
+Data:          -1
+
+##### K data txt reading #####
+K vector:           0
+
+Data:          -6
+
+Data:           3
+
+Data:          -2
+
+Data:          -1
+
+Data:          -5
+
+Data:           1
+
+Data:           0
+
+Data:           7
+
+K vector:           1
+
+Data:           0
+
+Data:          -5
+
+Data:          -8
+
+Data:           0
+
+Data:           6
+
+Data:           0
+
+Data:          -5
+
+Data:          -7
+
+K vector:           2
+
+Data:           4
+
+Data:          -7
+
+Data:          -6
+
+Data:           3
+
+Data:           7
+
+Data:           7
+
+Data:           6
+
+Data:           6
+
+K vector:           3
+
+Data:          -3
+
+Data:           0
+
+Data:           0
+
+Data:          -7
+
+Data:           6
+
+Data:           3
+
+Data:           4
+
+Data:           7
+
+K vector:           4
+
+Data:           6
+
+Data:          -3
+
+Data:           4
+
+Data:          -7
+
+Data:          -4
+
+Data:          -3
+
+Data:          -2
+
+Data:          -5
+
+K vector:           5
+
+Data:           0
+
+Data:          -7
+
+Data:           3
+
+Data:           3
+
+Data:          -2
+
+Data:           6
+
+Data:           4
+
+Data:          -1
+
+K vector:           6
+
+Data:           7
+
+Data:          -5
+
+Data:           2
+
+Data:           1
+
+Data:           3
+
+Data:           6
+
+Data:           1
+
+Data:          -5
+
+K vector:           7
+
+Data:           3
+
+Data:          -1
+
+Data:           6
+
+Data:           3
+
+Data:          -6
+
+Data:          -2
+
+Data:           1
+
+Data:          -4
+
+##### Estimated multiplication result #####
+Q#:           0
+K#:           0
+Predicted psum:          93
+K#:           1
+Predicted psum:         -20
+K#:           2
+Predicted psum:          -7
+K#:           3
+Predicted psum:          94
+K#:           4
+Predicted psum:         -48
+K#:           5
+Predicted psum:         -45
+K#:           6
+Predicted psum:         -63
+K#:           7
+Predicted psum:         -86
+Predicted psum vector: fffaafffc1fffd3fffd00005effff9fffec0005d
+Q#:           1
+K#:           0
+Predicted psum:          52
+K#:           1
+Predicted psum:         -21
+K#:           2
+Predicted psum:         -73
+K#:           3
+Predicted psum:          24
+K#:           4
+Predicted psum:          -5
+K#:           5
+Predicted psum:         -33
+K#:           6
+Predicted psum:         -41
+K#:           7
+Predicted psum:         -23
+Predicted psum vector: fffe9fffd7fffdfffffb00018fffb7fffeb00034
+Q#:           2
+K#:           0
+Predicted psum:          38
+K#:           1
+Predicted psum:          27
+K#:           2
+Predicted psum:          50
+K#:           3
+Predicted psum:          63
+K#:           4
+Predicted psum:         -28
+K#:           5
+Predicted psum:          21
+K#:           6
+Predicted psum:          -3
+K#:           7
+Predicted psum:         -55
+Predicted psum vector: fffc9ffffd00015fffe40003f000320001b00026
+Q#:           3
+K#:           0
+Predicted psum:          33
+K#:           1
+Predicted psum:         -74
+K#:           2
+Predicted psum:          17
+K#:           3
+Predicted psum:         125
+K#:           4
+Predicted psum:         -37
+K#:           5
+Predicted psum:         -17
+K#:           6
+Predicted psum:         -27
+K#:           7
+Predicted psum:         -51
+Predicted psum vector: fffcdfffe5fffeffffdb0007d00011fffb600021
+Q#:           4
+K#:           0
+Predicted psum:          80
+K#:           1
+Predicted psum:         -10
+K#:           2
+Predicted psum:         -10
+K#:           3
+Predicted psum:          13
+K#:           4
+Predicted psum:        -138
+K#:           5
+Predicted psum:         -37
+K#:           6
+Predicted psum:         -90
+K#:           7
+Predicted psum:         -56
+Predicted psum vector: fffc8fffa6fffdbfff760000dffff6ffff600050
+Q#:           5
+K#:           0
+Predicted psum:          42
+K#:           1
+Predicted psum:           1
+K#:           2
+Predicted psum:          26
+K#:           3
+Predicted psum:          68
+K#:           4
+Predicted psum:           7
+K#:           5
+Predicted psum:           7
+K#:           6
+Predicted psum:          -8
+K#:           7
+Predicted psum:         -45
+Predicted psum vector: fffd3ffff80000700007000440001a000010002a
+Q#:           6
+K#:           0
+Predicted psum:         -19
+K#:           1
+Predicted psum:          48
+K#:           2
+Predicted psum:          99
+K#:           3
+Predicted psum:          -7
+K#:           4
+Predicted psum:          -1
+K#:           5
+Predicted psum:          23
+K#:           6
+Predicted psum:          46
+K#:           7
+Predicted psum:         -20
+Predicted psum vector: fffec0002e00017fffffffff90006300030fffed
+Q#:           7
+K#:           0
+Predicted psum:         -63
+K#:           1
+Predicted psum:          41
+K#:           2
+Predicted psum:         128
+K#:           3
+Predicted psum:         -46
+K#:           4
+Predicted psum:          -1
+K#:           5
+Predicted psum:          78
+K#:           6
+Predicted psum:          74
+K#:           7
+Predicted psum:          37
+Predicted psum vector: 000250004a0004effffffffd20008000029fffc1
+##### Qmem writing  #####
+##### Kmem writing #####
+##### K data loading to processor #####
+##### execute #####
+##### move ofifo to pmem #####
+##### compare pmem results to predicted #####
+Pmem result at address          0: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Result is incorrect!
+Pmem result at address          1: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Result is incorrect!
+Pmem result at address          2: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Result is incorrect!
+Pmem result at address          3: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Result is incorrect!
+Pmem result at address          4: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Result is incorrect!
+Pmem result at address          5: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Result is incorrect!
+Pmem result at address          6: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Result is incorrect!
+Pmem result at address          7: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Result is incorrect!
+Simulation complete via $finish(1) at time 94 NS + 0
+./netlist/core_tb.v:356 #10 $finish;
+xcelium> probe -create -shm core_tb.DUT.mac_array_instance.genblk1_4__mac_col_inst.clk core_tb.DUT.mac_array_instance.genblk1_4__mac_col_inst.cnt_q core_tb.DUT.mac_array_instance.genblk1_4__mac_col_inst.col_id core_tb.DUT.mac_array_instance.genblk1_4__mac_col_inst.fifo_wr core_tb.DUT.mac_array_instance.genblk1_4__mac_col_inst.load_ready_q core_tb.DUT.mac_array_instance.genblk1_4__mac_col_inst.key_q
+Created probe 3
+xcelium> run
+xmsim: *E,RNFNSH: Cannot continue simulation due to a previous $finish.
+xcelium> reset
+Loaded snapshot worklib.core_tb:v
+xcelium> run
+##### Q data txt reading #####
+Q vector:           0
+
+Data:          -5
+
+Data:           7
+
+Data:          -5
+
+Data:          -7
+
+Data:          -1
+
+Data:           6
+
+Data:           1
+
+Data:           2
+
+Q vector:           1
+
+Data:          -4
+
+Data:           7
+
+Data:          -2
+
+Data:          -5
+
+Data:          -3
+
+Data:           4
+
+Data:           1
+
+Data:          -3
+
+Q vector:           2
+
+Data:          -4
+
+Data:          -1
+
+Data:          -4
+
+Data:          -4
+
+Data:           0
+
+Data:           5
+
+Data:           2
+
+Data:           0
+
+Q vector:           3
+
+Data:          -3
+
+Data:           3
+
+Data:           6
+
+Data:          -4
+
+Data:           6
+
+Data:           2
+
+Data:           1
+
+Data:           6
+
+Q vector:           4
+
+Data:          -8
+
+Data:           5
+
+Data:          -2
+
+Data:           6
+
+Data:           2
+
+Data:           1
+
+Data:          -3
+
+Data:           4
+
+Q vector:           5
+
+Data:          -2
+
+Data:          -1
+
+Data:          -2
+
+Data:          -6
+
+Data:          -1
+
+Data:           4
+
+Data:           0
+
+Data:           2
+
+Q vector:           6
+
+Data:           5
+
+Data:          -7
+
+Data:          -1
+
+Data:           3
+
+Data:           2
+
+Data:           1
+
+Data:          -7
+
+Data:           6
+
+Q vector:           7
+
+Data:           5
+
+Data:          -8
+
+Data:          -3
+
+Data:           6
+
+Data:           0
+
+Data:          -2
+
+Data:           6
+
+Data:          -1
+
+##### K data txt reading #####
+K vector:           0
+
+Data:          -6
+
+Data:           3
+
+Data:          -2
+
+Data:          -1
+
+Data:          -5
+
+Data:           1
+
+Data:           0
+
+Data:           7
+
+K vector:           1
+
+Data:           0
+
+Data:          -5
+
+Data:          -8
+
+Data:           0
+
+Data:           6
+
+Data:           0
+
+Data:          -5
+
+Data:          -7
+
+K vector:           2
+
+Data:           4
+
+Data:          -7
+
+Data:          -6
+
+Data:           3
+
+Data:           7
+
+Data:           7
+
+Data:           6
+
+Data:           6
+
+K vector:           3
+
+Data:          -3
+
+Data:           0
+
+Data:           0
+
+Data:          -7
+
+Data:           6
+
+Data:           3
+
+Data:           4
+
+Data:           7
+
+K vector:           4
+
+Data:           6
+
+Data:          -3
+
+Data:           4
+
+Data:          -7
+
+Data:          -4
+
+Data:          -3
+
+Data:          -2
+
+Data:          -5
+
+K vector:           5
+
+Data:           0
+
+Data:          -7
+
+Data:           3
+
+Data:           3
+
+Data:          -2
+
+Data:           6
+
+Data:           4
+
+Data:          -1
+
+K vector:           6
+
+Data:           7
+
+Data:          -5
+
+Data:           2
+
+Data:           1
+
+Data:           3
+
+Data:           6
+
+Data:           1
+
+Data:          -5
+
+K vector:           7
+
+Data:           3
+
+Data:          -1
+
+Data:           6
+
+Data:           3
+
+Data:          -6
+
+Data:          -2
+
+Data:           1
+
+Data:          -4
+
+##### Estimated multiplication result #####
+Q#:           0
+K#:           0
+Predicted psum:          93
+K#:           1
+Predicted psum:         -20
+K#:           2
+Predicted psum:          -7
+K#:           3
+Predicted psum:          94
+K#:           4
+Predicted psum:         -48
+K#:           5
+Predicted psum:         -45
+K#:           6
+Predicted psum:         -63
+K#:           7
+Predicted psum:         -86
+Predicted psum vector: fffaafffc1fffd3fffd00005effff9fffec0005d
+Q#:           1
+K#:           0
+Predicted psum:          52
+K#:           1
+Predicted psum:         -21
+K#:           2
+Predicted psum:         -73
+K#:           3
+Predicted psum:          24
+K#:           4
+Predicted psum:          -5
+K#:           5
+Predicted psum:         -33
+K#:           6
+Predicted psum:         -41
+K#:           7
+Predicted psum:         -23
+Predicted psum vector: fffe9fffd7fffdfffffb00018fffb7fffeb00034
+Q#:           2
+K#:           0
+Predicted psum:          38
+K#:           1
+Predicted psum:          27
+K#:           2
+Predicted psum:          50
+K#:           3
+Predicted psum:          63
+K#:           4
+Predicted psum:         -28
+K#:           5
+Predicted psum:          21
+K#:           6
+Predicted psum:          -3
+K#:           7
+Predicted psum:         -55
+Predicted psum vector: fffc9ffffd00015fffe40003f000320001b00026
+Q#:           3
+K#:           0
+Predicted psum:          33
+K#:           1
+Predicted psum:         -74
+K#:           2
+Predicted psum:          17
+K#:           3
+Predicted psum:         125
+K#:           4
+Predicted psum:         -37
+K#:           5
+Predicted psum:         -17
+K#:           6
+Predicted psum:         -27
+K#:           7
+Predicted psum:         -51
+Predicted psum vector: fffcdfffe5fffeffffdb0007d00011fffb600021
+Q#:           4
+K#:           0
+Predicted psum:          80
+K#:           1
+Predicted psum:         -10
+K#:           2
+Predicted psum:         -10
+K#:           3
+Predicted psum:          13
+K#:           4
+Predicted psum:        -138
+K#:           5
+Predicted psum:         -37
+K#:           6
+Predicted psum:         -90
+K#:           7
+Predicted psum:         -56
+Predicted psum vector: fffc8fffa6fffdbfff760000dffff6ffff600050
+Q#:           5
+K#:           0
+Predicted psum:          42
+K#:           1
+Predicted psum:           1
+K#:           2
+Predicted psum:          26
+K#:           3
+Predicted psum:          68
+K#:           4
+Predicted psum:           7
+K#:           5
+Predicted psum:           7
+K#:           6
+Predicted psum:          -8
+K#:           7
+Predicted psum:         -45
+Predicted psum vector: fffd3ffff80000700007000440001a000010002a
+Q#:           6
+K#:           0
+Predicted psum:         -19
+K#:           1
+Predicted psum:          48
+K#:           2
+Predicted psum:          99
+K#:           3
+Predicted psum:          -7
+K#:           4
+Predicted psum:          -1
+K#:           5
+Predicted psum:          23
+K#:           6
+Predicted psum:          46
+K#:           7
+Predicted psum:         -20
+Predicted psum vector: fffec0002e00017fffffffff90006300030fffed
+Q#:           7
+K#:           0
+Predicted psum:         -63
+K#:           1
+Predicted psum:          41
+K#:           2
+Predicted psum:         128
+K#:           3
+Predicted psum:         -46
+K#:           4
+Predicted psum:          -1
+K#:           5
+Predicted psum:          78
+K#:           6
+Predicted psum:          74
+K#:           7
+Predicted psum:          37
+Predicted psum vector: 000250004a0004effffffffd20008000029fffc1
+##### Qmem writing  #####
+##### Kmem writing #####
+##### K data loading to processor #####
+##### execute #####
+##### move ofifo to pmem #####
+##### compare pmem results to predicted #####
+Pmem result at address          0: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Result is incorrect!
+Pmem result at address          1: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Result is incorrect!
+Pmem result at address          2: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Result is incorrect!
+Pmem result at address          3: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Result is incorrect!
+Pmem result at address          4: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Result is incorrect!
+Pmem result at address          5: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Result is incorrect!
+Pmem result at address          6: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Result is incorrect!
+Pmem result at address          7: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Result is incorrect!
+Simulation complete via $finish(1) at time 94 NS + 0
+./netlist/core_tb.v:356 #10 $finish;
+xcelium> probe -create -shm core_tb.DUT.mac_array_instance.genblk1_4__mac_col_inst.reset
+Created probe 4
+xcelium> reset
+Loaded snapshot worklib.core_tb:v
+xcelium> run
+##### Q data txt reading #####
+Q vector:           0
+
+Data:          -5
+
+Data:           7
+
+Data:          -5
+
+Data:          -7
+
+Data:          -1
+
+Data:           6
+
+Data:           1
+
+Data:           2
+
+Q vector:           1
+
+Data:          -4
+
+Data:           7
+
+Data:          -2
+
+Data:          -5
+
+Data:          -3
+
+Data:           4
+
+Data:           1
+
+Data:          -3
+
+Q vector:           2
+
+Data:          -4
+
+Data:          -1
+
+Data:          -4
+
+Data:          -4
+
+Data:           0
+
+Data:           5
+
+Data:           2
+
+Data:           0
+
+Q vector:           3
+
+Data:          -3
+
+Data:           3
+
+Data:           6
+
+Data:          -4
+
+Data:           6
+
+Data:           2
+
+Data:           1
+
+Data:           6
+
+Q vector:           4
+
+Data:          -8
+
+Data:           5
+
+Data:          -2
+
+Data:           6
+
+Data:           2
+
+Data:           1
+
+Data:          -3
+
+Data:           4
+
+Q vector:           5
+
+Data:          -2
+
+Data:          -1
+
+Data:          -2
+
+Data:          -6
+
+Data:          -1
+
+Data:           4
+
+Data:           0
+
+Data:           2
+
+Q vector:           6
+
+Data:           5
+
+Data:          -7
+
+Data:          -1
+
+Data:           3
+
+Data:           2
+
+Data:           1
+
+Data:          -7
+
+Data:           6
+
+Q vector:           7
+
+Data:           5
+
+Data:          -8
+
+Data:          -3
+
+Data:           6
+
+Data:           0
+
+Data:          -2
+
+Data:           6
+
+Data:          -1
+
+##### K data txt reading #####
+K vector:           0
+
+Data:          -6
+
+Data:           3
+
+Data:          -2
+
+Data:          -1
+
+Data:          -5
+
+Data:           1
+
+Data:           0
+
+Data:           7
+
+K vector:           1
+
+Data:           0
+
+Data:          -5
+
+Data:          -8
+
+Data:           0
+
+Data:           6
+
+Data:           0
+
+Data:          -5
+
+Data:          -7
+
+K vector:           2
+
+Data:           4
+
+Data:          -7
+
+Data:          -6
+
+Data:           3
+
+Data:           7
+
+Data:           7
+
+Data:           6
+
+Data:           6
+
+K vector:           3
+
+Data:          -3
+
+Data:           0
+
+Data:           0
+
+Data:          -7
+
+Data:           6
+
+Data:           3
+
+Data:           4
+
+Data:           7
+
+K vector:           4
+
+Data:           6
+
+Data:          -3
+
+Data:           4
+
+Data:          -7
+
+Data:          -4
+
+Data:          -3
+
+Data:          -2
+
+Data:          -5
+
+K vector:           5
+
+Data:           0
+
+Data:          -7
+
+Data:           3
+
+Data:           3
+
+Data:          -2
+
+Data:           6
+
+Data:           4
+
+Data:          -1
+
+K vector:           6
+
+Data:           7
+
+Data:          -5
+
+Data:           2
+
+Data:           1
+
+Data:           3
+
+Data:           6
+
+Data:           1
+
+Data:          -5
+
+K vector:           7
+
+Data:           3
+
+Data:          -1
+
+Data:           6
+
+Data:           3
+
+Data:          -6
+
+Data:          -2
+
+Data:           1
+
+Data:          -4
+
+##### Estimated multiplication result #####
+Q#:           0
+K#:           0
+Predicted psum:          93
+K#:           1
+Predicted psum:         -20
+K#:           2
+Predicted psum:          -7
+K#:           3
+Predicted psum:          94
+K#:           4
+Predicted psum:         -48
+K#:           5
+Predicted psum:         -45
+K#:           6
+Predicted psum:         -63
+K#:           7
+Predicted psum:         -86
+Predicted psum vector: fffaafffc1fffd3fffd00005effff9fffec0005d
+Q#:           1
+K#:           0
+Predicted psum:          52
+K#:           1
+Predicted psum:         -21
+K#:           2
+Predicted psum:         -73
+K#:           3
+Predicted psum:          24
+K#:           4
+Predicted psum:          -5
+K#:           5
+Predicted psum:         -33
+K#:           6
+Predicted psum:         -41
+K#:           7
+Predicted psum:         -23
+Predicted psum vector: fffe9fffd7fffdfffffb00018fffb7fffeb00034
+Q#:           2
+K#:           0
+Predicted psum:          38
+K#:           1
+Predicted psum:          27
+K#:           2
+Predicted psum:          50
+K#:           3
+Predicted psum:          63
+K#:           4
+Predicted psum:         -28
+K#:           5
+Predicted psum:          21
+K#:           6
+Predicted psum:          -3
+K#:           7
+Predicted psum:         -55
+Predicted psum vector: fffc9ffffd00015fffe40003f000320001b00026
+Q#:           3
+K#:           0
+Predicted psum:          33
+K#:           1
+Predicted psum:         -74
+K#:           2
+Predicted psum:          17
+K#:           3
+Predicted psum:         125
+K#:           4
+Predicted psum:         -37
+K#:           5
+Predicted psum:         -17
+K#:           6
+Predicted psum:         -27
+K#:           7
+Predicted psum:         -51
+Predicted psum vector: fffcdfffe5fffeffffdb0007d00011fffb600021
+Q#:           4
+K#:           0
+Predicted psum:          80
+K#:           1
+Predicted psum:         -10
+K#:           2
+Predicted psum:         -10
+K#:           3
+Predicted psum:          13
+K#:           4
+Predicted psum:        -138
+K#:           5
+Predicted psum:         -37
+K#:           6
+Predicted psum:         -90
+K#:           7
+Predicted psum:         -56
+Predicted psum vector: fffc8fffa6fffdbfff760000dffff6ffff600050
+Q#:           5
+K#:           0
+Predicted psum:          42
+K#:           1
+Predicted psum:           1
+K#:           2
+Predicted psum:          26
+K#:           3
+Predicted psum:          68
+K#:           4
+Predicted psum:           7
+K#:           5
+Predicted psum:           7
+K#:           6
+Predicted psum:          -8
+K#:           7
+Predicted psum:         -45
+Predicted psum vector: fffd3ffff80000700007000440001a000010002a
+Q#:           6
+K#:           0
+Predicted psum:         -19
+K#:           1
+Predicted psum:          48
+K#:           2
+Predicted psum:          99
+K#:           3
+Predicted psum:          -7
+K#:           4
+Predicted psum:          -1
+K#:           5
+Predicted psum:          23
+K#:           6
+Predicted psum:          46
+K#:           7
+Predicted psum:         -20
+Predicted psum vector: fffec0002e00017fffffffff90006300030fffed
+Q#:           7
+K#:           0
+Predicted psum:         -63
+K#:           1
+Predicted psum:          41
+K#:           2
+Predicted psum:         128
+K#:           3
+Predicted psum:         -46
+K#:           4
+Predicted psum:          -1
+K#:           5
+Predicted psum:          78
+K#:           6
+Predicted psum:          74
+K#:           7
+Predicted psum:          37
+Predicted psum vector: 000250004a0004effffffffd20008000029fffc1
+##### Qmem writing  #####
+##### Kmem writing #####
+##### K data loading to processor #####
+##### execute #####
+##### move ofifo to pmem #####
+##### compare pmem results to predicted #####
+Pmem result at address          0: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Result is incorrect!
+Pmem result at address          1: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Result is incorrect!
+Pmem result at address          2: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Result is incorrect!
+Pmem result at address          3: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Result is incorrect!
+Pmem result at address          4: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Result is incorrect!
+Pmem result at address          5: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Result is incorrect!
+Pmem result at address          6: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Result is incorrect!
+Pmem result at address          7: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Result is incorrect!
+Simulation complete via $finish(1) at time 94 NS + 0
+./netlist/core_tb.v:356 #10 $finish;
+xcelium> ^C
+xcelium> exit
+xmsim: Memory Usage - Final: 154.8M, Peak: 158.2M, Peak virtual: 494.7M
+xmsim: Main Thread CPU Usage - 6.0s system + 7.7s user = 13.7s total
+xmsim: CPU Usage - 6.0s system + 7.4s user = 13.4s total (394.9s, 3.4% cpu)
+TOOL:	xrun(64)	20.09-s017: Exiting on Mar 19, 2025 at 22:03:45 PDT  (total: 00:06:40)

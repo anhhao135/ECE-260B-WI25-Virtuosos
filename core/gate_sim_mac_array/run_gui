@@ -1,4 +1,6 @@
 xrun \
+-define INITIALIZE_MEMORY \
+-xminitialize 0 \
 +gui \
 +access+rwc \
 +xm64bit \
@@ -8,5 +10,5 @@ xrun \
 -v ./netlist/mac_array.pnr.v \
 -v /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v \
 ./netlist/mac_array_tb.v \
-#+xmseq_udp_delay+20ps \
++xmseq_udp_delay+20ps \
 
