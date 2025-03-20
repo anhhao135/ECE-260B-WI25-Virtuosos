@@ -11,12 +11,13 @@ module norm (clk, in, out,out_valid,valid, reset, div_complete);
   input  valid;
   input  reset;
   input  [bw_psum*col-1:0] in;
+  input  reg signed [bw_psum+1:0] sum_in;
+  output reg signed [bw_psum+1:0] sum;  
   output reg [bw_psum*col-1:0] out;
   output reg div_complete;
   output out_valid;
   reg signed [2*bw_psum-1:0] div_out;
   reg signed [bw_psum+2:0] sum_q;
-  reg signed [bw_psum+1:0] sum;
   reg signed [bw_psum-1:0] psum_out;
   reg div_state;
   reg div_complete_d;
@@ -36,7 +37,7 @@ module norm (clk, in, out,out_valid,valid, reset, div_complete);
   always @(*)
   begin
         sum_q = psum_mem[7]+psum_mem[6]+psum_mem[5]+psum_mem[4]+psum_mem[3]+psum_mem[2]+psum_mem[1]+psum_mem[0];
-	sum=sum_q[bw_psum+2]?(~sum_q[bw_psum+1:0]+1):sum_q[bw_psum+1:0];
+	sum=sum_q[bw_psum+2]?(~sum_q[bw_psum+1:0]+1):sum_q[bw_psum+1:0]+sum_in;
 	input_abs=psum_mem[cnt][bw_psum-1]?(~psum_mem[cnt][bw_psum-2:0]+1):psum_mem[cnt][bw_psum-2:0];
 	input_sgn=psum_mem[cnt][bw_psum-1];
   end

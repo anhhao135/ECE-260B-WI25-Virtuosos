@@ -124,6 +124,8 @@ norm norm_inst (
 	.out(sfp_out),
 	.out_valid(sfp_valid),
 	.valid(norm_valid),
+	.sum(sum_out),
+	.sum_in(sum_in),
 	.div_complete(div_complete)
 );
 
