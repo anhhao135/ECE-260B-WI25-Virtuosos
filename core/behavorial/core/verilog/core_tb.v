@@ -44,7 +44,7 @@ reg clk = 0;
 reg [pr*bw-1:0] mem_in_core1; 
 reg [pr*bw-1:0] mem_in_core2; 
 reg ofifo_rd = 0;
-wire [19:0] inst; 
+wire [20:0] inst; 
 wire [bw_psum*col-1:0] out_core1;
 wire [bw_psum*col-1:0] out_core2;
 
@@ -61,7 +61,9 @@ reg norm_valid;
 reg norm_start;
 reg [3:0] qkmem_add = 0;
 reg [3:0] pmem_add = 0;
+reg exchange_sum=0;
 
+assign inst[20]=exchange_sum;
 assign inst[19]=sfp_rd;
 assign inst[18]=norm_valid;
 assign inst[17]=norm_start;
@@ -229,7 +231,7 @@ $display("##### Estimated multiplication result #####");
 #0.5 clk = 1;
 #0.5 clk = 0; reset = 0;
 #0.5 clk = 1;
-
+exchange_sum=0;
 
 
 ///// Qmem writing  /////
@@ -434,11 +436,15 @@ begin
 	#0.5 clk=1'b0;
 	#0.5 clk=1'b1;
 	norm_valid=1;
+	#0.5 clk=1'b1;
+	#0.5 clk=1'b0;
+	exchange_sum=1;
 	for (st=0;st<18;st=st+1)
 	begin
 		#0.5 clk =1'b0;
 		#0.5 clk=1'b1;
 	end
+	exchange_sum=0;
 	norm_valid=0;
 end
 pmem_rd=0;

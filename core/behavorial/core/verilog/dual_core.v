@@ -1,4 +1,4 @@
-module dual_core (clk,mem_in_core1,mem_in_core2, out_core1,out_core2, inst_core1,inst_core_2, reset);
+module dual_core (clk,mem_in_core1,mem_in_core2, out_core1,out_core2, inst_core1,inst_core2, reset);
 parameter col = 8;
 parameter bw = 8;
 parameter bw_psum = 2*bw+4;
@@ -9,11 +9,11 @@ wire   [bw_psum*col-1:0] pmem_out;
 input  [pr*bw-1:0] mem_in_core1;
 input  [pr*bw-1:0] mem_in_core2;
 input  clk;
-input  [19:0] inst_core1;
-input  [19:0] inst_core2;
+input  [20:0] inst_core1;
+input  [20:0] inst_core2;
 input  reset;
-reg [bw_psum+3:0] sum_out_core1;
-reg [bw_psum+3:0] sum_out_core2;
+wire [bw_psum+3:0] sum_out_core1;
+wire [bw_psum+3:0] sum_out_core2;
 
 reg [bw_psum+3:0] sum_in_core1;
 reg [bw_psum+3:0] sum_in_core2;
@@ -34,8 +34,8 @@ begin
 		end
 		else
 		begin
-			sum_in_core1<=sum_out_core2;
-			sum_in_core2<=sum_out_core1;
+			sum_in_core1<=0;
+			sum_in_core2<=0;
 		end
 	end	
 end
