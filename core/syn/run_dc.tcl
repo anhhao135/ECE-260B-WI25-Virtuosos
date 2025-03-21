@@ -92,7 +92,9 @@ current_design $top_module
 
 # Compile
 # Source user compile options
-compile_ultra -no_autoungroup -timing_high_effort_script -exact_map
+#compile_ultra -no_autoungroup
+#ungroup -flatten -all
+
 
 # Write Out Design - Hierarchical
 current_design $top_module

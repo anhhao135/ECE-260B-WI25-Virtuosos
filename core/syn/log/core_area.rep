@@ -3,7 +3,7 @@
 Report : area
 Design : core
 Version: K-2015.06-SP2
-Date   : Sun Mar  9 20:35:45 2025
+Date   : Thu Mar 20 21:16:03 2025
 ****************************************
 
 Information: Updating design information... (UID-85)
@@ -13,21 +13,21 @@ Library(s) Used:
     tcbn65gpluswc (File: /home/linux/ieng6/ee260bwi25/public/PDKdata/db/tcbn65gpluswc.db)
 
 Number of ports:                        17249
-Number of nets:                         59474
-Number of cells:                        41468
-Number of combinational cells:          30495
-Number of sequential cells:             10800
+Number of nets:                         62728
+Number of cells:                        44668
+Number of combinational cells:          33696
+Number of sequential cells:             10799
 Number of macros/black boxes:               0
-Number of buf/inv:                       3915
-Number of references:                      10
+Number of buf/inv:                       3548
+Number of references:                      11
 
-Combinational area:              81099.720683
-Buf/Inv area:                     4674.600173
-Noncombinational area:           91815.837731
+Combinational area:              89730.721053
+Buf/Inv area:                     4060.440155
+Noncombinational area:           83792.159591
 Macro/Black Box area:                0.000000
 Net Interconnect area:      undefined  (Wire load has zero net area)
 
-Total cell area:                172915.558414
+Total cell area:                173522.880644
 Total area:                 undefined
 1
  
@@ -35,7 +35,7 @@ Total area:                 undefined
 Report : reference
 Design : core
 Version: K-2015.06-SP2
-Date   : Sun Mar  9 20:35:47 2025
+Date   : Thu Mar 20 21:16:05 2025
 ****************************************
 
 Attributes:
@@ -51,22 +51,24 @@ Attributes:
 
 Reference          Library       Unit Area   Count    Total Area   Attributes
 -----------------------------------------------------------------------------
+INVD0              tcbn65gpluswc
+                                  1.080000       1      1.080000  
 INVD1              tcbn65gpluswc
-                                  1.080000       3      3.240000  
+                                  1.080000       2      2.160000  
 MUX2D0             tcbn65gpluswc
                                   3.240000      64    207.360001  
-NR2D0              tcbn65gpluswc
-                                  1.440000       1      1.440000  
 NR2D1              tcbn65gpluswc
                                   1.440000       1      1.440000  
+NR2D2              tcbn65gpluswc
+                                  2.520000       1      2.520000  
 NR2XD0             tcbn65gpluswc
                                   1.440000       1      1.440000  
 mac_array_col8_bw8_bw_psum20_pr8
-                              84245.759611       1  84245.759611  h, n
-ofifo_col8_bw20               33983.999952       1  33983.999952  h, n
-sram_w16_sram_bit64_0         12173.399878       1  12173.399878  h, n
-sram_w16_sram_bit64_1         12166.199879       1  12166.199879  h, n
-sram_w16_sram_bit160          30131.279094       1  30131.279094  h, n
+                              83770.200249       1  83770.200249  h, n
+ofifo_col8_bw20               34594.560759       1  34594.560759  h, n
+sram_w16_sram_bit64_0         12412.080270       1  12412.080270  h, n
+sram_w16_sram_bit64_1         12404.880270       1  12404.880270  h, n
+sram_w16_sram_bit160          30125.159094       1  30125.159094  h, n
 -----------------------------------------------------------------------------
-Total 10 references                                 172915.558414
+Total 11 references                                 173522.880644
 1

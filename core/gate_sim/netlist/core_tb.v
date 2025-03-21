@@ -74,8 +74,8 @@ core DUT (
       .out(out)
 );
 
-initial $sdf_annotate("./constraints/core_BC.sdf", DUT, , ,"MAXIMUM","1:1:1","FROM_MTM");
 
+//initial $sdf_annotate("./constraints/core_BC.sdf", DUT, , ,"MAXIMUM","1:1:1","FROM_MTM");
 //initial $sdf_annotate("../constraints/core_WC.sdf", DUT, , ,"MAXIMUM","1:1:1","FROM_MTM");
 
 initial begin 
