@@ -249,8 +249,31 @@ $display("##### K data loading to processor #####");
   #0.5 clk = 1'b0;  
   kmem_rd = 0; qkmem_add = 0;
   #0.5 clk = 1'b1;  
+  #0.5 clk = 1'b0;  
+  #0.5 clk = 1'b1;  
+  #0.5 clk = 1'b0;  
+  #0.5 clk = 1'b1;
+  #0.5 clk = 1'b0;
+  #0.5 clk = 1'b1;  
+  #0.5 clk = 1'b0;  
+  #0.5 clk = 1'b1;  
+  #0.5 clk = 1'b0;  
+  #0.5 clk = 1'b1;
+  #0.5 clk = 1'b0;
+  #0.5 clk = 1'b1;  
+  #0.5 clk = 1'b0;  
+  #0.5 clk = 1'b1;  
+  #0.5 clk = 1'b0;  
+  #0.5 clk = 1'b1;
+  #0.5 clk = 1'b0;
+  #0.5 clk = 1'b1;  
+  #0.5 clk = 1'b0;  
+  #0.5 clk = 1'b1;  
+  #0.5 clk = 1'b0;  
+  #0.5 clk = 1'b1;
+  #0.5 clk = 1'b0;
 
-  #0.5 clk = 1'b0;   
+
   load = 0;
   #0.5 clk = 1'b1;  
 

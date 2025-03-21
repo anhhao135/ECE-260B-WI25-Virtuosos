@@ -15,7 +15,7 @@ input [23:0] col_ids;
 wire   [col*bw_psum-1:0] psum;
 wire   [2*(col+1)-1:0] inst_temp;
 wire   [2*(col+1)*bw*pr-1:0] q_temp;
-reg [3:0] cnt_q = -4;
+reg [7:0] cnt_q = 0;
 
 genvar i;
 
@@ -41,7 +41,7 @@ end
 
 always @ (negedge clk) begin
 	if (reset)
-		cnt_q = -4;
+		cnt_q = 0;
 	else begin
 		if (inst[0]) begin
 			cnt_q = cnt_q + 1;

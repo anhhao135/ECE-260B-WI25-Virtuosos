@@ -1,4 +1,4 @@
-module core (clk, sum_out, mem_in, out, inst, reset, col_ids);
+module core (clk, sum_out, mem_in, out, inst, reset, col_ids, cnt_q_out);
 
 parameter col = 8;
 parameter bw = 8;
@@ -13,6 +13,7 @@ input  clk;
 input  [16:0] inst; 
 input  reset;
 input  [23:0] col_ids;
+output [7:0] cnt_q_out;
 
 wire  [pr*bw-1:0] mac_in;
 wire  [pr*bw-1:0] kmem_out;
@@ -55,7 +56,8 @@ mac_array #(.bw(bw), .bw_psum(bw_psum), .col(col), .pr(pr)) mac_array_instance (
         .inst(inst[7:6]),     
         .fifo_wr(fifo_wr),     
 	.out(array_out),
-	.col_ids(col_ids)
+	.col_ids(col_ids),
+	.cnt_q_out(cnt_q_out)
 );
 
 ofifo #(.bw(bw_psum), .col(col))  ofifo_inst (

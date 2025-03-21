@@ -66,6 +66,9 @@ reg [bw_psum*col-1:0] temp16b;
 reg [23:0] col_ids = {3'd7, 3'd6, 3'd5, 3'd4, 3'd3, 3'd2, 3'd1, 3'd0};
 
 
+wire [7:0] cnt_q_out;
+
+
 
 core DUT (
       .reset(reset),
@@ -73,7 +76,8 @@ core DUT (
       .mem_in(mem_in), 
       .inst(inst),
       .out(out),
-      .col_ids(col_ids)
+      .col_ids(col_ids),
+      .cnt_q_out(cnt_q_out)
 );
 
 
@@ -249,8 +253,31 @@ $display("##### K data loading to processor #####");
   #0.5 clk = 1'b0;  
   kmem_rd = 0; qkmem_add = 0;
   #0.5 clk = 1'b1;  
+  #0.5 clk = 1'b0;  
+  #0.5 clk = 1'b1;  
+  #0.5 clk = 1'b0;  
+  #0.5 clk = 1'b1;
+  #0.5 clk = 1'b0;
+  #0.5 clk = 1'b1;  
+  #0.5 clk = 1'b0;  
+  #0.5 clk = 1'b1;  
+  #0.5 clk = 1'b0;  
+  #0.5 clk = 1'b1;
+  #0.5 clk = 1'b0;
+  #0.5 clk = 1'b1;  
+  #0.5 clk = 1'b0;  
+  #0.5 clk = 1'b1;  
+  #0.5 clk = 1'b0;  
+  #0.5 clk = 1'b1;
+  #0.5 clk = 1'b0;
+  #0.5 clk = 1'b1;  
+  #0.5 clk = 1'b0;  
+  #0.5 clk = 1'b1;  
+  #0.5 clk = 1'b0;  
+  #0.5 clk = 1'b1;
+  #0.5 clk = 1'b0;
 
-  #0.5 clk = 1'b0;   
+
   load = 0;
   #0.5 clk = 1'b1;  
 
@@ -289,7 +316,7 @@ $display("##### execute #####");
 
 ///////////////////////////////////////////
 
- for (q=0; q<10; q=q+1) begin
+ for (q=0; q<50; q=q+1) begin
     #0.5 clk = 1'b0;   
     #0.5 clk = 1'b1;   
  end

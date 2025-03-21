@@ -12,9 +12,9 @@ input  [1:0] i_inst; // [1]: execute, [0]: load
 output [1:0] o_inst; // [1]: execute, [0]: load 
 output fifo_wr;
 input [2:0] col_id;
-input [3:0] cnt_q;
+input [7:0] cnt_q;
 reg    load_ready_q;
-//reg    [3:0] cnt_q;
+reg    [3:0] cnt_q_internal = 0;
 reg    [1:0] inst_q;
 reg    [1:0] inst_2q;
 reg    [1:0] inst_3q;
@@ -70,7 +70,9 @@ always @ (posedge clk) begin
 
        query_q <= q_in;
 
-       if (cnt_q == col_id && load_ready_q) begin
+       
+
+       if ((cnt_q-1 == (col_id * 2) || (col_id == 0 && cnt_q == 1)) && load_ready_q) begin
          key_q <= q_in;
          load_ready_q <= 0;
        end
