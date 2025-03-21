@@ -1,6 +1,6 @@
 // Created by prof. Mingu Kang @VVIP Lab in UCSD ECE department
 // Please do not spread this code without permission 
-module norm (clk, in,sum_in,sum_out, out,out_valid,valid, reset, div_complete);
+module norm (clk, in,sum_in,sum_out,sum_in_valid,sum_out_valid, out,out_valid,valid, reset, div_complete);
 
   parameter bw = 8;
   parameter bw_psum = 2*bw+4;
@@ -12,8 +12,10 @@ module norm (clk, in,sum_in,sum_out, out,out_valid,valid, reset, div_complete);
   input  reset;
   input  [bw_psum*col-1:0] in;
   input  signed [bw_psum+3:0] sum_in;
+  input sum_in_valid;
   output reg signed [bw_psum+3:0] sum_out;  
   output reg [bw_psum*col-1:0] out;
+  output reg sum_out_valid;
   output reg div_complete;
   output out_valid;
   reg signed [2*bw_psum-1:0] div_out;
@@ -24,12 +26,14 @@ module norm (clk, in,sum_in,sum_out, out,out_valid,valid, reset, div_complete);
   reg div_complete_d;
   //reg div_complete;
   reg valid_d;
+  reg sum_flag;
   reg [2:0] cnt;
   reg [2:0] cnt_d;
   reg [2:0] cnt_dd;
   reg [2:0] cnt_ddd;
   reg clk_div;
   reg clk_div_d;
+  reg sum_complete;
   reg signed [bw_psum-2:0] input_abs;
   reg input_sgn;
   reg signed [bw_psum-1:0] psum_mem [col-1:0];
@@ -39,7 +43,7 @@ module norm (clk, in,sum_in,sum_out, out,out_valid,valid, reset, div_complete);
   begin
         sum_q = psum_mem[7]+psum_mem[6]+psum_mem[5]+psum_mem[4]+psum_mem[3]+psum_mem[2]+psum_mem[1]+psum_mem[0];
 	sum_out=sum_q[bw_psum+3]?(~sum_q[bw_psum+3:0]+1):sum_q[bw_psum+3:0];
-	sum=sum_out+sum_in;
+	//sum=sum_out+sum_in;
 	input_abs=psum_mem[cnt][bw_psum-1]?(~psum_mem[cnt][bw_psum-2:0]+1):psum_mem[cnt][bw_psum-2:0];
 	input_sgn=psum_mem[cnt][bw_psum-1];
   end
@@ -52,6 +56,8 @@ module norm (clk, in,sum_in,sum_out, out,out_valid,valid, reset, div_complete);
       div_complete<=1;
       clk_div<=0;
       out<=0;
+      sum_out_valid<=0;
+      sum_flag<=0;
    end
    else
    begin
@@ -62,6 +68,11 @@ module norm (clk, in,sum_in,sum_out, out,out_valid,valid, reset, div_complete);
 	cnt_dd<=cnt_d;
 	cnt_ddd<=cnt_dd;
 	div_complete_d<=div_complete;
+	if (sum_in_valid)
+	begin
+		sum<=sum_out+sum_in;
+		sum_flag<=1;
+	end
 	psum_mem_out[cnt_d]<=div_out[bw_psum-1:0];
 	 if (valid && ~valid_d) begin
 	div_state<=1;
@@ -77,12 +88,13 @@ module norm (clk, in,sum_in,sum_out, out,out_valid,valid, reset, div_complete);
 	psum_mem[2]<= in[bw_psum*3-1:bw_psum*2];
 	psum_mem[1]<= in[bw_psum*2-1:bw_psum];
 	psum_mem[0]<= in[bw_psum-1:0];
-	
+	sum_out_valid<=1;
 	end
-      else if (div_state && ~div_complete_d)
+      else if (div_state && ~div_complete_d && sum_flag)
       begin
 	clk_div<=clk_div+1;
         div_out <= input_sgn?~({input_abs, 8'b00000000}/sum)+1:({input_abs, 8'b00000000}/sum);
+	sum_out_valid<=0;
 	if (clk_div && ~clk_div_d)
 	begin
 		cnt<=cnt+1;
@@ -92,6 +104,7 @@ module norm (clk, in,sum_in,sum_out, out,out_valid,valid, reset, div_complete);
 	begin
 		div_complete<=1;
 		div_state<=0;
+		sum_flag<=0;
 	end
   end
   else if (~div_state && div_complete_d)

@@ -1,4 +1,4 @@
-module core (clk, sum_out,sum_in, mem_in, out, inst, reset);
+module core (clk, sum_out,sum_out_valid,sum_in,sum_in_valid, mem_in, out, inst, reset);
 
 parameter col = 8;
 parameter bw = 8;
@@ -6,7 +6,9 @@ parameter bw_psum = 2*bw+4;
 parameter pr = 8;
 
 output [bw_psum+3:0] sum_out;
+output sum_out_valid;
 input  [bw_psum+3:0] sum_in;
+input sum_in_valid;
 output [bw_psum*col-1:0] out;
 wire   [bw_psum*col-1:0] pmem_out;
 input  [pr*bw-1:0] mem_in;
@@ -126,7 +128,9 @@ norm norm_inst (
 	.out_valid(sfp_valid),
 	.valid(norm_valid),
 	.sum_out(sum_out),
+	.sum_out_valid(sum_out_valid),
 	.sum_in(sum_in),
+	.sum_in_valid(sum_in_valid),
 	.div_complete(div_complete)
 );
 
