@@ -3,31 +3,31 @@
 Report : area
 Design : core
 Version: K-2015.06-SP2
-Date   : Sun Mar  9 20:35:45 2025
+Date   : Fri Mar 21 13:31:22 2025
 ****************************************
 
 Information: Updating design information... (UID-85)
 Warning: Design 'core' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
 Library(s) Used:
 
-    tcbn65gpluswc (File: /home/linux/ieng6/ee260bwi25/public/PDKdata/db/tcbn65gpluswc.db)
+    tcbn65gplustc (File: /home/linux/ieng6/ee260bwi25/public/PDKdata/db/tcbn65gplustc.db)
 
 Number of ports:                        17249
-Number of nets:                         59474
-Number of cells:                        41468
-Number of combinational cells:          30495
+Number of nets:                         51704
+Number of cells:                        32499
+Number of combinational cells:          21526
 Number of sequential cells:             10800
 Number of macros/black boxes:               0
-Number of buf/inv:                       3915
-Number of references:                      10
+Number of buf/inv:                       1579
+Number of references:                       9
 
-Combinational area:              81099.720683
-Buf/Inv area:                     4674.600173
-Noncombinational area:           91815.837731
+Combinational area:              71372.160158
+Buf/Inv area:                     1795.680070
+Noncombinational area:           88009.918236
 Macro/Black Box area:                0.000000
 Net Interconnect area:      undefined  (Wire load has zero net area)
 
-Total cell area:                172915.558414
+Total cell area:                159382.078393
 Total area:                 undefined
 1
  
@@ -35,7 +35,7 @@ Total area:                 undefined
 Report : reference
 Design : core
 Version: K-2015.06-SP2
-Date   : Sun Mar  9 20:35:47 2025
+Date   : Fri Mar 21 13:31:24 2025
 ****************************************
 
 Attributes:
@@ -51,22 +51,20 @@ Attributes:
 
 Reference          Library       Unit Area   Count    Total Area   Attributes
 -----------------------------------------------------------------------------
-INVD1              tcbn65gpluswc
+INVD1              tcbn65gplustc
                                   1.080000       3      3.240000  
-MUX2D0             tcbn65gpluswc
+MUX2D0             tcbn65gplustc
                                   3.240000      64    207.360001  
-NR2D0              tcbn65gpluswc
-                                  1.440000       1      1.440000  
-NR2D1              tcbn65gpluswc
-                                  1.440000       1      1.440000  
-NR2XD0             tcbn65gpluswc
+NR2D1              tcbn65gplustc
+                                  1.440000       2      2.880000  
+NR2XD0             tcbn65gplustc
                                   1.440000       1      1.440000  
 mac_array_col8_bw8_bw_psum20_pr8
-                              84245.759611       1  84245.759611  h, n
-ofifo_col8_bw20               33983.999952       1  33983.999952  h, n
-sram_w16_sram_bit64_0         12173.399878       1  12173.399878  h, n
-sram_w16_sram_bit64_1         12166.199879       1  12166.199879  h, n
-sram_w16_sram_bit160          30131.279094       1  30131.279094  h, n
+                              70953.839595       1  70953.839595  h, n
+ofifo_col8_bw20               33864.479954       1  33864.479954  h, n
+sram_w16_sram_bit64_0         12134.519876       1  12134.519876  h, n
+sram_w16_sram_bit64_1         12137.039876       1  12137.039876  h, n
+sram_w16_sram_bit160          30077.279091       1  30077.279091  h, n
 -----------------------------------------------------------------------------
-Total 10 references                                 172915.558414
+Total 9 references                                  159382.078393
 1

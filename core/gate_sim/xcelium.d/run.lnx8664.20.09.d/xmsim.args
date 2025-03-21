@@ -3,6 +3,8 @@
 // Do not modify this file
 //
 +xmoveride_timescale
++define+INITIALIZE_MEMORY
++xminitialize+0
 +gui
 +access+rwc
 +xm64bit
@@ -16,7 +18,7 @@
 +EMGRLOG
 xrun.log
 -XLSTIME
-1742011970
+1742599787
 -XLKEEP
 -XLMODE
 ./xcelium.d/run.lnx8664.20.09.d

@@ -40,6 +40,12 @@ always @ (posedge clk) begin
 		product5 <= 0;
 		product6 <= 0;
 		product7 <= 0;
+		psum_0_0 <= 0;
+		psum_0_1 <= 0;
+		psum_0_2 <= 0;
+		psum_0_3 <= 0;
+		psum_1_0 <= 0;
+		psum_1_1 <= 0;
 	end
 	else begin
 		product0	<=	{{(bw){a[bw*	1	-1]}},	a[bw*	1	-1:bw*	0	]}	*	{{(bw){b[bw*	1	-1]}},	b[bw*	1	-1:	bw*	0	]};

@@ -50,6 +50,8 @@ always @ (posedge clk) begin
     inst_4q <= 0;
     inst_5q <= 0;
     inst_6q <= 0;
+    key_q <= 0;
+    query_q <= 0;
 
   end
 
