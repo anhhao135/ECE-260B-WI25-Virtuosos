@@ -193,9 +193,23 @@ $display("##### Estimated multiplication result #####");
         result_core2[t][q] = result_core2[t][q] + Q_core2[t][k] * K_core2[q][k];	
 
       end
+      if (result_core1[t][q]>0)
+      begin
       sum_core1[t]=sum_core1[t]+result_core1[t][q];
-      sum_core2[t]=sum_core2[t]+result_core2[t][q];      
-      //$display("Predicted psum: %d", result[t][q]);
+      end
+      else
+      begin
+      sum_core1[t]=sum_core1[t]-result_core1[t][q];
+      end
+
+      if (result_core2[t][q]>0)
+      begin
+      sum_core2[t]=sum_core2[t]+result_core2[t][q];
+      end
+      else
+      begin
+      sum_core2[t]=sum_core2[t]-result_core2[t][q];
+      end
     end
       //$display("predicted result sum %d",sum[t]);
       if (sum_core1[t]<0)
