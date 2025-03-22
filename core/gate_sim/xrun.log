@@ -1,5 +1,5 @@
 xrun(64): 20.09-s017: (c) Copyright 1995-2021 Cadence Design Systems, Inc.
-TOOL:	xrun(64)	20.09-s017: Started on Mar 22, 2025 at 12:29:36 PDT
+TOOL:	xrun(64)	20.09-s017: Started on Mar 22, 2025 at 14:27:29 PDT
 xrun
 	+define+INITIALIZE_MEMORY
 	+xminitialize+0
@@ -126,8 +126,8 @@ DEFINE sharedKen /home/linux/ieng6/ee283fa23/public/ee283fa23_hll/shared_buck_pr
 |
 xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,36): cds.lib Invalid path '/home/linux/ieng6/ee283fa23/public/ee283fa23_hll/shared_buck_project' (cds.lib command ignored).
 Recompiling... reason: file './netlist/core.v' is newer than expected.
-	expected: Sat Mar 22 12:10:14 2025
-	actual:   Sat Mar 22 12:28:57 2025
+	expected: Sat Mar 22 14:24:09 2025
+	actual:   Sat Mar 22 14:27:26 2025
 DEFINE analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
 |
 xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,5): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/artist/analogLib' (cds.lib command ignored).
@@ -182,9 +182,6 @@ xmvlog: *W,DLCLIB (/home/linux/ieng6/oce/6d/h3le/cds.lib,26): cds.lib Library no
 DEFINE sharedKen /home/linux/ieng6/ee283fa23/public/ee283fa23_hll/shared_buck_project
 |
 xmvlog: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,36): cds.lib Invalid path '/home/linux/ieng6/ee283fa23/public/ee283fa23_hll/shared_buck_project' (cds.lib command ignored).
-file: ./netlist/core_tb.v
-	module worklib.core_tb:v
-		errors: 0, warnings: 0
 file: ./netlist/core.v
 	module netlist.core:v
 		errors: 0, warnings: 0
@@ -539,13 +536,10 @@ file: ./netlist/core.v
 		errors: 0, warnings: 0
 	module netlist.fifo_mux_2_1_bw20_simd1_83:v
 		errors: 0, warnings: 0
-file: /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v
-	module tcbn65gplus.EDFCND1:v
-		errors: 0, warnings: 0
 	Total errors/warnings found outside modules and primitives:
 		errors: 0, warnings: 9
-xmvlog: Memory Usage - Current physical: 25.2M, Current virtual: 95.7M
-xmvlog: CPU Usage - 0.1s system + 1.4s user = 1.6s total (2.0s, 78.5% cpu)
+xmvlog: Memory Usage - Current physical: 25.6M, Current virtual: 96.0M
+xmvlog: CPU Usage - 0.2s system + 1.5s user = 1.6s total (2.0s, 82.5% cpu)
 DEFINE analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
 |
 xrun: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,5): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/artist/analogLib' (cds.lib command ignored).
@@ -772,8 +766,6 @@ xmvlog_cg: *W,DLCLIB (/home/linux/ieng6/oce/6d/h3le/cds.lib,26): cds.lib Library
 DEFINE sharedKen /home/linux/ieng6/ee283fa23/public/ee283fa23_hll/shared_buck_project
 |
 xmvlog_cg: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,36): cds.lib Invalid path '/home/linux/ieng6/ee283fa23/public/ee283fa23_hll/shared_buck_project' (cds.lib command ignored).
-		worklib.core_tb:v <0x3e05354b>
-			streams:  28, words: 47451
 		netlist.fifo_mux_16_1_bw20_simd1_0:v <0x3c5b80e0>
 			streams:   0, words:     0
 		netlist.fifo_mux_16_1_bw20_simd1_1:v <0x52565382>
@@ -792,56 +784,6 @@ xmvlog_cg: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,36): cds.lib Invalid
 			streams:   0, words:     0
 		netlist.mac_array_col8_bw8_bw_psum20_pr8:v <0x34c0eb20>
 			streams:   0, words:     0
-		tcbn65gplus.EDFQD1:v <0x4bcef2c4>
-			streams:   0, words:     0
-		tcbn65gplus.DFQD1:v <0x7e049845>
-			streams:   0, words:     0
-		tcbn65gplus.EDFQD1:v <0x2ca3ace8>
-			streams:   0, words:     0
-		tcbn65gplus.EDFCND1:v <0x2dd2aaee>
-			streams:   0, words:     0
-		tcbn65gplus.CKXOR2D1:v <0x0499ab43>
-			streams:   0, words:     0
-		tcbn65gplus.EDFCNQD2:v <0x71e02f50>
-			streams:   0, words:     0
-		tcbn65gplus.MUX2ND0:v <0x006f8b2a>
-			streams:   0, words:     0
-		tcbn65gplus.MUX2D0:v <0x4d16f57b>
-			streams:   0, words:     0
-		tcbn65gplus.DFCND1:v <0x4966d82f>
-			streams:   0, words:     0
-		tcbn65gplus.DFSNQD1:v <0x5e8f6f07>
-			streams:   0, words:     0
-		tcbn65gplus.EDFCNQD1:v <0x53781701>
-			streams:   0, words:     0
-		tcbn65gplus.XOR2D0:v <0x4c9be404>
-			streams:   0, words:     0
-		tcbn65gplus.FA1D2:v <0x6e21157d>
-			streams:   0, words:     0
-		tcbn65gplus.XNR2D2:v <0x35d0f0d1>
-			streams:   0, words:     0
-		tcbn65gplus.HA1D0:v <0x309ba6e5>
-			streams:   0, words:     0
-		tcbn65gplus.XOR3D0:v <0x0f49be06>
-			streams:   0, words:     0
-		tcbn65gplus.XNR2D1:v <0x4cd30749>
-			streams:   0, words:     0
-		tcbn65gplus.XNR2D0:v <0x73b988e2>
-			streams:   0, words:     0
-		tcbn65gplus.CKXOR2D0:v <0x06345606>
-			streams:   0, words:     0
-		tcbn65gplus.FA1D1:v <0x0b42909a>
-			streams:   0, words:     0
-		tcbn65gplus.DFCNQD4:v <0x705062bb>
-			streams:   0, words:     0
-		tcbn65gplus.DFCNQD2:v <0x42f10262>
-			streams:   0, words:     0
-		tcbn65gplus.CMPE42D1:v <0x79140818>
-			streams:   0, words:     0
-		tcbn65gplus.FA1D0:v <0x1eb311f8>
-			streams:   0, words:     0
-		tcbn65gplus.DFCNQD1:v <0x6eea6967>
-			streams:   0, words:     0
 	Building instance specific data structures.
 	Loading native compiled code:     .................... Done
 	Design hierarchy summary:
@@ -858,8 +800,8 @@ xmvlog_cg: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,36): cds.lib Invalid
 		Pseudo assignments:        3       3
 		Simulation timescale:    1ps
 	Writing initial simulation snapshot: worklib.core_tb:v
-xmelab: Memory Usage - Final: 59.8M, Peak: 68.9M, Peak virtual: 193.1M
-xmelab: CPU Usage - 0.1s system + 3.4s user = 3.5s total (3.7s, 94.7% cpu)
+xmelab: Memory Usage - Final: 59.6M, Peak: 68.4M, Peak virtual: 192.5M
+xmelab: CPU Usage - 0.1s system + 3.5s user = 3.7s total (3.8s, 96.6% cpu)
 DEFINE analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
 |
 xmsim: *W,DLCPTH (/home/linux/ieng6/oce/6d/h3le/cds.lib,5): cds.lib Invalid path '/software/ECE/IC-618/tools/dfII/bin/tools/dfII/etc/cdslib/artist/analogLib' (cds.lib command ignored).
@@ -894,7 +836,7 @@ xcelium>
 xcelium> source /software/ECE/XCELIUM-2009/tools/xcelium/files/xmsimrc
 xcelium> database -open waves -into waves.shm -default
 Created default SHM database waves
-xcelium> probe -create -shm core_tb.DUT.mac_array_instance.genblk1_5__mac_col_inst.clk core_tb.DUT.mac_array_instance.genblk1_5__mac_col_inst.cnt_q core_tb.DUT.mac_array_instance.genblk1_5__mac_col_inst.fifo_wr core_tb.DUT.mac_array_instance.genblk1_5__mac_col_inst.i_inst core_tb.DUT.mac_array_instance.genblk1_5__mac_col_inst.key_q core_tb.DUT.mac_array_instance.genblk1_5__mac_col_inst.load_ready_q core_tb.DUT.mac_array_instance.genblk1_5__mac_col_inst.o_inst core_tb.DUT.mac_array_instance.genblk1_5__mac_col_inst.out core_tb.DUT.mac_array_instance.genblk1_5__mac_col_inst.q_in core_tb.DUT.mac_array_instance.genblk1_5__mac_col_inst.q_out core_tb.DUT.mac_array_instance.genblk1_5__mac_col_inst.reset
+xcelium> probe -create -shm core_tb.clk core_tb.out core_tb.reset core_tb.inst core_tb.mem_in
 Created probe 1
 xcelium> run
 ##### Q data txt reading #####
@@ -1358,7 +1300,7 @@ Simulation complete via $finish(1) at time 94 NS + 0
 ./netlist/core_tb.v:357 #10 $finish;
 xcelium> ^C
 xcelium> exit
-xmsim: Memory Usage - Final: 141.9M, Peak: 148.9M, Peak virtual: 613.7M
-xmsim: Main Thread CPU Usage - 2.1s system + 2.4s user = 4.5s total
-xmsim: CPU Usage - 2.1s system + 2.1s user = 4.2s total (132.7s, 3.1% cpu)
-TOOL:	xrun(64)	20.09-s017: Exiting on Mar 22, 2025 at 12:31:55 PDT  (total: 00:02:19)
+xmsim: Memory Usage - Final: 136.8M, Peak: 147.2M, Peak virtual: 548.3M
+xmsim: Main Thread CPU Usage - 5.9s system + 4.5s user = 10.3s total
+xmsim: CPU Usage - 5.8s system + 4.2s user = 10.0s total (319.3s, 3.1% cpu)
+TOOL:	xrun(64)	20.09-s017: Exiting on Mar 22, 2025 at 14:32:54 PDT  (total: 00:05:25)
