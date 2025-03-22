@@ -44,8 +44,8 @@ reg pmem_rd = 0;
 reg pmem_wr = 0; 
 reg execute = 0;
 reg load = 0;
-reg norm_valid;
-reg norm_start;
+reg norm_valid = 0;
+reg norm_start = 0;
 reg [3:0] qkmem_add = 0;
 reg [3:0] pmem_add = 0;
 
