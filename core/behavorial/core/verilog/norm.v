@@ -32,10 +32,19 @@ module norm (clk, in, out,out_valid,valid, reset, div_complete);
   reg input_sgn;
   reg signed [bw_psum-1:0] psum_mem [col-1:0];
   reg signed [bw_psum-1:0] psum_mem_out [col-1:0];
+  wire signed [bw_psum-2:0] psum_mem_abs [col-1:0];    
   assign out_valid=(cnt_ddd==3'b111);
+  assign psum_mem_abs[0]=psum_mem[0][bw_psum-1]?(~psum_mem[0][bw_psum-2:0]+1):psum_mem[0][bw_psum-2:0];
+  assign psum_mem_abs[1]=psum_mem[1][bw_psum-1]?(~psum_mem[1][bw_psum-2:0]+1):psum_mem[1][bw_psum-2:0];
+  assign psum_mem_abs[2]=psum_mem[2][bw_psum-1]?(~psum_mem[2][bw_psum-2:0]+1):psum_mem[2][bw_psum-2:0];
+  assign psum_mem_abs[3]=psum_mem[3][bw_psum-1]?(~psum_mem[3][bw_psum-2:0]+1):psum_mem[3][bw_psum-2:0];
+  assign psum_mem_abs[4]=psum_mem[4][bw_psum-1]?(~psum_mem[4][bw_psum-2:0]+1):psum_mem[4][bw_psum-2:0];
+  assign psum_mem_abs[5]=psum_mem[5][bw_psum-1]?(~psum_mem[5][bw_psum-2:0]+1):psum_mem[5][bw_psum-2:0];
+  assign psum_mem_abs[6]=psum_mem[6][bw_psum-1]?(~psum_mem[6][bw_psum-2:0]+1):psum_mem[6][bw_psum-2:0];
+  assign psum_mem_abs[7]=psum_mem[7][bw_psum-1]?(~psum_mem[7][bw_psum-2:0]+1):psum_mem[7][bw_psum-2:0];
   always @(*)
   begin
-        sum_q = psum_mem[7]+psum_mem[6]+psum_mem[5]+psum_mem[4]+psum_mem[3]+psum_mem[2]+psum_mem[1]+psum_mem[0];
+        sum_q = psum_mem_abs[7]+psum_mem_abs[6]+psum_mem_abs[5]+psum_mem_abs[4]+psum_mem_abs[3]+psum_mem_abs[2]+psum_mem_abs[1]+psum_mem_abs[0];
 	sum=sum_q[bw_psum+2]?(~sum_q[bw_psum+1:0]+1):sum_q[bw_psum+1:0];
 	input_abs=psum_mem[cnt][bw_psum-1]?(~psum_mem[cnt][bw_psum-2:0]+1):psum_mem[cnt][bw_psum-2:0];
 	input_sgn=psum_mem[cnt][bw_psum-1];
