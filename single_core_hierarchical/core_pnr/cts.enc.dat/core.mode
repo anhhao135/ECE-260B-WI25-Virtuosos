@@ -35,3 +35,5 @@ catch { setPinAssignMode -pinEditInBatch false }
 catch { setTrialRouteMode -handlePreroute true }
 catch { setTrialRouteMode -keepMarkedOptRoutes true }
 catch { setAddStripeMode -break_at block_ring }
+catch { set_power_rail_plot_mode -enable_voltage_sources false }
+catch { set_power_rail_plot_mode -plot none }

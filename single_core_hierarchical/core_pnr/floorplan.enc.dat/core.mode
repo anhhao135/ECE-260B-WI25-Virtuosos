@@ -10,3 +10,5 @@ catch { setDelayCalMode -engine aae }
 catch { setDelayCalMode -ignoreNetLoad false }
 catch { setPinAssignMode -pinEditInBatch false }
 catch { setAddStripeMode -break_at block_ring }
+catch { set_power_rail_plot_mode -enable_voltage_sources false }
+catch { set_power_rail_plot_mode -plot none }

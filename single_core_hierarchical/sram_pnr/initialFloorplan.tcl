@@ -1,5 +1,5 @@
 # Floorplan
-floorPlan -site core -r 1 0.4 20 20 20 20
+floorPlan -site core -r 1 0.4 50 50 50 50
 
 timeDesign -preplace -prefix preplace
 
