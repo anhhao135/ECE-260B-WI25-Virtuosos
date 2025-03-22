@@ -8,8 +8,10 @@ parameter bw_psum = 2*bw+4;  // partial sum bit precision
 parameter pr = 8;           // how many products added in each dot product 
 parameter col = 8;           // how many dot product units are equipped
 
-integer qk_file ; // file handler
-integer qk_scan_file ; // file handler
+integer qk_file_core1; // file handler
+integer qk_scan_file_core1; // file handler
+integer qk_file_core2; // file handler
+integer qk_scan_file_core2; // file handler
 
 
 integer  captured_data;
@@ -19,22 +21,33 @@ integer  weight [col*pr-1:0];
 
 
 
-integer  K[col-1:0][pr-1:0];
-integer  Q[total_cycle-1:0][pr-1:0];
-integer  result[total_cycle-1:0][col-1:0];
-integer  sum[total_cycle-1:0];
-integer norm_result[total_cycle-1:0][col-1:0];
-reg [bw_psum*pr-1:0] predicted_results_pmem [7:0];
+integer  K_core1[col-1:0][pr-1:0];
+integer  Q_core1[total_cycle-1:0][pr-1:0];
+integer  result_core1[total_cycle-1:0][col-1:0];
+integer  sum_core1[total_cycle-1:0];
+integer norm_result_core1[total_cycle-1:0][col-1:0];
+reg [bw_psum*pr-1:0] predicted_results_pmem_core1 [7:0];
+
+integer  K_core2[col-1:0][pr-1:0];
+integer  Q_core2[total_cycle-1:0][pr-1:0];
+integer  result_core2[total_cycle-1:0][col-1:0];
+integer  sum_core2[total_cycle-1:0];
+integer norm_result_core2[total_cycle-1:0][col-1:0];
+reg [bw_psum*pr-1:0] predicted_results_pmem_core2 [7:0];
+
 
 integer i,j,k,t,p,q,s,u,m,st,kl;
 
 
 reg reset = 1;
 reg clk = 0;
-reg [pr*bw-1:0] mem_in; 
+reg [pr*bw-1:0] mem_in_core1; 
+reg [pr*bw-1:0] mem_in_core2; 
 reg ofifo_rd = 0;
-wire [19:0] inst; 
-wire [bw_psum*col-1:0] out;
+wire [20:0] inst; 
+wire [bw_psum*col-1:0] out_core1;
+wire [bw_psum*col-1:0] out_core2;
+
 reg sfp_rd;
 reg qmem_rd = 0;
 reg qmem_wr = 0; 
@@ -48,7 +61,9 @@ reg norm_valid;
 reg norm_start;
 reg [3:0] qkmem_add = 0;
 reg [3:0] pmem_add = 0;
+reg exchange_sum=0;
 
+assign inst[20]=exchange_sum;
 assign inst[19]=sfp_rd;
 assign inst[18]=norm_valid;
 assign inst[17]=norm_start;
@@ -72,12 +87,15 @@ reg [bw_psum*col-1:0] temp16b;
 
 
 
-core #(.bw(bw), .bw_psum(bw_psum), .col(col), .pr(pr)) DUT (
+dual_core #(.bw(bw), .bw_psum(bw_psum), .col(col), .pr(pr)) DUT (
       .reset(reset),
       .clk(clk), 
-      .mem_in(mem_in), 
-      .inst(inst),
-      .out(out)
+      .mem_in_core1(mem_in_core1), 
+      .mem_in_core2(mem_in_core2), 
+      .inst_core1(inst),
+      .inst_core2(inst),      
+      .out_core1(out_core1),
+      .out_core2(out_core2)
 );
 
 
@@ -88,35 +106,65 @@ initial begin
 
 
 
-///// Q data txt reading /////
+///// Q data txt reading core1 /////
 
 $display("##### Q data txt reading #####");
-qk_file = $fopen("qdata.txt", "r");
+qk_file_core1 = $fopen("qdata_core1.txt", "r");
 
 for (q=0; q<total_cycle; q=q+1) begin
-  $display("Q vector: %d\n", q);
+  $display("Q vector core1: %d\n", q);
   for (j=0; j<pr; j=j+1) begin
-    qk_scan_file = $fscanf(qk_file, "%d\n", captured_data);
-    Q[q][j] = captured_data;
-    $display("Data: %d\n", captured_data);
+    qk_scan_file_core1 = $fscanf(qk_file_core1, "%d\n", captured_data);
+    Q_core1[q][j] = captured_data;
+    $display("Data core1: %d\n", captured_data);
   end
 end
+
+///// Q data txt reading core2 /////
+
+$display("##### Q data txt reading #####");
+qk_file_core2 = $fopen("qdata_core2.txt", "r");
+
+for (q=0; q<total_cycle; q=q+1) begin
+  $display("Q vector core2: %d\n", q);
+  for (j=0; j<pr; j=j+1) begin
+    qk_scan_file_core2 = $fscanf(qk_file_core2, "%d\n", captured_data);
+    Q_core2[q][j] = captured_data;
+    $display("Data core2: %d\n", captured_data);
+  end
+end
+
 /////////////////////////////////
 
 
-///// K data txt reading /////
+///// K data txt reading core1 /////
 
 $display("##### K data txt reading #####");
-qk_file = $fopen("kdata.txt", "r");
+qk_file_core1 = $fopen("kdata_core1.txt", "r");
 
 for (q=0; q<col; q=q+1) begin
-  $display("K vector: %d\n", q);
+  $display("K vector core1: %d\n", q);
   for (j=0; j<pr; j=j+1) begin
-    qk_scan_file = $fscanf(qk_file, "%d\n", captured_data);
-    K[q][j] = captured_data;
-    $display("Data: %d\n", captured_data);
+    qk_scan_file_core1 = $fscanf(qk_file_core1, "%d\n", captured_data);
+    K_core1[q][j] = captured_data;
+    $display("Data core1: %d\n", captured_data);
   end
 end
+
+///// K data txt reading core2 /////
+
+$display("##### K data txt reading #####");
+qk_file_core2 = $fopen("kdata_core2.txt", "r");
+
+for (q=0; q<col; q=q+1) begin
+  $display("K vector core2: %d\n", q);
+  for (j=0; j<pr; j=j+1) begin
+    qk_scan_file_core2 = $fscanf(qk_file_core2, "%d\n", captured_data);
+    K_core2[q][j] = captured_data;
+    $display("Data core2: %d\n", captured_data);
+  end
+end
+
 /////////////////////////////////
 
 
@@ -129,9 +177,11 @@ $display("##### Estimated multiplication result #####");
 
   for (t=0; t<total_cycle; t=t+1) begin
      for (q=0; q<col; q=q+1) begin
-       result[t][q] = 0;
+       result_core1[t][q]=0;
+       result_core2[t][q]=0;
      end
-     sum[t]=0;
+     sum_core1[t]=0;
+     sum_core2[t]=0;
   end
 
   for (t=0; t<total_cycle; t=t+1) begin
@@ -139,29 +189,52 @@ $display("##### Estimated multiplication result #####");
     for (q=0; q<col; q=q+1) begin
       $display("K#: %d", q);
       for (k=0; k<pr; k=k+1) begin
-        result[t][q] = result[t][q] + Q[t][k] * K[q][k];
+        result_core1[t][q] = result_core1[t][q] + Q_core1[t][k] * K_core1[q][k];
+        result_core2[t][q] = result_core2[t][q] + Q_core2[t][k] * K_core2[q][k];	
+
       end
-      sum[t]=sum[t]+result[t][q];
-      //$display("Predicted psum: %d", result[t][q]);
+      if (result_core1[t][q]>0)
+      begin
+      sum_core1[t]=sum_core1[t]+result_core1[t][q];
+      end
+      else
+      begin
+      sum_core1[t]=sum_core1[t]-result_core1[t][q];
+      end
+
+      if (result_core2[t][q]>0)
+      begin
+      sum_core2[t]=sum_core2[t]+result_core2[t][q];
+      end
+      else
+      begin
+      sum_core2[t]=sum_core2[t]-result_core2[t][q];
+      end
     end
       //$display("predicted result sum %d",sum[t]);
-      if (sum[t]<0)
+      if (sum_core1[t]<0)
       begin
-	      sum[t]=sum[t]-2*sum[t];
+	      sum_core1[t]=sum_core1[t]-2*sum_core1[t];
       end      
-      //sum[t]=(sum[t]<0)?-sum[t][q]:sum[t][q];  
-      //$display("predicted result sum %d",sum[t]);      
-      
-    for (kl=0;kl<col;kl++)
-    begin
-	    result[t][kl]=result[t][kl]*(256)/sum[t];
-	    $display("post division prediction %d",result[t][kl]);
-    end
-    predicted_results_pmem [t] = {result[t][7][bw_psum-1:0], result[t][6][bw_psum-1:0], result[t][5][bw_psum-1:0], result[t][4][bw_psum-1:0], result[t][3][bw_psum-1:0], result[t][2][bw_psum-1:0], result[t][1][bw_psum-1:0], result[t][0][bw_psum-1:0]};
+      if (sum_core2[t]<0)
+      begin
+	      sum_core2[t]=sum_core2[t]-2*sum_core2[t];
+      end      
 
-    $display("Predicted psum vector: %h", predicted_results_pmem [t]);
+     for (kl=0;kl<col;kl++)
+      begin
+	    result_core1[t][kl]=result_core1[t][kl]*(256)/(sum_core1[t]+sum_core2[t]);
+	    $display("post division prediction core1 %d",result_core1[t][kl]);
+	    result_core2[t][kl]=result_core2[t][kl]*(256)/(sum_core1[t]+sum_core2[t]);
+	    $display("post division prediction core2 %d",result_core2[t][kl]);
+
+      end
+    predicted_results_pmem_core1 [t] = {result_core1[t][7][bw_psum-1:0], result_core1[t][6][bw_psum-1:0], result_core1[t][5][bw_psum-1:0], result_core1[t][4][bw_psum-1:0], result_core1[t][3][bw_psum-1:0], result_core1[t][2][bw_psum-1:0], result_core1[t][1][bw_psum-1:0], result_core1[t][0][bw_psum-1:0]};
+    predicted_results_pmem_core2 [t] = {result_core2[t][7][bw_psum-1:0], result_core2[t][6][bw_psum-1:0], result_core2[t][5][bw_psum-1:0], result_core2[t][4][bw_psum-1:0], result_core2[t][3][bw_psum-1:0], result_core2[t][2][bw_psum-1:0], result_core2[t][1][bw_psum-1:0], result_core2[t][0][bw_psum-1:0]};
+    $display("Predicted psum vector core1: %h", predicted_results_pmem_core1 [t]);
+    $display("Predicted psum vector core2: %h", predicted_results_pmem_core2 [t]);      
   end
-
+  
 //////////////////////////////////////////////
 
 #0.5 clk = 0;
@@ -172,7 +245,7 @@ $display("##### Estimated multiplication result #####");
 #0.5 clk = 1;
 #0.5 clk = 0; reset = 0;
 #0.5 clk = 1;
-
+exchange_sum=0;
 
 
 ///// Qmem writing  /////
@@ -184,14 +257,24 @@ for (q=0; q<total_cycle; q=q+1) begin
   #0.5 clk = 1'b0;  
   qmem_wr = 1;  if (q>0) qkmem_add = qkmem_add + 1; 
   
-  mem_in[1*bw-1:0*bw] = Q[q][0];
-  mem_in[2*bw-1:1*bw] = Q[q][1];
-  mem_in[3*bw-1:2*bw] = Q[q][2];
-  mem_in[4*bw-1:3*bw] = Q[q][3];
-  mem_in[5*bw-1:4*bw] = Q[q][4];
-  mem_in[6*bw-1:5*bw] = Q[q][5];
-  mem_in[7*bw-1:6*bw] = Q[q][6];
-  mem_in[8*bw-1:7*bw] = Q[q][7];
+  mem_in_core1[1*bw-1:0*bw] = Q_core1[q][0];
+  mem_in_core1[2*bw-1:1*bw] = Q_core1[q][1];
+  mem_in_core1[3*bw-1:2*bw] = Q_core1[q][2];
+  mem_in_core1[4*bw-1:3*bw] = Q_core1[q][3];
+  mem_in_core1[5*bw-1:4*bw] = Q_core1[q][4];
+  mem_in_core1[6*bw-1:5*bw] = Q_core1[q][5];
+  mem_in_core1[7*bw-1:6*bw] = Q_core1[q][6];
+  mem_in_core1[8*bw-1:7*bw] = Q_core1[q][7];
+
+  mem_in_core2[1*bw-1:0*bw] = Q_core2[q][0];
+  mem_in_core2[2*bw-1:1*bw] = Q_core2[q][1];
+  mem_in_core2[3*bw-1:2*bw] = Q_core2[q][2];
+  mem_in_core2[4*bw-1:3*bw] = Q_core2[q][3];
+  mem_in_core2[5*bw-1:4*bw] = Q_core2[q][4];
+  mem_in_core2[6*bw-1:5*bw] = Q_core2[q][5];
+  mem_in_core2[7*bw-1:6*bw] = Q_core2[q][6];
+  mem_in_core2[8*bw-1:7*bw] = Q_core2[q][7];
+ 
 
   #0.5 clk = 1'b1;  
 
@@ -223,14 +306,24 @@ $display("##### Kmem writing #####");
     #0.5 clk = 1'b0;  
     kmem_wr = 1; if (q>0) qkmem_add = qkmem_add + 1; 
     
-    mem_in[1*bw-1:0*bw] = K[q][0];
-    mem_in[2*bw-1:1*bw] = K[q][1];
-    mem_in[3*bw-1:2*bw] = K[q][2];
-    mem_in[4*bw-1:3*bw] = K[q][3];
-    mem_in[5*bw-1:4*bw] = K[q][4];
-    mem_in[6*bw-1:5*bw] = K[q][5];
-    mem_in[7*bw-1:6*bw] = K[q][6];
-    mem_in[8*bw-1:7*bw] = K[q][7];
+    mem_in_core1[1*bw-1:0*bw] = K_core1[q][0];
+    mem_in_core1[2*bw-1:1*bw] = K_core1[q][1];
+    mem_in_core1[3*bw-1:2*bw] = K_core1[q][2];
+    mem_in_core1[4*bw-1:3*bw] = K_core1[q][3];
+    mem_in_core1[5*bw-1:4*bw] = K_core1[q][4];
+    mem_in_core1[6*bw-1:5*bw] = K_core1[q][5];
+    mem_in_core1[7*bw-1:6*bw] = K_core1[q][6];
+    mem_in_core1[8*bw-1:7*bw] = K_core1[q][7];
+
+    mem_in_core2[1*bw-1:0*bw] = K_core2[q][0];
+    mem_in_core2[2*bw-1:1*bw] = K_core2[q][1];
+    mem_in_core2[3*bw-1:2*bw] = K_core2[q][2];
+    mem_in_core2[4*bw-1:3*bw] = K_core2[q][3];
+    mem_in_core2[5*bw-1:4*bw] = K_core2[q][4];
+    mem_in_core2[6*bw-1:5*bw] = K_core2[q][5];
+    mem_in_core2[7*bw-1:6*bw] = K_core2[q][6];
+    mem_in_core2[8*bw-1:7*bw] = K_core2[q][7];
+
 
     #0.5 clk = 1'b1;  
 
@@ -357,11 +450,15 @@ begin
 	#0.5 clk=1'b0;
 	#0.5 clk=1'b1;
 	norm_valid=1;
+	#0.5 clk=1'b1;
+	#0.5 clk=1'b0;
+	exchange_sum=1;
 	for (st=0;st<18;st=st+1)
 	begin
 		#0.5 clk =1'b0;
 		#0.5 clk=1'b1;
 	end
+	exchange_sum=0;
 	norm_valid=0;
 end
 pmem_rd=0;
@@ -393,8 +490,8 @@ $display("##### compare pmem results to predicted #####");
     #0.5 clk = 1'b1; 
     if (q>0) begin
 
-    	$display("Pmem result at address %d: %h", pmem_add-1, out);
-	if (out == predicted_results_pmem[q-1]) begin
+    	$display("core1 Pmem result at address %d: %h", pmem_add-1, out_core1);
+	if (out_core1 == predicted_results_pmem_core1[q-1]) begin
         	$display("Result matched predicted!");
 	end
 
@@ -402,6 +499,18 @@ $display("##### compare pmem results to predicted #####");
 		$display("Result is incorrect!");
 	end
     end
+    if (q>0) begin
+
+    	$display("core2 Pmem result at address %d: %h", pmem_add-1, out_core2);
+	if (out_core2 == predicted_results_pmem_core2[q-1]) begin
+        	$display("Result matched predicted!");
+	end
+
+	else begin
+		$display("Result is incorrect!");
+	end
+    end
+
   end
 
   #0.5 clk = 1'b0;  

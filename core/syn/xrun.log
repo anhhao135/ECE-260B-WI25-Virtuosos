@@ -1,0 +1,847 @@
+xrun(64): 20.09-s017: (c) Copyright 1995-2021 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	20.09-s017: Started on Mar 17, 2025 at 17:33:48 PDT
+xrun
+	-define INITIALIZE_MEMORY
+	-xminitialize 0
+	+xm64bit
+	+xmstatus
+	+xmtimescale+1ns/1ps
+	+xmoveride_timescale
+	-v core.out.v
+	-v /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v
+	core_tb.v
+
+   User defined plus("+") options:
+	+xmoveride_timescale
+
+		Caching library 'worklib' ....... Done
+		Caching library 'syn' ....... Done
+		Caching library 'tcbn65gplus' ....... Done
+	Elaborating the design hierarchy:
+core DUT (
+       |
+xmelab: *W,CUVWSP (./core_tb.v,69|7): 1 output port was not connected:
+xmelab: (./core.out.v,50981): sum_out
+
+  FICIND2 U262 ( .CIN(n2449), .B(psum_1_0[19]), .A(psum_1_1[19]), .S(N258) );
+             |
+xmelab: *W,CUVWSP (./core.out.v,894|13): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,10408): CO
+
+  FICIND1 U2558 ( .CIN(n2419), .B(psum_1_0[19]), .A(psum_1_1[19]), .S(N258) );
+              |
+xmelab: *W,CUVWSP (./core.out.v,6801|14): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,10366): CO
+
+  DFD1 cnt_q_reg_2_ ( .D(n20), .CP(clk), .QN(n8) );
+                  |
+xmelab: *W,CUVWSP (./core.out.v,6892|18): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,5821): Q
+
+  FICIND1 U2552 ( .CIN(n2405), .B(psum_1_0[19]), .A(psum_1_1[19]), .S(N258) );
+              |
+xmelab: *W,CUVWSP (./core.out.v,10346|14): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,10366): CO
+
+  DFD1 cnt_q_reg_2_ ( .D(n20), .CP(clk), .QN(n8) );
+                  |
+xmelab: *W,CUVWSP (./core.out.v,10441|18): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,5821): Q
+
+  DFKCND1 product1_reg_10_ ( .CN(n2509), .D(N29), .CP(clk), .Q(n20) );
+                         |
+xmelab: *W,CUVWSP (./core.out.v,11293|25): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,5938): QN
+
+  DFKCND1 product1_reg_11_ ( .CN(n2509), .D(N30), .CP(clk), .Q(n19) );
+                         |
+xmelab: *W,CUVWSP (./core.out.v,11294|25): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,5938): QN
+
+  DFKCND1 product0_reg_13_ ( .CN(n2510), .D(N16), .CP(clk), .Q(n9) );
+                         |
+xmelab: *W,CUVWSP (./core.out.v,11295|25): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,5938): QN
+
+  FICIND1 U8 ( .CIN(n2403), .B(psum_1_0[19]), .A(psum_1_1[19]), .S(N258) );
+           |
+xmelab: *W,CUVWSP (./core.out.v,11301|11): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,10366): CO
+
+  DFD1 cnt_q_reg_2_ ( .D(n19), .CP(clk), .QN(n7) );
+                  |
+xmelab: *W,CUVWSP (./core.out.v,13974|18): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,5821): Q
+
+  DFKCND1 product3_reg_13_ ( .CN(n2545), .D(N64), .CP(clk), .Q(n17) );
+                         |
+xmelab: *W,CUVWSP (./core.out.v,14835|25): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,5938): QN
+
+  DFKCND1 product0_reg_14_ ( .CN(n2549), .D(N17), .CP(clk), .Q(n15) );
+                         |
+xmelab: *W,CUVWSP (./core.out.v,14836|25): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,5938): QN
+
+  DFD1 cnt_q_reg_0_ ( .D(n22), .CP(clk), .QN(n98) );
+                  |
+xmelab: *W,CUVWSP (./core.out.v,17560|18): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,5821): Q
+
+  DFD1 cnt_q_reg_2_ ( .D(n20), .CP(clk), .QN(n8) );
+                  |
+xmelab: *W,CUVWSP (./core.out.v,17562|18): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,5821): Q
+
+  DFKCND1 product7_reg_12_ ( .CN(n2537), .D(N127), .CP(clk), .Q(n21) );
+                         |
+xmelab: *W,CUVWSP (./core.out.v,18410|25): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,5938): QN
+
+  DFKCND1 product7_reg_13_ ( .CN(n2537), .D(N128), .CP(clk), .Q(n20) );
+                         |
+xmelab: *W,CUVWSP (./core.out.v,18411|25): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,5938): QN
+
+  DFKCND1 product7_reg_10_ ( .CN(n2537), .D(N125), .CP(clk), .Q(n19) );
+                         |
+xmelab: *W,CUVWSP (./core.out.v,18412|25): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,5938): QN
+
+  DFKCND1 product7_reg_14_ ( .CN(n2537), .D(N129), .CP(clk), .Q(n18) );
+                         |
+xmelab: *W,CUVWSP (./core.out.v,18413|25): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,5938): QN
+
+  DFKCND1 product7_reg_11_ ( .CN(n2537), .D(N126), .CP(clk), .Q(n14) );
+                         |
+xmelab: *W,CUVWSP (./core.out.v,18414|25): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,5938): QN
+
+  DFKCND1 product0_reg_11_ ( .CN(n2535), .D(N14), .CP(clk), .Q(n7) );
+                         |
+xmelab: *W,CUVWSP (./core.out.v,18415|25): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,5938): QN
+
+  FICIND1 U2578 ( .CIN(n2429), .B(psum_1_0[19]), .A(psum_1_1[19]), .S(N258) );
+              |
+xmelab: *W,CUVWSP (./core.out.v,21031|14): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,10366): CO
+
+  DFD1 load_ready_q_reg ( .D(n23), .CP(clk), .QN(n12) );
+                      |
+xmelab: *W,CUVWSP (./core.out.v,21152|22): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,5821): Q
+
+  FICIND1 U2588 ( .CIN(n2434), .B(psum_1_0[19]), .A(psum_1_1[19]), .S(N258) );
+              |
+xmelab: *W,CUVWSP (./core.out.v,24626|14): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,10366): CO
+
+  DFD1 cnt_q_reg_0_ ( .D(n23), .CP(clk), .Q(cnt_q[0]) );
+                  |
+xmelab: *W,CUVWSP (./core.out.v,24717|18): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,5821): QN
+
+  DFD1 cnt_q_reg_1_ ( .D(n20), .CP(clk), .QN(n4) );
+                  |
+xmelab: *W,CUVWSP (./core.out.v,24718|18): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,5821): Q
+
+  FICIND1 U945 ( .CIN(n2445), .B(psum_1_0[19]), .A(psum_1_1[19]), .S(N258) );
+             |
+xmelab: *W,CUVWSP (./core.out.v,26515|13): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,10366): CO
+
+  FA1D1 U1026 ( .A(n883), .B(n882), .CI(n881), .S(n15) );
+            |
+xmelab: *W,CUVWSP (./core.out.v,26596|12): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,9795): CO
+
+  ofifo_col8_bw20 ofifo_inst ( .clk(clk), .in(array_out), .out(pmem_in), .rd(
+                           |
+xmelab: *W,CUVWSP (./core.out.v,50998|27): 2 output ports were not connected:
+xmelab: (./core.out.v,38181): o_valid
+xmelab: (./core.out.v,38181): o_full
+
+  fifo_depth16_bw20_simd1_7 col_idx_0__fifo_instance ( .rd_clk(clk), .wr_clk(
+                                                   |
+xmelab: *W,CUVWSP (./core.out.v,38189|51): 2 output ports were not connected:
+xmelab: (./core.out.v,29271): o_full
+xmelab: (./core.out.v,29272): o_empty
+
+  DFD1 rd_ptr_reg_1_ ( .D(n179), .CP(rd_clk), .Q(rd_ptr[1]) );
+                   |
+xmelab: *W,CUVWSP (./core.out.v,29321|19): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,5821): QN
+
+  fifo_depth16_bw20_simd1_6 col_idx_1__fifo_instance ( .rd_clk(clk), .wr_clk(
+                                                   |
+xmelab: *W,CUVWSP (./core.out.v,38192|51): 2 output ports were not connected:
+xmelab: (./core.out.v,30453): o_full
+xmelab: (./core.out.v,30454): o_empty
+
+  DFD1 rd_ptr_reg_1_ ( .D(n179), .CP(rd_clk), .Q(rd_ptr[1]) );
+                   |
+xmelab: *W,CUVWSP (./core.out.v,30503|19): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,5821): QN
+
+  fifo_depth16_bw20_simd1_5 col_idx_2__fifo_instance ( .rd_clk(clk), .wr_clk(
+                                                   |
+xmelab: *W,CUVWSP (./core.out.v,38195|51): 2 output ports were not connected:
+xmelab: (./core.out.v,37556): o_full
+xmelab: (./core.out.v,37557): o_empty
+
+  DFD1 rd_ptr_reg_1_ ( .D(n287), .CP(rd_clk), .Q(rd_ptr[1]) );
+                   |
+xmelab: *W,CUVWSP (./core.out.v,37607|19): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,5821): QN
+
+  fifo_depth16_bw20_simd1_4 col_idx_3__fifo_instance ( .rd_clk(clk), .wr_clk(
+                                                   |
+xmelab: *W,CUVWSP (./core.out.v,38198|51): 2 output ports were not connected:
+xmelab: (./core.out.v,36373): o_full
+xmelab: (./core.out.v,36374): o_empty
+
+  DFD1 rd_ptr_reg_1_ ( .D(n287), .CP(rd_clk), .Q(rd_ptr[1]) );
+                   |
+xmelab: *W,CUVWSP (./core.out.v,36424|19): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,5821): QN
+
+  fifo_depth16_bw20_simd1_3 col_idx_4__fifo_instance ( .rd_clk(clk), .wr_clk(
+                                                   |
+xmelab: *W,CUVWSP (./core.out.v,38201|51): 2 output ports were not connected:
+xmelab: (./core.out.v,35190): o_full
+xmelab: (./core.out.v,35191): o_empty
+
+  DFD1 rd_ptr_reg_1_ ( .D(n287), .CP(rd_clk), .Q(rd_ptr[1]) );
+                   |
+xmelab: *W,CUVWSP (./core.out.v,35241|19): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,5821): QN
+
+  fifo_depth16_bw20_simd1_2 col_idx_5__fifo_instance ( .rd_clk(clk), .wr_clk(
+                                                   |
+xmelab: *W,CUVWSP (./core.out.v,38204|51): 2 output ports were not connected:
+xmelab: (./core.out.v,34007): o_full
+xmelab: (./core.out.v,34008): o_empty
+
+  DFD1 rd_ptr_reg_1_ ( .D(n287), .CP(rd_clk), .Q(rd_ptr[1]) );
+                   |
+xmelab: *W,CUVWSP (./core.out.v,34058|19): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,5821): QN
+
+  fifo_depth16_bw20_simd1_1 col_idx_6__fifo_instance ( .rd_clk(clk), .wr_clk(
+                                                   |
+xmelab: *W,CUVWSP (./core.out.v,38207|51): 2 output ports were not connected:
+xmelab: (./core.out.v,32824): o_full
+xmelab: (./core.out.v,32825): o_empty
+
+  DFD1 rd_ptr_reg_1_ ( .D(n287), .CP(rd_clk), .Q(rd_ptr[1]) );
+                   |
+xmelab: *W,CUVWSP (./core.out.v,32875|19): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,5821): QN
+
+  fifo_depth16_bw20_simd1_0 col_idx_7__fifo_instance ( .rd_clk(clk), .wr_clk(
+                                                   |
+xmelab: *W,CUVWSP (./core.out.v,38210|51): 2 output ports were not connected:
+xmelab: (./core.out.v,31641): o_full
+xmelab: (./core.out.v,31642): o_empty
+
+  DFD1 rd_ptr_reg_1_ ( .D(n287), .CP(rd_clk), .Q(rd_ptr[1]) );
+                   |
+xmelab: *W,CUVWSP (./core.out.v,31692|19): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,5821): QN
+
+	Top level design units:
+		core_tb
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.core_tb:v <0x412193d5>
+			streams:  25, words: 49741
+		syn.fifo_mux_16_1_bw20_simd1_0:v <0x0914b5e0>
+			streams:   0, words:     0
+		syn.fifo_mux_16_1_bw20_simd1_1:v <0x759baa0b>
+			streams:   0, words:     0
+		syn.fifo_mux_16_1_bw20_simd1_2:v <0x79505dc1>
+			streams:   0, words:     0
+		syn.fifo_mux_16_1_bw20_simd1_3:v <0x05df422a>
+			streams:   0, words:     0
+		syn.fifo_mux_16_1_bw20_simd1_4:v <0x3bb6b414>
+			streams:   0, words:     0
+		syn.fifo_mux_16_1_bw20_simd1_5:v <0x4739abff>
+			streams:   0, words:     0
+		syn.fifo_mux_16_1_bw20_simd1_6:v <0x4bf25c35>
+			streams:   0, words:     0
+		syn.fifo_mux_16_1_bw20_simd1_7:v <0x377d43de>
+			streams:   0, words:     0
+		syn.mac_col_bw8_bw_psum20_pr8_col_id6:v <0x43b23c8d>
+			streams:   0, words:     0
+		syn.mac_col_bw8_bw_psum20_pr8_col_id5:v <0x3499a833>
+			streams:   0, words:     0
+		syn.mac_col_bw8_bw_psum20_pr8_col_id4:v <0x66774a8e>
+			streams:   0, words:     0
+		syn.mac_col_bw8_bw_psum20_pr8_col_id3:v <0x0546e09f>
+			streams:   0, words:     0
+		syn.mac_col_bw8_bw_psum20_pr8_col_id2:v <0x6c1401f1>
+			streams:   0, words:     0
+		syn.mac_col_bw8_bw_psum20_pr8_col_id1:v <0x3006374b>
+			streams:   0, words:     0
+		syn.mac_col_bw8_bw_psum20_pr8_col_id0:v <0x1b1b143c>
+			streams:   0, words:     0
+		syn.mac_array_col8_bw8_bw_psum20_pr8:v <0x0ed083ea>
+			streams:   0, words:     0
+		tcbn65gplus.MUX2ND0:v <0x6d5d0546>
+			streams:   0, words:     0
+		tcbn65gplus.FA1D1:v <0x5a470a11>
+			streams:   0, words:     0
+		tcbn65gplus.DFD1:v <0x359c496d>
+			streams:   0, words:     0
+		tcbn65gplus.DFKCND1:v <0x118c97ce>
+			streams:   0, words:     0
+		tcbn65gplus.CKXOR2D4:v <0x369b8b76>
+			streams:   0, words:     0
+		tcbn65gplus.EDFQD4:v <0x5bf1ffa8>
+			streams:   0, words:     0
+		tcbn65gplus.DFD1:v <0x7753cbdb>
+			streams:   0, words:     0
+		tcbn65gplus.FICIND1:v <0x29716ab6>
+			streams:   0, words:     0
+		tcbn65gplus.MUX2D0:v <0x20247b17>
+			streams:   0, words:     0
+		tcbn65gplus.DFQD2:v <0x63dbdb46>
+			streams:   0, words:     0
+		tcbn65gplus.EDFQD2:v <0x68280f1d>
+			streams:   0, words:     0
+		tcbn65gplus.DFQD1:v <0x23422ca4>
+			streams:   0, words:     0
+		tcbn65gplus.DFD1:v <0x641bc03c>
+			streams:   0, words:     0
+		tcbn65gplus.DFQD4:v <0x012555a6>
+			streams:   0, words:     0
+		tcbn65gplus.CKXOR2D0:v <0x3df8e5df>
+			streams:   0, words:     0
+		tcbn65gplus.XOR2D0:v <0x775757dd>
+			streams:   0, words:     0
+		tcbn65gplus.XNR2D4:v <0x1fd6cd1c>
+			streams:   0, words:     0
+		tcbn65gplus.XOR3D2:v <0x2517470c>
+			streams:   0, words:     0
+		tcbn65gplus.XOR3D1:v <0x11433c76>
+			streams:   0, words:     0
+		tcbn65gplus.XNR3D2:v <0x2ea5101a>
+			streams:   0, words:     0
+		tcbn65gplus.FA1D2:v <0x7b02d115>
+			streams:   0, words:     0
+		tcbn65gplus.HA1D1:v <0x0ffd6af8>
+			streams:   0, words:     0
+		tcbn65gplus.FA1D4:v <0x31c5dadb>
+			streams:   0, words:     0
+		tcbn65gplus.XNR2D0:v <0x48753b3b>
+			streams:   0, words:     0
+		tcbn65gplus.FICIND2:v <0x1ce71502>
+			streams:   0, words:     0
+		tcbn65gplus.XOR2D2:v <0x313e2fee>
+			streams:   0, words:     0
+		tcbn65gplus.XNR2D1:v <0x771fb490>
+			streams:   0, words:     0
+		tcbn65gplus.HA1D0:v <0x0ccfe242>
+			streams:   0, words:     0
+		tcbn65gplus.FA1D0:v <0x0b90d590>
+			streams:   0, words:     0
+		tcbn65gplus.FA1D1:v <0x1e6154f2>
+			streams:   0, words:     0
+		tcbn65gplus.CKXOR2D1:v <0x3f55189a>
+			streams:   0, words:     0
+		tcbn65gplus.DFKCNQD1:v <0x5e3cb9dd>
+			streams:   0, words:     0
+		tcbn65gplus.EDFQD1:v <0x5c7c7467>
+			streams:   0, words:     0
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                   Instances  Unique
+		Modules:               41470     320
+		UDPs:                  29704       3
+		Primitives:            84812       9
+		Timing outputs:        42493     126
+		Registers:             10835      45
+		Scalar wires:          53305       -
+		Expanded wires:           72       3
+		Initial blocks:           14      14
+		Cont. assignments:        11      11
+		Timing checks:         96512       -
+		Simulation timescale:    1ps
+	Writing initial simulation snapshot: worklib.core_tb:v
+xmelab: Memory Usage - Final: 73.5M, Peak: 86.9M, Peak virtual: 211.1M
+xmelab: CPU Usage - 0.2s system + 4.3s user = 4.5s total (4.6s, 98.0% cpu)
+Loading snapshot worklib.core_tb:v .................... Done
+xcelium> source /software/ECE/XCELIUM-2009/tools/xcelium/files/xmsimrc
+xcelium> run
+xmsim: *W,DVEXACC: some objects excluded from $dumpvars due to access restrictions, use +access+r on command line for access to all objects.
+            File: ./core_tb.v, line = 84, pos = 10
+           Scope: core_tb
+            Time: 0 FS + 0
+
+##### Q data txt reading #####
+Q vector:           0
+
+Data:          -5
+
+Data:           7
+
+Data:          -5
+
+Data:          -7
+
+Data:          -1
+
+Data:           6
+
+Data:           1
+
+Data:           2
+
+Q vector:           1
+
+Data:          -4
+
+Data:           7
+
+Data:          -2
+
+Data:          -5
+
+Data:          -3
+
+Data:           4
+
+Data:           1
+
+Data:          -3
+
+Q vector:           2
+
+Data:          -4
+
+Data:          -1
+
+Data:          -4
+
+Data:          -4
+
+Data:           0
+
+Data:           5
+
+Data:           2
+
+Data:           0
+
+Q vector:           3
+
+Data:          -3
+
+Data:           3
+
+Data:           6
+
+Data:          -4
+
+Data:           6
+
+Data:           2
+
+Data:           1
+
+Data:           6
+
+Q vector:           4
+
+Data:          -8
+
+Data:           5
+
+Data:          -2
+
+Data:           6
+
+Data:           2
+
+Data:           1
+
+Data:          -3
+
+Data:           4
+
+Q vector:           5
+
+Data:          -2
+
+Data:          -1
+
+Data:          -2
+
+Data:          -6
+
+Data:          -1
+
+Data:           4
+
+Data:           0
+
+Data:           2
+
+Q vector:           6
+
+Data:           5
+
+Data:          -7
+
+Data:          -1
+
+Data:           3
+
+Data:           2
+
+Data:           1
+
+Data:          -7
+
+Data:           6
+
+Q vector:           7
+
+Data:           5
+
+Data:          -8
+
+Data:          -3
+
+Data:           6
+
+Data:           0
+
+Data:          -2
+
+Data:           6
+
+Data:          -1
+
+##### K data txt reading #####
+K vector:           0
+
+Data:          -6
+
+Data:           3
+
+Data:          -2
+
+Data:          -1
+
+Data:          -5
+
+Data:           1
+
+Data:           0
+
+Data:           7
+
+K vector:           1
+
+Data:           0
+
+Data:          -5
+
+Data:          -8
+
+Data:           0
+
+Data:           6
+
+Data:           0
+
+Data:          -5
+
+Data:          -7
+
+K vector:           2
+
+Data:           4
+
+Data:          -7
+
+Data:          -6
+
+Data:           3
+
+Data:           7
+
+Data:           7
+
+Data:           6
+
+Data:           6
+
+K vector:           3
+
+Data:          -3
+
+Data:           0
+
+Data:           0
+
+Data:          -7
+
+Data:           6
+
+Data:           3
+
+Data:           4
+
+Data:           7
+
+K vector:           4
+
+Data:           6
+
+Data:          -3
+
+Data:           4
+
+Data:          -7
+
+Data:          -4
+
+Data:          -3
+
+Data:          -2
+
+Data:          -5
+
+K vector:           5
+
+Data:           0
+
+Data:          -7
+
+Data:           3
+
+Data:           3
+
+Data:          -2
+
+Data:           6
+
+Data:           4
+
+Data:          -1
+
+K vector:           6
+
+Data:           7
+
+Data:          -5
+
+Data:           2
+
+Data:           1
+
+Data:           3
+
+Data:           6
+
+Data:           1
+
+Data:          -5
+
+K vector:           7
+
+Data:           3
+
+Data:          -1
+
+Data:           6
+
+Data:           3
+
+Data:          -6
+
+Data:          -2
+
+Data:           1
+
+Data:          -4
+
+##### Estimated multiplication result #####
+Q#:           0
+K#:           0
+Predicted psum:          93
+K#:           1
+Predicted psum:         -20
+K#:           2
+Predicted psum:          -7
+K#:           3
+Predicted psum:          94
+K#:           4
+Predicted psum:         -48
+K#:           5
+Predicted psum:         -45
+K#:           6
+Predicted psum:         -63
+K#:           7
+Predicted psum:         -86
+Predicted psum vector: fffaafffc1fffd3fffd00005effff9fffec0005d
+Q#:           1
+K#:           0
+Predicted psum:          52
+K#:           1
+Predicted psum:         -21
+K#:           2
+Predicted psum:         -73
+K#:           3
+Predicted psum:          24
+K#:           4
+Predicted psum:          -5
+K#:           5
+Predicted psum:         -33
+K#:           6
+Predicted psum:         -41
+K#:           7
+Predicted psum:         -23
+Predicted psum vector: fffe9fffd7fffdfffffb00018fffb7fffeb00034
+Q#:           2
+K#:           0
+Predicted psum:          38
+K#:           1
+Predicted psum:          27
+K#:           2
+Predicted psum:          50
+K#:           3
+Predicted psum:          63
+K#:           4
+Predicted psum:         -28
+K#:           5
+Predicted psum:          21
+K#:           6
+Predicted psum:          -3
+K#:           7
+Predicted psum:         -55
+Predicted psum vector: fffc9ffffd00015fffe40003f000320001b00026
+Q#:           3
+K#:           0
+Predicted psum:          33
+K#:           1
+Predicted psum:         -74
+K#:           2
+Predicted psum:          17
+K#:           3
+Predicted psum:         125
+K#:           4
+Predicted psum:         -37
+K#:           5
+Predicted psum:         -17
+K#:           6
+Predicted psum:         -27
+K#:           7
+Predicted psum:         -51
+Predicted psum vector: fffcdfffe5fffeffffdb0007d00011fffb600021
+Q#:           4
+K#:           0
+Predicted psum:          80
+K#:           1
+Predicted psum:         -10
+K#:           2
+Predicted psum:         -10
+K#:           3
+Predicted psum:          13
+K#:           4
+Predicted psum:        -138
+K#:           5
+Predicted psum:         -37
+K#:           6
+Predicted psum:         -90
+K#:           7
+Predicted psum:         -56
+Predicted psum vector: fffc8fffa6fffdbfff760000dffff6ffff600050
+Q#:           5
+K#:           0
+Predicted psum:          42
+K#:           1
+Predicted psum:           1
+K#:           2
+Predicted psum:          26
+K#:           3
+Predicted psum:          68
+K#:           4
+Predicted psum:           7
+K#:           5
+Predicted psum:           7
+K#:           6
+Predicted psum:          -8
+K#:           7
+Predicted psum:         -45
+Predicted psum vector: fffd3ffff80000700007000440001a000010002a
+Q#:           6
+K#:           0
+Predicted psum:         -19
+K#:           1
+Predicted psum:          48
+K#:           2
+Predicted psum:          99
+K#:           3
+Predicted psum:          -7
+K#:           4
+Predicted psum:          -1
+K#:           5
+Predicted psum:          23
+K#:           6
+Predicted psum:          46
+K#:           7
+Predicted psum:         -20
+Predicted psum vector: fffec0002e00017fffffffff90006300030fffed
+Q#:           7
+K#:           0
+Predicted psum:         -63
+K#:           1
+Predicted psum:          41
+K#:           2
+Predicted psum:         128
+K#:           3
+Predicted psum:         -46
+K#:           4
+Predicted psum:          -1
+K#:           5
+Predicted psum:          78
+K#:           6
+Predicted psum:          74
+K#:           7
+Predicted psum:          37
+Predicted psum vector: 000250004a0004effffffffd20008000029fffc1
+##### Qmem writing  #####
+##### Kmem writing #####
+##### K data loading to processor #####
+##### execute #####
+##### move ofifo to pmem #####
+##### compare pmem results to predicted #####
+Pmem result at address          0: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Result is incorrect!
+Pmem result at address          1: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Result is incorrect!
+Pmem result at address          2: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Result is incorrect!
+Pmem result at address          3: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Result is incorrect!
+Pmem result at address          4: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Result is incorrect!
+Pmem result at address          5: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Result is incorrect!
+Pmem result at address          6: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Result is incorrect!
+Pmem result at address          7: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Result is incorrect!
+Simulation complete via $finish(1) at time 94 NS + 0
+./core_tb.v:357 #10 $finish;
+xcelium> exit
+xmsim: Memory Usage - Final: 112.7M, Peak: 112.7M, Peak virtual: 229.2M
+xmsim: CPU Usage - 0.1s system + 0.4s user = 0.6s total (1.6s, 35.4% cpu)
+TOOL:	xrun(64)	20.09-s017: Exiting on Mar 17, 2025 at 17:33:54 PDT  (total: 00:00:06)
