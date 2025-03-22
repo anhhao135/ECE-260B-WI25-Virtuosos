@@ -141,7 +141,14 @@ $display("##### Estimated multiplication result #####");
       for (k=0; k<pr; k=k+1) begin
         result[t][q] = result[t][q] + Q[t][k] * K[q][k];
       end
+      if (result[t][q]>0)
+      begin
       sum[t]=sum[t]+result[t][q];
+      end
+      else
+      begin
+      sum[t]=sum[t]-result[t][q];	      
+      end
       //$display("Predicted psum: %d", result[t][q]);
     end
       //$display("predicted result sum %d",sum[t]);
