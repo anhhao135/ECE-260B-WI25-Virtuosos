@@ -22,10 +22,8 @@ setObjFPlanBox Instance psum_mem_instance 382.695 231.0565 669.095 515.8565
 flipOrRotateObject -flip MX
 deselectInst psum_mem_instance
 
-
-addHaloToBlock {3 3 3 3} qmem_instance
-addHaloToBlock {3 3 3 3} kmem_instance
-addHaloToBlock {3 3 3 3} psum_mem_instance
+addHaloToBlock {3 3 3 3} -allBlock
+setInstancePlacementStatus -status fixed -name {qmem_instance kmem_instance psum_mem_instance}
 
 addRing -nets {VDD VSS} -type block_rings -around each_block -layer {top M1 bottom M1 left M2 right M2} -width {top 0.5 bottom 0.5 left 0.5 right 0.5} -spacing {top 0.5 bottom 0.5 left 0.5 right 0.5} 
 
