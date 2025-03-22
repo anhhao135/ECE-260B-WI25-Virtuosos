@@ -7,3 +7,5 @@
 +rwc
 -timescale
 1ns/1ps
+-SEQ_UDP_DELAY
+20ps

@@ -7,7 +7,7 @@ Report : power
         -analysis_effort low
 Design : core
 Version: K-2015.06-SP2
-Date   : Fri Mar 21 13:31:27 2025
+Date   : Sat Mar 22 12:27:25 2025
 ****************************************
 
 
@@ -58,6 +58,30 @@ fifo_mux_8_1_bw20_simd1_15
 fifo_mux_2_1_bw20_simd1_119
                        ZeroWireload      tcbn65gplustc
 sram_w16_sram_bit64_0  ZeroWireload      tcbn65gplustc
+fifo_depth16_bw20_simd1_0
+                       ZeroWireload      tcbn65gplustc
+fifo_depth16_bw20_simd1_1
+                       ZeroWireload      tcbn65gplustc
+fifo_depth16_bw20_simd1_2
+                       ZeroWireload      tcbn65gplustc
+fifo_depth16_bw20_simd1_3
+                       ZeroWireload      tcbn65gplustc
+fifo_depth16_bw20_simd1_4
+                       ZeroWireload      tcbn65gplustc
+fifo_depth16_bw20_simd1_5
+                       ZeroWireload      tcbn65gplustc
+fifo_mux_16_1_bw20_simd1_0
+                       ZeroWireload      tcbn65gplustc
+fifo_mux_16_1_bw20_simd1_1
+                       ZeroWireload      tcbn65gplustc
+fifo_mux_16_1_bw20_simd1_2
+                       ZeroWireload      tcbn65gplustc
+fifo_mux_16_1_bw20_simd1_3
+                       ZeroWireload      tcbn65gplustc
+fifo_mux_16_1_bw20_simd1_4
+                       ZeroWireload      tcbn65gplustc
+fifo_mux_16_1_bw20_simd1_5
+                       ZeroWireload      tcbn65gplustc
 mac_8in_bw8_bw_psum20_pr8_0
                        ZeroWireload      tcbn65gplustc
 mac_8in_bw8_bw_psum20_pr8_1
@@ -101,30 +125,6 @@ fifo_mux_8_1_bw20_simd1_12
 fifo_mux_8_1_bw20_simd1_13
                        ZeroWireload      tcbn65gplustc
 fifo_mux_8_1_bw20_simd1_14
-                       ZeroWireload      tcbn65gplustc
-fifo_depth16_bw20_simd1_0
-                       ZeroWireload      tcbn65gplustc
-fifo_depth16_bw20_simd1_1
-                       ZeroWireload      tcbn65gplustc
-fifo_depth16_bw20_simd1_2
-                       ZeroWireload      tcbn65gplustc
-fifo_depth16_bw20_simd1_3
-                       ZeroWireload      tcbn65gplustc
-fifo_depth16_bw20_simd1_4
-                       ZeroWireload      tcbn65gplustc
-fifo_depth16_bw20_simd1_5
-                       ZeroWireload      tcbn65gplustc
-fifo_mux_16_1_bw20_simd1_0
-                       ZeroWireload      tcbn65gplustc
-fifo_mux_16_1_bw20_simd1_1
-                       ZeroWireload      tcbn65gplustc
-fifo_mux_16_1_bw20_simd1_2
-                       ZeroWireload      tcbn65gplustc
-fifo_mux_16_1_bw20_simd1_3
-                       ZeroWireload      tcbn65gplustc
-fifo_mux_16_1_bw20_simd1_4
-                       ZeroWireload      tcbn65gplustc
-fifo_mux_16_1_bw20_simd1_5
                        ZeroWireload      tcbn65gplustc
 fifo_mux_2_1_bw20_simd1_0
                        ZeroWireload      tcbn65gplustc
@@ -375,12 +375,12 @@ Power-specific unit information :
     Leakage Power Units = 1nW
 
 
-  Cell Internal Power  =  86.0237 mW   (98%)
-  Net Switching Power  =   1.4100 mW    (2%)
+  Cell Internal Power  =  86.0941 mW   (98%)
+  Net Switching Power  =   1.5085 mW    (2%)
                          ---------
-Total Dynamic Power    =  87.4337 mW  (100%)
+Total Dynamic Power    =  87.6026 mW  (100%)
 
-Cell Leakage Power     = 760.8628 uW
+Cell Leakage Power     = 770.0724 uW
 
 
                  Internal         Switching           Leakage            Total
@@ -390,9 +390,9 @@ io_pad             0.0000            0.0000            0.0000            0.0000 
 memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
 black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
 clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
-register          84.3261            0.2702        4.2321e+05           85.0196  (  96.40%)
+register          84.4094            0.2306        4.2458e+05           85.0644  (  96.26%)
 sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
-combinational      1.6978            1.1398        3.3765e+05            3.1752  (   3.60%)
+combinational      1.6848            1.2779        3.4550e+05            3.3082  (   3.74%)
 --------------------------------------------------------------------------------------------------
-Total             86.0238 mW         1.4100 mW     7.6086e+05 nW        88.1948 mW
+Total             86.0942 mW         1.5085 mW     7.7007e+05 nW        88.3726 mW
 1

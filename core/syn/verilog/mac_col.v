@@ -38,7 +38,7 @@ mac_8in #(.bw(8), .bw_psum(bw_psum), .pr(8)) mac_8in_instance (
 ); 
 
 
-always @ (posedge clk) begin
+always @ (posedge clk or posedge reset) begin
 
   if (reset) begin
 

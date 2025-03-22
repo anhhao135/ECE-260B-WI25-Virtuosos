@@ -10,11 +10,14 @@
 +xm64bit
 +xmstatus
 +xmtimescale+1ns/1ps
++xmseq_udp_delay+20ps
 -ACCESS
 +rwc
 -STATUS
 -timescale
 1ns/1ps
+-SEQ_UDP_DELAY
+20ps
 -MESSAGES
 -XMINITIALIZE
 -XLMODE

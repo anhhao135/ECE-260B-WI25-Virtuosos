@@ -29,7 +29,7 @@ reg signed [bw_psum-1:0] psum_1_0;
 reg signed [bw_psum-1:0] psum_1_1;
 
 
-always @ (posedge clk) begin
+always @ (posedge clk or posedge reset) begin
 	if (reset) begin
 		out <= 0;
 		product0 <= 0;
