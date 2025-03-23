@@ -1,0 +1,8 @@
+//
+// File created by:  xrun
+// Do not modify this file
+
+s1::(17Mar2025:17:17:22):( xrun -define INITIALIZE_MEMORY -xminitialize 0 +gui +access+rwc +xm64bit +xmstatus +xmtimescale+1ns/1ps +xmoveride_timescale -v core.out.v -v /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v core_tb.v )
+s2::(17Mar2025:17:32:19):( xrun -define INITIALIZE_MEMORY -xminitialize 0 )
+s3::(17Mar2025:17:33:08):( xrun -define INITIALIZE_MEMORY -xminitialize 0 )
+s4::(17Mar2025:17:33:48):( xrun -define INITIALIZE_MEMORY -xminitialize 0 +xm64bit +xmstatus +xmtimescale+1ns/1ps +xmoveride_timescale -v core.out.v -v /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v core_tb.v )
