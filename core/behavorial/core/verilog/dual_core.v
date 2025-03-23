@@ -25,6 +25,14 @@ wire [bw_psum+3:0] sum_in_core2;
 assign exchange_sum=inst_core1[20] && inst_core2[20];
 assign sum_in_core1=sum_out_core2;
 assign sum_in_core2=sum_out_core1;
+wire sum_out_ack_core1;
+wire sum_out_ack_core2;
+
+reg sum_out_ack_core1_d;
+reg sum_out_ack_core2_d;
+
+reg sum_in_ack_core1;
+reg sum_in_ack_core2;
 always @(posedge clk)
 begin
 	/*if (reset)
@@ -38,6 +46,10 @@ begin
 		sum_out_valid_core2_d<=sum_out_valid_core2;
 		sum_in_valid_core1<=sum_out_valid_core2_d;
 		sum_in_valid_core2<=sum_out_valid_core1_d;
+		sum_out_ack_core1_d<=sum_out_ack_core1;
+		sum_out_ack_core2_d<=sum_out_ack_core2;
+		sum_in_ack_core1<=sum_out_ack_core2_d;
+		sum_in_ack_core2<=sum_out_ack_core1_d;
 		/*		
 		if (exchange_sum)
 		begin
@@ -62,6 +74,8 @@ core #(.bw(bw), .bw_psum(bw_psum), .col(col), .pr(pr)) core1 (
       .sum_in_valid(sum_in_valid_core1),
       .sum_out_valid(sum_out_valid_core1),
       .sum_out(sum_out_core1),
+      .sum_in_ack(sum_in_ack_core1),
+      .sum_out_ack(sum_out_ack_core1),
       .out(out_core1)
 );
 
@@ -74,6 +88,8 @@ core #(.bw(bw), .bw_psum(bw_psum), .col(col), .pr(pr)) core2 (
       .sum_in_valid(sum_in_valid_core2),
       .sum_out_valid(sum_out_valid_core2),
       .sum_out(sum_out_core2),
+      .sum_in_ack(sum_in_ack_core2),
+      .sum_out_ack(sum_out_ack_core2),
       .out(out_core2)
 );
 endmodule

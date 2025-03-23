@@ -1,6 +1,6 @@
 // Created by prof. Mingu Kang @VVIP Lab in UCSD ECE department
 // Please do not spread this code without permission 
-module norm (clk, in,sum_in,sum_out,sum_in_valid,sum_out_valid, out,out_valid,valid, reset, div_complete);
+module norm (clk, in,sum_in,sum_out,sum_in_valid,sum_in_ack,sum_out_valid,sum_out_ack, out,out_valid,valid, reset, div_complete);
 
   parameter bw = 8;
   parameter bw_psum = 2*bw+4;
@@ -13,6 +13,8 @@ module norm (clk, in,sum_in,sum_out,sum_in_valid,sum_out_valid, out,out_valid,va
   input  [bw_psum*col-1:0] in;
   input  signed [bw_psum+3:0] sum_in;
   input sum_in_valid;
+  input sum_in_ack;
+  output reg sum_out_ack;
   output reg signed [bw_psum+3:0] sum_out;  
   output reg [bw_psum*col-1:0] out;
   output reg sum_out_valid;
@@ -67,6 +69,7 @@ module norm (clk, in,sum_in,sum_out,sum_in_valid,sum_out_valid, out,out_valid,va
       clk_div<=0;
       out<=0;
       sum_out_valid<=0;
+      sum_out_ack<=0;
       sum_flag<=0;
    end
    else
@@ -78,10 +81,19 @@ module norm (clk, in,sum_in,sum_out,sum_in_valid,sum_out_valid, out,out_valid,va
 	cnt_dd<=cnt_d;
 	cnt_ddd<=cnt_dd;
 	div_complete_d<=div_complete;
-	if (sum_in_valid)
+	if (sum_in_valid &&~sum_flag)
 	begin
 		sum<=sum_out+sum_in;
 		sum_flag<=1;
+		sum_out_ack<=1;
+	end
+	if (sum_in_ack)
+	begin
+		sum_out_valid<=0;
+	end
+	if (~sum_in_valid)
+	begin
+		sum_out_ack<=0;
 	end
 	psum_mem_out[cnt_d]<=div_out[bw_psum-1:0];
 	 if (valid && ~valid_d) begin
@@ -103,8 +115,9 @@ module norm (clk, in,sum_in,sum_out,sum_in_valid,sum_out_valid, out,out_valid,va
       else if (div_state && ~div_complete_d && sum_flag)
       begin
 	clk_div<=clk_div+1;
-        div_out <= input_sgn?~({input_abs, 8'b00000000}/sum)+1:({input_abs, 8'b00000000}/sum);
-	sum_out_valid<=0;
+        //div_out <= input_sgn?~({input_abs, 8'b00000000}/sum)+1:({input_abs, 8'b00000000}/sum);
+	//sum_out_valid<=0;
+	div_out<={input_abs,8'b00000000}/sum;
 	if (clk_div && ~clk_div_d)
 	begin
 		cnt<=cnt+1;

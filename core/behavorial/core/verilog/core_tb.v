@@ -223,9 +223,19 @@ $display("##### Estimated multiplication result #####");
 
      for (kl=0;kl<col;kl++)
       begin
+
 	    result_core1[t][kl]=result_core1[t][kl]*(256)/(sum_core1[t]+sum_core2[t]);
+	    if (result_core1[t][kl]<0)
+	    begin
+		    result_core1[t][kl]=-result_core1[t][kl];
+	    end
 	    $display("post division prediction core1 %d",result_core1[t][kl]);
 	    result_core2[t][kl]=result_core2[t][kl]*(256)/(sum_core1[t]+sum_core2[t]);
+	    if (result_core2[t][kl]<0)
+	    begin
+		    result_core2[t][kl]=-result_core2[t][kl];
+	    end
+
 	    $display("post division prediction core2 %d",result_core2[t][kl]);
 
       end
