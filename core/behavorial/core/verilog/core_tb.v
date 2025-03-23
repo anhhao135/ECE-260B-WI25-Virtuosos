@@ -17,7 +17,9 @@ integer qk_scan_file_core2; // file handler
 integer  captured_data;
 integer  weight [col*pr-1:0];
 `define NULL 0
-
+reg [31:0] core1_rand1;
+reg [31:0] core1_rand2;
+reg[7:0] core2_rand1;
 
 
 
@@ -109,28 +111,42 @@ initial begin
 ///// Q data txt reading core1 /////
 
 $display("##### Q data txt reading #####");
-qk_file_core1 = $fopen("qdata_core1.txt", "r");
-
 for (q=0; q<total_cycle; q=q+1) begin
   $display("Q vector core1: %d\n", q);
   for (j=0; j<pr; j=j+1) begin
-    qk_scan_file_core1 = $fscanf(qk_file_core1, "%d\n", captured_data);
-    Q_core1[q][j] = captured_data;
-    $display("Data core1: %d\n", captured_data);
+    core1_rand1=$random;
+    core1_rand2=$random;
+    if (core1_rand2[7:0]>64)
+    begin
+    Q_core1[q][j] = 0;
+    end
+    else 
+    begin
+	    Q_core1[q][j]=core1_rand1[7:0];
+    end
+    $display("Data core1: %d\n", Q_core1[q][j]);
   end
 end
 
 ///// Q data txt reading core2 /////
 
 $display("##### Q data txt reading #####");
-qk_file_core2 = $fopen("qdata_core2.txt", "r");
+//qk_file_core2 = $fopen("qdata_core2.txt", "r");
 
 for (q=0; q<total_cycle; q=q+1) begin
   $display("Q vector core2: %d\n", q);
   for (j=0; j<pr; j=j+1) begin
-    qk_scan_file_core2 = $fscanf(qk_file_core2, "%d\n", captured_data);
-    Q_core2[q][j] = captured_data;
-    $display("Data core2: %d\n", captured_data);
+        core1_rand1=$random;
+    core1_rand2=$random;
+    if (core1_rand2[7:0]>64)
+    begin
+    Q_core1[q][j] = 0;
+    end
+    else 
+    begin
+	    Q_core2[q][j]=core1_rand1[7:0];
+    end
+    $display("Data core2: %d\n", Q_core2[q][j]);
   end
 end
 
@@ -225,6 +241,7 @@ $display("##### Estimated multiplication result #####");
       begin
 
 	    result_core1[t][kl]=result_core1[t][kl]*(256)/(sum_core1[t]+sum_core2[t]);
+	    $display("pre division prediction core1 %d",result_core1[t][kl]);	    
 	    if (result_core1[t][kl]<0)
 	    begin
 		    result_core1[t][kl]=-result_core1[t][kl];
