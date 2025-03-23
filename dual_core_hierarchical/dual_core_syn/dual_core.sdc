@@ -8,11 +8,10 @@ set_clock_uncertainty $uncertainty  [get_clocks clk]
 
 
 set_input_delay  $io_delay -clock [get_clocks {clk}] [get_ports {reset}]
-set_input_delay  $io_delay -clock [get_clocks {clk}] [get_ports {inst}]
-set_input_delay  $io_delay -clock [get_clocks {clk}] [get_ports {mem_in}]
-set_input_delay  $io_delay -clock [get_clocks {clk}] [get_ports {sum_in}]
-set_input_delay  $io_delay -clock [get_clocks {clk}] [get_ports {sum_in_valid}]
+set_input_delay  $io_delay -clock [get_clocks {clk}] [get_ports {inst_core1}]
+set_input_delay  $io_delay -clock [get_clocks {clk}] [get_ports {inst_core2}]
+set_input_delay  $io_delay -clock [get_clocks {clk}] [get_ports {mem_in_core1}]
+set_input_delay  $io_delay -clock [get_clocks {clk}] [get_ports {mem_in_core2}]
 
-set_output_delay  $io_delay -clock [get_clocks {clk}] [get_ports {out}]
-set_output_delay  $io_delay -clock [get_clocks {clk}] [get_ports {sum_out}]
-set_output_delay  $io_delay -clock [get_clocks {clk}] [get_ports {sum_out_valid}]
+set_output_delay  $io_delay -clock [get_clocks {clk}] [get_ports {out_core1}]
+set_output_delay  $io_delay -clock [get_clocks {clk}] [get_ports {out_core2}]

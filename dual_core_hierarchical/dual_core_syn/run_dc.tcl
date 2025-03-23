@@ -1,4 +1,4 @@
-set top_module core
+set top_module dual_core
 set rtlPath "./verilog"
 
 # Target library
@@ -42,16 +42,7 @@ define_design_lib WORK -path .template
 set verilogout_single_bit false
 
 # read RTL
-analyze -format verilog -lib WORK core.v
-analyze -format verilog -lib WORK fifo_mux_16_1.v
-analyze -format verilog -lib WORK fifo_mux_8_1.v
-analyze -format verilog -lib WORK fifo_mux_2_1.v
-analyze -format verilog -lib WORK fifo_depth16.v
-analyze -format verilog -lib WORK ofifo.v
-analyze -format verilog -lib WORK mac_array.v
-analyze -format verilog -lib WORK mac_col.v
-analyze -format verilog -lib WORK mac_8in.v
-analyze -format verilog -lib WORK norm.v
+analyze -format verilog -lib WORK dual_core.v
 
 elaborate $top_module -lib WORK -update
 current_design $top_module
