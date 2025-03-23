@@ -1,4 +1,4 @@
-streamOut ${design}.gds2 -merge {../core/core.gds2}
+streamOut ${design}.gds2 -merge {../core_pnr/core.gds2}
 write_lef_abstract -stripePin ${design}.lef
 defOut -netlist -routing ${design}.def
 saveNetlist ${design}.pnr.v

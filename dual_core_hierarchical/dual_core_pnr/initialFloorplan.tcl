@@ -12,7 +12,7 @@ setAddStripeMode -break_at {block_ring}
 addStripe -nets {VDD VSS} -layer M8 -direction vertical -width 2 -spacing 6 -number_of_sets 20
 
 setObjFPlanBox Instance core1 258.8355 92.877 1369.4355 1202.677
-setObjFPlanBox Instance core2 1365.619 1396.9915 2476.219 2506.7915
+setObjFPlanBox Instance core2 1307.5735 1381.5115 2418.1735 2491.3115
 
 addHaloToBlock {3 3 3 3} -allBlock
 setInstancePlacementStatus -status fixed -name {core1 core2}
