@@ -1,0 +1,103 @@
+
+Usage: setNanoRouteMode [-help] [-reset] [-dbAllowInstanceOverlaps {true|false}] [-dbIgnoreFollowPinShape {true|false}] [-dbSkipAnalog {true|false}] [-dbViaWeight <value>] [-drouteAntennaEcoListFile <value>]
+                        [-drouteAutoStop {true|false}] [-drouteEndIteration <value>] [-drouteFixAntenna {true|false}] [-drouteFixViaDensityViolationAfterViaSwap {true|false}] [-drouteMaskOnlyOnLayer <value>]
+                        [-drouteMinLengthForWireSpreading <value>] [-drouteMinLengthForWireWidening <value>] [-drouteMinSlackForWireOptimization <value>] [-drouteNoTaperInLayers <value>]
+                        [-drouteNoTaperOnOutputPin <value>] [-drouteOnGridOnly <value>] [-droutePostRouteLithoRepair {true|false}] [-droutePostRouteSpreadWire <value>] [-droutePostRouteSwapVia <value>]
+                        [-droutePostRouteSwapViaPriority <value>] [-droutePostRouteWidenWire <value>] [-droutePostRouteWidenWireRule <value>] [-drouteSearchAndRepair {true|false}] [-drouteSignOffEffort <value>]
+                        [-drouteUseMultiCutViaEffort <value>] [-envNumberFailLimit <value>] [-envNumberProcessor <value>] [-envNumberWarningLimit <value>] [-grouteFloorPlanMode {true|false}]
+                        [-routeAllowPinAsFeedthrough <value>] [-routeAntennaCellName <value>] [-routeAntennaPinLimit <value>] [-routeBottomRoutingLayer <value>] [-routeConcurrentMinimizeViaCountEffort <value>]
+                        [-routeConnectToBump {true|false}] [-routeDesignFixClockNets {true|false}] [-routeDesignRouteClockNetsFirst {true|false}] [-routeEcoOnlyInLayers <value>]
+                        [-routeEnableNdrSiLimitLength <value>] [-routeEnforceNdrOnSpecialNetWire <value>] [-routeExtraViaEnclosure <value>] [-routeFixTopLayerAntenna {true|false}]
+                        [-routeHonorPowerDomain {true|false}] [-routeIgnoreAntennaTopCellPin {true|false}] [-routeInsertAntennaDiode {true|false}] [-routeInsertDiodeForClockNets {true|false}]
+                        [-routeRelaxedNdrSpacingToPGNets <value>] [-routeReserveSpaceForMultiCut {true|false}] [-routeReverseDirection <value>] [-routeSelectedNetOnly {true|false}]
+                        [-routeShieldCrosstieOffset <value>] [-routeStrictlyHonorNonDefaultRule <value>] [-routeStripeLayerRange <value>] [-routeTieNetToShape <value>] [-routeTopRoutingLayer <value>]
+                        [-routeTrunkWithClusterTargetSize <value>] [-routeUnconnectedPorts {true|false}] [-routeWithEco {true|false}] [-routeWithLithoDriven {true|false}] [-routeWithSiDriven {true|false}]
+                        [-routeWithTimingDriven {true|false}] [-routeWithViaInPin <value>] [-routeWithViaInPinSingleMask {true|false}] [-routeWithViaOnlyForMacroCellPin <value>]
+                        [-routeWithViaOnlyForStandardCellPin <value>]
+
+-help                                    # Prints out the command usage
+-reset                                   # Resets all or specified options to default value
+-dbAllowInstanceOverlaps {true|false}    # don't do instance overlap check (bool, default=false)
+-dbIgnoreFollowPinShape {true|false}     # Ignore follow pin via shapes (bool, default=false)
+-dbSkipAnalog {true|false}               # skip routing nets or pins marked + USE ANALOG in the DEF file (bool, default=false)
+-dbViaWeight <value>                     # set weight for vias (string, default="")
+-drouteAntennaEcoListFile <value>        # set file name for antenna eco list (string, default="")
+-drouteAutoStop {true|false}             # control whether Nanoroute continues routing if there are many violations (bool, default=true)
+-drouteEndIteration <value>              # specify the last iteration pass in a detailed routing step (int, default=0)
+-drouteFixAntenna {true|false}           # fix antenna violation by jumping metal layers (bool, default=true)
+-drouteFixViaDensityViolationAfterViaSwap {true|false}
+                                         # fix via density violations after via swapping (bool, default=false)
+-drouteMaskOnlyOnLayer <value>           # only defined mask can be used for the layers (string, default=false)
+-drouteMinLengthForWireSpreading <value>
+                                         # specify the min. length of a spreaded wire (string, default=0)
+-drouteMinLengthForWireWidening <value>  # specify the min. length of a widened wire (float, default=1)
+-drouteMinSlackForWireOptimization <value>
+                                         # specify the min slack for a net wire optimization (float, default=0)
+-drouteNoTaperInLayers <value>           # Specifies the range of the layer where taper is not allowed (string, default="")
+-drouteNoTaperOnOutputPin <value>        # forbid wire tapering at output pin (ternary, default=false)
+-drouteOnGridOnly <value>                # route on grid only (string, default=none)
+-droutePostRouteLithoRepair {true|false}
+                                         # litho hotspot repair in post route stage (bool, default=false)
+-droutePostRouteSpreadWire <value>       # spread wire in post route stage (string, default=false)
+-droutePostRouteSwapVia <value>          # to enforce post route via swapping mode in detail route command. (string, default=none)
+-droutePostRouteSwapViaPriority <value>  # Set net priority for via swapping based on timing (string, default=auto)
+-droutePostRouteWidenWire <value>        # widen wire in post route stage (string, default=none)
+-droutePostRouteWidenWireRule <value>    # specify the rule used to widen wire (string, default="")
+-drouteSearchAndRepair {true|false}      # run search-and-repair step after the initial detailed routing (bool, default=true)
+-drouteSignOffEffort <value>             # specify when to give up on irresolvable violations (string, default=high)
+-drouteUseMultiCutViaEffort <value>      # specify the effort to use multi-cut via during routing (string, default=low)
+-envNumberFailLimit <value>              # set limit for number of fails (int, default=0)
+-envNumberProcessor <value>              # set the number of processors to be used in one workstation for multi-threading (int, default=1)
+-envNumberWarningLimit <value>           # set limit for number of warnings (int, default=0)
+-grouteFloorPlanMode {true|false}        # Enable quick floorplan routing (bool, default=false)
+-routeAllowPinAsFeedthrough <value>      # allow pin as feedthrough (string, default=true)
+-routeAntennaCellName <value>            # specify the antenna diode cell names for antenna fixing (string, default="")
+-routeAntennaPinLimit <value>            # ignore antenna check on a net with fanout greater than the pin limit (int, default=1000)
+-routeBottomRoutingLayer <value>         # specify the lowest metal layer Nanoroute uses for routing (int, default=0)
+-routeConcurrentMinimizeViaCountEffort <value>
+                                         # specify the effort of concurrent via minimization (string, default=medium)
+-routeConnectToBump {true|false}         # connect to bumps in native NanoRoute in Innovus (bool, default=false)
+-routeDesignFixClockNets {true|false}    # set clock nets routing status to fixed or routed (bool, default=false)
+-routeDesignRouteClockNetsFirst {true|false}
+                                         # route clock nets first (bool, default=true)
+-routeEcoOnlyInLayers <value>            # specify the bottom and top metal layer for ECO routing (string, default="")
+-routeEnableNdrSiLimitLength <value>     # use MAR wire length as NDR PRL requirement for metal spacing check (string, default=false)
+-routeEnforceNdrOnSpecialNetWire <value>
+                                         # enforce ndr rule on all special wire segments of specified nets (string, default=false)
+-routeExtraViaEnclosure <value>          # specify an extra via enclosure to use when connecting to block pins and special net wires (float, default=0)
+-routeFixTopLayerAntenna {true|false}    # encourage global router not to use the top routing layer to fix antenna violations on nets without diode protection (bool, default=true)
+-routeHonorPowerDomain {true|false}      # honor power domain routing (bool, default=false)
+-routeIgnoreAntennaTopCellPin {true|false}
+                                         # ignore antenna check on block I/O pins (bool, default=true)
+-routeInsertAntennaDiode {true|false}    # insert antenna diode to fix antenna violation (bool, default=false)
+-routeInsertDiodeForClockNets {true|false}
+                                         # allow diode insertion on clock nets (bool, default=false)
+-routeRelaxedNdrSpacingToPGNets <value>  # relax the spacing requirement from NDR spacing for the layers (string, default=none)
+-routeReserveSpaceForMultiCut {true|false}
+                                         # Reserves space to insert multicut vias in postroute stage. This option has to be set before routing. After routing with this parameter specified, you can add
+                                         # double-cut vias or larger overhang vias by using the "routeDesign -viaOpt" command. For examples, see routeDesign. (bool, default=false)
+-routeReverseDirection <value>           # reverse routing direction in area: (lx ly ux uy [bot_lyr : top_lyr]) ... , top_lyr and bot_lyr could be either layer name or layer routing id (string, default="")
+-routeSelectedNetOnly {true|false}       # route selected net only (bool, default=false)
+-routeShieldCrosstieOffset <value>       # Specifies the offset in terms of number of tracks for adding crossties. The default is 0 for all layers. The syntax is 'layerName:numTrack1 layerName2:numTrack2... '.
+                                         # (string, default="")
+-routeStrictlyHonorNonDefaultRule <value>
+                                         # Strictly enforce non-default rules (string, default=false)
+-routeStripeLayerRange <value>           # specify the target layer range of stripes for tie net connection (string, default="")
+-routeTieNetToShape <value>              # specify the target special wire shapes or target instance pin for tie net connection: [auto stripe ring powergroundpin] (string, default=auto)
+-routeTopRoutingLayer <value>            # specify the highest metal layer Nanoroute uses for routing (int, default=0)
+-routeTrunkWithClusterTargetSize <value>
+                                         # global control of trunk routing pattern for nets with TRUNK pattern attribute. 0: nets with TRUNK pattern will be routed as Steiner tree; 1: default, nets will be
+                                         # routed as traditional trunk pattern, i.e., each pin directly connects to SNET trunk separately; >1: define a proximate max cluster size (in number of pins), and nets
+                                         # will be routed as fishbone style, i.e., several pins in a column are clustered together, and then connects to SNET trunk. (int, default=1)
+-routeUnconnectedPorts {true|false}      # Route unconnected ports (bool, default=false)
+-routeWithEco {true|false}               # enable eco routing (bool, default=false)
+-routeWithLithoDriven {true|false}       # enable the litho-driven routing (bool, default=false)
+-routeWithSiDriven {true|false}          # enable si driven routing (bool, default=false)
+-routeWithTimingDriven {true|false}      # enable timing driven routing (bool, default=false)
+-routeWithViaInPin <value>               # enclose via in pin shape (string, default=false)
+-routeWithViaInPinSingleMask {true|false}
+                                         # enclose via in pin shape of a single mask (bool, default=false)
+-routeWithViaOnlyForMacroCellPin <value>
+                                         # enclose via in pin shape for macro cell pins (string, default=false)
+-routeWithViaOnlyForStandardCellPin <value>
+                                         # disable planar access to standard cell pins (string, default=false)

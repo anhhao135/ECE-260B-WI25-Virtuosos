@@ -1,0 +1,281 @@
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+Warning: Design has unannotated black box outputs. (PWR-428)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : core
+Version: K-2015.06-SP2
+Date   : Sat Mar 22 19:57:05 2025
+****************************************
+
+
+Library(s) Used:
+
+    tcbn65gpluswc (File: /home/linux/ieng6/ee260bwi25/public/PDKdata/db/tcbn65gpluswc.db)
+
+
+Operating Conditions: WCCOM   Library: tcbn65gpluswc
+Wire Load Model Mode: segmented
+
+Design        Wire Load Model            Library
+------------------------------------------------
+core                   ZeroWireload      tcbn65gpluswc
+mac_array_col8_bw8_bw_psum20_pr8
+                       ZeroWireload      tcbn65gpluswc
+ofifo_col8_bw20        ZeroWireload      tcbn65gpluswc
+fifo_depth16_bw160     ZeroWireload      tcbn65gpluswc
+norm                   ZeroWireload      tcbn65gpluswc
+mac_col_bw8_bw_psum20_pr8_col_id0
+                       ZeroWireload      tcbn65gpluswc
+mac_col_bw8_bw_psum20_pr8_col_id1
+                       ZeroWireload      tcbn65gpluswc
+mac_col_bw8_bw_psum20_pr8_col_id2
+                       ZeroWireload      tcbn65gpluswc
+mac_col_bw8_bw_psum20_pr8_col_id3
+                       ZeroWireload      tcbn65gpluswc
+mac_col_bw8_bw_psum20_pr8_col_id4
+                       ZeroWireload      tcbn65gpluswc
+mac_col_bw8_bw_psum20_pr8_col_id5
+                       ZeroWireload      tcbn65gpluswc
+mac_col_bw8_bw_psum20_pr8_col_id6
+                       ZeroWireload      tcbn65gpluswc
+mac_col_bw8_bw_psum20_pr8_col_id7
+                       ZeroWireload      tcbn65gpluswc
+fifo_depth16_bw20_simd1_7
+                       ZeroWireload      tcbn65gpluswc
+fifo_depth16_bw20_simd1_6
+                       ZeroWireload      tcbn65gpluswc
+fifo_mux_16_1_bw160_simd1
+                       ZeroWireload      tcbn65gpluswc
+mac_8in_bw8_bw_psum20_pr8_7
+                       ZeroWireload      tcbn65gpluswc
+fifo_mux_16_1_bw20_simd1_7
+                       ZeroWireload      tcbn65gpluswc
+fifo_mux_16_1_bw20_simd1_6
+                       ZeroWireload      tcbn65gpluswc
+fifo_mux_8_1_bw160_1   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw160_14  ZeroWireload      tcbn65gpluswc
+fifo_mux_8_1_bw20_15   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_119  ZeroWireload      tcbn65gpluswc
+mac_8in_bw8_bw_psum20_pr8_0
+                       ZeroWireload      tcbn65gpluswc
+mac_8in_bw8_bw_psum20_pr8_1
+                       ZeroWireload      tcbn65gpluswc
+mac_8in_bw8_bw_psum20_pr8_2
+                       ZeroWireload      tcbn65gpluswc
+mac_8in_bw8_bw_psum20_pr8_3
+                       ZeroWireload      tcbn65gpluswc
+mac_8in_bw8_bw_psum20_pr8_4
+                       ZeroWireload      tcbn65gpluswc
+mac_8in_bw8_bw_psum20_pr8_5
+                       ZeroWireload      tcbn65gpluswc
+mac_8in_bw8_bw_psum20_pr8_6
+                       ZeroWireload      tcbn65gpluswc
+fifo_depth16_bw20_simd1_0
+                       ZeroWireload      tcbn65gpluswc
+fifo_depth16_bw20_simd1_1
+                       ZeroWireload      tcbn65gpluswc
+fifo_depth16_bw20_simd1_2
+                       ZeroWireload      tcbn65gpluswc
+fifo_depth16_bw20_simd1_3
+                       ZeroWireload      tcbn65gpluswc
+fifo_depth16_bw20_simd1_4
+                       ZeroWireload      tcbn65gpluswc
+fifo_depth16_bw20_simd1_5
+                       ZeroWireload      tcbn65gpluswc
+fifo_mux_16_1_bw20_simd1_0
+                       ZeroWireload      tcbn65gpluswc
+fifo_mux_16_1_bw20_simd1_1
+                       ZeroWireload      tcbn65gpluswc
+fifo_mux_16_1_bw20_simd1_2
+                       ZeroWireload      tcbn65gpluswc
+fifo_mux_16_1_bw20_simd1_3
+                       ZeroWireload      tcbn65gpluswc
+fifo_mux_16_1_bw20_simd1_4
+                       ZeroWireload      tcbn65gpluswc
+fifo_mux_16_1_bw20_simd1_5
+                       ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_0    ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_1    ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_2    ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_3    ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_4    ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_5    ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_6    ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_7    ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_8    ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_9    ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_10   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_11   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_12   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_13   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_14   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_15   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_16   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_17   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_18   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_19   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_20   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_21   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_22   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_23   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_24   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_25   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_26   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_27   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_28   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_29   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_30   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_31   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_32   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_33   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_34   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_35   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_36   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_37   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_38   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_39   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_40   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_41   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_42   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_43   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_44   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_45   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_46   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_47   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_48   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_49   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_50   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_51   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_52   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_53   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_54   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_55   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_56   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_57   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_58   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_59   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_60   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_61   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_62   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_63   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_64   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_65   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_66   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_67   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_68   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_69   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_70   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_71   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_72   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_73   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_74   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_75   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_76   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_77   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_78   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_79   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_80   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_81   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_82   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_83   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_84   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_85   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_86   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_87   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_88   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_89   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_90   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_91   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_92   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_93   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_94   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_95   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_96   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_97   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_98   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_99   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_100  ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_101  ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_102  ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_103  ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_104  ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_105  ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_106  ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_107  ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_108  ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_109  ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_110  ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_111  ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_112  ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_113  ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_114  ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_115  ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_116  ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_117  ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw20_118  ZeroWireload      tcbn65gpluswc
+fifo_mux_8_1_bw20_0    ZeroWireload      tcbn65gpluswc
+fifo_mux_8_1_bw20_1    ZeroWireload      tcbn65gpluswc
+fifo_mux_8_1_bw20_2    ZeroWireload      tcbn65gpluswc
+fifo_mux_8_1_bw20_3    ZeroWireload      tcbn65gpluswc
+fifo_mux_8_1_bw20_4    ZeroWireload      tcbn65gpluswc
+fifo_mux_8_1_bw20_5    ZeroWireload      tcbn65gpluswc
+fifo_mux_8_1_bw20_6    ZeroWireload      tcbn65gpluswc
+fifo_mux_8_1_bw20_7    ZeroWireload      tcbn65gpluswc
+fifo_mux_8_1_bw20_8    ZeroWireload      tcbn65gpluswc
+fifo_mux_8_1_bw20_9    ZeroWireload      tcbn65gpluswc
+fifo_mux_8_1_bw20_10   ZeroWireload      tcbn65gpluswc
+fifo_mux_8_1_bw20_11   ZeroWireload      tcbn65gpluswc
+fifo_mux_8_1_bw20_12   ZeroWireload      tcbn65gpluswc
+fifo_mux_8_1_bw20_13   ZeroWireload      tcbn65gpluswc
+fifo_mux_8_1_bw20_14   ZeroWireload      tcbn65gpluswc
+fifo_mux_8_1_bw160_0   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw160_0   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw160_1   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw160_2   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw160_3   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw160_4   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw160_5   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw160_6   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw160_7   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw160_8   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw160_9   ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw160_10  ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw160_11  ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw160_12  ZeroWireload      tcbn65gpluswc
+fifo_mux_2_1_bw160_13  ZeroWireload      tcbn65gpluswc
+
+
+Global Operating Voltage = 0.9  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+  Cell Internal Power  =  54.7175 mW    (8%)
+  Net Switching Power  = 609.6601 mW   (92%)
+                         ---------
+Total Dynamic Power    = 664.3776 mW  (100%)
+
+Cell Leakage Power     =   1.2963 mW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network  2.8138e-02          607.8451        4.8759e+03          607.8783  (  91.32%)
+register          51.5136            0.3119        4.5472e+05           52.2802  (   7.85%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational      3.1756            1.5066        8.3670e+05            5.5189  (   0.83%)
+--------------------------------------------------------------------------------------------------
+Total             54.7173 mW       609.6636 mW     1.2963e+06 nW       665.6774 mW
+1
