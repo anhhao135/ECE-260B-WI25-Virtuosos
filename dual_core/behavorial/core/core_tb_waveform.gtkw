@@ -1,0 +1,35 @@
+[*]
+[*] GTKWave Analyzer v3.3.118 (w)1999-2023 BSI
+[*] Fri Mar  7 20:54:34 2025
+[*]
+[dumpfile] "/home/linux/ieng6/ee260bwi25/h3le/ECE-260B-WI25-Virtuosos/core/behavorial/core/core_tb.vcd"
+[dumpfile_mtime] "Fri Mar  7 20:53:17 2025"
+[dumpfile_size] 225094
+[savefile] "/home/linux/ieng6/ee260bwi25/h3le/ECE-260B-WI25-Virtuosos/core/behavorial/core/core_tb_waveform.gtkw"
+[timestart] 21030
+[size] 1920 808
+[pos] -39 -39
+*-11.000000 28130 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] core_tb.
+[treeopen] core_tb.DUT.
+[sst_width] 229
+[signals_width] 298
+[sst_expanded] 1
+[sst_vpaned_height] 212
+@28
+core_tb.clk
+core_tb.kmem_rd
+core_tb.kmem_wr
+@22
+core_tb.mem_in[63:0]
+@28
+core_tb.qmem_rd
+core_tb.qmem_wr
+core_tb.reset
+core_tb.DUT.mac_array_instance.inst[1:0]
+@22
+core_tb.DUT.mac_array_instance.fifo_wr[7:0]
+@23
+core_tb.DUT.mac_array_instance.in[63:0]
+[pattern_trace] 1
+[pattern_trace] 0
