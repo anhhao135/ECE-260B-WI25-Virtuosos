@@ -11,7 +11,8 @@ addRing -spacing {top 10 bottom 10 left 10 right 10} -width {top 3 bottom 3 left
 setAddStripeMode -break_at {block_ring}
 addStripe -nets {VDD VSS} -layer M8 -direction vertical -width 2 -spacing 6 -number_of_sets 20
 
-# TODO: Place instances
+setObjFPlanBox Instance core1 258.8355 92.877 1369.4355 1202.677
+setObjFPlanBox Instance core2 1365.619 1396.9915 2476.219 2506.7915
 
 addHaloToBlock {3 3 3 3} -allBlock
 setInstancePlacementStatus -status fixed -name {core1 core2}
