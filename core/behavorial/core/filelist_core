@@ -1,4 +1,5 @@
 ./verilog/core_tb.v
+./verilog/dual_core.v
 ./verilog/core.v
 ./verilog/norm.v
 ./verilog/fifo_depth16.v
